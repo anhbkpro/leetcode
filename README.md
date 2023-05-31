@@ -27,5 +27,6 @@
 | 1603. Design Parking System                       | **Design**                                       | https://leetcode.com/problems/design-parking-system/                          | [Solution](./lc_1603_design_parking_system.py)                       |      |
 | 2542. Maximum Subsequence Score                   | **Heap (Priority Queue)**                        | https://leetcode.com/problems/maximum-subsequence-score/                      | [Solution](./lc_2542_maximum_subsequence_score.py)                   |      |
 | 2553. Separate the Digits in an Array             | **Math**                                         | https://leetcode.com/problems/separate-the-digits-in-an-array/                | [Solution](./lc_2553_separate_the_digits_in_an_array.py)             |      |
+| 2671. Frequency Tracker                           | **Design**, **Hash Table**                       | https://leetcode.com/problems/frequency-tracker/                              | [Solution](./lc_2671_frequency_tracker.py)                           |      |
 
 
