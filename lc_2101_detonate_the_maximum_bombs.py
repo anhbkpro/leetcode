@@ -18,12 +18,12 @@ def maximumDetonation(bombs: List[List[int]]) -> int:
                 graph[i].append(j)
 
     # DFS to get the number of nodes reachable from a given node cur
-    def dfs(cur, visited):
-        visited.add(cur)
-        for neib in graph[cur]:
-            if neib not in visited:
-                dfs(neib, visited)
-        return len(visited)
+    def dfs(cur, seen):
+        seen.add(cur)
+        for neighbor in graph[cur]:
+            if neighbor not in seen:
+                dfs(neighbor, seen)
+        return len(seen)
 
     answer = 0
     for i in range(n):
