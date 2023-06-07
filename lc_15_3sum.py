@@ -4,10 +4,10 @@ from typing import List
 def twoSum(nums: List[int], i: int, answer: List[List[int]]) -> None:
     lo, hi = i + 1, len(nums) - 1
     while lo < hi:
-        sum = nums[i] + nums[lo] + nums[hi]
-        if sum < 0:
+        total = nums[i] + nums[lo] + nums[hi]
+        if total < 0:
             lo += 1
-        elif sum > 0:
+        elif total > 0:
             hi -= 1
         else:
             answer.append([nums[i], nums[lo], nums[hi]])
