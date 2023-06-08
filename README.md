@@ -50,5 +50,6 @@
 | 2671. Frequency Tracker                                      | **Design**, **Hash Table**                       | https://leetcode.com/problems/frequency-tracker/                                      | [Solution](./lc_2671_frequency_tracker.py)                                      |      |
 | 2684. Maximum Number of Moves in a Grid                      | **Dynamic Programming**                          | https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/                      | [Solution](./lc_2684_maximum_number_of_moves_in_a_grid.py)                      |      |
 | 2696. Minimum String Length After Removing Substrings        | **Greedy**                                       | https://leetcode.com/problems/minimum-string-length-after-removing-substrings/        | [Solution](./lc_2696_minimum_string_length_after_removing_substrings.py)        |      |
+| 2710. Remove Trailing Zeros From a String                    | **String**                                       | https://leetcode.com/problems/remove-trailing-zeros-from-a-string/                    | [Solution](./lc_2710_remove_trailing_zeros_from_a_string.py)                    |      |
 
 
