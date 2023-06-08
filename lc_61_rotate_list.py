@@ -19,26 +19,30 @@ class ListNode:
 
 
 def rotate_right(head: Optional[ListNode], k: int) -> Optional[ListNode]:
+    # base cases
     if not head:
         return None
     if not head.next:
         return head
-    # find the length of the list
-    length = 1
+
+    # close the linked list into the ring
     old_tail = head
+    n = 1
     while old_tail.next:
-        length += 1
         old_tail = old_tail.next
-    # connect the tail to the head
+        n += 1
     old_tail.next = head
-    # find the new tail
+
+    # find new tail : (n - k % n - 1)th node
+    # and new head : (n - k % n)th node
     new_tail = head
-    for _ in range(length - k % length - 1):
+    for i in range(n - k % n - 1):
         new_tail = new_tail.next
-    # find the new head
     new_head = new_tail.next
+
     # break the ring
     new_tail.next = None
+
     return new_head
 
 
