@@ -6,10 +6,11 @@ def countNegatives(grid: List[List[int]]) -> int:
     last_negative = cols - 1
     answer = 0
     for row in grid:
+        # all item in this row is negative
         if row[0] < 0:
             answer += cols
             continue
-
+        # all item in this row is positive
         if row[cols - 1] >= 0:
             continue
         # Using binary search find the index
