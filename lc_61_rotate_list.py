@@ -19,6 +19,9 @@ class ListNode:
 
 
 def rotate_right(head: Optional[ListNode], k: int) -> Optional[ListNode]:
+    """Time complexity: O(N)
+    Space complexity: O(1)
+    """
     # base cases
     if not head:
         return None
