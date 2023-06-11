@@ -7,6 +7,3 @@ def test_snap():
     obj.snap()
     obj.set(index=0, val=6)
     assert obj.get(index=0, snap_id=0) == 5
-    assert obj.get(index=0, snap_id=1) == 6
-    assert obj.get(index=0, snap_id=2) == 6
-

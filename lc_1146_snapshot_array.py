@@ -17,13 +17,15 @@ class SnapshotArray:
         # return self.history_records[index][snap_index - 1][1]
         history = self.history_records[index]
         left, right = 0, len(history) - 1
-        while left < right:
-            mid = (left + right + 1) // 2
+
+        while left <= right:
+            mid = (left + right) // 2
             if history[mid][0] <= snap_id:
-                left = mid
+                left = mid + 1
             else:
                 right = mid - 1
-        return history[left][1]
+
+        return history[right][1]
 
 # Your SnapshotArray object will be instantiated and called as such:
 # obj = SnapshotArray(length)
