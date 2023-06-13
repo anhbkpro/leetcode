@@ -1,4 +1,4 @@
-from lc_2352_equal_row_and_column_pairs import equalPairs
+from lc_2352_equal_row_and_column_pairs_hashmap import equalPairs
 
 
 def test_equal_pairs():
