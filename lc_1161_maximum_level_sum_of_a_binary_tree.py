@@ -1,4 +1,5 @@
 # Definition for a binary tree node.
+import collections
 from typing import Optional
 
 
@@ -9,25 +10,29 @@ class TreeNode:
         self.right = right
 
 
-def maxLevelSum(root: Optional[TreeNode]) -> int:
-    max_sum = float('-inf')
-    max_level = 0
-    level = 1
-    q = [root]
+def max_level_sum(root: Optional[TreeNode]) -> int:
+    max_sum, ans, level = float('-inf'), 0, 0
+
+    q = collections.deque()
+    q.append(root)
+
     while q:
-        curr_sum = 0
+        level += 1
+        sum_at_current_level = 0
+        # Iterate over all the nodes in the current level.
         for _ in range(len(q)):
-            node = q.pop(0)
-            curr_sum += node.val
+            node = q.popleft()
+            sum_at_current_level += node.val
+
             if node.left:
                 q.append(node.left)
             if node.right:
                 q.append(node.right)
-        if curr_sum > max_sum:
-            max_sum = curr_sum
-            max_level = level
-        level += 1
-    return max_level
+
+        if max_sum < sum_at_current_level:
+            max_sum, ans = sum_at_current_level, level
+
+    return ans
 
 
 class Solution:
