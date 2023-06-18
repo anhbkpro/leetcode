@@ -1,4 +1,4 @@
-# top-100-liked-questions-leetcode-py
+# LeetCode 75
 
 | Problem                                                       | Related Topics                                      | Question                                                                               | Solution                                                                         | Note |
 |---------------------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|------|
@@ -89,7 +89,13 @@
 | 2710. Remove Trailing Zeros From a String                     | **String**                                          | https://leetcode.com/problems/remove-trailing-zeros-from-a-string/                     | [Solution](./lc_2710_remove_trailing_zeros_from_a_string.py)                     |      |
 
 # Premium Algo 100
-
-| Problem                                                       | Related Topics                                      | Question                                                                               | Solution                                  | Note |
-|---------------------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------------------------------------|-------------------------------------------|------|
-| 161. One Edit Distance                                        | **String**, **Dynamic Programming**                 | https://leetcode.com/problems/one-edit-distance/                                       | [Solution](./lc_161_one_edit_distance.py) |      |
+## Array / String
+| Problem                           | Related Topics                      | Question                                                    | Solution                                             | Note |
+|-----------------------------------|-------------------------------------|-------------------------------------------------------------|------------------------------------------------------|------|
+| 624. Maximum Distance in Arrays   | **Array**                           | https://leetcode.com/problems/maximum-distance-in-arrays/   | [Solution](./lc_624_maximum_distance_in_arrays.py)   |      |
+| 280. Wiggle Sort                  | **Array**, **Sort**                 | https://leetcode.com/problems/wiggle-sort/                  | [Solution](./lc_280_wiggle_sort.py)                  |      |
+| 1056. Confusing Number            | **Math**, **String**                | https://leetcode.com/problems/confusing-number/             | [Solution](./lc_1056_confusing_number.py)            |      |
+| 1427. Perform String Shifts       | **String**                          | https://leetcode.com/problems/perform-string-shifts/        | [Solution](./lc_1427_perform_string_shifts.py)       |      |
+| 161. One Edit Distance            | **String**, **Dynamic Programming** | https://leetcode.com/problems/one-edit-distance/            | [Solution](./lc_161_one_edit_distance.py)            |      |
+| 186. Reverse Words in a String II | **String**                          | https://leetcode.com/problems/reverse-words-in-a-string-ii/ | [Solution](./lc_186_reverse_words_in_a_string_ii.py) |      |
+| 1055. Shortest Way to Form String | **String**, **Greedy**              | https://leetcode.com/problems/shortest-way-to-form-string/  | [Solution](./lc_1055_shortest_way_to_form_string.py) |      |
