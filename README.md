@@ -88,4 +88,8 @@
 | 2707. Extra Characters in a String                            | **Dynamic Programming**                             | https://leetcode.com/problems/extra-characters-in-a-string/                            | [Solution](./lc_2707_extra_characters_in_a_string.py)                            |      |
 | 2710. Remove Trailing Zeros From a String                     | **String**                                          | https://leetcode.com/problems/remove-trailing-zeros-from-a-string/                     | [Solution](./lc_2710_remove_trailing_zeros_from_a_string.py)                     |      |
 
+# Premium Algo 100
 
+| Problem                                                       | Related Topics                                      | Question                                                                               | Solution                                  | Note |
+|---------------------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------------------------------------|-------------------------------------------|------|
+| 161. One Edit Distance                                        | **String**, **Dynamic Programming**                 | https://leetcode.com/problems/one-edit-distance/                                       | [Solution](./lc_161_one_edit_distance.py) |      |
