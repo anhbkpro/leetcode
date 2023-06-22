@@ -113,3 +113,5 @@
 | 159. Longest Substring with At Most Two Distinct Characters | **String**, **Sliding Window** | https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/ | [Solution](./lc_159_longest_substring_with_at_most_two_distinct_characters.py) |      |
 | 340. Longest Substring with At Most K Distinct Characters   | **String**, **Sliding Window** | https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/   | [Solution](./lc_340_longest_substring_with_at_most_k_distinct_characters.py)   |      |
 | 487. Max Consecutive Ones II                                | **Array**, **Sliding Window**  | https://leetcode.com/problems/max-consecutive-ones-ii/                                | [Solution](./lc_487_max_consecutive_ones_ii.py)                                |      |
+| 1100. Find K-Length Substrings With No Repeated Characters  | **String**, **Sliding Window** | https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/   | [Solution](./lc_1100_find_k_length_substrings_with_no_repeated_characters.py)  |      |
+
