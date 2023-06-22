@@ -116,6 +116,7 @@
 | 1100. Find K-Length Substrings With No Repeated Characters  | **String**, **Sliding Window** | https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/   | [Solution](./lc_1100_find_k_length_substrings_with_no_repeated_characters.py)  |      |
 
 ## Hashing
-| Problem                    | Related Topics | Question                                             | Solution                                      | Note |
-|----------------------------|----------------|------------------------------------------------------|-----------------------------------------------|------|
-| 760. Find Anagram Mappings | **Hash Table** | https://leetcode.com/problems/find-anagram-mappings/ | [Solution](./lc_760_find_anagram_mappings.py) |      |
+| Problem                     | Related Topics | Question                                              | Solution                                       | Note |
+|-----------------------------|----------------|-------------------------------------------------------|------------------------------------------------|------|
+| 760. Find Anagram Mappings  | **Hash Table** | https://leetcode.com/problems/find-anagram-mappings/  | [Solution](./lc_760_find_anagram_mappings.py)  |      |
+| 266. Palindrome Permutation | **Hash Table** | https://leetcode.com/problems/palindrome-permutation/ | [Solution](./lc_266_palindrome_permutation.py) |      |
