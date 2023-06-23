@@ -6,7 +6,7 @@ def test_word_dictionary():
     obj.addWord('bad')
     obj.addWord('dad')
     obj.addWord('mad')
-    assert obj.search('pad') == False
-    assert obj.search('bad') == True
-    assert obj.search('.ad') == True
-    assert obj.search('b..') == True
+    assert obj.search('pad') is False
+    assert obj.search('bad') is True
+    assert obj.search('.ad') is True
+    assert obj.search('b..') is True

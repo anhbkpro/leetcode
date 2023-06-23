@@ -11,4 +11,3 @@ def test_pop_smallest():
     assert smallestInfiniteSet.popSmallest() == 1
     smallestInfiniteSet.addBack(2)
     assert smallestInfiniteSet.popSmallest() == 2
-
