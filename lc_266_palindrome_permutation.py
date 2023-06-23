@@ -6,7 +6,7 @@ def can_permute_palindrome(s: str) -> bool:
     num_odds = 0
 
     for item in counter:
-        if counter[item] % 2 is not 0:
+        if counter[item] % 2 != 0:
             num_odds += 1
 
     return num_odds <= 1
