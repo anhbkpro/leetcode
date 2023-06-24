@@ -124,3 +124,4 @@
 | 266. Palindrome Permutation | **Hash Table** | https://leetcode.com/problems/palindrome-permutation/ | [Solution](./lc_266_palindrome_permutation.py) |      |
 | 734. Sentence Similarity    | **Hash Table** | https://leetcode.com/problems/sentence-similarity/    | [Solution](./lc_734_sentence_similarity.py)    |      |
 | 1165. Single-Row Keyboard   | **Hash Table** | https://leetcode.com/problems/single-row-keyboard/    | [Solution](./lc_1165_single_row_keyboard.py)   |      |
+| 249. Group Shifted Strings  | **Hash Table** | https://leetcode.com/problems/group-shifted-strings/  | [Solution](./lc_249_group_shifted_strings.py)  |      |
