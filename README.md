@@ -122,3 +122,4 @@
 |-----------------------------|----------------|-------------------------------------------------------|------------------------------------------------|------|
 | 760. Find Anagram Mappings  | **Hash Table** | https://leetcode.com/problems/find-anagram-mappings/  | [Solution](./lc_760_find_anagram_mappings.py)  |      |
 | 266. Palindrome Permutation | **Hash Table** | https://leetcode.com/problems/palindrome-permutation/ | [Solution](./lc_266_palindrome_permutation.py) |      |
+| 734. Sentence Similarity    | **Hash Table** | https://leetcode.com/problems/sentence-similarity/    | [Solution](./lc_734_sentence_similarity.py)    |      |
