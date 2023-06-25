@@ -126,3 +126,4 @@
 | 1165. Single-Row Keyboard   | **Hash Table** | https://leetcode.com/problems/single-row-keyboard/    | [Solution](./lc_1165_single_row_keyboard.py)   |      |
 | 249. Group Shifted Strings  | **Hash Table** | https://leetcode.com/problems/group-shifted-strings/  | [Solution](./lc_249_group_shifted_strings.py)  |      |
 | 1133. Largest Unique Number | **Hash Table** | https://leetcode.com/problems/largest-unique-number/  | [Solution](./lc_1133_largest_unique_number.py) |      |
+| 1426. Counting Elements     | **Hash Table** | https://leetcode.com/problems/counting-elements/      | [Solution](./lc_1426_counting_elements.py)     |      |
