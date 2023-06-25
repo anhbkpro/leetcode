@@ -135,3 +135,9 @@
 |-----------------------------------|----------------|-------------------------------------------------------|------------------------------------------------|------|
 | 422. Valid Word Square            | **String**     | https://leetcode.com/problems/valid-word-square/      | [Solution](./lc_422_valid_word_square.py)      |      |
 | 531. Lonely Pixel I               | **Array**      | https://leetcode.com/problems/lonely-pixel-i/         | [Solution](./lc_531_lonely_pixel_i.py)         |      |
+
+## Intervals
+| Problem                           | Related Topics | Question                                              | Solution                                       | Note |
+|-----------------------------------|----------------|-------------------------------------------------------|------------------------------------------------|------|
+| 163. Missing Ranges               | **Array**      | https://leetcode.com/problems/missing-ranges/         | [Solution](./lc_163_missing_ranges.py)         |      |
+| 252. Meeting Rooms                | **Array**      | https://leetcode.com/problems/meeting-rooms/          | [Solution](./lc_252_meeting_rooms.py)          |      |
