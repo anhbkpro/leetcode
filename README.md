@@ -61,7 +61,6 @@
 | 1154. Day of the Year                                         | **Math**                                               | https://leetcode.com/problems/day-of-the-year/                                         | [Solution](./lc_1154_day_of_the_year.py)                                         |      |
 | 1161. Maximum Level Sum of a Binary Tree                      | **Tree**, **Breadth-First Search**                     | https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/                      | [Solution](./lc_1161_maximum_level_sum_of_a_binary_tree.py)                      |      |
 | 1187. Make Array Strictly Increasing                          | **Dynamic Programming**                                | https://leetcode.com/problems/make-array-strictly-increasing/                          | [Solution](./lc_1187_make_array_strictly_increasing.py)                          |      |
-| 1198. Find Smallest Common Element in All Rows                | **Array**, **Binary Search**                           | https://leetcode.com/problems/find-smallest-common-element-in-all-rows/                | [Solution](./lc_1198_find_smallest_common_element_in_all_rows.py)                |      |
 | 1232. Check If It Is a Straight Line                          | **Array**, **Math**                                    | https://leetcode.com/problems/check-if-it-is-a-straight-line/                          | [Solution](./lc_1232_check_if_it_is_a_straight_line.py)                          |      |
 | 1268. Search Suggestions System                               | **String**, **Trie**                                   | https://leetcode.com/problems/search-suggestions-system/                               | [Solution](./lc_1268_search_suggestions_system.py)                               |      |
 | 1318. Minimum Flips to Make a OR b Equal to c                 | **Bit Manipulation**                                   | https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/                 | [Solution](./lc_1318_minimum_flips_to_make_a_or_b_equal_to_c.py)                 |      |
@@ -120,12 +119,19 @@
 | 1100. Find K-Length Substrings With No Repeated Characters  | **String**, **Sliding Window** | https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/   | [Solution](./lc_1100_find_k_length_substrings_with_no_repeated_characters.py)  |      |
 
 ## Hashing
-| Problem                     | Related Topics | Question                                              | Solution                                       | Note |
-|-----------------------------|----------------|-------------------------------------------------------|------------------------------------------------|------|
-| 760. Find Anagram Mappings  | **Hash Table** | https://leetcode.com/problems/find-anagram-mappings/  | [Solution](./lc_760_find_anagram_mappings.py)  |      |
-| 266. Palindrome Permutation | **Hash Table** | https://leetcode.com/problems/palindrome-permutation/ | [Solution](./lc_266_palindrome_permutation.py) |      |
-| 734. Sentence Similarity    | **Hash Table** | https://leetcode.com/problems/sentence-similarity/    | [Solution](./lc_734_sentence_similarity.py)    |      |
-| 1165. Single-Row Keyboard   | **Hash Table** | https://leetcode.com/problems/single-row-keyboard/    | [Solution](./lc_1165_single_row_keyboard.py)   |      |
-| 249. Group Shifted Strings  | **Hash Table** | https://leetcode.com/problems/group-shifted-strings/  | [Solution](./lc_249_group_shifted_strings.py)  |      |
-| 1133. Largest Unique Number | **Hash Table** | https://leetcode.com/problems/largest-unique-number/  | [Solution](./lc_1133_largest_unique_number.py) |      |
-| 1426. Counting Elements     | **Hash Table** | https://leetcode.com/problems/counting-elements/      | [Solution](./lc_1426_counting_elements.py)     |      |
+| Problem                                        | Related Topics               | Question                                                                | Solution                                                          | Note |
+|------------------------------------------------|------------------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------|------|
+| 760. Find Anagram Mappings                     | **Hash Table**               | https://leetcode.com/problems/find-anagram-mappings/                    | [Solution](./lc_760_find_anagram_mappings.py)                     |      |
+| 266. Palindrome Permutation                    | **Hash Table**               | https://leetcode.com/problems/palindrome-permutation/                   | [Solution](./lc_266_palindrome_permutation.py)                    |      |
+| 734. Sentence Similarity                       | **Hash Table**               | https://leetcode.com/problems/sentence-similarity/                      | [Solution](./lc_734_sentence_similarity.py)                       |      |
+| 1165. Single-Row Keyboard                      | **Hash Table**               | https://leetcode.com/problems/single-row-keyboard/                      | [Solution](./lc_1165_single_row_keyboard.py)                      |      |
+| 249. Group Shifted Strings                     | **Hash Table**               | https://leetcode.com/problems/group-shifted-strings/                    | [Solution](./lc_249_group_shifted_strings.py)                     |      |
+| 1133. Largest Unique Number                    | **Hash Table**               | https://leetcode.com/problems/largest-unique-number/                    | [Solution](./lc_1133_largest_unique_number.py)                    |      |
+| 1426. Counting Elements                        | **Hash Table**               | https://leetcode.com/problems/counting-elements/                        | [Solution](./lc_1426_counting_elements.py)                        |      |
+| 1198. Find Smallest Common Element in All Rows | **Array**, **Binary Search** | https://leetcode.com/problems/find-smallest-common-element-in-all-rows/ | [Solution](./lc_1198_find_smallest_common_element_in_all_rows.py) |      |
+
+## Matrix
+| Problem                           | Related Topics | Question                                              | Solution                                       | Note |
+|-----------------------------------|----------------|-------------------------------------------------------|------------------------------------------------|------|
+| 422. Valid Word Square            | **String**     | https://leetcode.com/problems/valid-word-square/      | [Solution](./lc_422_valid_word_square.py)      |      |
+| 531. Lonely Pixel I               | **Array**      | https://leetcode.com/problems/lonely-pixel-i/         | [Solution](./lc_531_lonely_pixel_i.py)         |      |
