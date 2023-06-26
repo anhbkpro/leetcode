@@ -146,3 +146,8 @@
 | 253. Meeting Rooms II       | **Array**      | https://leetcode.com/problems/meeting-rooms-ii/       | [Solution](./lc_253_meeting_rooms_ii.py)       |      |
 | 616. Add Bold Tag in String | **String**     | https://leetcode.com/problems/add-bold-tag-in-string/ | [Solution](./lc_616_add_bold_tag_in_string.py) |      |
 | 1272. Remove Interval       | **Array**      | https://leetcode.com/problems/remove-interval/        | [Solution](./lc_1272_remove_interval.py)       |      |
+
+## Stack
+| Problem               | Related Topics | Question                                         | Solution                                 | Note |
+|-----------------------|----------------|--------------------------------------------------|------------------------------------------|------|
+| 20. Valid Parentheses | **Stack**      | https://leetcode.com/problems/valid-parentheses/ | [Solution](./lc_20_valid_parentheses.py) |      |
