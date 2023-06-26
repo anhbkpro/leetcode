@@ -139,9 +139,10 @@
 | 531. Lonely Pixel I               | **Array**      | https://leetcode.com/problems/lonely-pixel-i/         | [Solution](./lc_531_lonely_pixel_i.py)         |      |
 
 ## Intervals
-| Problem                           | Related Topics | Question                                              | Solution                                       | Note |
-|-----------------------------------|----------------|-------------------------------------------------------|------------------------------------------------|------|
-| 163. Missing Ranges               | **Array**      | https://leetcode.com/problems/missing-ranges/         | [Solution](./lc_163_missing_ranges.py)         |      |
-| 252. Meeting Rooms                | **Array**      | https://leetcode.com/problems/meeting-rooms/          | [Solution](./lc_252_meeting_rooms.py)          |      |
-| 253. Meeting Rooms II             | **Array**      | https://leetcode.com/problems/meeting-rooms-ii/       | [Solution](./lc_253_meeting_rooms_ii.py)       |      |
-| 616. Add Bold Tag in String       | **String**     | https://leetcode.com/problems/add-bold-tag-in-string/ | [Solution](./lc_616_add_bold_tag_in_string.py) |      |
+| Problem                     | Related Topics | Question                                              | Solution                                       | Note |
+|-----------------------------|----------------|-------------------------------------------------------|------------------------------------------------|------|
+| 163. Missing Ranges         | **Array**      | https://leetcode.com/problems/missing-ranges/         | [Solution](./lc_163_missing_ranges.py)         |      |
+| 252. Meeting Rooms          | **Array**      | https://leetcode.com/problems/meeting-rooms/          | [Solution](./lc_252_meeting_rooms.py)          |      |
+| 253. Meeting Rooms II       | **Array**      | https://leetcode.com/problems/meeting-rooms-ii/       | [Solution](./lc_253_meeting_rooms_ii.py)       |      |
+| 616. Add Bold Tag in String | **String**     | https://leetcode.com/problems/add-bold-tag-in-string/ | [Solution](./lc_616_add_bold_tag_in_string.py) |      |
+| 1272. Remove Interval       | **Array**      | https://leetcode.com/problems/remove-interval/        | [Solution](./lc_1272_remove_interval.py)       |      |
