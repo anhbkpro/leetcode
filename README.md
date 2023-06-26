@@ -142,3 +142,4 @@
 |-----------------------------------|----------------|-------------------------------------------------------|------------------------------------------------|------|
 | 163. Missing Ranges               | **Array**      | https://leetcode.com/problems/missing-ranges/         | [Solution](./lc_163_missing_ranges.py)         |      |
 | 252. Meeting Rooms                | **Array**      | https://leetcode.com/problems/meeting-rooms/          | [Solution](./lc_252_meeting_rooms.py)          |      |
+| 253. Meeting Rooms II             | **Array**      | https://leetcode.com/problems/meeting-rooms-ii/       | [Solution](./lc_253_meeting_rooms_ii.py)       |      |
