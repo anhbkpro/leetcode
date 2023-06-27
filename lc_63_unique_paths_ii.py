@@ -37,5 +37,24 @@ def uniquePathsWithObstacles(obstacleGrid):
     return obstacleGrid[m - 1][n - 1]
 
 
+def uniquePathsWithObstacles1DArray(obstacleGrid):
+    """
+    :type obstacleGrid: List[List[int]]
+    :rtype: int
+    """
+    m, n = len(obstacleGrid), len(obstacleGrid[0])
+    dp = [0] * n
+    dp[0] = 1
+
+    for row in range(m):
+        for col in range(n):
+            if obstacleGrid[row][col] == 1:
+                dp[col] = 0
+            elif col > 0:
+                dp[col] += dp[col - 1]
+
+    return dp[-1]
+
+
 class Solution(object):
     pass
