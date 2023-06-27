@@ -11,7 +11,6 @@ def kSmallestPairs(nums1: List[int], nums2: List[int], k: int) -> List[List[int]
 
     min_heap = [(nums1[0] + nums2[0], (0, 0))]
     visited.add((0, 0))
-    count = 0
 
     while k > 0 and min_heap:
         val, (i, j) = heappop(min_heap)
