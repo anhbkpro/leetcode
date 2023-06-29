@@ -162,3 +162,8 @@
 |--------------------------------------|-----------------------|----------------------------------------------------------------|---------------------------------------------------------|------|
 | 346. Moving Average from Data Stream | **Design**, **Queue** | https://leetcode.com/problems/moving-average-from-data-stream/ | [Solution](./lc_346_moving_average_from_data_stream.py) |      |
 | 1429. First Unique Number            | **Design**, **Queue** | https://leetcode.com/problems/first-unique-number/             | [Solution](./lc_1429_first_unique_number.py)            |      |
+
+## Linked Lists
+| Problem                                             | Related Topics  | Question                                                                     | Solution                                                               | Note |
+|-----------------------------------------------------|-----------------|------------------------------------------------------------------------------|------------------------------------------------------------------------|------|
+| 1474. Delete N Nodes After M Nodes of a Linked List | **Linked List** | https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/ | [Solution](./lc_1474_delete_n_nodes_after_m_nodes_of_a_linked_list.py) |      |
