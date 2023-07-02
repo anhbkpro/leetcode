@@ -81,6 +81,7 @@
 | 1547. Minimum Cost to Cut a Stick                             | **Dynamic Programming**                                | https://leetcode.com/problems/minimum-cost-to-cut-a-stick/                             | [Solution](./lc_1547_minimum_cost_to_cut_a_stick.py)                             |      |
 | 1569. Number of Ways to Reorder Array to Get Same BST         | **Dynamic Programming**, **Tree**                      | https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/         | [Solution](./lc_1569_number_of_ways_to_reorder_array_to_get_same_bst.py)         |      |
 | 1575. Count All Possible Routes                               | **Dynamic Programming**                                | https://leetcode.com/problems/count-all-possible-routes/                               | [Solution](./lc_1575_count_all_possible_routes.py)                               |      |
+| 1601. Maximum Number of Achievable Transfer Requests          | **Bit Manipulation**, **Recursion**                    | https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/          | [Solution](./lc_1601_maximum_number_of_achievable_transfer_requests.py)          |      |
 | 1603. Design Parking System                                   | **Design**                                             | https://leetcode.com/problems/design-parking-system/                                   | [Solution](./lc_1603_design_parking_system.py)                                   |      |
 | 1732. Find the Highest Altitude                               | **Array**                                              | https://leetcode.com/problems/find-the-highest-altitude/                               | [Solution](./lc_1732_find_the_highest_altitude.py)                               |      |
 | 1768. Merge Strings Alternately                               | **String**                                             | https://leetcode.com/problems/merge-strings-alternately/                               | [Solution](./lc_1768_merge_strings_alternately.py)                               |      |
@@ -168,3 +169,25 @@
 | Problem                                             | Related Topics  | Question                                                                     | Solution                                                               | Note |
 |-----------------------------------------------------|-----------------|------------------------------------------------------------------------------|------------------------------------------------------------------------|------|
 | 1474. Delete N Nodes After M Nodes of a Linked List | **Linked List** | https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/ | [Solution](./lc_1474_delete_n_nodes_after_m_nodes_of_a_linked_list.py) |      |
+
+# Dynamic Programming - 10 Essential DP Patterns
+## 1. Fibonacci style
+| Problem                         | Related Topics | Question                                                  | Solution                                           | Note |
+|---------------------------------|----------------|-----------------------------------------------------------|----------------------------------------------------|------|
+| 70. Climbing Stairs             | **DP**         | https://leetcode.com/problems/climbing-stairs/            | [Solution](./lc_70_climbing_stairs.py)             |      |
+| 509. Fibonacci Number           | **DP**         | https://leetcode.com/problems/fibonacci-number/           | [Solution](./lc_509_fibonacci_number.py)           |      |
+| 1137. N-th Tribonacci Number    | **DP**         | https://leetcode.com/problems/n-th-tribonacci-number/     | [Solution](./lc_1137_n_th_tribonacci_number.py)    |      |
+| 746. Min Cost Climbing Stairs   | **DP**         | https://leetcode.com/problems/min-cost-climbing-stairs/   | [Solution](./lc_746_min_cost_climbing_stairs.py)   |      |
+| 198. House Robber               | **DP**         | https://leetcode.com/problems/house-robber/               | [Solution](./lc_198_house_robber.py)               |      |
+| 740. Delete and Earn            | **DP**         | https://leetcode.com/problems/delete-and-earn/            | [Solution](./lc_740_delete_and_earn.py)            |      |
+
+## 1. 0/1 Knapsack
+| Problem                         | Related Topics | Question                                                  | Solution                                           | Note |
+|---------------------------------|----------------|-----------------------------------------------------------|----------------------------------------------------|------|
+| 279. Perfect Squares            | **DP**         | https://leetcode.com/problems/perfect-squares/            | [Solution](./lc_279_perfect_squares.py)            |      |
+| 518. Coin Change II             | **DP**         | https://leetcode.com/problems/coin-change-2/              | [Solution](./lc_518_coin_change_2.py)              |      |
+| 377. Combination Sum IV         | **DP**         | https://leetcode.com/problems/combination-sum-iv/         | [Solution](./lc_377_combination_sum_iv.py)         |      |
+| 474. Ones and Zeroes            | **DP**         | https://leetcode.com/problems/ones-and-zeroes/            | [Solution](./lc_474_ones_and_zeroes.py)            |      |
+
+
+
