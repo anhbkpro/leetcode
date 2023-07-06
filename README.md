@@ -173,6 +173,7 @@
 | Problem                                             | Related Topics  | Question                                                                     | Solution                                                               | Note |
 |-----------------------------------------------------|-----------------|------------------------------------------------------------------------------|------------------------------------------------------------------------|------|
 | 1474. Delete N Nodes After M Nodes of a Linked List | **Linked List** | https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/ | [Solution](./lc_1474_delete_n_nodes_after_m_nodes_of_a_linked_list.py) |      |
+| 369. Plus One Linked List                           | **Linked List** | https://leetcode.com/problems/plus-one-linked-list/                          | [Solution](./lc_369_plus_one_linked_list.py)                           |      |
 
 # Dynamic Programming - 10 Essential DP Patterns
 ## 1. Fibonacci style
