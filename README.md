@@ -185,6 +185,15 @@
 | 708. Insert into a Sorted Circular Linked List      | **Linked List** | https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list/     | [Solution](./lc_708_insert_into_a_sorted_circular_linked_list.py)      |      |
 | 369. Plus One Linked List                           | **Linked List** | https://leetcode.com/problems/plus-one-linked-list/                          | [Solution](./lc_369_plus_one_linked_list.py)                           |      |
 
+## Topological Sort (Graph) using Kahn's Algorithm
+| Problem                        | Related Topics | Question                                                 | Solution                                          | Note |
+|--------------------------------|----------------|----------------------------------------------------------|---------------------------------------------------|------|
+| 802. Find Eventual Safe States | **Graph**      | https://leetcode.com/problems/find-eventual-safe-states/ | [Solution](./lc_802_find_eventual_safe_states.py) |      |
+| 207. Course Schedule           | **Graph**      | https://leetcode.com/problems/course-schedule/           | [Solution](./lc_207_course_schedule.py)           |      |
+| 210. Course Schedule II        | **Graph**      | https://leetcode.com/problems/course-schedule-ii/        | [Solution](./lc_210_course_schedule_ii.py)        |      |
+| 444. Sequence Reconstruction   | **Graph**      | https://leetcode.com/problems/sequence-reconstruction/   | [Solution](./lc_444_sequence_reconstruction.py)   |      |
+| 269. Alien Dictionary          | **Graph**      | https://leetcode.com/problems/alien-dictionary/          | [Solution](./lc_269_alien_dictionary.py)          |      |
+
 # Dynamic Programming - 10 Essential DP Patterns
 ## 1. Fibonacci style
 | Problem                         | Related Topics | Question                                                  | Solution                                           | Note |
