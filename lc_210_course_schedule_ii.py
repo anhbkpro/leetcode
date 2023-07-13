@@ -7,9 +7,9 @@ def find_order(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
     adj = [[] for _ in range(numCourses)]
 
     for pair in prerequisites:
-        first, second = pair
-        indegree[first] += 1
-        adj[second].append(first)
+        second, first = pair
+        indegree[second] += 1
+        adj[first].append(second)
 
     q = deque()
     for i in range(numCourses):
