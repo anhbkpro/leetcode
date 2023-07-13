@@ -193,6 +193,7 @@
 | 210. Course Schedule II        | **Graph**      | https://leetcode.com/problems/course-schedule-ii/        | [Solution](./lc_210_course_schedule_ii.py)        |      |
 | 444. Sequence Reconstruction   | **Graph**      | https://leetcode.com/problems/sequence-reconstruction/   | [Solution](./lc_444_sequence_reconstruction.py)   |      |
 | 269. Alien Dictionary          | **Graph**      | https://leetcode.com/problems/alien-dictionary/          | [Solution](./lc_269_alien_dictionary.py)          |      |
+| 1136. Parallel Courses         | **Graph**      | https://leetcode.com/problems/parallel-courses/          | [Solution](./lc_1136_parallel_courses.py)         |      |
 
 # Dynamic Programming - 10 Essential DP Patterns
 ## 1. Fibonacci style
