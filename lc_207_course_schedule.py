@@ -2,9 +2,9 @@ from collections import deque
 from typing import List
 
 
-def canFinish(numCourses: int, prerequisites: List[List[int]]) -> bool:
-    adj = [[] for _ in range(numCourses)]
-    indegree = [0] * numCourses
+def can_finish(num_courses: int, prerequisites: List[List[int]]) -> bool:
+    adj = [[] for _ in range(num_courses)]
+    indegree = [0] * num_courses
 
     for pair in prerequisites:
         second, first = pair
@@ -12,21 +12,25 @@ def canFinish(numCourses: int, prerequisites: List[List[int]]) -> bool:
         adj[first].append(second)
 
     q = deque()
-    for item in range(numCourses):
+    for item in range(num_courses):
         if indegree[item] == 0:
             q.append(item)
 
+    nodes_visited = 0
     while q:
         node = q.popleft()
+        nodes_visited += 1
+
         for neighbor in adj[node]:
             indegree[neighbor] -= 1
             if indegree[neighbor] == 0:
                 q.append(neighbor)
 
-    if any(indegree):
-        return False
-
-    return True
+    # if any(indegree):
+    #     return False
+    #
+    # return True
+    return nodes_visited == num_courses  # this is the same as the above commented out code
 
 
 class Solution:
