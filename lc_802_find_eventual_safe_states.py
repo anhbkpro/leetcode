@@ -22,12 +22,10 @@ def eventualSafeNodes(graph: List[List[int]]) -> List[int]:
 
     # A node is a `safe node` if every possible path starting from that node leads to a terminal node (or another
     # safe node). => so a `terminal node` is also a safe node.
-    q = deque()
-    # Push all the nodes with indegree zero in the queue.
-    for i in range(n):
-        if indegree[i] == 0:
-            q.append(i)  # [5, 6] terminal nodes (A node is a terminal node if there are no outgoing edges.)
 
+    # Push all the nodes with indegree zero in the queue.
+    # [5, 6] terminal nodes (A node is a terminal node if there are no outgoing edges.)
+    q = deque([i for i in range(n) if indegree[i] == 0])
     print(adj)
     print(indegree)
     print(q)
