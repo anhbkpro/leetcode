@@ -11,14 +11,11 @@ def can_finish(num_courses: int, prerequisites: List[List[int]]) -> bool:
         indegree[second] += 1
         adj[first].append(second)
 
-    q = deque()
-    for item in range(num_courses):
-        if indegree[item] == 0:
-            q.append(item)
+    q = [c for c in indegree if indegree[c] == 0]
 
     nodes_visited = 0
     while q:
-        node = q.popleft()
+        node = q.pop()
         nodes_visited += 1
 
         for neighbor in adj[node]:
