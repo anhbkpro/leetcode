@@ -11,10 +11,7 @@ def find_order(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
         indegree[second] += 1
         adj[first].append(second)
 
-    q = deque()
-    for i in range(numCourses):
-        if indegree[i] == 0:
-            q.append(i)
+    q = deque([c for c in range(numCourses) if indegree[c] == 0])
 
     res = []
     while q:
