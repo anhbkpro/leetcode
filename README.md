@@ -104,6 +104,7 @@
 | 2024. Maximize the Confusion of an Exam                       | **Two Pointers**, **Sliding Window**                   | https://leetcode.com/problems/maximize-the-confusion-of-an-exam/                       | [Solution](./lc_2024_maximize_the_confusion_of_an_exam.py)                       |      |
 | 2090. K Radius Subarray Averages                              | **Array**, **Sliding Window**                          | https://leetcode.com/problems/k-radius-subarray-averages/                              | [Solution](./lc_2090_k_radius_subarray_averages.py)                              |      |
 | 2101. Detonate the Maximum Bombs                              | **DFS**                                                | https://leetcode.com/problems/detonate-the-maximum-bombs/                              | [Solution](./lc_2101_detonate_the_maximum_bombs.py)                              |      |
+| 2115. Find All Possible Recipes from Given Supplies           | **Topological Sort**                                   | https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/           | [Solution](./lc_2115_find_all_possible_recipes_from_given_supplies.py)           |      |
 | 2272. Substring With Largest Variance                         | **Sliding Window**, **Two Pointers**                   | https://leetcode.com/problems/substring-with-largest-variance/                         | [Solution](./lc_2272_substring_with_largest_variance.py)                         |      |
 | 2300. Successful Pairs of Spells and Potions                  | **Hash Table**, **Two Pointers**                       | https://leetcode.com/problems/successful-pairs-of-spells-and-potions/                  | [Solution](./lc_2300_successful_pairs_of_spells_and_potions.py)                  |      |
 | 2305. Fair Distribution of Cookies                            | **Backtracking**                                       | https://leetcode.com/problems/fair-distribution-of-cookies/                            | [Solution](./lc_2305_fair_distribution_of_cookies.py)                            |      |
@@ -190,14 +191,15 @@
 | 369. Plus One Linked List                           | **Linked List** | https://leetcode.com/problems/plus-one-linked-list/                          | [Solution](./lc_369_plus_one_linked_list.py)                           |      |
 
 ## Topological Sort (Graph) using Kahn's Algorithm (Same pattern: in-degree and adjacency list)
-| Problem                        | Related Topics | Question                                                 | Solution                                          | Note |
-|--------------------------------|----------------|----------------------------------------------------------|---------------------------------------------------|------|
-| 802. Find Eventual Safe States | **Graph**      | https://leetcode.com/problems/find-eventual-safe-states/ | [Solution](./lc_802_find_eventual_safe_states.py) |      |
-| 207. Course Schedule           | **Graph**      | https://leetcode.com/problems/course-schedule/           | [Solution](./lc_207_course_schedule.py)           |      |
-| 210. Course Schedule II        | **Graph**      | https://leetcode.com/problems/course-schedule-ii/        | [Solution](./lc_210_course_schedule_ii.py)        |      |
-| 444. Sequence Reconstruction   | **Graph**      | https://leetcode.com/problems/sequence-reconstruction/   | [Solution](./lc_444_sequence_reconstruction.py)   |      |
-| 269. Alien Dictionary          | **Graph**      | https://leetcode.com/problems/alien-dictionary/          | [Solution](./lc_269_alien_dictionary.py)          |      |
-| 1136. Parallel Courses         | **Graph**      | https://leetcode.com/problems/parallel-courses/          | [Solution](./lc_1136_parallel_courses.py)         |      |
+| Problem                                             | Related Topics | Question                                                                     | Solution                                                               | Note |
+|-----------------------------------------------------|----------------|------------------------------------------------------------------------------|------------------------------------------------------------------------|------|
+| 802. Find Eventual Safe States                      | **Graph**      | https://leetcode.com/problems/find-eventual-safe-states/                     | [Solution](./lc_802_find_eventual_safe_states.py)                      |      |
+| 207. Course Schedule                                | **Graph**      | https://leetcode.com/problems/course-schedule/                               | [Solution](./lc_207_course_schedule.py)                                |      |
+| 210. Course Schedule II                             | **Graph**      | https://leetcode.com/problems/course-schedule-ii/                            | [Solution](./lc_210_course_schedule_ii.py)                             |      |
+| 444. Sequence Reconstruction                        | **Graph**      | https://leetcode.com/problems/sequence-reconstruction/                       | [Solution](./lc_444_sequence_reconstruction.py)                        |      |
+| 269. Alien Dictionary                               | **Graph**      | https://leetcode.com/problems/alien-dictionary/                              | [Solution](./lc_269_alien_dictionary.py)                               |      |
+| 1136. Parallel Courses                              | **Graph**      | https://leetcode.com/problems/parallel-courses/                              | [Solution](./lc_1136_parallel_courses.py)                              |      |
+| 2115. Find All Possible Recipes from Given Supplies | **Graph**      | https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/ | [Solution](./lc_2115_find_all_possible_recipes_from_given_supplies.py) |      |
 
 ## Dynamic Programming (Same pattern: [start_i, end_i, profit_i])
 | Problem                                                | Related Topics | Question                                                                        | Solution                                                                  | Note |
