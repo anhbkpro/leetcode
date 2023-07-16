@@ -66,6 +66,7 @@
 | 1055. Shortest Way to Form String                             | **Greedy**, **String**                                 | https://leetcode.com/problems/shortest-way-to-form-string/                             | [Solution](./lc_1055_shortest_way_to_form_string.py)                             |      |
 | 1082. Sales Analysis I                                        | **SQL**                                                | https://leetcode.com/problems/sales-analysis-i/                                        | [Solution](./lc_1082_sales_analysis_i.sql)                                       |      |
 | 1091. Shortest Path in Binary Matrix                          | **Breadth-First Search**                               | https://leetcode.com/problems/shortest-path-in-binary-matrix/                          | [Solution](./lc_1091_shortest_path_in_binary_matrix.py)                          |      |
+| 1125. Smallest Sufficient Team                                | **Dynamic Programming**, **Bit Manipulation**          | https://leetcode.com/problems/smallest-sufficient-team/                                | [Solution](./lc_1125_smallest_sufficient_team.py)                                |      |
 | 1137. N-th Tribonacci Number                                  | **Dynamic Programming**                                | https://leetcode.com/problems/n-th-tribonacci-number/                                  | [Solution](./lc_1137_n_th_tribonacci_number.py)                                  |      |
 | 1140. Stone Game II                                           | **Dynamic Programming**, **Minimax**                   | https://leetcode.com/problems/stone-game-ii/                                           | [Solution](./lc_1140_stone_game_ii.py)                                           |      |
 | 1143. Longest Common Subsequence                              | **Dynamic Programming**                                | https://leetcode.com/problems/longest-common-subsequence/                              | [Solution](./lc_1143_longest_common_subsequence.py)                              |      |
@@ -188,7 +189,7 @@
 | 708. Insert into a Sorted Circular Linked List      | **Linked List** | https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list/     | [Solution](./lc_708_insert_into_a_sorted_circular_linked_list.py)      |      |
 | 369. Plus One Linked List                           | **Linked List** | https://leetcode.com/problems/plus-one-linked-list/                          | [Solution](./lc_369_plus_one_linked_list.py)                           |      |
 
-## Topological Sort (Graph) using Kahn's Algorithm
+## Topological Sort (Graph) using Kahn's Algorithm (Same pattern: in-degree and adjacency list)
 | Problem                        | Related Topics | Question                                                 | Solution                                          | Note |
 |--------------------------------|----------------|----------------------------------------------------------|---------------------------------------------------|------|
 | 802. Find Eventual Safe States | **Graph**      | https://leetcode.com/problems/find-eventual-safe-states/ | [Solution](./lc_802_find_eventual_safe_states.py) |      |
@@ -197,6 +198,13 @@
 | 444. Sequence Reconstruction   | **Graph**      | https://leetcode.com/problems/sequence-reconstruction/   | [Solution](./lc_444_sequence_reconstruction.py)   |      |
 | 269. Alien Dictionary          | **Graph**      | https://leetcode.com/problems/alien-dictionary/          | [Solution](./lc_269_alien_dictionary.py)          |      |
 | 1136. Parallel Courses         | **Graph**      | https://leetcode.com/problems/parallel-courses/          | [Solution](./lc_1136_parallel_courses.py)         |      |
+
+## Dynamic Programming (Same pattern: [start_i, end_i, profit_i])
+| Problem                                                | Related Topics | Question                                                                        | Solution                                                                  | Note |
+|--------------------------------------------------------|----------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------|------|
+| 1751. Maximum Number of Events That Can Be Attended II | **DP**         | https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/ | [Solution](./lc_1751_maximum_number_of_events_that_can_be_attended_ii.py) |      |
+| 1235. Maximum Profit in Job Scheduling                 | **DP**         | https://leetcode.com/problems/maximum-profit-in-job-scheduling/                 | [Solution](./lc_1235_maximum_profit_in_job_scheduling.py)                 |      |
+| 2008. Maximum Earnings From Taxi                       | **DP**         | https://leetcode.com/problems/maximum-earnings-from-taxi/                       | [Solution](./lc_2008_maximum_earnings_from_taxi.py)                       |      |
 
 # Dynamic Programming - 10 Essential DP Patterns
 ## 1. Fibonacci style
