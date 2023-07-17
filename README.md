@@ -203,7 +203,9 @@
 | 1136. Parallel Courses                              | **Graph**      | https://leetcode.com/problems/parallel-courses/                              | [Solution](./lc_1136_parallel_courses.py)                              |      |
 | 2115. Find All Possible Recipes from Given Supplies | **Graph**      | https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/ | [Solution](./lc_2115_find_all_possible_recipes_from_given_supplies.py) |      |
 
-## Dynamic Programming (Pattern do-or-skip: [start_i, end_i, profit_i])
+## Dynamic Programming (Patterns)
+1. [x] (Pattern do-or-skip: [start_i, end_i, profit_i])
+
 | Problem                                                | Related Topics | Question                                                                        | Solution                                                                  | Note |
 |--------------------------------------------------------|----------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------|------|
 | 1751. Maximum Number of Events That Can Be Attended II | **DP**         | https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/ | [Solution](./lc_1751_maximum_number_of_events_that_can_be_attended_ii.py) |      |
