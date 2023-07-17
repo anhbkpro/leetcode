@@ -192,6 +192,16 @@
 | 708. Insert into a Sorted Circular Linked List      | **Linked List** | https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list/     | [Solution](./lc_708_insert_into_a_sorted_circular_linked_list.py)      |      |
 | 369. Plus One Linked List                           | **Linked List** | https://leetcode.com/problems/plus-one-linked-list/                          | [Solution](./lc_369_plus_one_linked_list.py)                           |      |
 
+## Binary Search
+| Problem                                                       | Related Topics    | Question                                                                               | Solution                                                                         | Note |
+|---------------------------------------------------------------|-------------------|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|------|
+| 1228. Missing Number In Arithmetic Progression                | **Binary Search** | https://leetcode.com/problems/missing-number-in-arithmetic-progression/                | [Solution](./lc_1228_missing_number_in_arithmetic_progression.py)                |      |
+| 1060. Missing Element in Sorted Array                         | **Binary Search** | https://leetcode.com/problems/missing-element-in-sorted-array/                         | [Solution](./lc_1060_missing_element_in_sorted_array.py)                         |      |
+| 1533. Find the Index of the Large Integer                     | **Binary Search** | https://leetcode.com/problems/find-the-index-of-the-large-integer/                     | [Solution](./lc_1533_find_the_index_of_the_large_integer.py)                     |      |
+| 1150. Check If a Number Is Majority Element in a Sorted Array | **Binary Search** | https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/ | [Solution](./lc_1150_check_if_a_number_is_majority_element_in_a_sorted_array.py) |      |
+| 1231. Divide Chocolate                                        | **Binary Search** | https://leetcode.com/problems/divide-chocolate/                                        | [Solution](./lc_1231_divide_chocolate.py)                                        |      |
+| 644. Maximum Average Subarray II                              | **Binary Search** | https://leetcode.com/problems/maximum-average-subarray-ii/                             | [Solution](./lc_644_maximum_average_subarray_ii.py)                              |      |
+
 ## Topological Sort (Graph) using Kahn's Algorithm (Same pattern: in-degree and adjacency list)
 | Problem                                             | Related Topics | Question                                                                     | Solution                                                               | Note |
 |-----------------------------------------------------|----------------|------------------------------------------------------------------------------|------------------------------------------------------------------------|------|
