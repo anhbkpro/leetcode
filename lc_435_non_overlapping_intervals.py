@@ -1,19 +1,20 @@
+from math import inf
 from typing import List
 
 
-def eraseOverlapIntervals(intervals: List[List[int]]) -> int:
-    # Sort by start time
-    intervals.sort(key=lambda x: x[0])
+def erase_overlap_intervals(intervals: List[List[int]]) -> int:
+    # Sort by end time
+    intervals.sort(key=lambda x: x[1])
     ans = 0
-    prev = 0
-    for i in range(1, len(intervals)):
-        if intervals[prev][1] > intervals[i][0]:
-            # Overlap
-            ans += 1
-            if intervals[prev][1] > intervals[i][1]:
-                prev = i
+    k = -inf
+    for x, y in intervals:
+        if x >= k:
+            # Update end time
+            k = y
         else:
-            prev = i
+            # Remove interval
+            ans += 1
+
     return ans
 
 
