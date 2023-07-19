@@ -4,7 +4,7 @@ from typing import List
 
 def erase_overlap_intervals(intervals: List[List[int]]) -> int:
     # Sort by end time
-    intervals.sort(key=lambda x: x[1])
+    intervals.sort(key=lambda interval: interval[1])
     ans = 0
     k = -inf
     for x, y in intervals:
