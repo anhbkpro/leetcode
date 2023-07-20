@@ -50,6 +50,7 @@
 | 703. Kth Largest Element in a Stream                          | **Design**, **Heap (Priority Queue)**                  | https://leetcode.com/problems/kth-largest-element-in-a-stream/                         | [Solution](./lc_703_kth_largest_element_in_a_stream.py)                          |      |
 | 705. Design HashSet                                           | **Design**, **Hash Table**                             | https://leetcode.com/problems/design-hashset/                                          | [Solution](./lc_705_design_hashset.py)                                           |      |
 | 714. Best Time to Buy and Sell Stock with Transaction Fee     | **Dynamic Programming**, **Greedy**                    | https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/    | [Solution](./lc_714_best_time_to_buy_and_sell_stock_with_transaction_fee.py)     |      |
+| 735. Asteroid Collision                                       | **Stack**                                              | https://leetcode.com/problems/asteroid-collision/                                      | [Solution](./lc_735_asteroid_collision.py)                                       |      |
 | 739. Daily Temperatures                                       | **Stack**, **Hash Table**                              | https://leetcode.com/problems/daily-temperatures/                                      | [Solution](./lc_739_daily_temperatures.py)                                       |      |
 | 744. Find Smallest Letter Greater Than Target                 | **Brute Force**                                        | https://leetcode.com/problems/find-smallest-letter-greater-than-target/                | [Solution](./lc_744_find_smallest_letter_greater_than_target.py)                 |      |
 | 802. Find Eventual Safe States                                | **Graph**, **Topological Sort**                        | https://leetcode.com/problems/find-eventual-safe-states/                               | [Solution](./lc_802_find_eventual_safe_states.py)                                |      |
@@ -173,6 +174,23 @@
 | 253. Meeting Rooms II       | **Array**      | https://leetcode.com/problems/meeting-rooms-ii/       | [Solution](./lc_253_meeting_rooms_ii.py)       |      |
 | 616. Add Bold Tag in String | **String**     | https://leetcode.com/problems/add-bold-tag-in-string/ | [Solution](./lc_616_add_bold_tag_in_string.py) |      |
 | 1272. Remove Interval       | **Array**      | https://leetcode.com/problems/remove-interval/        | [Solution](./lc_1272_remove_interval.py)       |      |
+
+## Merge Intervals
+| Problem                                                | Related Topics | Question                                                                        | Solution                                                                  | Note |
+|--------------------------------------------------------|----------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------|------|
+| 56. Merge Intervals                                    | **Array**      | https://leetcode.com/problems/merge-intervals/                                  | [Solution](./lc_56_merge_intervals.py)                                    |      |
+| 57. Insert Interval                                    | **Array**      | https://leetcode.com/problems/insert-interval/                                  | [Solution](./lc_57_insert_interval.py)                                    |      |
+| 986. Interval List Intersections                       | **Array**      | https://leetcode.com/problems/interval-list-intersections/                      | [Solution](./lc_986_interval_list_intersections.py)                       |      |
+| 252. Meeting Rooms                                     | **Array**      | https://leetcode.com/problems/meeting-rooms/                                    | [Solution](./lc_252_meeting_rooms.py)                                     |      |
+| 253. Meeting Rooms II                                  | **Array**      | https://leetcode.com/problems/meeting-rooms-ii/                                 | [Solution](./lc_253_meeting_rooms_ii.py)                                  |      |
+| 616. Add Bold Tag in String                            | **String**     | https://leetcode.com/problems/add-bold-tag-in-string/                           | [Solution](./lc_616_add_bold_tag_in_string.py)                            |      |
+| 435. Non-overlapping Intervals                         | **Array**      | https://leetcode.com/problems/non-overlapping-intervals/                        | [Solution](./lc_435_non_overlapping_intervals.py)                         |      |
+| 826. Most Profit Assigning Work                        | **Array**      | https://leetcode.com/problems/most-profit-assigning-work/                       | [Solution](./lc_826_most_profit_assigning_work.py)                        |      |
+| 2589. Minimum Time to Complete All Tasks               | **Array**      | https://leetcode.com/problems/minimum-time-to-complete-all-tasks/               | [Solution](./lc_2589_minimum_time_to_complete_all_tasks.py)               |      |
+| 1353. Maximum Number of Events That Can Be Attended    | **Array**      | https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/    | [Solution](./lc_1353_maximum_number_of_events_that_can_be_attended.py)    |      |
+| 1751. Maximum Number of Events That Can Be Attended II | **Array**      | https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/ | [Solution](./lc_1751_maximum_number_of_events_that_can_be_attended_ii.py) |      |
+| 452. Minimum Number of Arrows to Burst Balloons        | **Array**      | https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/       | [Solution](./lc_452_minimum_number_of_arrows_to_burst_balloons.py)        |      |
+
 
 ## Stack
 | Problem               | Related Topics | Question                                         | Solution                                 | Note |
