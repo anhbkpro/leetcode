@@ -5,17 +5,20 @@ def asteroid_collision(asteroids: List[int]) -> List[int]:
     st = []
     never_collisions = []
     for asteroid in asteroids:
-        flag = 1
-        if len(st) == 0 and asteroid < 0:
+        if len(st) == 0 and asteroid < 0:  # to handle the case when the first asteroid is negative like [-2, -2, 1, -2]
             never_collisions.append(asteroid)
             continue
-        while st and st[-1] > 0 > asteroid:
-            if abs(st[-1]) < abs(asteroid):
+
+        flag = 1
+        while st and st[-1] > 0 > asteroid:  # collision happened
+            top = st[-1]
+            # the left asteroid is destroyed, the right one is still alive, continue collision to the top of the stack
+            if abs(top) < abs(asteroid):
                 st.pop()
                 continue
-            elif abs(st[-1]) == abs(asteroid):
+            elif abs(top) == abs(asteroid):  # both are destroyed
                 st.pop()
-            flag = 0
+            flag = 0  # the right asteroid is destroyed, keep the left one
             break
 
         if flag:
