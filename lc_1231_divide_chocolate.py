@@ -1,12 +1,12 @@
 from typing import List
 
 
-def maximizeSweetness(sweetness: List[int], k: int) -> int:
+def maximize_sweetness(sweetness: List[int], k: int) -> int:
     number_of_people = k + 1
     lo, hi = min(sweetness), sum(sweetness) // number_of_people
     while lo < hi:
         mid = (lo + hi + 1) // 2
-        if canCutSweetness(mid, sweetness, k):
+        if not_enough_cut(mid, sweetness, k):
             lo = mid
         else:
             hi = mid - 1
@@ -18,7 +18,7 @@ class Solution:
     pass
 
 
-def canCutSweetness(mid: int, sweetness: List[int], k: int):
+def not_enough_cut(mid: int, sweetness: List[int], k: int):
     cur_sweetness = 0
     people_with_chocolate = 0
     for s in sweetness:
