@@ -2,7 +2,7 @@ import heapq
 from typing import List
 
 
-def minMeetingRooms(intervals: List[List[int]]) -> int:
+def min_meeting_rooms(intervals: List[List[int]]) -> int:
 
     # If there is no meeting to schedule then no room needs to be allocated.
     if not intervals:
@@ -21,6 +21,8 @@ def minMeetingRooms(intervals: List[List[int]]) -> int:
     for i in intervals[1:]:
 
         # If the room due to free up the earliest is free, assign that room to this meeting.
+        # i[0] is the start time of the next meeting
+        # free_rooms[0] is the end time of the earliest meeting that is going to free up
         if free_rooms[0] <= i[0]:
             heapq.heappop(free_rooms)
 
