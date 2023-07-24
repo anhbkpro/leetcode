@@ -1,6 +1,8 @@
 from typing import List
 
 
+# Time: O(nlogn)
+# Space: O(1)
 def can_attend_meetings(intervals: List[List[int]]) -> bool:
     intervals.sort()
     for i in range(len(intervals) - 1):
