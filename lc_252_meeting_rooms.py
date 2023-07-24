@@ -1,7 +1,7 @@
 from typing import List
 
 
-def canAttendMeetings(intervals: List[List[int]]) -> bool:
+def can_attend_meetings(intervals: List[List[int]]) -> bool:
     intervals.sort()
     for i in range(len(intervals) - 1):
         if intervals[i][1] > intervals[i + 1][0]:
