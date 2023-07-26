@@ -24,10 +24,11 @@ class Solution:
 
 
 def can_arrive_on_time(speed: int, dist: List[int], hour: float) -> bool:
-    time_take = 0
+    time_required = 0
     for train in dist:
-        time_take += ceil(train / speed)
+        time_required += ceil(train / speed)
 
-    time_take = time_take - ceil(dist[-1] / speed) + dist[-1] / speed
+    # Round off to the next integer, if not the last ride.
+    time_required = time_required - ceil(dist[-1] / speed) + dist[-1] / speed
 
-    return time_take <= hour
+    return time_required <= hour
