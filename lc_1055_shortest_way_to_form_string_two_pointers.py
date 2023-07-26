@@ -46,7 +46,5 @@ def shortestWay(source: str, target: str) -> int:
     return count
 
 
-
-
 class Solution:
     pass
