@@ -6,7 +6,7 @@ class Solution:
     @staticmethod
     def min_speed_on_time(dist: List[int], hour: float) -> int:
         if hour < len(dist) - 1:
-            return -1
+            return -1  # Impossible to arrive on time.
 
         upper = 10000000
         lo, hi = 1, upper
@@ -18,7 +18,7 @@ class Solution:
                 lo = mid + 1
 
         if lo > upper:
-            return -1
+            return -1  # Impossible to arrive on time.
 
         return lo
 
