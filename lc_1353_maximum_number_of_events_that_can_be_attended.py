@@ -7,7 +7,8 @@ def max_events(A):
     res = d = 0
     print(A)
     while A or h:
-        if not h: d = A[-1][0]
+        if not h:
+            d = A[-1][0]
         while A and A[-1][0] <= d:
             heapq.heappush(h, A.pop()[1])
         heapq.heappop(h)
