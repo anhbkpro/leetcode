@@ -5,7 +5,7 @@ from typing import List
 class Solution:
     @staticmethod
     def min_speed_on_time(dist: List[int], hour: float) -> int:
-        if hour < len(dist) - 1:
+        if hour <= len(dist) - 1:
             return -1  # Impossible to arrive on time.
 
         upper = 10000000
