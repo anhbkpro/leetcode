@@ -1,0 +1,11 @@
+from typing import List
+
+
+class Solution:
+    @staticmethod
+    def find_duplicate(nums: List[int]) -> int:
+        seen = set()
+        for item in nums:
+            if item in seen:
+                return item
+            seen.add(item)
