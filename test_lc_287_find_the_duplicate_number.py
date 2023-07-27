@@ -5,3 +5,6 @@ def test_find_duplicate():
     assert Solution.find_duplicate(nums=[1, 3, 4, 2, 2]) == 2
     assert Solution.find_duplicate(nums=[3, 1, 3, 4, 2]) == 3
     assert Solution.find_duplicate(nums=[1, 1]) == 1
+    assert Solution.find_duplicate_using_floyd_tortoise_and_hare(nums=[1, 3, 4, 2, 2]) == 2
+    assert Solution.find_duplicate_using_floyd_tortoise_and_hare(nums=[3, 1, 3, 4, 2]) == 3
+    assert Solution.find_duplicate_using_floyd_tortoise_and_hare(nums=[1, 1]) == 1
