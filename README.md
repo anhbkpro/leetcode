@@ -282,5 +282,6 @@
 | Problem                         | Related Topics | Question                                                  | Solution                                           | Note |
 |---------------------------------|----------------|-----------------------------------------------------------|----------------------------------------------------|------|
 | 704. Binary Search              | **BS**         | https://leetcode.com/problems/binary-search/              | [Solution](./lc_704_binary_search.py)              |      |
+| 35. Search Insert Position      | **BS**         | https://leetcode.com/problems/search-insert-position/     | [Solution](./lc_35_search_insert_position.py)      |      |
 
 
