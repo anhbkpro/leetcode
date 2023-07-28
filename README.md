@@ -277,4 +277,10 @@
 | 474. Ones and Zeroes            | **DP**         | https://leetcode.com/problems/ones-and-zeroes/            | [Solution](./lc_474_ones_and_zeroes.py)            |      |
 
 
+# Binary Search (8 Patterns, 42 Qs = Master BS)
+## 1. Search In Array
+| Problem                         | Related Topics | Question                                                  | Solution                                           | Note |
+|---------------------------------|----------------|-----------------------------------------------------------|----------------------------------------------------|------|
+| 704. Binary Search              | **BS**         | https://leetcode.com/problems/binary-search/              | [Solution](./lc_704_binary_search.py)              |      |
+
 
