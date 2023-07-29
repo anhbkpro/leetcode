@@ -279,9 +279,12 @@
 
 # Binary Search (8 Patterns, 42 Qs = Master BS)
 ## 1. Search In Array
-| Problem                         | Related Topics | Question                                                  | Solution                                           | Note |
-|---------------------------------|----------------|-----------------------------------------------------------|----------------------------------------------------|------|
-| 704. Binary Search              | **BS**         | https://leetcode.com/problems/binary-search/              | [Solution](./lc_704_binary_search.py)              |      |
-| 35. Search Insert Position      | **BS**         | https://leetcode.com/problems/search-insert-position/     | [Solution](./lc_35_search_insert_position.py)      |      |
+| Problem                                                     | Related Topics | Question                                                                               | Solution                                                                       | Note |
+|-------------------------------------------------------------|----------------|----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|------|
+| 704. Binary Search                                          | **BS**         | https://leetcode.com/problems/binary-search/                                           | [Solution](./lc_704_binary_search.py)                                          |      |
+| 35. Search Insert Position                                  | **BS**         | https://leetcode.com/problems/search-insert-position/                                  | [Solution](./lc_35_search_insert_position.py)                                  |      |
+| 744. Find Smallest Letter Greater Than Target               | **BS**         | https://leetcode.com/problems/find-smallest-letter-greater-than-target/                | [Solution](./lc_744_find_smallest_letter_greater_than_target.py)               |      |
+| 1351. Count Negative Numbers in a Sorted Matrix             | **BS**         | https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/               | [Solution](./lc_1351_count_negative_numbers_in_a_sorted_matrix.py)             |      |
+| 34. Find First and Last Position of Element in Sorted Array | **BS**         | https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/ | [Solution](./lc_34_find_first_and_last_position_of_element_in_sorted_array.py) |      |
 
 
