@@ -293,3 +293,9 @@
 | 436. Find Right Interval                                    | **BS**         | https://leetcode.com/problems/find-right-interval/                                     | [Solution](./lc_436_find_right_interval.py)                                    |      |
 
 
+# 30 Days of Pandas
+## 1. Data Manipulation
+| Problem                               | Related Topics | Question                                                       | Solution                                                 | Note |
+|---------------------------------------|----------------|----------------------------------------------------------------|----------------------------------------------------------|------|
+| 595. Big Countries                    | **Pandas**     | https://leetcode.com/problems/big-countries/                   | [Solution](./lc_595_big_countries.py)                    |      |
+| 1757. Recyclable and Low Fat Products | **Pandas**     | https://leetcode.com/problems/recyclable-and-low-fat-products/ | [Solution](./lc_1757_recyclable_and_low_fat_products.py) |      |
