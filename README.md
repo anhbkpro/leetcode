@@ -302,3 +302,4 @@
 | 183. Customers Who Never Order        | **Pandas**     | https://leetcode.com/problems/customers-who-never-order/       | [Solution](./lc_183_customers_who_never_order.py)        |      |
 | 1148. Article Views I                 | **Pandas**     | https://leetcode.com/problems/article-views-i/                 | [Solution](./lc_1148_article_views_i.py)                 |      |
 | 1683. Invalid Tweets                  | **Pandas**     | https://leetcode.com/problems/invalid-tweets/                  | [Solution](./lc_1683_invalid_tweets.py)                  |      |
+| 1873. Calculate Special Bonus         | **Pandas**     | https://leetcode.com/problems/calculate-special-bonus/         | [Solution](./lc_1873_calculate_special_bonus.py)         |      |
