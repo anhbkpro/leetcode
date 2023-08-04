@@ -17,6 +17,9 @@ def letter_combinations(digits: str) -> List[str]:
             return  # Backtrack
 
         # Get the letters that the current digit maps to, and loop through them
+        # digits = "23"
+        # with index = 0, digits[0] = 2,  possible_letters[2] = "abc"
+        # with index = 1, digits[1] = 3,  possible_letters[3] = "def"
         possible_letters = letters[digits[index]]
         for letter in possible_letters:
             # Add the letter to our current path
