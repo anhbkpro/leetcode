@@ -300,3 +300,4 @@
 | 595. Big Countries                    | **Pandas**     | https://leetcode.com/problems/big-countries/                   | [Solution](./lc_595_big_countries.py)                    |      |
 | 1757. Recyclable and Low Fat Products | **Pandas**     | https://leetcode.com/problems/recyclable-and-low-fat-products/ | [Solution](./lc_1757_recyclable_and_low_fat_products.py) |      |
 | 183. Customers Who Never Order        | **Pandas**     | https://leetcode.com/problems/customers-who-never-order/       | [Solution](./lc_183_customers_who_never_order.py)        |      |
+| 1148. Article Views I                 | **Pandas**     | https://leetcode.com/problems/article-views-i/                 | [Solution](./lc_1148_article_views_i.py)                 |      |
