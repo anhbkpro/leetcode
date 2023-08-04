@@ -1,4 +1,4 @@
-from lc_139_word_break import Solution
+from lc_139_word_break_bottom_up_dp import Solution
 
 
 def test_word_break():
