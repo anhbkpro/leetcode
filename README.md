@@ -305,3 +305,4 @@
 | 1683. Invalid Tweets                  | **Pandas**     | https://leetcode.com/problems/invalid-tweets/                  | [Solution](./lc_1683_invalid_tweets.py)                  |      |
 | 1873. Calculate Special Bonus         | **Pandas**     | https://leetcode.com/problems/calculate-special-bonus/         | [Solution](./lc_1873_calculate_special_bonus.py)         |      |
 | 1667. Fix Names in a Table            | **Pandas**     | https://leetcode.com/problems/fix-names-in-a-table/            | [Solution](./lc_1667_fix_names_in_a_table.py)            |      |
+| 1517. Find Users With Valid E-Mails   | **Pandas**     | https://leetcode.com/problems/find-users-with-valid-e-mails/   | [Solution](./lc_1517_find_users_with_valid_e_mails.py)   |      |
