@@ -310,3 +310,4 @@
 | 177. Nth Highest Salary               | **Pandas**     | https://leetcode.com/problems/nth-highest-salary/              | [Solution](./lc_177_nth_highest_salary.py)               |      |
 | 176. Second Highest Salary            | **Pandas**     | https://leetcode.com/problems/second-highest-salary/           | [Solution](./lc_176_second_highest_salary.py)            |      |
 | 184. Department Highest Salary        | **Pandas**     | https://leetcode.com/problems/department-highest-salary/       | [Solution](./lc_184_department_highest_salary.py)        |      |
+| 178. Rank Scores                      | **Pandas**     | https://leetcode.com/problems/rank-scores/                     | [Solution](./lc_178_rank_scores.py)                      |      |
