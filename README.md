@@ -308,3 +308,4 @@
 | 1517. Find Users With Valid E-Mails   | **Pandas**     | https://leetcode.com/problems/find-users-with-valid-e-mails/   | [Solution](./lc_1517_find_users_with_valid_e_mails.py)   |      |
 | 1527. Patients With a Condition       | **Pandas**     | https://leetcode.com/problems/patients-with-a-condition/       | [Solution](./lc_1527_patients_with_a_condition.py)       |      |
 | 177. Nth Highest Salary               | **Pandas**     | https://leetcode.com/problems/nth-highest-salary/              | [Solution](./lc_177_nth_highest_salary.py)               |      |
+| 176. Second Highest Salary            | **Pandas**     | https://leetcode.com/problems/second-highest-salary/           | [Solution](./lc_176_second_highest_salary.py)            |      |
