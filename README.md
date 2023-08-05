@@ -309,3 +309,4 @@
 | 1527. Patients With a Condition       | **Pandas**     | https://leetcode.com/problems/patients-with-a-condition/       | [Solution](./lc_1527_patients_with_a_condition.py)       |      |
 | 177. Nth Highest Salary               | **Pandas**     | https://leetcode.com/problems/nth-highest-salary/              | [Solution](./lc_177_nth_highest_salary.py)               |      |
 | 176. Second Highest Salary            | **Pandas**     | https://leetcode.com/problems/second-highest-salary/           | [Solution](./lc_176_second_highest_salary.py)            |      |
+| 184. Department Highest Salary        | **Pandas**     | https://leetcode.com/problems/department-highest-salary/       | [Solution](./lc_184_department_highest_salary.py)        |      |
