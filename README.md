@@ -314,3 +314,5 @@
 | 184. Department Highest Salary        | **Pandas**, **Data Manipulation** | https://leetcode.com/problems/department-highest-salary/       | [Solution](./lc_184_department_highest_salary.py)        |      |
 | 178. Rank Scores                      | **Pandas**, **Data Manipulation** | https://leetcode.com/problems/rank-scores/                     | [Solution](./lc_178_rank_scores.py)                      |      |
 | 196. Delete Duplicate Emails          | **Pandas**, **Data Manipulation** | https://leetcode.com/problems/delete-duplicate-emails/         | [Solution](./lc_196_delete_duplicate_emails.py)          |      |
+| 1795. Rearrange Products Table        | **Pandas**, **Data Manipulation** | https://leetcode.com/problems/rearrange-products-table/        | [Solution](./lc_1795_rearrange_products_table.py)        |      |
+| 2082. The Number of Rich Customers    | **Pandas**, **Data Manipulation** | https://leetcode.com/problems/the-number-of-rich-customers/    | [Solution](./lc_2082_the_number_of_rich_customers.py)    |      |
