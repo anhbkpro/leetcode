@@ -298,21 +298,22 @@
 
 
 # 30 Days of Pandas
-| Problem                               | Related Topics                    | Question                                                       | Solution                                                 | Note |
-|---------------------------------------|-----------------------------------|----------------------------------------------------------------|----------------------------------------------------------|------|
-| 595. Big Countries                    | **Pandas**, **Data Filtering**    | https://leetcode.com/problems/big-countries/                   | [Solution](./lc_595_big_countries.py)                    |      |
-| 1757. Recyclable and Low Fat Products | **Pandas**, **Data Filtering**    | https://leetcode.com/problems/recyclable-and-low-fat-products/ | [Solution](./lc_1757_recyclable_and_low_fat_products.py) |      |
-| 183. Customers Who Never Order        | **Pandas**, **Data Filtering**    | https://leetcode.com/problems/customers-who-never-order/       | [Solution](./lc_183_customers_who_never_order.py)        |      |
-| 1148. Article Views I                 | **Pandas**, **Data Filtering**    | https://leetcode.com/problems/article-views-i/                 | [Solution](./lc_1148_article_views_i.py)                 |      |
-| 1683. Invalid Tweets                  | **Pandas**, **String Methods**    | https://leetcode.com/problems/invalid-tweets/                  | [Solution](./lc_1683_invalid_tweets.py)                  |      |
-| 1873. Calculate Special Bonus         | **Pandas**, **String Methods**    | https://leetcode.com/problems/calculate-special-bonus/         | [Solution](./lc_1873_calculate_special_bonus.py)         |      |
-| 1667. Fix Names in a Table            | **Pandas**, **String Methods**    | https://leetcode.com/problems/fix-names-in-a-table/            | [Solution](./lc_1667_fix_names_in_a_table.py)            |      |
-| 1517. Find Users With Valid E-Mails   | **Pandas**, **String Methods**    | https://leetcode.com/problems/find-users-with-valid-e-mails/   | [Solution](./lc_1517_find_users_with_valid_e_mails.py)   |      |
-| 1527. Patients With a Condition       | **Pandas**, **String Methods**    | https://leetcode.com/problems/patients-with-a-condition/       | [Solution](./lc_1527_patients_with_a_condition.py)       |      |
-| 177. Nth Highest Salary               | **Pandas**, **Data Manipulation** | https://leetcode.com/problems/nth-highest-salary/              | [Solution](./lc_177_nth_highest_salary.py)               |      |
-| 176. Second Highest Salary            | **Pandas**, **Data Manipulation** | https://leetcode.com/problems/second-highest-salary/           | [Solution](./lc_176_second_highest_salary.py)            |      |
-| 184. Department Highest Salary        | **Pandas**, **Data Manipulation** | https://leetcode.com/problems/department-highest-salary/       | [Solution](./lc_184_department_highest_salary.py)        |      |
-| 178. Rank Scores                      | **Pandas**, **Data Manipulation** | https://leetcode.com/problems/rank-scores/                     | [Solution](./lc_178_rank_scores.py)                      |      |
-| 196. Delete Duplicate Emails          | **Pandas**, **Data Manipulation** | https://leetcode.com/problems/delete-duplicate-emails/         | [Solution](./lc_196_delete_duplicate_emails.py)          |      |
-| 1795. Rearrange Products Table        | **Pandas**, **Data Manipulation** | https://leetcode.com/problems/rearrange-products-table/        | [Solution](./lc_1795_rearrange_products_table.py)        |      |
-| 2082. The Number of Rich Customers    | **Pandas**, **Data Manipulation** | https://leetcode.com/problems/the-number-of-rich-customers/    | [Solution](./lc_2082_the_number_of_rich_customers.py)    |      |
+| Problem                               | Related Topics                              | Question                                                       | Solution                                                 | Note |
+|---------------------------------------|---------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------|------|
+| 595. Big Countries                    | **Pandas**, **Data Filtering**              | https://leetcode.com/problems/big-countries/                   | [Solution](./lc_595_big_countries.py)                    |      |
+| 1757. Recyclable and Low Fat Products | **Pandas**, **Data Filtering**              | https://leetcode.com/problems/recyclable-and-low-fat-products/ | [Solution](./lc_1757_recyclable_and_low_fat_products.py) |      |
+| 183. Customers Who Never Order        | **Pandas**, **Data Filtering**              | https://leetcode.com/problems/customers-who-never-order/       | [Solution](./lc_183_customers_who_never_order.py)        |      |
+| 1148. Article Views I                 | **Pandas**, **Data Filtering**              | https://leetcode.com/problems/article-views-i/                 | [Solution](./lc_1148_article_views_i.py)                 |      |
+| 1683. Invalid Tweets                  | **Pandas**, **String Methods**              | https://leetcode.com/problems/invalid-tweets/                  | [Solution](./lc_1683_invalid_tweets.py)                  |      |
+| 1873. Calculate Special Bonus         | **Pandas**, **String Methods**              | https://leetcode.com/problems/calculate-special-bonus/         | [Solution](./lc_1873_calculate_special_bonus.py)         |      |
+| 1667. Fix Names in a Table            | **Pandas**, **String Methods**              | https://leetcode.com/problems/fix-names-in-a-table/            | [Solution](./lc_1667_fix_names_in_a_table.py)            |      |
+| 1517. Find Users With Valid E-Mails   | **Pandas**, **String Methods**              | https://leetcode.com/problems/find-users-with-valid-e-mails/   | [Solution](./lc_1517_find_users_with_valid_e_mails.py)   |      |
+| 1527. Patients With a Condition       | **Pandas**, **String Methods**              | https://leetcode.com/problems/patients-with-a-condition/       | [Solution](./lc_1527_patients_with_a_condition.py)       |      |
+| 177. Nth Highest Salary               | **Pandas**, **Data Manipulation**           | https://leetcode.com/problems/nth-highest-salary/              | [Solution](./lc_177_nth_highest_salary.py)               |      |
+| 176. Second Highest Salary            | **Pandas**, **Data Manipulation**           | https://leetcode.com/problems/second-highest-salary/           | [Solution](./lc_176_second_highest_salary.py)            |      |
+| 184. Department Highest Salary        | **Pandas**, **Data Manipulation**           | https://leetcode.com/problems/department-highest-salary/       | [Solution](./lc_184_department_highest_salary.py)        |      |
+| 178. Rank Scores                      | **Pandas**, **Data Manipulation**           | https://leetcode.com/problems/rank-scores/                     | [Solution](./lc_178_rank_scores.py)                      |      |
+| 196. Delete Duplicate Emails          | **Pandas**, **Data Manipulation**           | https://leetcode.com/problems/delete-duplicate-emails/         | [Solution](./lc_196_delete_duplicate_emails.py)          |      |
+| 1795. Rearrange Products Table        | **Pandas**, **Data Manipulation**           | https://leetcode.com/problems/rearrange-products-table/        | [Solution](./lc_1795_rearrange_products_table.py)        |      |
+| 2082. The Number of Rich Customers    | **Pandas**, **Statistics**                  | https://leetcode.com/problems/the-number-of-rich-customers/    | [Solution](./lc_2082_the_number_of_rich_customers.py)    |      |
+| 1173. Immediate Food Delivery I       | **Pandas**, **Statistics**                  | https://leetcode.com/problems/immediate-food-delivery-i/       | [Solution](./lc_1173_immediate_food_delivery_i.py)       |      |
