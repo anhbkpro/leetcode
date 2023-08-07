@@ -314,3 +314,4 @@
 | 176. Second Highest Salary            | **Pandas**     | https://leetcode.com/problems/second-highest-salary/           | [Solution](./lc_176_second_highest_salary.py)            |      |
 | 184. Department Highest Salary        | **Pandas**     | https://leetcode.com/problems/department-highest-salary/       | [Solution](./lc_184_department_highest_salary.py)        |      |
 | 178. Rank Scores                      | **Pandas**     | https://leetcode.com/problems/rank-scores/                     | [Solution](./lc_178_rank_scores.py)                      |      |
+| 196. Delete Duplicate Emails          | **Pandas**     | https://leetcode.com/problems/delete-duplicate-emails/         | [Solution](./lc_196_delete_duplicate_emails.py)          |      |
