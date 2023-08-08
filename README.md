@@ -317,3 +317,4 @@
 | 1795. Rearrange Products Table        | **Pandas**, **Data Manipulation**           | https://leetcode.com/problems/rearrange-products-table/        | [Solution](./lc_1795_rearrange_products_table.py)        |      |
 | 2082. The Number of Rich Customers    | **Pandas**, **Statistics**                  | https://leetcode.com/problems/the-number-of-rich-customers/    | [Solution](./lc_2082_the_number_of_rich_customers.py)    |      |
 | 1173. Immediate Food Delivery I       | **Pandas**, **Statistics**                  | https://leetcode.com/problems/immediate-food-delivery-i/       | [Solution](./lc_1173_immediate_food_delivery_i.py)       |      |
+| 1907. Count Salary Categories         | **Pandas**, **Statistics**                  | https://leetcode.com/problems/count-salary-categories/         | [Solution](./lc_1907_count_salary_categories.py)         |      |
