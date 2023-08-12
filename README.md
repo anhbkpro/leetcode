@@ -282,12 +282,12 @@
 | 740. Delete and Earn            | **DP**         | https://leetcode.com/problems/delete-and-earn/            | [Solution](./lc_740_delete_and_earn.py)            |      |
 
 ## 1. 0/1 Knapsack
-| Problem                         | Related Topics | Question                                                  | Solution                                           | Note |
-|---------------------------------|----------------|-----------------------------------------------------------|----------------------------------------------------|------|
-| 279. Perfect Squares            | **DP**         | https://leetcode.com/problems/perfect-squares/            | [Solution](./lc_279_perfect_squares.py)            |      |
-| 518. Coin Change II             | **DP**         | https://leetcode.com/problems/coin-change-2/              | [Solution](./lc_518_coin_change_ii_dp_bottom_up.py)              |      |
-| 377. Combination Sum IV         | **DP**         | https://leetcode.com/problems/combination-sum-iv/         | [Solution](./lc_377_combination_sum_iv.py)         |      |
-| 474. Ones and Zeroes            | **DP**         | https://leetcode.com/problems/ones-and-zeroes/            | [Solution](./lc_474_ones_and_zeroes.py)            |      |
+| Problem                 | Related Topics | Question                                          | Solution                                            | Note |
+|-------------------------|----------------|---------------------------------------------------|-----------------------------------------------------|------|
+| 279. Perfect Squares    | **DP**         | https://leetcode.com/problems/perfect-squares/    | [Solution](./lc_279_perfect_squares.py)             |      |
+| 518. Coin Change II     | **DP**         | https://leetcode.com/problems/coin-change-2/      | [Solution](./lc_518_coin_change_ii_dp_bottom_up.py) |      |
+| 377. Combination Sum IV | **DP**         | https://leetcode.com/problems/combination-sum-iv/ | [Solution](./lc_377_combination_sum_iv.py)          |      |
+| 474. Ones and Zeroes    | **DP**         | https://leetcode.com/problems/ones-and-zeroes/    | [Solution](./lc_474_ones_and_zeroes.py)             |      |
 
 
 # Binary Search (8 Patterns, 42 Qs = Master BS)
@@ -336,3 +336,4 @@
 | 570. Managers with at Least 5 Direct Reports                   | **Pandas**, **Data Integration**  | https://leetcode.com/problems/managers-with-at-least-5-direct-reports/                  | [Solution](./lc_570_managers_with_at_least_5_direct_reports.py)                   |      |
 | 607. Sales Person                                              | **Pandas**, **Data Integration**  | https://leetcode.com/problems/sales-person/                                             | [Solution](./lc_607_sales_person.py)                                              |      |
 | 2377. Sort the Olympic Table by Gold Medal                     | **Pandas**, **Data Integration**  | https://leetcode.com/problems/sort-the-olympic-table-by-gold-medal/                     | [Solution](./lc_2377_sort_the_olympic_table_by_gold_medal.py)                     |      |
+| 185. Department Top Three Salaries                             | **Pandas**, **Data Integration**  | https://leetcode.com/problems/department-top-three-salaries/                            | [Solution](./lc_185_department_top_three_salaries.sql)                             |      |
