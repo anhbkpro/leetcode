@@ -1,6 +1,7 @@
 from typing import List
 
 
+# Approach 1: Bottom-Up Dynamic Programming (Tabulation)
 class Solution:
     @staticmethod
     def minCostClimbingStairs(cost: List[int]) -> int:
