@@ -1,4 +1,4 @@
-from lc_746_min_cost_climbing_stairs import Solution
+from lc_746_min_cost_climbing_stairs_bottom_up import Solution
 
 
 def test_min_cost_climbing_stairs():
