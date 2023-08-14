@@ -283,6 +283,16 @@
 | 198. House Robber             | **DP**         | https://leetcode.com/problems/house-robber/             | [Solution](./lc_198_house_robber.py)                       |      |
 | 740. Delete and Earn          | **DP**         | https://leetcode.com/problems/delete-and-earn/          | [Solution](./lc_740_delete_and_earn.py)                    |      |
 
+## 2. Matrix
+| Problem                       | Related Topics | Question                                                | Solution                                                   | Note |
+|-------------------------------|----------------|---------------------------------------------------------|------------------------------------------------------------|------|
+| 62. Unique Paths              | **DP**         | https://leetcode.com/problems/unique-paths/             | [Solution](./lc_62_unique_paths.py)                        |      |
+| 64. Minimum Path Sum          | **DP**         | https://leetcode.com/problems/minimum-path-sum/         | [Solution](./lc_64_minimum_path_sum.py)                    |      |
+| 63. Unique Paths II           | **DP**         | https://leetcode.com/problems/unique-paths-ii/          | [Solution](./lc_63_unique_paths_ii.py)                     |      |
+| 120. Triangle                 | **DP**         | https://leetcode.com/problems/triangle/                 | [Solution](./lc_120_triangle.py)                           |      |
+| 931. Minimum Falling Path Sum | **DP**         | https://leetcode.com/problems/minimum-falling-path-sum/ | [Solution](./lc_931_minimum_falling_path_sum.py)           |      |
+| 221. Maximal Square           | **DP**         | https://leetcode.com/problems/maximal-square/           | [Solution](./lc_221_maximal_square.py)                     |      |
+
 ## 1. 0/1 Knapsack
 | Problem                 | Related Topics | Question                                          | Solution                                            | Note |
 |-------------------------|----------------|---------------------------------------------------|-----------------------------------------------------|------|
