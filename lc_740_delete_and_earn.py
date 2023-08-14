@@ -14,14 +14,14 @@ class Solution:
             max_number = max(max_number, num)
 
         @cache
-        def max_points(num):
+        def max_points(num) -> int:
             # Check for base cases
             if num == 0:
                 return 0
             if num == 1:
                 return points[1]
 
-            # Apply recurrence relation
+            # Apply recurrence relation: don't take, or take.
             return max(max_points(num - 1), max_points(num - 2) + points[num])
 
         return max_points(max_number)
