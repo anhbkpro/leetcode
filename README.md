@@ -72,6 +72,7 @@
 | 714. Best Time to Buy and Sell Stock with Transaction Fee     | **Dynamic Programming**, **Greedy**                    | https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/    | [Solution](./lc_714_best_time_to_buy_and_sell_stock_with_transaction_fee.py)        |      |
 | 735. Asteroid Collision                                       | **Stack**                                              | https://leetcode.com/problems/asteroid-collision/                                      | [Solution](./lc_735_asteroid_collision.py)                                          |      |
 | 739. Daily Temperatures                                       | **Stack**, **Hash Table**                              | https://leetcode.com/problems/daily-temperatures/                                      | [Solution](./lc_739_daily_temperatures.py)                                          |      |
+| 740. Delete and Earn                                          | **Dynamic Programming**                                | https://leetcode.com/problems/delete-and-earn/                                         | [Solution](./lc_740_delete_and_earn.py)                                             |      |
 | 744. Find Smallest Letter Greater Than Target                 | **Brute Force**                                        | https://leetcode.com/problems/find-smallest-letter-greater-than-target/                | [Solution](./lc_744_find_smallest_letter_greater_than_target.py)                    |      |
 | 802. Find Eventual Safe States                                | **Graph**, **Topological Sort**                        | https://leetcode.com/problems/find-eventual-safe-states/                               | [Solution](./lc_802_find_eventual_safe_states.py)                                   |      |
 | 808. Soup Servings                                            | **Dynamic Programming**, **Memoization**               | https://leetcode.com/problems/soup-servings/                                           | [Solution](./lc_808_soup_servings.py)                                               |      |
@@ -273,14 +274,14 @@
 
 # Dynamic Programming - 10 Essential DP Patterns
 ## 1. Fibonacci style
-| Problem                         | Related Topics | Question                                                  | Solution                                           | Note |
-|---------------------------------|----------------|-----------------------------------------------------------|----------------------------------------------------|------|
-| 70. Climbing Stairs             | **DP**         | https://leetcode.com/problems/climbing-stairs/            | [Solution](./lc_70_climbing_stairs.py)             |      |
-| 509. Fibonacci Number           | **DP**         | https://leetcode.com/problems/fibonacci-number/           | [Solution](./lc_509_fibonacci_number.py)           |      |
-| 1137. N-th Tribonacci Number    | **DP**         | https://leetcode.com/problems/n-th-tribonacci-number/     | [Solution](./lc_1137_n_th_tribonacci_number.py)    |      |
-| 746. Min Cost Climbing Stairs   | **DP**         | https://leetcode.com/problems/min-cost-climbing-stairs/   | [Solution](./lc_746_min_cost_climbing_stairs.py)   |      |
-| 198. House Robber               | **DP**         | https://leetcode.com/problems/house-robber/               | [Solution](./lc_198_house_robber.py)               |      |
-| 740. Delete and Earn            | **DP**         | https://leetcode.com/problems/delete-and-earn/            | [Solution](./lc_740_delete_and_earn.py)            |      |
+| Problem                       | Related Topics | Question                                                | Solution                                                   | Note |
+|-------------------------------|----------------|---------------------------------------------------------|------------------------------------------------------------|------|
+| 70. Climbing Stairs           | **DP**         | https://leetcode.com/problems/climbing-stairs/          | [Solution](./lc_70_climbing_stairs.py)                     |      |
+| 509. Fibonacci Number         | **DP**         | https://leetcode.com/problems/fibonacci-number/         | [Solution](./lc_509_fibonacci_number.py)                   |      |
+| 1137. N-th Tribonacci Number  | **DP**         | https://leetcode.com/problems/n-th-tribonacci-number/   | [Solution](./lc_1137_n_th_tribonacci_number.py)            |      |
+| 746. Min Cost Climbing Stairs | **DP**         | https://leetcode.com/problems/min-cost-climbing-stairs/ | [Solution](./lc_746_min_cost_climbing_stairs_bottom_up.py) |      |
+| 198. House Robber             | **DP**         | https://leetcode.com/problems/house-robber/             | [Solution](./lc_198_house_robber.py)                       |      |
+| 740. Delete and Earn          | **DP**         | https://leetcode.com/problems/delete-and-earn/          | [Solution](./lc_740_delete_and_earn.py)                    |      |
 
 ## 1. 0/1 Knapsack
 | Problem                 | Related Topics | Question                                          | Solution                                            | Note |
