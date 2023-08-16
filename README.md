@@ -296,10 +296,11 @@
 | 221. Maximal Square           | **DP**         | https://leetcode.com/problems/maximal-square/           | [Solution](./lc_221_maximal_square.py)                     |      |
 
 ## 3. On Strings
-| Problem                          | Related Topics | Question                                                     | Solution                                            | Note |
-|----------------------------------|----------------|--------------------------------------------------------------|-----------------------------------------------------|------|
-| 5. Longest Palindromic Substring | **DP**         | https://leetcode.com/problems/longest-palindromic-substring/ | [Solution](./lc_5_longest_palindromic_substring.py) |      |
-| 139. Word Break                  | **DP**         | https://leetcode.com/problems/word-break/                    | [Solution](./lc_139_word_break_bottom_up_dp.py)     |      |
+| Problem                              | Related Topics | Question                                                       | Solution                                                | Note |
+|--------------------------------------|----------------|----------------------------------------------------------------|---------------------------------------------------------|------|
+| 5. Longest Palindromic Substring     | **DP**         | https://leetcode.com/problems/longest-palindromic-substring/   | [Solution](./lc_5_longest_palindromic_substring.py)     |      |
+| 139. Word Break                      | **DP**         | https://leetcode.com/problems/word-break/                      | [Solution](./lc_139_word_break_bottom_up_dp.py)         |      |
+| 516. Longest Palindromic Subsequence | **DP**         | https://leetcode.com/problems/longest-palindromic-subsequence/ | [Solution](./lc_516_longest_palindromic_subsequence.py) |      |
 
 
 ## 1. 0/1 Knapsack
