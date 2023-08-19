@@ -13,7 +13,6 @@ class UnionFind:
         :return: root of a node
         """
         # path compression
-        tmp = a
         while a != self.parents[a]:
             a = self.parents[a]
 
