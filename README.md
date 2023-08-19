@@ -277,6 +277,11 @@
 | 1235. Maximum Profit in Job Scheduling                 | **DP**         | https://leetcode.com/problems/maximum-profit-in-job-scheduling/                 | [Solution](./lc_1235_maximum_profit_in_job_scheduling.py)                 |      |
 | 2008. Maximum Earnings From Taxi                       | **DP**         | https://leetcode.com/problems/maximum-earnings-from-taxi/                       | [Solution](./lc_2008_maximum_earnings_from_taxi.py)                       |      |
 
+## Minimum Spanning Tree (MST)
+| Problem                                   | Related Topics | Question                                                           | Solution                                                     | Note |
+|-------------------------------------------|----------------|--------------------------------------------------------------------|--------------------------------------------------------------|------|
+| 1135. Connecting Cities With Minimum Cost | **MST**        | https://leetcode.com/problems/connecting-cities-with-minimum-cost/ | [Solution](./lc_1135_connecting_cities_with_minimum_cost.py) |      |
+| 1584. Min Cost to Connect All Points      | **MST**        | https://leetcode.com/problems/min-cost-to-connect-all-points/      | [Solution](./lc_1584_min_cost_to_connect_all_points.py)      |      |
 
 # Dynamic Programming - 10 Essential DP Patterns
 ## 1. Fibonacci style
