@@ -1,7 +1,7 @@
 from typing import List
 
 
-class DisjoinSet:
+class UnionFind:
     def __init__(self, n):
         self.rank = [0] * (n + 1)
         self.parents = [i for i in range(n + 1)]
@@ -11,17 +11,15 @@ class DisjoinSet:
             a = self.parents[a]
         return a
 
-    def union(self, a, b):
+    def join(self, a, b) -> bool:
         root_a = self.find(a)
         root_b = self.find(b)
 
         if root_a == root_b:
-            return
+            return False
 
         self.parents[root_b] = root_a
-
-    def is_in_same_root(self, a, b):
-        return self.find(a) == self.find(b)
+        return True
 
 
 class Solution:
@@ -37,17 +35,16 @@ class Solution:
                 else:
                     distance = abs(points[i][0] - points[j][0]) + abs(points[i][1] - points[j][1])
                     visited[(i, j)] = True
-                    weights.append([i, j, distance])
-        weights = sorted(weights, key=lambda x: x[2])
-        ds = DisjoinSet(n)
+                    weights.append([distance, i, j])
+
+        weights.sort()
+        ds = UnionFind(n)
         total_cost = 0
         total_edges = 0
-        for weight in weights:
-            if ds.is_in_same_root(weight[0], weight[1]):
-                continue
-            ds.union(weight[0], weight[1])
-            total_cost += weight[2]
-            total_edges += 1
+        for weight, node1, node2 in weights:
+            if ds.join(node1, node2):
+                total_cost += weight
+                total_edges += 1
 
         if total_edges == n - 1:
             return total_cost
