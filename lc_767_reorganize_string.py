@@ -4,7 +4,7 @@ from heapq import heappush, heappop, heapify
 
 class Solution:
     @staticmethod
-    def reorganizeString(s: str) -> str:
+    def reorganize_string(s: str) -> str:
         ans = []
         # Min heap ordered by character counts, so we will use
         # negative values for count
