@@ -12,8 +12,8 @@ class Solution:
         for i in range(n):
             start = i
             end = i + nums[i]
-            for i in range(start, end + 1):
-                if i <= n:
-                    dp[i] = min(dp[start] + 1, dp[i])
+            for j in range(start, end + 1):
+                if j <= n:
+                    dp[j] = min(dp[start] + 1, dp[j])
 
         return dp[n - 1]
