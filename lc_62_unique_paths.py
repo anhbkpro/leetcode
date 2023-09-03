@@ -8,6 +8,7 @@ def unique_paths(m: int, n: int) -> int:
     return d[m - 1][n - 1]
 
 
+# m rows, n columns
 def my_unique_paths(m: int, n: int) -> int:
     dp = [[0] * (n + 1) for _ in range(m + 1)]
     dp[m - 1][n - 1] = 1
