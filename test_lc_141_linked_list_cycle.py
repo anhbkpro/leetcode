@@ -17,3 +17,8 @@ node = node1
 def test_has_cycle():
     assert Solution.hasCycle(head=ListNode(1)) is False
     assert Solution.hasCycle(head=node) is True
+
+
+def test_has_cycle_use_hash_table():
+    assert Solution.has_cycle_use_hash_table(head=ListNode(1)) is False
+    assert Solution.has_cycle_use_hash_table(head=node) is True
