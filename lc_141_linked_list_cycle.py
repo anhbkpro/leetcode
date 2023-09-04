@@ -21,3 +21,13 @@ class Solution:
             slow = slow.next
             fast = fast.next.next
         return True
+
+    @staticmethod
+    def has_cycle_use_hash_table(head: Optional[ListNode]) -> bool:
+        nodes_seen = set()
+        while head is not None:
+            if head in nodes_seen:
+                return True
+            nodes_seen.add(head)
+            head = head.next
+        return False
