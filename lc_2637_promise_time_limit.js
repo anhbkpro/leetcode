@@ -16,3 +16,6 @@ var timeLimit = function(fn, t) {
 
 const limited = timeLimit((t) => new Promise(res => setTimeout(res, t)), 100);
 limited(150).catch(console.log) // "Time Limit Exceeded" at t=100ms
+
+// How to test:
+// 1. Run this file with `node lc_2637_promise_time_limit.js`
