@@ -3,7 +3,7 @@
  * @param {number} t milliseconds
  * @return {Function}
  */
-var debounce = function(fn, t) {
+const debounce = function(fn, t) {
     let interval;
     return function(...args) {
         const lastCall = Date.now();
