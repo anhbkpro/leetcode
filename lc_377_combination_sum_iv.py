@@ -8,7 +8,7 @@ class Solution:
         # potential optimization
         # nums.sort()
 
-        @functools.lru_cache(maxsize = None)
+        @functools.lru_cache(maxsize=None)
         def combs(remain):
             if remain == 0:
                 return 1
