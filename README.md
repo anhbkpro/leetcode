@@ -191,6 +191,7 @@
 | 2696. Minimum String Length After Removing Substrings                  | **Greedy**                                                                        | https://leetcode.com/problems/minimum-string-length-after-removing-substrings/                  | [Solution](./lc_2696_minimum_string_length_after_removing_substrings.py)            |      |
 | 2707. Extra Characters in a String                                     | **Dynamic Programming**                                                           | https://leetcode.com/problems/extra-characters-in-a-string/                                     | [Solution](./lc_2707_extra_characters_in_a_string.py)                               |      |
 | 2710. Remove Trailing Zeros From a String                              | **String**                                                                        | https://leetcode.com/problems/remove-trailing-zeros-from-a-string/                              | [Solution](./lc_2710_remove_trailing_zeros_from_a_string.py)                        |      |
+| 2721. Execute Asynchronous Functions in Parallel                       | **Javascript**                                                                    | https://leetcode.com/problems/execute-asynchronous-functions-in-parallel/                       | [Solution](./lc_2721_execute_asynchronous_functions_in_parallel.js)                 |      |
 
 # Premium Algo 100
 ## Array / String
