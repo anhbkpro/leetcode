@@ -5,8 +5,8 @@ class Solution:
     @staticmethod
     def min_deletions(s: str) -> int:
         c = collections.Counter(s)
-        print(c)
-        c = sorted(c.items(), key=lambda x: -x[1])
+        c = sorted(c.items(), key=lambda x: -x[1])  # sort by frequency in descending order
+        print(c)  # "ceabaacb" => [('a', 3), ('c', 2), ('b', 2), ('e', 1)]
         frequency = {}
         delete_count = 0
         for k, v in c:
