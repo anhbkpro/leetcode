@@ -7,21 +7,18 @@ class Solution:
         c = collections.Counter(s)
         print(c)
         c = sorted(c.items(), key=lambda x: -x[1])
-        seen_count = {}
-        count = 0
+        frequency = {}
+        delete_count = 0
         for k, v in c:
             print(k, v)
-            if v not in seen_count:
-                seen_count[v] = True
+            if v not in frequency:
+                frequency[v] = True
             else:
-                while v in seen_count:
+                while v and v in frequency:  # frequency of 0 is ignored
                     v -= 1
-                    count += 1
+                    delete_count += 1
 
-                if v == 0:  # frequency of 0 is ignored
-                    continue
+                frequency[v] = True
 
-                seen_count[v] = True
-
-        print(seen_count)
-        return count
+        print(frequency)
+        return delete_count
