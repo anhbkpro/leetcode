@@ -3,7 +3,6 @@ from typing import List
 
 class UnionFind:
     def __init__(self, n):
-        self.rank = [0] * (n + 1)
         self.parents = [i for i in range(n + 1)]
 
     def find(self, a):
