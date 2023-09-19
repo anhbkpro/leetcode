@@ -8,4 +8,5 @@ def test_detect_cycle():
     head = ListNode(1)
     head.next = head
     assert Solution.detectCycle(head=head) == head
+    assert Solution.detect_cycle_tortoise_and_hare(head=head) == head
 
