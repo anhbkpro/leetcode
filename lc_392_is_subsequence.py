@@ -6,7 +6,7 @@ def is_subsequence(s: str, t: str) -> bool:
         return True
 
     # matrix to store the history of matches/deletions
-    dp = [ [0] * (target_len + 1) for _ in range(source_len + 1)]
+    dp = [[0] * (target_len + 1) for _ in range(source_len + 1)]
 
     # DP compute, we fill the matrix column by column, bottom up
     for col in range(1, target_len + 1):
