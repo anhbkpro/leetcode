@@ -1,6 +1,6 @@
 class Solution(object):
     @staticmethod
-    def decodeAtIndex(S, K):
+    def decode_at_index(S, K):
         size = 0
         # Find size = length of decoded string
         for c in S:
