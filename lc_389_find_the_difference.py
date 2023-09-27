@@ -16,3 +16,7 @@ class Solution:
                 return k
 
         return ""
+
+    @staticmethod
+    def findTheDifference2(s: str, t: str) -> str:
+        return chr(sum(map(ord, t)) - sum(map(ord, s)))
