@@ -9,8 +9,8 @@ class Solution:
         stack = []
         min_array = [-1] * len(nums)
         min_array[0] = nums[0]
-        nums = [6, 12, 3, 4, 6, 11, 20]
-        min_array = [6, 6, 3, 3, 3, 3, 3]
+        # nums = [6, 12, 3, 4, 6, 11, 20]
+        # min_array = [6, 6, 3, 3, 3, 3, 3]
         for i in range(1, len(nums)):
             min_array[i] = min(min_array[i - 1], nums[i])
 
