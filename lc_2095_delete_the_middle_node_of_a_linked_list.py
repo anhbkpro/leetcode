@@ -1,0 +1,28 @@
+from typing import Optional
+
+
+class ListNode:
+    def __init__(self, val):
+        self.val = val
+        self.next = None
+
+
+class Solution:
+    @staticmethod
+    def deleteMiddle(head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head or not head.next:
+            return None
+
+        slow = head
+        fast = head
+        prev = None
+
+        while fast and fast.next:
+            prev = slow
+            slow = slow.next
+            fast = fast.next.next
+
+        prev.next = slow.next
+
+        return head
+
