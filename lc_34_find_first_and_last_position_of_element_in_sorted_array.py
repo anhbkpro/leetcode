@@ -2,35 +2,42 @@ from typing import List
 
 
 class Solution:
-    @staticmethod
-    def searchRange(nums: List[int], target: int) -> List[int]:
-        first_index = findBound(nums, target, True)
-        if first_index == -1:
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+
+        lower_bound = self.findBound(nums, target, True)
+        if lower_bound == -1:
             return [-1, -1]
-        second_index = findBound(nums, target, False)
 
-        return [first_index, second_index]
+        upper_bound = self.findBound(nums, target, False)
 
+        return [lower_bound, upper_bound]
 
-def findBound(nums: List[int], target: int, is_first: bool) -> int:
-    n = len(nums) - 1
-    lo, hi = 0, n
-    while lo <= hi:
-        mid = (lo + hi) // 2
-        if nums[mid] == target:
-            if is_first:
-                if mid == lo or nums[mid - 1] < target:
-                    return mid
+    def findBound(self, nums: List[int], target: int, isFirst: bool) -> int:
 
-                hi = mid - 1
+        N = len(nums)
+        begin, end = 0, N - 1
+        while begin <= end:
+            mid = int((begin + end) / 2)
+
+            if nums[mid] == target:
+                if isFirst:
+                    # This means we found our lower bound.
+                    if mid == begin or nums[mid - 1] < target:
+                        return mid
+
+                    # Search on the left side for the bound.
+                    end = mid - 1
+                else:
+                    # This means we found our upper bound.
+                    if mid == end or nums[mid + 1] > target:
+                        return mid
+
+                    # Search on the right side for the bound.
+                    begin = mid + 1
+
+            elif nums[mid] > target:
+                end = mid - 1
             else:
-                if mid == hi or nums[mid + 1] > target:
-                    return mid
+                begin = mid + 1
 
-                lo = mid + 1
-        elif nums[mid] > target:
-            hi = mid - 1
-        else:
-            lo = mid + 1
-
-    return -1
+        return -1
