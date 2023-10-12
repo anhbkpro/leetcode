@@ -1,5 +1,19 @@
+class MountainArray:
+    def __init__(self, array):
+        self.array = array
+        self.counter = 0
+
+    def get(self, index):
+        self.counter += 1
+        return self.array[index]
+
+    def length(self):
+        return len(self.array)
+
+
 class Solution:
-    def findInMountainArray(self, target: int, mountain_arr: 'MountainArray') -> int:
+    @staticmethod
+    def findInMountainArray(target: int, mountain_arr: MountainArray) -> int:
         # Save the length of the mountain array
         length = mountain_arr.length()
 
