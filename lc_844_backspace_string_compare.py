@@ -14,7 +14,7 @@ class Solution:
     def proceed_str(s: str, q: deque):
         for c in s:
             print(c)
-            if c is not "#":
+            if c != "#":
                 q.append(c)
             else:
                 if q:
