@@ -12,24 +12,24 @@ class TreeNode:
 
 class Solution:
     @staticmethod
-    def largestValues(root: Optional[TreeNode]) -> List[int]:
+    def largestValuesDFS(root: Optional[TreeNode]) -> List[int]:
         if not root:
             return []
 
         ans = []
-        queue = deque([root])
 
-        while queue:
-            current_length = len(queue)
-            current_max = float("-inf")
-            for _ in range(current_length):
-                node = queue.popleft()
-                current_max = max(current_max, node.val)
-                if node.left:
-                    queue.append(node.left)
-                if node.right:
-                    queue.append(node.right)
+        def dfs(node, level):
+            if not node:
+                return
 
-            ans.append(current_max)
+            if level == len(ans):
+                ans.append(node.val)
+            else:
+                ans[level] = max(ans[level], node.val)
+
+            dfs(node.left, level + 1)
+            dfs(node.right, level + 1)
+
+        dfs(root, 0)
 
         return ans
