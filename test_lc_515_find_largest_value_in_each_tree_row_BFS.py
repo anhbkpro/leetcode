@@ -1,4 +1,4 @@
-from lc_515_find_largest_value_in_each_tree_row import Solution, TreeNode
+from lc_515_find_largest_value_in_each_tree_row_BFS import Solution, TreeNode
 
 root = TreeNode(val=1)
 root.left = TreeNode(val=3)
