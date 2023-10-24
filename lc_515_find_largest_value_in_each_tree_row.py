@@ -13,7 +13,7 @@ class TreeNode:
 class Solution:
     @staticmethod
     def largestValues(root: Optional[TreeNode]) -> List[int]:
-        if root is None:
+        if not root:
             return []
 
         ans = []
