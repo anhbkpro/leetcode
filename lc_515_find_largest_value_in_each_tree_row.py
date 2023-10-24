@@ -1,0 +1,35 @@
+from collections import deque
+from typing import Optional, List
+
+
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+class Solution:
+    @staticmethod
+    def largestValues(root: Optional[TreeNode]) -> List[int]:
+        if root is None:
+            return []
+
+        ans = []
+        queue = deque([root])
+
+        while queue:
+            current_length = len(queue)
+            current_max = float("-inf")
+            for _ in range(current_length):
+                node = queue.popleft()
+                current_max = max(current_max, node.val)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+
+            ans.append(current_max)
+
+        return ans
