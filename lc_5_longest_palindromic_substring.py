@@ -2,6 +2,7 @@ class Solution:
     @staticmethod
     def longest_palindrome(s: str) -> str:
         n = len(s)
+        # dp[i][j] = True if s[i:j+1] is palindrome
         dp = [[False] * n for _ in range(n)]
         ans = [0, 0]
 
