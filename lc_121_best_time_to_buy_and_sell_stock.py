@@ -4,7 +4,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maxProfit(prices: List[int]) -> int:
-        min_price = prices[0]
+        min_price = float("inf")
         max_profit = 0
 
         for price in prices:
