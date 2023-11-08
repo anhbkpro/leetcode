@@ -262,6 +262,7 @@
 | 2722. Join Two Arrays by ID                                            | **Javascript**                                                                    | https://leetcode.com/problems/join-two-arrays-by-id/                                            | [Solution](./lc_2722_join_two_arrays_by_id.js)                                            |      |
 | 2724. Sort By                                                          | **Javascript**                                                                    | https://leetcode.com/problems/sort-by/                                                          | [Solution](./lc_2724_sort_by.js)                                                          |      |
 | 2742. Painting the Walls                                               | **Dynamic Programming**                                                           | https://leetcode.com/problems/painting-the-walls/                                               | [Solution](./lc_2742_painting_the_walls.py)                                               |      |
+| 2849. Determine if a Cell Is Reachable at a Given Time                 | **Breadth-First Search**                                                          | https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/                 | [Solution](./lc_2849_determine_if_a_cell_is_reachable_at_a_given_time.py)                 |      |
 
 # Premium Algo 100
 ## Array / String
