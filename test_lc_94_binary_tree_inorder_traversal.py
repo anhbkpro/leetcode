@@ -6,4 +6,5 @@ root.right.left = TreeNode(val=3)
 
 
 def test_inorder_traversal():
-    assert s.inorderTraversal(root=root) == [1, 3, 2]
+    assert s.inorder_traversal(root=root) == [1, 3, 2]
+    assert s.inorder_traversal_iterative(root=root) == [1, 3, 2]

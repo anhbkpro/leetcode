@@ -10,7 +10,7 @@ class TreeNode:
 
 
 class Solution:
-    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    def inorder_traversal(self, root: Optional[TreeNode]) -> List[int]:
         result = []
         self.helper(root, result)
         return result
@@ -22,3 +22,17 @@ class Solution:
         self.helper(root.left, result)
         result.append(root.val)
         return self.helper(root.right, result)
+
+    @staticmethod
+    def inorder_traversal_iterative(root: Optional[TreeNode]) -> List[int]:
+        result = []
+        stack = []
+        current = root
+        while current or stack:
+            while current:
+                stack.append(current)
+                current = current.left
+            current = stack.pop()
+            result.append(current.val)
+            current = current.right
+        return result
