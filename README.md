@@ -329,6 +329,7 @@
 | 2742. Painting the Walls                                               | **Dynamic Programming**                                                           | https://leetcode.com/problems/painting-the-walls/                                               | [Solution](./lc_2742_painting_the_walls.py)                                               |      |
 | 2785. Sort Vowels in a String                                          | **String**                                                                        | https://leetcode.com/problems/sort-vowels-in-a-string/                                          | [Solution](./lc_2785_sort_vowels_in_a_string.py)                                          |      |
 | 2849. Determine if a Cell Is Reachable at a Given Time                 | **Breadth-First Search**                                                          | https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/                 | [Solution](./lc_2849_determine_if_a_cell_is_reachable_at_a_given_time.py)                 |      |
+| 2870. Minimum Number of Operations to Make Array Empty                 | **Math**                                                                          | https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/                 | [Solution](./lc_2870_minimum_number_of_operations_to_make_array_empty.py)                 |      |
 
 # Premium Algo 100
 ## Array / String
