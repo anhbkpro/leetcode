@@ -4,17 +4,29 @@ from typing import List
 class Solution:
     @staticmethod
     def fixedPoint(arr: List[int]) -> int:
-        lo, hi = 0, len(arr) - 1
-        ans = -1
-        while lo <= hi:
-            mid = (lo + hi) // 2
+        # Initialize the boundary of search space
+        left, right = 0, len(arr) - 1
+
+        # Initialize answer to -1, 
+        # If no answer is possible, we will return -1
+        answer = -1
+
+        # While the boundary size is non-zero
+        while left <= right:
+            # The middle point in the search space
+            # To divide the search space into two halves
+            mid = (left + right) // 2
+
             if arr[mid] == mid:
-                ans = mid
-                hi = mid - 1  # remove this line still works
-
-            if arr[mid] < mid:
-                lo = mid + 1
+                # We found a possible answer, but keep looking 
+                # for a smaller index on the left part
+                answer = mid
+                right = mid - 1  # the solution still works if remove this line
+            elif arr[mid] < mid:
+                # No solution possible on left, move to the right half
+                left = mid + 1
             else:
-                hi = mid - 1
+                # No solution possible on right, move to the left half
+                right = mid - 1
 
-        return ans
+        return answer
