@@ -1,15 +1,13 @@
 class Solution:
     @staticmethod
     def climbStairs(n: int) -> int:
-        def numberOfWays(i: int) -> int:
-            if i <= 2:
-                return i
+        if n == 1:
+            return 1
 
-            if i in dp:
-                return dp[i]
+        dp = [0] * (n + 1)
+        dp[1] = 1
+        dp[2] = 2
+        for i in range(3, n + 1):
+            dp[i] = dp[i - 1] + dp[i - 2]
 
-            dp[i] = numberOfWays(i - 1) + numberOfWays(i - 2)
-            return dp[i]
-
-        dp = {}
-        return numberOfWays(n)
+        return dp[n]
