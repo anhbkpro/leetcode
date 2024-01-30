@@ -8,17 +8,17 @@ class Solution:
             "+": lambda a, b: a + b,
             "-": lambda a, b: a - b,
             "*": lambda a, b: a * b,
-            "/": lambda a, b: a / b
+            "/": lambda a, b: int(a / b)
         }
 
         st = []
         for t in tokens:
-            if t not in ["+", "-", "*", "/"]:
-                st.append(t)
+            if t not in operations:
+                st.append(int(t))
             else:
-                first = int(st.pop())
-                second = int(st.pop())
+                first = st.pop()
+                second = st.pop()
                 op = operations[t]
                 st.append(op(second, first))
 
-        return int(st[0])
+        return st.pop()
