@@ -8,7 +8,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        square_nums = [i ** 2 for i in range(0, int(math.sqrt(n)) + 1)]
+        square_nums = [i ** 2 for i in range(1, int(math.sqrt(n)) + 1)]
 
         dp = [float('inf')] * (n + 1)
         # bottom case
