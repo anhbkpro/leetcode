@@ -17,3 +17,28 @@ class Solution:
                 ans += is_palindrome(s, lo, hi)
 
         return ans
+
+
+    @staticmethod
+    def count_substrings_dp(s: str) -> int:
+        ans = 0
+        n = len(s)
+        dp = [[False] * n for _ in range(n)]
+
+        # Base case for single letter strings
+        for i in range(n):
+            dp[i][i] = True
+            ans += 1
+
+        # Base case for double letter strings
+        for i in range(n - 1):
+            dp[i][i + 1] = s[i] == s[i + 1]
+            ans += dp[i][i + 1]
+
+        # All other cases: substrings of length 3 to n
+        for length in range(3, n + 1):
+            for i in range(n - length + 1):
+                dp[i][i + length - 1] = s[i] == s[i + length - 1] and dp[i + 1][i + length - 2]
+                ans += dp[i][i + length - 1]
+
+        return ans
