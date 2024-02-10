@@ -32,13 +32,13 @@ class Solution:
 
         # Base case for double letter strings
         for i in range(n - 1):
-            dp[i][i + 1] = s[i] == s[i + 1]
+            dp[i][i + 1] = (s[i] == s[i + 1])
             ans += dp[i][i + 1]
 
         # All other cases: substrings of length 3 to n
         for length in range(3, n + 1):
             for i in range(n - length + 1):
-                dp[i][i + length - 1] = s[i] == s[i + length - 1] and dp[i + 1][i + length - 2]
+                dp[i][i + length - 1] = dp[i + 1][i + length - 2] and (s[i] == s[i + length - 1])
                 ans += dp[i][i + length - 1]
 
         return ans
