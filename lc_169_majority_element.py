@@ -22,9 +22,13 @@ class Solution:
         candidate = None
 
         for num in nums:
+            # [7, 7, 5, 7, 5, 1 | 5, 7 | 5, 5, 7, 7 | 7, 7, 7, 7]
+            # when count is 0, the candidate is the current number
             if count == 0:
                 candidate = num
 
+            # when the current number is the candidate, increment count
+            # when the current number is not the candidate, decrement count
             count += (1 if candidate == num else -1)
 
         return candidate
