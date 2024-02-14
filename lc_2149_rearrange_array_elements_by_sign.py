@@ -4,10 +4,25 @@ from typing import List
 class Solution:
     @staticmethod
     def rearrange_array(nums: List[int]) -> List[int]:
-        positives = [num for num in nums if num >= 0]
-        negatives = [num for num in nums if num < 0]
-        for i in range(len(positives)):
-            nums[2 * i] = positives[i]
-            nums[2 * i + 1] = negatives[i]
+        n = len(nums)
 
-        return nums
+        # Initializing an answer array of size n
+        ans = [0] * n
+
+        # Initializing two pointers to track even and
+        # odd indices for positive and negative integers respectively
+        pos_index, neg_index = 0, 1
+
+        for i in range(n):
+            if nums[i] > 0:
+                # Placing the positive integer at the
+                # desired index in ans and incrementing pos_index by 2
+                ans[pos_index] = nums[i]
+                pos_index += 2
+            else:
+                # Placing the negative integer at the
+                # desired index in ans and incrementing neg_index by 2
+                ans[neg_index] = nums[i]
+                neg_index += 2
+
+        return ans
