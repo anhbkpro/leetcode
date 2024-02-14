@@ -4,14 +4,12 @@ from typing import List
 
 class Solution:
     @staticmethod
-    def connectSticks(sticks: List[int]) -> int:
-        h = []
-        for s in sticks:
-            heapq.heappush(h, s)
-        sum = 0
-        while len(h) > 1:
-            top_two_sum = heapq.heappop(h) + heapq.heappop(h)
-            sum += top_two_sum
-            heapq.heappush(h, top_two_sum)
+    def connect_sticks(sticks: List[int]) -> int:
+        heapq.heapify(sticks)
+        total_cost = 0
+        while len(sticks) > 1:
+            joined_stick_cost = heapq.heappop(sticks) + heapq.heappop(sticks)
+            total_cost += joined_stick_cost
+            heapq.heappush(sticks, joined_stick_cost)
 
-        return sum
+        return total_cost
