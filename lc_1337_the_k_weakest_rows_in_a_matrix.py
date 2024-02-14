@@ -4,7 +4,7 @@ from typing import List
 
 class Solution:
     @staticmethod
-    def kWeakestRows(mat: List[List[int]], k: int) -> List[int]:
+    def k_weakest_rows(mat: List[List[int]], k: int) -> List[int]:
 
         m = len(mat)
         n = len(mat[0])
@@ -42,3 +42,23 @@ class Solution:
         indexes = indexes[::-1]
 
         return indexes
+
+    @staticmethod
+    def k_weakest_rows_nsmallest(mat: List[List[int]], k: int) -> List[int]:
+        def number_of_soldiers(row: List[int]) -> int:
+            lo, hi = 0, len(row) - 1
+            while lo <= hi:
+                mid = (lo + hi) // 2
+                if not row[mid]:
+                    hi = mid - 1
+                else:
+                    lo = mid + 1
+
+            return lo
+
+        soldier_freq = {}
+        for idx, row in enumerate(mat):
+            soldiers = number_of_soldiers(row)
+            soldier_freq[idx] = soldiers
+
+        return heapq.nsmallest(k, soldier_freq.keys(), key=soldier_freq.get)
