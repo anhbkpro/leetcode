@@ -58,7 +58,6 @@ class Solution:
 
         soldier_freq = {}
         for idx, row in enumerate(mat):
-            soldiers = number_of_soldiers(row)
-            soldier_freq[idx] = soldiers
+            soldier_freq[idx] = number_of_soldiers(row)
 
         return heapq.nsmallest(k, soldier_freq.keys(), key=soldier_freq.get)
