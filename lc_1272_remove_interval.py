@@ -13,14 +13,17 @@ class Solution:
         ans = []
         remove_start, remove_end = toBeRemoved
         for interval in intervals:
+            # If there are no overlaps, add the interval to the list as is.
             if not is_overlapping(interval, toBeRemoved):
                 ans.append(interval)
                 continue
 
             start, end = interval
+            # Is there a left interval we need to keep?
             if start < remove_start:
                 ans.append([start, remove_start])
 
+            # Is there a right interval we need to keep?
             if remove_end < end:
                 ans.append([remove_end, end])
 
