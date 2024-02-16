@@ -7,11 +7,11 @@ class Solution:
     @staticmethod
     def find_least_num_of_unique_ints(arr: List[int], k: int) -> int:
         freq = Counter(arr)
-        data = heapq.nsmallest(k, freq.keys(), freq.get)
+        least_frequency_numbers = heapq.nsmallest(k, freq.keys(), freq.get)
 
         index = 0
-        while k > 0 and data:
-            item = data[index]
+        while k > 0 and least_frequency_numbers:
+            item = least_frequency_numbers[index]
             to_removed_count = min(k, freq[item])
             k -= to_removed_count
             freq[item] -= to_removed_count
