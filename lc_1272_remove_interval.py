@@ -19,9 +19,9 @@ class Solution:
 
             start, end = interval
             if start < remove_start:
-                ans.append([start, min(remove_start, end)])
+                ans.append([start, remove_start])
 
             if remove_end < end:
-                ans.append([max(remove_end, start), end])
+                ans.append([remove_end, end])
 
         return ans
