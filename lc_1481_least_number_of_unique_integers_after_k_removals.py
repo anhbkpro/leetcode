@@ -11,12 +11,12 @@ class Solution:
 
         index = 0
         while k > 0 and least_frequency_numbers:
-            item = least_frequency_numbers[index]
-            to_be_removed_count = min(k, freq[item])
+            num = least_frequency_numbers[index]
+            to_be_removed_count = min(k, freq[num])
             k -= to_be_removed_count
-            freq[item] -= to_be_removed_count
-            if freq[item] == 0:
-                del freq[item]
+            freq[num] -= to_be_removed_count
+            if freq[num] == 0:
+                del freq[num]
             index += 1
 
         return len(freq)
