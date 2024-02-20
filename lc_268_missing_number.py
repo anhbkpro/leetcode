@@ -5,11 +5,9 @@ class Solution:
     @staticmethod
     def missing_number(nums: List[int]) -> int:
         n = len(nums)
-        ans = 0
-        for num in nums:
-            ans ^= num
-
-        for i in range(n + 1):
-            ans ^= i
+        ans = n
+        for i in range(n):
+            # XOR operation: a ^ b ^ b = a ^ 0 = a
+            ans ^= i ^ nums[i]
 
         return ans
