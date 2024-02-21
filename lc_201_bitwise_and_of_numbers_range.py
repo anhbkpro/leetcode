@@ -10,10 +10,7 @@ class Solution:
         :param right:
         :return:
         """
-        shift = 0
-        # find the common 1-bits
         while left < right:
-            left = left >> 1
-            right = right >> 1
-            shift += 1
-        return left << shift
+            # turn off rightmost 1-bit
+            right &= right - 1
+        return left & right
