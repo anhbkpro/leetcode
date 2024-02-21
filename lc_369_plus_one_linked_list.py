@@ -4,6 +4,12 @@ from lc_61_rotate_list import ListNode
 class Solution:
     @staticmethod
     def plus_one(head: ListNode) -> ListNode:
+        """
+        Given a non-negative integer represented as a linked list of digits, plus one to the integer.
+        The digits are stored such that the most significant digit is at the head of the list.
+        :param head: head of the linked list
+        :return: head of the new linked list
+        """
         # sentinel head to handle edge case of 999 -> 1000 (add 1 more node to the head)
         sentinel = ListNode(0)
         sentinel.next = head
