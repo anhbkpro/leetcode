@@ -10,7 +10,7 @@ class Solution:
         not_nine = sentinel
 
         # find the rightmost not-nine node value
-        # for example, if input is 1929, not_nine will be 2
+        # for example, if input is 192999, not_nine will be 2
         while head:
             if head.val != 9:
                 not_nine = head
