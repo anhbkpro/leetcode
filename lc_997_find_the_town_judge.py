@@ -14,6 +14,7 @@ class Solution:
             out_degrees[f] += 1
 
         for i in range(1, n + 1):
+            # everyone trusts the judge and the judge trusts no one
             if in_degrees[i] == n - 1 and out_degrees[i] == 0:
                 return i
 
