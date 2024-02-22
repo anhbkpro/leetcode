@@ -7,14 +7,14 @@ class Solution:
         if len(trust) < n - 1:
             return -1
 
-        indegrees = [0] * (n + 1)
-        outdegrees = [0] * (n + 1)
+        in_degrees = [0] * (n + 1)
+        out_degrees = [0] * (n + 1)
         for f, s in trust:
-            indegrees[s] += 1
-            outdegrees[f] += 1
+            in_degrees[s] += 1
+            out_degrees[f] += 1
 
         for i in range(1, n + 1):
-            if indegrees[i] == n - 1 and outdegrees[i] == 0:
+            if in_degrees[i] == n - 1 and out_degrees[i] == 0:
                 return i
 
         return -1
