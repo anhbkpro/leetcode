@@ -1,3 +1,19 @@
+# Linter and Formatter
+## Linter
+- `flake8` is used for linting
+- How to run:
+  - `flake8 <filename>.py`
+  - `flake8 <directory>`
+- Integration with `Github Actions`:
+  - Defined in `.github/workflows/python-app.yml`
+  - `flake8` is run on every push to the repository
+  - Build still passes even if `flake8` produces errors
+## Formatter
+- `black` is used for formatting
+- How to run:
+  - `black <filename>.py`
+  - `black <directory>`
+
 # LeetCode 75
 
 | Problem                                                                | Related Topics                                                                    | Question                                                                                        | Solution                                                                                  | Note |
