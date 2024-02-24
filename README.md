@@ -13,6 +13,8 @@
 - How to run:
   - `black <filename>.py`
   - `black <directory>`
+- Integration with `Github Actions`?:
+  - Currently, `black` is not integrated with `Github Actions`, developers are responsible for running `black` before pushing the code :v
 
 # LeetCode 75
 
