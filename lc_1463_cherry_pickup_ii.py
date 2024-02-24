@@ -19,10 +19,12 @@ class Solution:
             if col1 != col2:
                 result += grid[row][col2]
             # transition
-            if row != m-1:
-                result += max(dp(row+1, new_col1, new_col2)
-                              for new_col1 in [col1, col1+1, col1-1]
-                              for new_col2 in [col2, col2+1, col2-1])
+            if row != m - 1:
+                result += max(
+                    dp(row + 1, new_col1, new_col2)
+                    for new_col1 in [col1, col1 + 1, col1 - 1]
+                    for new_col2 in [col2, col2 + 1, col2 - 1]
+                )
             return result
 
-        return dp(0, 0, n-1)
+        return dp(0, 0, n - 1)
