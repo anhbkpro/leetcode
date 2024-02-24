@@ -1,4 +1,4 @@
-from lc_872_leaf_similar_trees import *
+from lc_872_leaf_similar_trees import Solution, TreeNode
 
 tree1 = TreeNode(3)
 tree1.left = TreeNode(5)
