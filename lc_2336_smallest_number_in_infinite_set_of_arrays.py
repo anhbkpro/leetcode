@@ -26,4 +26,3 @@ class SmallestInfiniteSet:
         # We push 'num' in the min-heap if it isn't already present.
         heapq.heappush(self.added_integers, num)
         self.is_present.add(num)
-        
