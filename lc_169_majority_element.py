@@ -10,7 +10,7 @@ class Solution:
         for i in range(n):
             freq[nums[i]] += 1
 
-        for (k, v) in freq.items():
+        for k, v in freq.items():
             if v > n / 2:
                 return k
 
@@ -29,6 +29,6 @@ class Solution:
 
             # when the current number is the candidate, increment count
             # when the current number is not the candidate, decrement count
-            count += (1 if candidate == num else -1)
+            count += 1 if candidate == num else -1
 
         return candidate
