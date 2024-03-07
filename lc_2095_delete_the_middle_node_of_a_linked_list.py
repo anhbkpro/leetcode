@@ -13,10 +13,8 @@ class Solution:
         if not head or not head.next:
             return None
 
-        slow = head
-        fast = head
         prev = None
-
+        slow = fast = head
         while fast and fast.next:
             prev = slow
             slow = slow.next
@@ -25,4 +23,3 @@ class Solution:
         prev.next = slow.next
 
         return head
-
