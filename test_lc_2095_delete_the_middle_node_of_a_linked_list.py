@@ -10,9 +10,9 @@ for i in range(1, len(data)):
 
 def test_delete_middle():
     result = Solution.deleteMiddle(head=head)
-    result_str = ''
+    result_str = ""
     while result:
         result_str += str(result.val)
         result = result.next
 
-    assert result_str == '134126'
+    assert result_str == "134126"
