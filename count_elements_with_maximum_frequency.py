@@ -8,4 +8,4 @@ class Solution:
 
         c = Counter(nums)
         max_freq = max(c.values())
-        return sum([v for k, v in c.items() if v == max_freq])
+        return sum([v for _, v in c.items() if v == max_freq])
