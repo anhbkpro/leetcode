@@ -419,6 +419,7 @@
 | 2966. Divide Array Into Arrays With Max Difference                     | **Greedy**                                                                        | https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/                     | [Solution](./lc_2966_divide_array_into_arrays_with_max_difference.py)                     |      |
 | 3005. Count Elements With Maximum Frequency                            | **Hash Table**                                                                    | https://leetcode.com/problems/count-elements-with-maximum-frequency/                            | [Solution](./lc_3005_count_elements_with_maximum_frequency.py)                            |      |
 | 3062. Winner of the Linked List Game                                   | **Linked List**                                                                   | https://leetcode.com/problems/winner-of-the-linked-list-game/                                   | [Solution](./lc_3062_winner_of_the_linked_list_game.py)                                   |      |
+| 3063. Linked List Frequency                                            | **Linked List**                                                                   | https://leetcode.com/problems/linked-list-frequency/                                            | [Solution](./lc_3063_linked_list_frequency.py)                                            |      |
 
 # Premium Algo 100
 ## Array / String
