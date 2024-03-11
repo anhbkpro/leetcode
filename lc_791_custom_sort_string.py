@@ -7,15 +7,16 @@ class Solution:
         s_counter = Counter(s)
         o_counter = Counter(order)
         ans = []
-        remaining = []
-        visited = set()
+        seen = set()
         for c in order:
             if c in s_counter:
                 ans += [c] * s_counter[c]
+                seen.add(c)
+        remaining = []
         for c in s:
-            if c not in o_counter and c not in visited:
+            if c not in o_counter and c not in seen:
                 remaining += [c] * s_counter[c]
-                visited.add(c)
+                seen.add(c)
 
         ans += remaining
-        return ''.join(ans)
+        return "".join(ans)
