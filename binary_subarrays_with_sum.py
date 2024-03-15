@@ -2,7 +2,8 @@ from typing import List
 
 
 class Solution:
-    def numSubarraysWithSum(self, nums: List[int], goal: int) -> int:
+    @staticmethod
+    def num_sub_arrays_with_sum(nums: List[int], goal: int) -> int:
         total_count = 0
         current_sum = 0
         # {prefix: number of occurrence}
