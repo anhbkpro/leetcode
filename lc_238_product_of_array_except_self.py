@@ -21,14 +21,14 @@ class Solution:
             # elements to the left of index 'i'
             answer[i] = nums[i - 1] * answer[i - 1]
 
-        # R contains the product of all the elements to the right
+        # right contains the product of all the elements to the right
         # Note: for the element at index 'length - 1', there are no elements to the right,
-        # so the R would be 1
-        R = 1
+        # so the right would be 1
+        right = 1
         for i in reversed(range(length)):
-            # For the index 'i', R would contain the
-            # product of all elements to the right. We update R accordingly
-            answer[i] = answer[i] * R
-            R *= nums[i]
+            # For the index 'i', right would contain the
+            # product of all elements to the right. We update right accordingly
+            answer[i] = answer[i] * right
+            right *= nums[i]
 
         return answer
