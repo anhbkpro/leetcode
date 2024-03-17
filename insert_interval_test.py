@@ -1,0 +1,25 @@
+from insert_interval import Solution
+
+
+def test_insert():
+    intervals = [[1, 3], [6, 9]]
+    newInterval = [2, 5]
+    assert Solution().insert(intervals, newInterval) == [[1, 5], [6, 9]]
+    intervals = [[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]]
+    newInterval = [4, 8]
+    assert Solution().insert(intervals, newInterval) == [[1, 2], [3, 10], [12, 16]]
+    intervals = []
+    newInterval = [5, 7]
+    assert Solution().insert(intervals, newInterval) == [[5, 7]]
+    intervals = [[1, 5]]
+    newInterval = [2, 3]
+    assert Solution().insert(intervals, newInterval) == [[1, 5]]
+    intervals = [[1, 5]]
+    newInterval = [2, 7]
+    assert Solution().insert(intervals, newInterval) == [[1, 7]]
+    intervals = [[1, 5]]
+    newInterval = [6, 8]
+    assert Solution().insert(intervals, newInterval) == [[1, 5], [6, 8]]
+    intervals = [[1, 5], [6, 8]]
+    newInterval = [5, 6]
+    assert Solution().insert(intervals, newInterval) == [[1, 8]]
