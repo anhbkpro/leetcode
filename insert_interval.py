@@ -6,7 +6,8 @@ class Solution:
         self, intervals: List[List[int]], newInterval: List[int]
     ) -> List[List[int]]:
         intervals.append(newInterval)
-        intervals.sort(key=lambda x: x[0])
+        # O(NlogN), this can be optimized to O(logN) by using binary search (lc_57_insert_interval.py)
+        intervals.sort(key=lambda x: x[0]) # O(NlogN)
 
         ans = []
         for start, end in intervals:

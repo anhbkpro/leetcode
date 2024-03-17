@@ -9,12 +9,16 @@ class Solution:
         # O(N)
         intervals.insert(position, newInterval)
 
-        answer = []
+        merged = []
         # O(N)
-        for i in range(len(intervals)):
-            if not answer or intervals[i][0] > answer[-1][1]:
-                answer.append(intervals[i])
+        for start, end in intervals:
+            # if the list of merged intervals is empty or if the current interval does not overlap with the previous,
+            # simply append it.
+            if not merged or merged[-1][1] < start:
+                merged.append([start, end])
             else:
-                answer[-1][1] = max(answer[-1][1], intervals[i][1])
+                # otherwise, there is overlap, so we merge the current and previous intervals by updating the end of
+                # the previous interval if it is less than the end of the current interval.
+                merged[-1][1] = max(merged[-1][1], end)
 
-        return answer
+        return merged
