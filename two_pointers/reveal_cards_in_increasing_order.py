@@ -2,7 +2,8 @@ from typing import List
 
 
 class Solution:
-    def deckRevealedIncreasing(self, deck: List[int]) -> List[int]:
+    @staticmethod
+    def deck_revealed_increasing(deck: List[int]) -> List[int]:
         N = len(deck)
         result = [0] * N
         skip = False
