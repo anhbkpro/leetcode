@@ -2,7 +2,7 @@ from typing import List
 
 
 class Solution:
-    def islandPerimeter(self, grid: List[List[int]]) -> int:
+    def island_perimeter(self, grid: List[List[int]]) -> int:
 
         rows = len(grid)
         cols = len(grid[0])
