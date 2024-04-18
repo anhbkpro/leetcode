@@ -9,8 +9,17 @@ class Solution:
         ans = []
         visited_farm = set()
 
-        def dfs(r, c, max_x, max_y):
+        def dfs(r: int, c: int, max_x: int, max_y: int):
+            """
+            Find the right corner of farm land
+            :param r: row
+            :param c: column
+            :param max_x: max row
+            :param max_y: max column
+            :return: max row and max column
+            """
             if r < 0 or r >= m or c < 0 or c >= n or land[r][c] != 1:
+                # if out of bound or not farm land
                 return max_x, max_y
 
             land[r][c] = 0 # mark as visited
