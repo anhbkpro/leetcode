@@ -1,4 +1,4 @@
-from maximal_rectangle import Solution
+from dp.maximal_rectangle import Solution
 
 
 def test_maximalRectangle():

@@ -1,4 +1,4 @@
-from valid_parenthesis_string import Solution
+from dp.valid_parenthesis_string import Solution
 
 
 def test_checkValidString():
