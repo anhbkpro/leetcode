@@ -13,7 +13,7 @@ class Solution:
             if r < 0 or r >= m or c < 0 or c >= n or land[r][c] != 1:
                 return max_x, max_y
 
-            land[r][c] = 0
+            land[r][c] = 0 # mark as visited
             max_x = max(r, max_x)
             max_y = max(c, max_y)
             # print(f"--- found farm land at [{r}, {c}]")
@@ -37,12 +37,12 @@ class Solution:
                 min_y = c
                 max_x = r
                 max_y = c
-                if land[r][c] == 1:
+                if land[r][c] == 1: # found left corner of farm
                     # print(f"start farm [{r}, {c}]")
                     min_x = min(min_x, r)
                     min_y = min(min_y, c)
-                    max_x, max_y = dfs(r, c, max_x, max_y)
-                    # print(max_x, max_y)
+                    max_x, max_y = dfs(r, c, max_x, max_y) # find right corner of farm
+                    # print(f"end farm [{max_x}, {max_y}]")
                     if (min_x, min_y) not in visited_farm:
                         visited_farm.add((r, c))
                         ans.append([min_x, min_y, max_x, max_y])
