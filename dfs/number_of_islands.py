@@ -7,6 +7,9 @@ class Solution:
             return 0
 
         def dfs(i, j):
+            """
+            Depth-first search to mark all connected islands as visited
+            """
             if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]) or grid[i][j] != '1':
                 return
             grid[i][j] = '0'  # mark as visited
