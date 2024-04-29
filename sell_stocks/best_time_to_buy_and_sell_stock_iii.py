@@ -3,6 +3,9 @@ from typing import List
 
 class Solution(object):
     def maxProfit(self, prices: List[int]) -> int:
+        """
+        Approach: This solution is based on the idea of best_time_to_buy_and_sell_stock.py (121. Best Time to Buy and Sell Stock - Easy)
+        """
         t1_cost, t2_cost = float("inf"), float("inf")
         t1_profit, t2_profit = 0, 0
 
