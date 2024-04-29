@@ -14,12 +14,13 @@ class Solution:
                 i += 1
             # find the local min (vally) for this down trend
             valley = prices[i]
+
             while i < len(prices) - 1 and prices[i] <= prices[i + 1]:
                 # up trend
                 i += 1
-
             # find the local max (peak) for this up trend
             peak = prices[i]
+
             max_profit += peak - valley
 
         return max_profit
