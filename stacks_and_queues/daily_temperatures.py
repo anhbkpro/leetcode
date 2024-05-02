@@ -4,22 +4,20 @@ from typing import List
 class Solution:
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
         stack = []  # decreasing monotonic
-        rv = []
-        ans = []
+        ans = [0] * len(temperatures)
         for i in range(len(temperatures) - 1, -1, -1):
-            temp = temperatures[i]
-            while stack and stack[-1][0] <= temp:
+            current_temp = temperatures[i]
+            while stack and stack[-1][0] <= current_temp:
                 stack.pop()
 
             if not stack:
                 # no warmer day
-                rv.append(0)
+                ans[i] = 0
             else:
                 # found warmer day
-                rv.append(stack[-1][1] - i)
-            stack.append([temp, i])
+                next_warmer_day = stack[-1][1]
+                ans[i] = next_warmer_day - i
 
-        for i in range(len(rv) - 1, -1, -1):
-            ans.append(rv[i])
+            stack.append([current_temp, i])
 
         return ans
