@@ -10,8 +10,7 @@ class Solution:
 
         def dfs_backtrack(grid, rows, cols, row, col):
             # Base case: this cell is not in the matrix or has no gold
-            if row < 0 or col < 0 or row == rows or col == cols or \
-                    grid[row][col] == 0:
+            if row < 0 or col < 0 or row == rows or col == cols or grid[row][col] == 0:
                 return 0
             max_gold = 0
 
