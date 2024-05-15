@@ -32,6 +32,5 @@ class Solution:
         # Search for the path with the maximum gold starting from each cell
         for row in range(rows):
             for col in range(cols):
-                max_gold = max(max_gold, dfs_backtrack(grid, rows, cols, row,
-                                                       col))
+                max_gold = max(max_gold, dfs_backtrack(grid, rows, cols, row, col))
         return max_gold
