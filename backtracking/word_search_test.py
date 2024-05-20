@@ -1,4 +1,4 @@
-from word_search import Solution
+from backtracking.word_search import Solution
 
 
 def test_exist():
