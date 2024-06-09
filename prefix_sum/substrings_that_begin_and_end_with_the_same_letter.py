@@ -1,4 +1,6 @@
 class Solution:
+    # Time Complexity: O(n)
+    # Space Complexity: O(1)
     def numberOfSubstrings(self, s: str) -> int:
         n = len(s)
         count = 0
