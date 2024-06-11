@@ -1,4 +1,4 @@
-from stacks_and_queues.online_stock_span import StockSpanner
+from .online_stock_span import StockSpanner
 
 
 def test_online_stock_span():

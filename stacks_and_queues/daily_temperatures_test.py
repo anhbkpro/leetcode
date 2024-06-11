@@ -1,4 +1,4 @@
-from stacks_and_queues.daily_temperatures import Solution
+from .daily_temperatures import Solution
 
 
 def test_daily_temperatures():

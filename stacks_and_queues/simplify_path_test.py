@@ -1,4 +1,4 @@
-from stacks_and_queues.simplify_path import Solution
+from .simplify_path import Solution
 
 
 def test_simplify_path():

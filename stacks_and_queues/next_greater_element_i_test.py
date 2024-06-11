@@ -1,4 +1,4 @@
-from stacks_and_queues.next_greater_element_i import Solution
+from .next_greater_element_i import Solution
 
 
 def test_next_greater_element():
