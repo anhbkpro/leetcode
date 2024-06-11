@@ -1,4 +1,4 @@
-from strings.longest_palindrome import Solution
+from .longest_palindrome import Solution
 
 
 def test_longest_palindrome():

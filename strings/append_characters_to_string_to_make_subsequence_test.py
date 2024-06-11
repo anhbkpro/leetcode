@@ -1,4 +1,4 @@
-from strings.append_characters_to_string_to_make_subsequence import Solution
+from .append_characters_to_string_to_make_subsequence import Solution
 
 
 def test_append_characters_to_string_to_make_subsequence():

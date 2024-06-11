@@ -1,4 +1,4 @@
-from strings.score_of_a_string import Solution
+from .score_of_a_string import Solution
 
 
 def test_score_of_string():

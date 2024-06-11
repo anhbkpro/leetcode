@@ -1,4 +1,4 @@
-from strings.find_common_characters import Solution
+from .find_common_characters import Solution
 
 
 def test_find_common_characters():

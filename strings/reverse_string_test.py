@@ -1,4 +1,4 @@
-from strings.reverse_string import Solution
+from .reverse_string import Solution
 
 
 def test_reverse_string():

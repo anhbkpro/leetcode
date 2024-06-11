@@ -1,4 +1,4 @@
-from strings.length_of_last_word import Solution
+from .length_of_last_word import Solution
 
 
 def test_length_of_last_word():

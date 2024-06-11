@@ -1,4 +1,4 @@
-from strings.isomorphic_strings import Solution
+from .isomorphic_strings import Solution
 
 
 def test_isomorphic_strings():

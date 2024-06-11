@@ -1,4 +1,4 @@
-from strings.intersection_of_two_arrays_ii import Solution
+from .intersection_of_two_arrays_ii import Solution
 
 
 def test_intersection_of_two_arrays():
