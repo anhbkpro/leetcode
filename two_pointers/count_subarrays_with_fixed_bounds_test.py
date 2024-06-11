@@ -1,4 +1,4 @@
-from count_subarrays_with_fixed_bounds import Solution
+from .count_subarrays_with_fixed_bounds import Solution
 
 
 def test_count_sub_arrays():
