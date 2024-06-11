@@ -1,4 +1,4 @@
-from sliding_windows.get_equal_substrings_within_budget import Solution
+from .get_equal_substrings_within_budget import Solution
 
 
 def test_equal_substrings():

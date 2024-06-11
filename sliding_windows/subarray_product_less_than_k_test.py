@@ -1,4 +1,4 @@
-from sliding_windows.subarray_product_less_than_k import Solution
+from .subarray_product_less_than_k import Solution
 
 
 def test_numSubarrayProductLessThanK():

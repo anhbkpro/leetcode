@@ -1,4 +1,4 @@
-from sliding_windows.subarrays_with_k_different_integers import Solution
+from .subarrays_with_k_different_integers import Solution
 
 
 def test_subarraysWithKDistinct():

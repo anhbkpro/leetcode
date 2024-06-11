@@ -1,4 +1,4 @@
-from sliding_windows.count_subarrays_where_max_element_appears_at_least_k_times import Solution
+from .count_subarrays_where_max_element_appears_at_least_k_times import Solution
 
 
 def test_count_sub_arrays():
