@@ -1,4 +1,4 @@
-from monotonic_stack.largest_rectangle_in_histogram import Solution
+from .largest_rectangle_in_histogram import Solution
 
 
 def test_largestRectangleArea():

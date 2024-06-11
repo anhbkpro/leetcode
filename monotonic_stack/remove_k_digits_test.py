@@ -1,4 +1,4 @@
-from monotonic_stack.remove_k_digits import Solution
+from .remove_k_digits import Solution
 
 
 def test_removeKdigits():

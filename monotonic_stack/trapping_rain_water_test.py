@@ -1,4 +1,4 @@
-from monotonic_stack.trapping_rain_water import Solution
+from .trapping_rain_water import Solution
 
 
 def test_trap():

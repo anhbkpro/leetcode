@@ -1,4 +1,4 @@
-from monotonic_stack.maximal_rectangle import Solution
+from .maximal_rectangle import Solution
 
 
 def test_maximal_rectangle():
