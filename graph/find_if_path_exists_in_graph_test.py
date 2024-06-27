@@ -1,4 +1,4 @@
-from graph.find_if_path_exists_in_graph import Solution
+from .find_if_path_exists_in_graph import Solution
 
 
 def test_valid_path():
