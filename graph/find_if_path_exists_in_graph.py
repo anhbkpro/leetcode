@@ -1,8 +1,11 @@
 from typing import List
 from collections import deque
 
+
 class Solution:
-    def valid_path(self, n: int, edges: List[List[int]], source: int, destination: int) -> bool:
+    def valid_path(
+        self, n: int, edges: List[List[int]], source: int, destination: int
+    ) -> bool:
         graph = {}
         for edge in edges:
             if edge[0] not in graph:
