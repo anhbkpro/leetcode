@@ -1,13 +1,13 @@
 from .double_a_number_represented_as_a_linked_list import Solution
-from .linked_list_node import ListNode
+from .linked_list_node import LinkedListNode
 
 
 def test_double_a_number_represented_as_a_linked_list():
     # Input: head = [1,8,9]
     # Output: [3,7,8]
-    head = ListNode(1)
-    head.next = ListNode(8)
-    head.next.next = ListNode(9)
+    head = LinkedListNode(1)
+    head.next = LinkedListNode(8)
+    head.next.next = LinkedListNode(9)
     rv = Solution().doubleIt(head)
     assert rv.val == 3
     assert rv.next.val == 7
@@ -16,9 +16,9 @@ def test_double_a_number_represented_as_a_linked_list():
 
     # Input: head = [9,9,9]
     # Output: [1,9,9,8]
-    head = ListNode(9)
-    head.next = ListNode(9)
-    head.next.next = ListNode(9)
+    head = LinkedListNode(9)
+    head.next = LinkedListNode(9)
+    head.next.next = LinkedListNode(9)
     rv = Solution().doubleIt(head)
     assert rv.val == 1
     assert rv.next.val == 9

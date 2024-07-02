@@ -1,9 +1,9 @@
 from typing import Optional
-from .linked_list_node import ListNode
+from .linked_list_node import LinkedListNode
 
 
 class Solution:
-    def removeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def removeNodes(self, head: Optional[LinkedListNode]) -> Optional[LinkedListNode]:
         stack = []
         current = head
 
@@ -14,7 +14,7 @@ class Solution:
 
         current = stack.pop()
         maximum = current.val
-        result_list = ListNode(maximum)
+        result_list = LinkedListNode(maximum)
 
         # Remove nodes from the stack and add to result
         while stack:
@@ -24,7 +24,7 @@ class Solution:
                 continue
             # Add new node with current's value to front of the result
             else:
-                new_node = ListNode(current.val)
+                new_node = LinkedListNode(current.val)
                 new_node.next = result_list
                 result_list = new_node
                 maximum = current.val

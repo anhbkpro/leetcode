@@ -1,9 +1,9 @@
 from typing import Optional
-from .linked_list_node import ListNode
+from .linked_list_node import LinkedListNode
 
 
 class Solution:
-    def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def deleteMiddle(self, head: Optional[LinkedListNode]) -> Optional[LinkedListNode]:
         if not head or not head.next:
             return head
 

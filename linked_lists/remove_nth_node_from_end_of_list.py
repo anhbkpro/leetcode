@@ -1,10 +1,10 @@
 from typing import Optional
-from .linked_list_node import ListNode
+from .linked_list_node import LinkedListNode
 
 
 class Solution:
-    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
-        dummy = ListNode(-1)
+    def removeNthFromEnd(self, head: Optional[LinkedListNode], n: int) -> Optional[LinkedListNode]:
+        dummy = LinkedListNode(-1)
         dummy.next = head
         ahead = before = dummy
 

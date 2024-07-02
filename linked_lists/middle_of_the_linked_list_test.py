@@ -1,11 +1,11 @@
 from .middle_of_the_linked_list import Solution
-from .linked_list_node import ListNode
+from .linked_list_node import LinkedListNode
 
 
 def test_middle_of_the_linked_list():
-    head = ListNode(1)
-    head.next = ListNode(2)
-    head.next.next = ListNode(3)
-    head.next.next.next = ListNode(4)
-    head.next.next.next.next = ListNode(5)
+    head = LinkedListNode(1)
+    head.next = LinkedListNode(2)
+    head.next.next = LinkedListNode(3)
+    head.next.next.next = LinkedListNode(4)
+    head.next.next.next.next = LinkedListNode(5)
     assert Solution().middleNode(head).val == 3

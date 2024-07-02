@@ -1,9 +1,9 @@
 from typing import Optional
-from .linked_list_node import ListNode
+from .linked_list_node import LinkedListNode
 
 
 class Solution:
-    def doubleIt(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def doubleIt(self, head: Optional[LinkedListNode]) -> Optional[LinkedListNode]:
         stack = []
         while head:
             stack.append(head.val)
@@ -12,13 +12,13 @@ class Solution:
         dummy = None
         carry = 0
         while stack:
-            dummy = ListNode(0, dummy)
+            dummy = LinkedListNode(0, dummy)
             curr_val = (stack[-1] * 2 + carry) % 10
             carry = (stack[-1] * 2 + carry) // 10
             dummy.val = curr_val
             stack.pop()
 
         if carry:
-            dummy = ListNode(carry, dummy)
+            dummy = LinkedListNode(carry, dummy)
 
         return dummy
