@@ -1,4 +1,4 @@
-from bit_manipulation.number_of_wonderful_substrings import Solution
+from .number_of_wonderful_substrings import Solution
 
 
 def test_number_of_wonderful_substrings():

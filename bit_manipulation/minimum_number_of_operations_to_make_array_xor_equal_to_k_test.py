@@ -1,4 +1,4 @@
-from bit_manipulation.minimum_number_of_operations_to_make_array_xor_equal_to_k import Solution
+from .minimum_number_of_operations_to_make_array_xor_equal_to_k import Solution
 
 
 def test_min_operations_xor():

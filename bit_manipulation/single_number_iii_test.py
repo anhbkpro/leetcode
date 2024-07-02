@@ -1,4 +1,4 @@
-from bit_manipulation.single_number_iii import Solution
+from .single_number_iii import Solution
 
 
 def test_single_number():
