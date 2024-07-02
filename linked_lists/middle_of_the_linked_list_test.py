@@ -1,4 +1,5 @@
-from linked_lists.middle_of_the_linked_list import Solution, ListNode
+from .middle_of_the_linked_list import Solution
+from .linked_list_node import ListNode
 
 
 def test_middle_of_the_linked_list():
