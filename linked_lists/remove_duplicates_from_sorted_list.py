@@ -1,17 +1,11 @@
 from typing import Optional
-
-
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from .linked_list_node import ListNode
 
 
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         current = head
-        while current is not None and current.next is not None:
+        while current and current.next:
             if current.next.val == current.val:
                 current.next = current.next.next
             else:

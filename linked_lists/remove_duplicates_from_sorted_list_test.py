@@ -1,4 +1,5 @@
-from linked_lists.remove_duplicates_from_sorted_list import ListNode, Solution
+from .remove_duplicates_from_sorted_list import Solution
+from .linked_list_node import ListNode
 
 
 def test_remove_duplicates_from_sorted_list():
