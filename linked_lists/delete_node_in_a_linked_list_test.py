@@ -1,4 +1,5 @@
-from linked_lists.delete_node_in_a_linked_list import ListNode, Solution
+from .delete_node_in_a_linked_list import Solution
+from .linked_list_node import ListNode
 
 
 def test_delete_node_in_a_linked_list():

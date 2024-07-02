@@ -1,4 +1,5 @@
-from linked_lists.remove_nodes_from_linked_list import ListNode, Solution
+from .remove_nodes_from_linked_list import Solution
+from .linked_list_node import ListNode
 
 
 def test_remove_nodes_from_linked_list():

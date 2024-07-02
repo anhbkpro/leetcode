@@ -1,4 +1,5 @@
-from linked_lists.double_a_number_represented_as_a_linked_list import ListNode, Solution
+from .double_a_number_represented_as_a_linked_list import Solution
+from .linked_list_node import ListNode
 
 
 def test_double_a_number_represented_as_a_linked_list():
