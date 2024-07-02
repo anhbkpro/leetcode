@@ -1,4 +1,4 @@
-from arraystrings.squares_of_a_sorted_array import Solution
+from .squares_of_a_sorted_array import Solution
 
 
 def test_squares_of_a_sorted_array():

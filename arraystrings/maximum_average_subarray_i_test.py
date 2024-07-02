@@ -1,4 +1,4 @@
-from arraystrings.maximum_average_subarray_i import Solution
+from .maximum_average_subarray_i import Solution
 
 
 def test_maximum_average_subarray():

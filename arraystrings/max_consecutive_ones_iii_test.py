@@ -1,4 +1,4 @@
-from arraystrings.max_consecutive_ones_iii import Solution
+from .max_consecutive_ones_iii import Solution
 
 
 def test_max_consecutive_ones():
