@@ -2,7 +2,7 @@ from .remove_nth_node_from_end_of_list import Solution
 from .linked_list_node import LinkedListNode
 
 
-def test_removeNthFromEnd():
+def test_remove_nth_from_end():
     solution = Solution()
 
     # Example 1
