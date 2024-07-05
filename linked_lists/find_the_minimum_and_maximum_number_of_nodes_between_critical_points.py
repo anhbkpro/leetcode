@@ -4,34 +4,47 @@ from .linked_list_node import LinkedListNode
 
 class Solution:
     def nodesBetweenCriticalPoints(self, head: Optional[LinkedListNode]) -> List[int]:
-        ans = []
-        index = 0
-        while head:
-            if self.isCriticalPoint(head):
-                ans.append(index + 1)
-            head = head.next
-            index += 1
+        result = [-1, -1]
 
-        if len(ans) < 2:
-            return [-1, -1]
+        # Initialize minimum distance to the maximum possible value
+        min_distance = float("inf")
 
-        maxDistance = ans[-1] - ans[0]
-        minDistance = ans[1] - ans[0]
-        for i in range(1, len(ans)):
-            minDistance = min(minDistance, ans[i] - ans[i-1])
+        # Pointers to track the previous node, current node, and indices
+        previous_node = head
+        current_node = head.next
+        current_index = 1
+        previous_critical_index = 0
+        first_critical_index = 0
 
-        return [minDistance, maxDistance]
+        while current_node.next is not None:
+            # Check if the current node is a local maxima or minima
+            if (
+                current_node.val < previous_node.val
+                and current_node.val < current_node.next.val
+            ) or (
+                current_node.val > previous_node.val
+                and current_node.val > current_node.next.val
+            ):
 
-    def isCriticalPoint(self, head: Optional[LinkedListNode]) -> bool:
-        if head is None:
-            return False
-        if head.next is None or head.next.next is None:
-            return False
-        if head.val > head.next.val and head.next.next.val > head.next.val:
-            return True
-        if head.val < head.next.val and head.next.next.val < head.next.val:
-            return True
-        return False
+                # If this is the first critical point found
+                if previous_critical_index == 0:
+                    previous_critical_index = current_index
+                    first_critical_index = current_index
+                else:
+                    # Calculate the minimum distance between critical points
+                    min_distance = min(
+                        min_distance, current_index - previous_critical_index
+                    )
+                    previous_critical_index = current_index
 
+            # Move to the next node and update indices
+            current_index += 1
+            previous_node = current_node
+            current_node = current_node.next
 
+        # If at least two critical points were found
+        if min_distance != float("inf"):
+            max_distance = previous_critical_index - first_critical_index
+            result = [min_distance, max_distance]
 
+        return result

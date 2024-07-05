@@ -1,4 +1,6 @@
-from .find_the_minimum_and_maximum_number_of_nodes_between_critical_points import Solution
+from .find_the_minimum_and_maximum_number_of_nodes_between_critical_points import (
+    Solution,
+)
 from .linked_list_node import LinkedListNode
 
 

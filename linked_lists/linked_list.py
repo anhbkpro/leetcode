@@ -1,5 +1,6 @@
 from .linked_list_node import LinkedListNode
 
+
 # Template for the linked list
 class LinkedList:
     # __init__ will be used to make a LinkedList type object.
