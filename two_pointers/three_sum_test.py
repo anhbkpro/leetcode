@@ -1,4 +1,4 @@
-from two_pointers.sort_3sum import Solution
+from two_pointers.three_sum import Solution
 
 
 def test_sort_3sum():
