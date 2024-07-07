@@ -1,4 +1,3 @@
-
 class Solution:
     def divide_by_two(self, s):
         s.pop()
