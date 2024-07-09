@@ -7,7 +7,7 @@ class Solution:
         total_wait_time = 0
         for arrival, time in customers:
             start_serve = max(arrival, last_serve_time)
-            wait_time = start_serve + time - arrival
-            total_wait_time += wait_time
             last_serve_time = start_serve + time
+            wait_time = last_serve_time - arrival
+            total_wait_time += wait_time
         return total_wait_time/len(customers)
