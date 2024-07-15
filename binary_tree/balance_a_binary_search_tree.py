@@ -22,9 +22,7 @@ class Solution:
         inorder.append(root.val)
         self.inorder_traversal(root.right, inorder)
 
-    def create_balanced_bst(
-        self, inorder: list, start: int, end: int
-    ) -> TreeNode:
+    def create_balanced_bst(self, inorder: list, start: int, end: int) -> TreeNode:
         # Base case: if the start index is greater than the end index, return None
         if start > end:
             return None

@@ -3,11 +3,8 @@ from typing import List, Optional
 from .binary_tree_node import TreeNode
 
 
-
 class Solution:
-    def createBinaryTree(
-        self, descriptions: List[List[int]]
-    ) -> Optional[TreeNode]:
+    def createBinaryTree(self, descriptions: List[List[int]]) -> Optional[TreeNode]:
         # Sets to track unique children and parents
         children = set()
         parents = set()
