@@ -40,4 +40,8 @@ class Solution:
                     if indegree[neighbor] == 0:
                         zero_indegree_queue.append(neighbor)
 
-        return topological_sorted_order if len(topological_sorted_order) == numCourses else []
+        return (
+            topological_sorted_order
+            if len(topological_sorted_order) == numCourses
+            else []
+        )
