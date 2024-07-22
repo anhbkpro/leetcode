@@ -1,7 +1,7 @@
 from dp.maximal_rectangle import Solution
 
 
-def test_maximalRectangle():
+def test_maximal_rectangle():
     assert (
         Solution().maximalRectangle(
             [
