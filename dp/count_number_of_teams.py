@@ -44,6 +44,7 @@ class Solution:
         # Recursively count teams with increasing ratings
         for next_index in range(current_index + 1, n):
             if rating[next_index] > rating[current_index]:
+                print(rating, next_index, team_size + 1, increasing_cache)
                 valid_teams += self._count_increasing_teams(
                     rating, next_index, team_size + 1, increasing_cache
                 )
