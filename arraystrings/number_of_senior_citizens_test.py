@@ -8,3 +8,4 @@ def test_count_seniors():
         )
         == 2
     )
+    assert Solution().countSeniors(details=["1313579440F2036", "2921522980M5644"]) == 0
