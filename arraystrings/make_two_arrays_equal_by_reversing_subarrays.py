@@ -4,20 +4,8 @@ from typing import List
 class Solution:
     def canBeEqual(self, target: List[int], arr: List[int]) -> bool:
         # Dictionary to maintain frequency count for arr
-        arrFreq = {}
-        for num in arr:
-            if num not in arrFreq:
-                arrFreq[num] = 1
-            else:
-                arrFreq[num] += 1
-
-        # Dictionary to maintain frequency count for arr
-        targetFreq = {}
-        for num in target:
-            if num not in targetFreq:
-                targetFreq[num] = 1
-            else:
-                targetFreq[num] += 1
+        arrFreq = self._build_dict(arr)
+        targetFreq = self._build_dict(target)
 
         # Number of distinct elements of the 2 arrays are not equal
         if len(arrFreq) != len(targetFreq):
@@ -29,3 +17,12 @@ class Solution:
                 return False
 
         return True
+
+    def _build_dict(self, arr: List[int]) -> dict:
+        freq = {}
+        for num in arr:
+            if num not in freq:
+                freq[num] = 1
+            else:
+                freq[num] += 1
+        return freq
