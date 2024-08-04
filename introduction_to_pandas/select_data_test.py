@@ -1,6 +1,7 @@
 from .select_data import selectData
 import pandas as pd
 
+
 def test_select_data():
     # Example 1:
     # Input:
@@ -19,7 +20,12 @@ def test_select_data():
     # | Ulysses | 13  |
     # +---------+-----+
     students = pd.DataFrame(
-        [[101, "Ulysses", 13], [53, "William", 10], [128, "Henry", 6], [3, "Henry", 11]],
+        [
+            [101, "Ulysses", 13],
+            [53, "William", 10],
+            [128, "Henry", 6],
+            [3, "Henry", 11],
+        ],
         columns=["student_id", "name", "age"],
     )
     students = selectData(students)
