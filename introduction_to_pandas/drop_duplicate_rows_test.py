@@ -2,7 +2,7 @@ from .drop_duplicate_rows import dropDuplicateEmails
 import pandas as pd
 
 
-def test_dropDuplicateEmails():
+def test_drop_duplicate_emails():
     # Input:
     # +-------------+---------+---------------------+
     # | customer_id | name    | email               |
