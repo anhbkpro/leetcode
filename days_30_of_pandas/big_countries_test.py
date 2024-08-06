@@ -36,5 +36,7 @@ def test_big_countries():
     }
     expected = pd.DataFrame(expected)
     assert big_countries(world)["name"].to_list() == expected["name"].to_list()
-    assert big_countries(world)["population"].to_list() == expected["population"].to_list()
+    assert (
+        big_countries(world)["population"].to_list() == expected["population"].to_list()
+    )
     assert big_countries(world)["area"].to_list() == expected["area"].to_list()
