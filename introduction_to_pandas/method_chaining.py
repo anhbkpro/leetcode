@@ -1,5 +1,8 @@
 import pandas as pd
 
+
 def findHeavyAnimals(animals: pd.DataFrame) -> pd.DataFrame:
-    animals = animals[animals["weight"] > 100].sort_values(by='weight', ascending=False)[["name"]]
+    filtered_animals = animals[animals["weight"] > 100]
+    sorted_animals = filtered_animals.sort_values(by="weight", ascending=False)
+    animals = sorted_animals[["name"]]
     return animals
