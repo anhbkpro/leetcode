@@ -33,4 +33,5 @@ def test_find_heavy_animals():
         }
     )
     ans = findHeavyAnimals(animals)
-    expected = pd.DataFrame({"name": ["Tatiana", "Jonathan", "Tommy", "Alex"]})
+    expected = ["Tatiana", "Jonathan", "Tommy", "Alex"]
+    assert ans["name"].tolist() == expected
