@@ -35,8 +35,26 @@ def test_melt_table():
     ans = meltTable(report)
     expected = pd.DataFrame(
         {
-            "product": ["Umbrella", "SleepingBag", "Umbrella", "SleepingBag", "Umbrella", "SleepingBag", "Umbrella", "SleepingBag"],
-            "quarter": ["quarter_1", "quarter_1", "quarter_2", "quarter_2", "quarter_3", "quarter_3", "quarter_4", "quarter_4"],
+            "product": [
+                "Umbrella",
+                "SleepingBag",
+                "Umbrella",
+                "SleepingBag",
+                "Umbrella",
+                "SleepingBag",
+                "Umbrella",
+                "SleepingBag",
+            ],
+            "quarter": [
+                "quarter_1",
+                "quarter_1",
+                "quarter_2",
+                "quarter_2",
+                "quarter_3",
+                "quarter_3",
+                "quarter_4",
+                "quarter_4",
+            ],
             "sales": [417, 800, 224, 936, 379, 93, 611, 875],
         }
     )
