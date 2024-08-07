@@ -15,31 +15,34 @@ class Solution:
 
         # Process the number in chunks of 1000
         while num > 0:
-            # Process the last three digits
+            # Process the last three digits, 1234567 -> 567
             if num % 1000 != 0:
                 group_result = ""
                 part = num % 1000
 
                 # Handle hundreds
                 if part >= 100:
-                    group_result += ones[part // 100] + " Hundred "
-                    part %= 100
+                    group_result += ones[part // 100] + " Hundred " # 567 -> Five Hundred
+                    part %= 100 # 567 -> 67
 
                 # Handle tens and units
                 if part >= 20:
-                    group_result += tens[part // 10] + " "
-                    part %= 10
+                    group_result += tens[part // 10] + " " # 67 -> Sixty
+                    part %= 10 # 67 -> 7
 
                 # Handle units
                 if part > 0:
-                    group_result += ones[part] + " "
+                    group_result += ones[part] + " " # 7 -> Seven
 
+                # 1234 [567], group_index = 0 -> "Five Hundred Sixty Seven"
+                # 1 [234] 567, group_index = 1 -> "Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
+                # [1] 234567, group_index = 2 -> "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
                 # Append the scale (thousand, million, billion) for the current group
                 group_result += thousands[group_index] + " "
                 # Insert the group result at the beginning of the final result
                 result = group_result + result
             # Move to the next chunk of 1000
-            num //= 1000
+            num //= 1000 # 1234567 -> 1234
             group_index += 1
 
         return result.strip()
