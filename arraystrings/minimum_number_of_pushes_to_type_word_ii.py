@@ -30,8 +30,6 @@ class Solution:
 
         # Calculate total number of presses
         while frequency_queue:
-            total_pushes += (1 + (index // 8)) * (
-                -heapq.heappop(frequency_queue)
-            )
+            total_pushes += (1 + (index // 8)) * (-heapq.heappop(frequency_queue))
             index += 1
         return total_pushes
