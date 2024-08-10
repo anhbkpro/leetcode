@@ -16,10 +16,16 @@ class Solution:
         return num_islands
 
     def _dfs(self, grid, r, c):
+        """
+        Start exploring the island from the current cell.
+        """
         if r < 0 or c < 0 or r >= len(grid) or c >= len(grid[0]) or grid[r][c] == "0":
+            # We are out of the grid or we reached water, so we can safely return
             return
 
+        # Mark as visited, this will prevent us from visiting it again in the future
         grid[r][c] = "0"
         directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         for dr, dc in directions:
+            # Visit all the neighbors
             self._dfs(grid, r + dr, c + dc)
