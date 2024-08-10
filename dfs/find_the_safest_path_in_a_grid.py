@@ -84,7 +84,11 @@ class Solution:
             for d in self.dir:
                 di, dj = curr[0] + d[0], curr[1] + d[1]
                 # Check if the neighboring cell is valid and unvisited
-                if self.isValidCell(grid, di, dj) and not visited[di][dj] and grid[di][dj] >= min_safeness:
+                if (
+                    self.isValidCell(grid, di, dj)
+                    and not visited[di][dj]
+                    and grid[di][dj] >= min_safeness
+                ):
                     visited[di][dj] = True
                     traversal_queue.append((di, dj))
 

@@ -21,6 +21,10 @@ class Solution:
             if is_leaf(node):
                 return True if node.val == 1 else False
 
-            return helper(node.left) and helper(node.right) if node.val == 3 else helper(node.left) or helper(node.right)
+            return (
+                helper(node.left) and helper(node.right)
+                if node.val == 3
+                else helper(node.left) or helper(node.right)
+            )
 
         return helper(root)

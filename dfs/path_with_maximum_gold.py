@@ -20,10 +20,16 @@ class Solution:
 
             # Backtrack in each of the four directions
             for direction in range(4):
-                max_gold = max(max_gold,
-                               dfs_backtrack(grid, rows, cols,
-                                             DIRECTIONS[direction] + row,
-                                             DIRECTIONS[direction + 1] + col))
+                max_gold = max(
+                    max_gold,
+                    dfs_backtrack(
+                        grid,
+                        rows,
+                        cols,
+                        DIRECTIONS[direction] + row,
+                        DIRECTIONS[direction + 1] + col,
+                    ),
+                )
 
             # Set the cell back to its original value
             grid[row][col] = original_val

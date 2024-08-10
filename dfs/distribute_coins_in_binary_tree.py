@@ -14,7 +14,8 @@ class Solution:
         self.moves = 0
 
         def dfs(current):
-            if current == None: return 0
+            if current == None:
+                return 0
 
             # Calculate the coins each subtree has available to exchange
             left_coins = dfs(current.left)

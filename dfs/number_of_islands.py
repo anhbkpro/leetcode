@@ -6,23 +6,20 @@ class Solution:
         if not grid:
             return 0
 
-        def dfs(i, j):
-            """
-            Depth-first search to mark all connected islands as visited
-            """
-            if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]) or grid[i][j] != '1':
-                return
-            grid[i][j] = '0'  # mark as visited
-            dfs(i + 1, j)
-            dfs(i - 1, j)
-            dfs(i, j + 1)
-            dfs(i, j - 1)
-
         num_islands = 0
-        for i in range(len(grid)):
-            for j in range(len(grid[0])):
-                if grid[i][j] == '1':
+        for r in range(len(grid)):
+            for c in range(len(grid[0])):
+                if grid[r][c] == "1":
                     num_islands += 1
-                    dfs(i, j)
+                    self._dfs(grid, r, c)
 
         return num_islands
+
+    def _dfs(self, grid, r, c):
+        if r < 0 or c < 0 or r >= len(grid) or c >= len(grid[0]) or grid[r][c] == "0":
+            return
+
+        grid[r][c] = "0"
+        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+        for dr, dc in directions:
+            self._dfs(grid, r + dr, c + dc)
