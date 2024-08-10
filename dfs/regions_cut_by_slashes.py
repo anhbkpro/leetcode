@@ -50,6 +50,17 @@ class Solution:
         grid[row][col] = 1
 
     def _is_within_grid_bounds(self, grid: List[List[int]], row: int, col: int) -> bool:
+        """
+        Check if the given row and column are within the bounds of the grid.
+
+        Parameters:
+            grid (List[List[int]]): The grid to check bounds within.
+            row (int): The row index to check.
+            col (int): The column index to check.
+
+        Returns:
+            bool: True if the row and column are within the grid bounds, False otherwise.
+        """
         grid_size = len(grid)
         return 0 <= row < grid_size and 0 <= col < grid_size
 
