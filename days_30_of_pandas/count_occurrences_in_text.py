@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def count_occurrences(files: pd.DataFrame) -> pd.DataFrame:
     bull_count = files[
         files["content"].str.contains(r"(\s+bull\s+)", regex=True, case=False)
