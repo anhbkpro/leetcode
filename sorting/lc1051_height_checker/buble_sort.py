@@ -8,7 +8,10 @@ class Solution:
             for i in range(n - 1):
                 for j in range(n - i - 1):
                     if sorted_heights[j] > sorted_heights[j + 1]:
-                        sorted_heights[j], sorted_heights[j + 1] = sorted_heights[j + 1], sorted_heights[j]
+                        sorted_heights[j], sorted_heights[j + 1] = (
+                            sorted_heights[j + 1],
+                            sorted_heights[j],
+                        )
 
         sorted_heights = heights[:]
         bubble_sort()

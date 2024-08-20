@@ -9,13 +9,13 @@ class Solution:
         f2 = Counter(arr2)
         remaining = []
         for num in arr2:
-            ans.extend([num]*f1[num])
+            ans.extend([num] * f1[num])
 
         visited = set()
         for num in arr1:
             if num in f2 or num in visited:
                 continue
-            remaining.extend([num]*f1[num])
+            remaining.extend([num] * f1[num])
             visited.add(num)
 
         remaining.sort()

@@ -2,9 +2,7 @@ from typing import List
 
 
 class Solution:
-    def maxBoxesInWarehouse(
-        self, boxes: List[int], warehouse: List[int]
-    ) -> int:
+    def maxBoxesInWarehouse(self, boxes: List[int], warehouse: List[int]) -> int:
         # Sort the boxes by height
 
         boxes.sort()

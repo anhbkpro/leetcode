@@ -2,9 +2,11 @@ from typing import List
 
 
 class Solution:
-    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+    def insert(
+        self, intervals: List[List[int]], newInterval: List[int]
+    ) -> List[List[int]]:
         intervals.append(newInterval)
-        intervals.sort(key = lambda x: x[0])
+        intervals.sort(key=lambda x: x[0])
 
         merged = []
         for start, end in intervals:
