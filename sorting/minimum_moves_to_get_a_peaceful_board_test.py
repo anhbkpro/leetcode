@@ -1,4 +1,4 @@
-from minimum_moves_to_get_a_peaceful_board import Solution
+from .minimum_moves_to_get_a_peaceful_board import Solution
 
 
 def test_min_moves():
