@@ -11,5 +11,6 @@ class Solution:
             # Total cost of painting nth house blue.
             costs[n][2] += min(costs[n + 1][0], costs[n + 1][1])
 
-        if len(costs) == 0: return 0
-        return min(costs[0]) # Return the minimum in the first row.
+        if len(costs) == 0:
+            return 0
+        return min(costs[0])  # Return the minimum in the first row.

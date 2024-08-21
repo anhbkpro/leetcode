@@ -12,7 +12,7 @@ class Solution:
 
             # State is not visited yet
             dp[i][c] = 0
-            match = c == (ord(s[i]) - ord('a'))
+            match = c == (ord(s[i]) - ord("a"))
             if match:
                 dp[i][c] = 1
 

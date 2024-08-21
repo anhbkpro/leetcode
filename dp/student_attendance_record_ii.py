@@ -22,16 +22,11 @@ class Solution:
             # We choose 'P' for the current position.
             count = eligible_combinations(n - 1, total_absences, 0)
             # We choose 'A' for the current position.
-            count = (
-                count +
-                eligible_combinations(n - 1, total_absences + 1, 0)
-            ) % MOD
+            count = (count + eligible_combinations(n - 1, total_absences + 1, 0)) % MOD
             # We choose 'L' for the current position.
             count = (
-                count +
-                eligible_combinations(n - 1,
-                                      total_absences,
-                                      consecutive_lates + 1)
+                count
+                + eligible_combinations(n - 1, total_absences, consecutive_lates + 1)
             ) % MOD
 
             # Return and store the current sub-problem result in the cache.

@@ -12,9 +12,7 @@ class Solution:
         for start_index in range(n):
             teams += self._count_increasing_teams(
                 rating, start_index, 1, increasing_cache
-            ) + self._count_decreasing_teams(
-                rating, start_index, 1, decreasing_cache
-            )
+            ) + self._count_decreasing_teams(rating, start_index, 1, decreasing_cache)
 
         return teams
 

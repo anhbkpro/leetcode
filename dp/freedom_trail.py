@@ -28,10 +28,12 @@ class Solution:
             min_steps = inf
             for char_index in range(ring_len):
                 if ring[char_index] == key[key_index]:
-                    min_steps = min(min_steps,
-                                    count_steps(ring_index, char_index)
-                                    + 1
-                                    + try_lock(char_index, key_index + 1))
+                    min_steps = min(
+                        min_steps,
+                        count_steps(ring_index, char_index)
+                        + 1
+                        + try_lock(char_index, key_index + 1),
+                    )
 
             best_steps[(ring_index, key_index)] = min_steps
             return min_steps

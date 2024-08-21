@@ -23,9 +23,7 @@ class Solution:
 
             # Calculate the current row's maximum points
             for col in range(cols):
-                current_row[col] = points[row][col] + max(
-                    left_max[col], right_max[col]
-                )
+                current_row[col] = points[row][col] + max(left_max[col], right_max[col])
 
             # Update previous_row for the next iteration
             previous_row = current_row

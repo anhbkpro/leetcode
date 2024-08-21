@@ -7,9 +7,7 @@ class Solution:
         memo = [[0 for _ in range(shelfWidth + 1)] for _ in range(len(books))]
         return self._dpHelper(books, shelfWidth, memo, 0, shelfWidth, 0)
 
-    def _dpHelper(
-        self, books, shelf_width, memo, i, remaining_shelf_width, max_height
-    ):
+    def _dpHelper(self, books, shelf_width, memo, i, remaining_shelf_width, max_height):
         current_book = books[i]
         max_height_updated = max(max_height, current_book[1])
         if i == len(books) - 1:
@@ -41,9 +39,7 @@ class Solution:
                     max_height_updated,
                 )
                 # Store result in cache
-                memo[i][remaining_shelf_width] = min(
-                    option_1_height, option_2_height
-                )
+                memo[i][remaining_shelf_width] = min(option_1_height, option_2_height)
                 return memo[i][remaining_shelf_width]
             memo[i][remaining_shelf_width] = option_1_height
             return memo[i][remaining_shelf_width]

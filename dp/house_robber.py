@@ -23,9 +23,7 @@ class Solution:
             return self.memo[i]
 
         # Recursive relation evaluation to get the optimal answer.
-        ans = max(
-            self.robFrom(i + 1, nums), self.robFrom(i + 2, nums) + nums[i]
-        )
+        ans = max(self.robFrom(i + 1, nums), self.robFrom(i + 2, nums) + nums[i])
 
         # Cache for future use.
         self.memo[i] = ans
