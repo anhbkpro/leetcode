@@ -10,4 +10,4 @@ class Solution:
             last_serve_time = start_serve + time
             wait_time = last_serve_time - arrival
             total_wait_time += wait_time
-        return total_wait_time/len(customers)
+        return total_wait_time / len(customers)
