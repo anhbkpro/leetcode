@@ -28,7 +28,13 @@ class Solution(object):
             return True
 
         # Check the current status, before jumping into backtracking
-        if row < 0 or row == self.ROWS or col < 0 or col == self.COLS or self.board[row][col] != suffix[0]:
+        if (
+            row < 0
+            or row == self.ROWS
+            or col < 0
+            or col == self.COLS
+            or self.board[row][col] != suffix[0]
+        ):
             return False
 
         ret = False

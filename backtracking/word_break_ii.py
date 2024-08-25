@@ -30,8 +30,6 @@ class Solution:
             if word in word_set:
                 current_sentence.append(word)
                 # Recursively call backtrack with the new end index
-                self._backtrack(
-                    s, word_set, current_sentence, results, end_index
-                )
+                self._backtrack(s, word_set, current_sentence, results, end_index)
                 # Remove the last word to backtrack
                 current_sentence.pop()

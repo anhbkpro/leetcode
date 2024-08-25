@@ -2,7 +2,9 @@ from typing import List
 
 
 class Solution:
-    def maxScoreWords(self, words: List[str], letters: List[str], score: List[int]) -> int:
+    def maxScoreWords(
+        self, words: List[str], letters: List[str], score: List[int]
+    ) -> int:
         W = len(words)
         # Count how many times each letter occurs
         freq = [0 for i in range(26)]
