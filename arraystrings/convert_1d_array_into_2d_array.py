@@ -9,6 +9,6 @@ class Solution:
             return ans
 
         for i in range(0, len_1d, n):
-            ans.append(original[i:i + n])
+            ans.append(original[i : i + n])
 
         return ans
