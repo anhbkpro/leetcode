@@ -3,9 +3,7 @@ from .binary_tree_node import TreeNode
 
 
 class Solution:
-    def getDirections(
-        self, root: TreeNode, startValue: int, destValue: int
-    ) -> str:
+    def getDirections(self, root: TreeNode, startValue: int, destValue: int) -> str:
         # Map to store parent nodes
         parent_map = {}
 
@@ -36,19 +34,13 @@ class Solution:
                     visited_nodes.add(parent_node)
 
             # Check and add left child
-            if (
-                current_element.left
-                and current_element.left not in visited_nodes
-            ):
+            if current_element.left and current_element.left not in visited_nodes:
                 q.append(current_element.left)
                 path_tracker[current_element.left] = (current_element, "L")
                 visited_nodes.add(current_element.left)
 
             # Check and add right child
-            if (
-                current_element.right
-                and current_element.right not in visited_nodes
-            ):
+            if current_element.right and current_element.right not in visited_nodes:
                 q.append(current_element.right)
                 path_tracker[current_element.right] = (current_element, "R")
                 visited_nodes.add(current_element.right)

@@ -18,5 +18,3 @@ def test_del_nodes():
     assert result[0].val == 6
     assert result[1].val == 7
     assert result[2].val == 1
-
-
