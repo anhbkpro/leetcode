@@ -33,6 +33,7 @@ def test_remove_duplicates_from_an_unsorted_linked_list():
     actual = Solution().deleteDuplicatesUnsorted(head)
     assert are_equal(actual, expected.head)
 
+
 def are_equal(head1: LinkedListNode, head2: LinkedListNode) -> bool:
     while head1 and head2:
         if head1.val != head2.val:

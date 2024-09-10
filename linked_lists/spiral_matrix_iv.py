@@ -18,12 +18,7 @@ class Solution:
 
             # If we bump into an edge or an already filled cell, change the
             # direction.
-            if (
-                min(newi, newj) < 0
-                or newi >= m
-                or newj >= n
-                or res[newi][newj] != -1
-            ):
+            if min(newi, newj) < 0 or newi >= m or newj >= n or res[newi][newj] != -1:
                 cur_d = (cur_d + 1) % 4
             i += movement[cur_d][0]
             j += movement[cur_d][1]
