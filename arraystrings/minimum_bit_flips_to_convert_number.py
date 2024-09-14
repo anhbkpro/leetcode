@@ -14,7 +14,11 @@ class Solution:
             if s != g:
                 ans += 1
 
-        return ans + start_bin[:(start_len - min_len)].count("1") + goal_bin[:(goal_len - min_len)].count("1")
+        return (
+            ans
+            + start_bin[: (start_len - min_len)].count("1")
+            + goal_bin[: (goal_len - min_len)].count("1")
+        )
 
     def minBitFlipsByShiftBit(self, start: int, goal: int) -> int:
         count = 0
