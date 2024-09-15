@@ -35,6 +35,7 @@ class Solution:
 
         except StopIteration:
             # One or both of the slot lists have been exhausted
+            print("One or both of the slot lists have been exhausted")
             pass
 
         return []
