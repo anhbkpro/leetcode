@@ -1,4 +1,4 @@
-from .implement_trie_prefix_tree  import Trie
+from .implement_trie_prefix_tree import Trie
 
 
 def test_trie():
