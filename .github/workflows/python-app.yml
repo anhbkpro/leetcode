@@ -32,6 +32,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
+      - name: Check workflow file location
+        run: |
+          pwd
+          ls -la ${{ github.workspace }}/.github/workflows
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
