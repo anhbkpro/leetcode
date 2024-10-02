@@ -7,7 +7,7 @@ class Solution:
         """
         seen = set()
         for start in range(0, n - L + 1):
-            tmp = S[start:start + L]
+            tmp = S[start : start + L]
             if tmp in seen:
                 return start
             seen.add(tmp)
