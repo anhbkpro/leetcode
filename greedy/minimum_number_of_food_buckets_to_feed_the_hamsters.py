@@ -4,12 +4,15 @@ class Solution:
             return -1
 
         count = hamsters.count("H")
-        if len(hamsters) == count or hamsters.startswith("HH") or hamsters.endswith("HH"):
+        if (
+            len(hamsters) == count
+            or hamsters.startswith("HH")
+            or hamsters.endswith("HH")
+        ):
             return -1
 
         ans = 0
         count_diff_1 = hamsters.count("H.H")
-        print(count, count_diff_1)
         if not count_diff_1:
             return count
 
