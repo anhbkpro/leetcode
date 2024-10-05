@@ -25,9 +25,7 @@ class Solution:
         return low
 
     # Count number of pairs with distance <= max_distance using a moving window
-    def _count_pairs_with_max_distance(
-        self, nums: List[int], max_distance: int
-    ) -> int:
+    def _count_pairs_with_max_distance(self, nums: List[int], max_distance: int) -> int:
         count = 0
         array_size = len(nums)
         left = 0

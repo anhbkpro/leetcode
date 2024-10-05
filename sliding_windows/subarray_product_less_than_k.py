@@ -19,10 +19,14 @@ class Solution:
 
             # Shrink the window from the left while the product is greater than or equal to k
             while product >= k:
-                product //= nums[left]  # Remove the element at the left pointer from the product
+                product //= nums[
+                    left
+                ]  # Remove the element at the left pointer from the product
                 left += 1
 
             # Update the total count by adding the number of valid sub-arrays with the current window size
-            total_count += right - left + 1 # right - left + 1 represents the current window size
+            total_count += (
+                right - left + 1
+            )  # right - left + 1 represents the current window size
 
         return total_count
