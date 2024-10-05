@@ -26,3 +26,35 @@ class Solution:
                 return True
 
         return False
+
+
+    def checkInclusionFreq(self, s1: str, s2: str) -> bool:
+        from collections import Counter
+
+        if len(s1) > len(s2):
+            return False
+
+        counter = Counter(s1)
+        enough = Counter()
+        l, r = 0, 0
+        while r < len(s2):
+            c = s2[r]
+            if c not in counter:
+                l = r
+                enough = {}
+                r += 1
+                continue
+
+            enough[c] = enough.get(c, 0) + 1
+            while enough[c] > counter[c]:
+                if s2[l] in enough:
+                    enough[s2[l]] -= 1
+                l += 1
+                if not enough[s2[l]]:
+                    del enough[s2[l]]
+            r += 1
+
+            if enough == counter:
+                return True
+
+        return False
