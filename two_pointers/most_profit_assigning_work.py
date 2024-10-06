@@ -5,9 +5,7 @@ class Solution:
     def maxProfitAssignment(
         self, difficulty: List[int], profit: List[int], worker: List[int]
     ) -> int:
-        job_profile = [
-            (difficulty[i], profit[i]) for i in range(len(difficulty))
-        ]
+        job_profile = [(difficulty[i], profit[i]) for i in range(len(difficulty))]
 
         # Sort both worker and job_profile arrays
 
