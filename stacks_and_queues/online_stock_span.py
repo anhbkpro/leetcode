@@ -1,7 +1,7 @@
 class StockSpanner:
 
     def __init__(self):
-        self.stack = [] # decreasing monotonic
+        self.stack = []  # decreasing monotonic
 
     def next(self, price: int) -> int:
         ans = 1

@@ -21,4 +21,3 @@ class Solution:
                     stack.append(n)
 
         return "".join(stack)
-
