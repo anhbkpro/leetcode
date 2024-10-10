@@ -15,4 +15,4 @@ class Solution:
         final_stack = num_stack[:-k] if k else num_stack
 
         # trip the leading zeros
-        return "".join(final_stack).lstrip('0') or "0"
+        return "".join(final_stack).lstrip("0") or "0"
