@@ -3,7 +3,9 @@ import heapq
 
 
 class Solution:
-    def mincostToHireWorkers(self, quality: List[int], wage: List[int], k: int) -> float:
+    def mincostToHireWorkers(
+        self, quality: List[int], wage: List[int], k: int
+    ) -> float:
         n = len(quality)
         total_cost = float("inf")
         current_total_quality = 0
@@ -39,7 +41,8 @@ class Solution:
             if len(highest_quality_workers) == k:
                 total_cost = min(
                     # calculate total_quality * curr_rate
-                    total_cost, current_total_quality * wage_to_quality_ratio[i][0]
+                    total_cost,
+                    current_total_quality * wage_to_quality_ratio[i][0],
                 )
 
         return total_cost

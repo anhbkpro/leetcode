@@ -3,7 +3,6 @@ import heapq
 from typing import List
 
 
-
 class Solution:
     def isNStraightHand(self, hand: List[int], groupSize: int) -> bool:
         c = Counter(hand)
@@ -29,6 +28,5 @@ class Solution:
                 c[num + i] -= freq
                 if c[num + i] == 0:
                     del c[num + i]
-
 
         return True

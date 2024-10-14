@@ -23,11 +23,14 @@ class Solution:
             numerator_index = cur[1]
             denominator_index = cur[2] - 1
             if denominator_index > numerator_index:
-                heapq.heappush(pq, (
-                    (arr[numerator_index] / arr[denominator_index]),
-                    numerator_index,
-                    denominator_index
-                ))
+                heapq.heappush(
+                    pq,
+                    (
+                        (arr[numerator_index] / arr[denominator_index]),
+                        numerator_index,
+                        denominator_index,
+                    ),
+                )
 
         # Retrieve the kth smallest fraction from
         # the top of the priority queue
