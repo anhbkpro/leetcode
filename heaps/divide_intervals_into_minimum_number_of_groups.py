@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def minGroups(self, intervals: List[List[int]]) -> int:
         # Convert the intervals to two events
