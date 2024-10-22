@@ -11,7 +11,7 @@ class Solution:
 
         heapq.heapify(heap)
         ans = 0
-        for i in range(k):
+        for _ in range(k):
             item = heapq.heappop(heap)
             ans += -item
             heapq.heappush(heap, ceil(item) // 3)
