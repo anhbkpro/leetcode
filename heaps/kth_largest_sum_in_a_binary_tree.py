@@ -1,6 +1,5 @@
 import heapq
 from collections import deque
-from typing import Optional
 
 
 # Definition for a binary tree node.
@@ -12,33 +11,34 @@ class TreeNode:
 
 
 class Solution:
-    def kthLargestLevelSum(self, root: Optional[TreeNode], k: int) -> int:
-        q = deque([root])
-        heap = []
-        while q:
-            nodes_num = len(q)
-            row_sum = 0
-            for _ in range(nodes_num):
-                current_node = q.popleft()
-                row_sum += current_node.val
-                if current_node.left:
-                    q.append(current_node.left)
-                if current_node.right:
-                    q.append(current_node.right)
+    def kthLargestLevelSum(self, root: TreeNode, k: int) -> int:
+        # max heap
+        pq = []
+        bfs_queue = deque()
+        bfs_queue.append(root)
 
-            heapq.heappush(heap, row_sum)
-            if len(heap) > k:
-                heapq.heappop(heap)
+        while bfs_queue:
+            # level order traversal
+            size = len(bfs_queue)
+            level_sum = 0
+            for _ in range(size):
+                node = bfs_queue.popleft()
+                level_sum += node.val
+                if node.left:
+                    # add left child
+                    bfs_queue.append(node.left)
+                if node.right:
+                    # add right child
+                    bfs_queue.append(node.right)
 
-        if len(heap) < k:
+            # Make sum negative to maintain a max heap
+            heapq.heappush(pq, -level_sum)
+
+        if len(pq) < k:
             return -1
 
-        max_heap = []
-        for count in heap:
-            heapq.heappush(max_heap, -count)
+        for _ in range(k - 1):
+            heapq.heappop(pq)
 
-        last = -1
-        while len(max_heap) > 0:
-            last = -heapq.heappop(max_heap)
-
-        return last
+        # Convert sum back to positive
+        return -heapq.heappop(pq)
