@@ -1,4 +1,4 @@
-class Solution:
+class SolutionSet:
     def removeSubfolders(self, folder) -> list[str]:
         # Create a set to store all folder paths for fast lookup
         folder_set = set(folder)
@@ -26,4 +26,25 @@ class Solution:
             # If not a sub-folder, add it to the result
             if not is_sub_folder:
                 result.append(f)
+        return result
+
+
+class SolutionSort:
+    def removeSubfolders(self, folder):
+        # Sort the folders alphabetically
+        folder.sort()
+
+        # Initialize the result list and add the first folder
+        result = [folder[0]]
+
+        # Iterate through each folder and check if it's a sub-folder of the last added folder in the result
+        for i in range(1, len(folder)):
+            last_folder = result[-1]
+            last_folder += "/"
+
+            # Check if the current folder starts with the last added folder path
+            if not folder[i].startswith(last_folder):
+                result.append(folder[i])
+
+        # Return the result containing only non-sub-folders
         return result
