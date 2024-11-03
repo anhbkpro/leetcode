@@ -1,10 +1,13 @@
 class Solution:
     def rotateString(self, s: str, goal: str) -> bool:
-        can_rotate = False
-        for i in range(len(s)):
-            temp_s = s[i:] + s[:i]
-            if temp_s == goal:
-                can_rotate = True
-                break
+        # Check if the lengths are different
+        if len(s) != len(goal):
+            return False
 
-        return can_rotate
+        # Create a new string by concatenating 's' with itself
+        doubled_string = s + s
+
+        # Use find to search for 'goal' in 'doubledString'
+        # If find returns an index that is not -1
+        # then 'goal' is a substring
+        return doubled_string.find(goal) != -1
