@@ -13,9 +13,7 @@ class Solution:
 
         events.sort()  # Sort events by time
 
-        available_chairs = list(
-            range(len(times))
-        )  # Tracking chairs that are free
+        available_chairs = list(range(len(times)))  # Tracking chairs that are free
 
         occupied_chairs = []  # When each chair will be free
 
