@@ -7,7 +7,7 @@ class Solution:
         word_len = len(word)
         curr_max = 0
         while i < len(sequence):
-            if sequence[i:word_len + i] == word:
+            if sequence[i : word_len + i] == word:
                 curr_max += 1
                 i += word_len
             elif curr_max > 0:
