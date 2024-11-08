@@ -17,7 +17,7 @@ class Solution(object):
             bit = ord(c) - 97
 
             # Flip the parity of the c-th bit in the running prefix mask
-            mask ^= (1 << bit)
+            mask ^= 1 << bit
 
             # Count smaller prefixes that create substrings with no odd occurring letters
             if mask in freq:

@@ -17,4 +17,4 @@ class Solution:
             if num & diff:
                 x ^= num
 
-        return [x, bitmask^x]
+        return [x, bitmask ^ x]
