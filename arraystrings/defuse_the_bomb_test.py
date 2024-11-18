@@ -1,0 +1,7 @@
+from .defuse_the_bomb import Solution
+
+
+def test_decrypt():
+    assert Solution().decrypt(code=[5, 7, 1, 4], k=3) == [12, 10, 16, 13]
+    assert Solution().decrypt(code=[1, 2, 3, 4], k=0) == [0, 0, 0, 0]
+    assert Solution().decrypt(code=[2, 4, 9, 3], k=-2) == [12, 5, 6, 13]
