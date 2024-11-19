@@ -22,7 +22,8 @@ class AllOne:
 
             nextNode = node.next
             if nextNode == self.tail or nextNode.freq != freq + 1:
-                # Create a new node if next node does not exist or freq is not freq + 1
+                # Create a new node if next node does not exist
+                # or freq is not freq + 1
                 newNode = Node(freq + 1)
                 newNode.keys.add(key)
                 newNode.prev = node
@@ -67,7 +68,8 @@ class AllOne:
         else:
             prevNode = node.prev
             if prevNode == self.head or prevNode.freq != freq - 1:
-                # Create a new node if the previous node does not exist or freq is not freq - 1
+                # Create a new node if the previous node does not exist
+                # or freq is not freq - 1
                 newNode = Node(freq - 1)
                 newNode.keys.add(key)
                 newNode.prev = prevNode
