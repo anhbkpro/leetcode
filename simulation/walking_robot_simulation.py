@@ -3,9 +3,7 @@ from typing import List
 
 class Solution:
     def __init__(self):
-        self.HASH_MULTIPLIER = (
-            60001  # Slightly larger than 2 * max coordinate value
-        )
+        self.HASH_MULTIPLIER = 60001  # Slightly larger than 2 * max coordinate value
 
     def robotSim(self, commands: List[int], obstacles: List[List[int]]) -> int:
         # Store obstacles in an set for efficient lookup
