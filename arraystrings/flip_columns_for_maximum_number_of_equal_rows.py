@@ -3,7 +3,6 @@ from typing import List
 
 class Solution:
     def maxEqualRowsAfterFlips(self, matrix: List[List[int]]) -> int:
-        num_cols = len(matrix[0])
         max_identical_rows = 0
 
         for current_row in matrix:
