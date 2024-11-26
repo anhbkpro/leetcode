@@ -4,7 +4,9 @@ from typing import List
 
 class Solution:
 
-    def secondMinimum(self, n: int, edges: List[List[int]], time: int, change: int) -> int:
+    def secondMinimum(
+        self, n: int, edges: List[List[int]], time: int, change: int
+    ) -> int:
         g = [[] for _ in range(n + 1)]
         for u, v in edges:
             g[u].append(v)

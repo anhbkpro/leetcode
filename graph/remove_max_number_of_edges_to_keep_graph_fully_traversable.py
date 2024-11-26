@@ -10,7 +10,9 @@ class Solution(object):
             def find_representative(self, x):
                 if self.representative[x] == x:
                     return x
-                self.representative[x] = self.find_representative(self.representative[x])
+                self.representative[x] = self.find_representative(
+                    self.representative[x]
+                )
                 return self.representative[x]
 
             def perform_union(self, x, y):
@@ -40,7 +42,9 @@ class Solution(object):
 
         for edge in edges:
             if edge[0] == 3:
-                edges_required += (alice.perform_union(edge[1], edge[2]) | bob.perform_union(edge[1], edge[2]))
+                edges_required += alice.perform_union(
+                    edge[1], edge[2]
+                ) | bob.perform_union(edge[1], edge[2])
 
         for edge in edges:
             if edge[0] == 2:
