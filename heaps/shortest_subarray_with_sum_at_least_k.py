@@ -24,9 +24,7 @@ class Solution:
                 shortest_subarray_length = min(shortest_subarray_length, i + 1)
 
             # Remove subarrays from heap that can form a valid subarray
-            while (
-                prefix_sum_heap and cumulative_sum - prefix_sum_heap[0][0] >= k
-            ):
+            while prefix_sum_heap and cumulative_sum - prefix_sum_heap[0][0] >= k:
                 # Update shortest subarray length
                 shortest_subarray_length = min(
                     shortest_subarray_length, i - heappop(prefix_sum_heap)[1]
@@ -37,7 +35,5 @@ class Solution:
 
         # Return -1 if no valid subarray found
         return (
-            -1
-            if shortest_subarray_length == float("inf")
-            else shortest_subarray_length
+            -1 if shortest_subarray_length == float("inf") else shortest_subarray_length
         )
