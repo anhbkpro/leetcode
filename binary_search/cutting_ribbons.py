@@ -3,10 +3,7 @@ from typing import List
 
 class Solution:
     def is_possible(self, max_length: int, ribbons: List[int], k: int) -> bool:
-        cut_ribbons = 0
-        for ribbon in ribbons:
-            cut_ribbons += ribbon // max_length
-
+        cut_ribbons = sum(ribbon // max_length for ribbon in ribbons)
         return cut_ribbons >= k
 
     def maxLength(self, ribbons: List[int], k: int) -> int:
