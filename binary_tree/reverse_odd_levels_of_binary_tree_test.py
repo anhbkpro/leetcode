@@ -20,8 +20,3 @@ def test_reverse_odd_levels():
     assert bfs_result.val == 2
     assert bfs_result.left.val == 5
     assert bfs_result.right.val == 3
-
-
-
-
-

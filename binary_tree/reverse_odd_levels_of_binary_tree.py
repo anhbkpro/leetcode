@@ -51,9 +51,7 @@ class SolutionBFS:
                 left, right = 0, len(current_level_nodes) - 1
                 while left < right:
                     tmp = current_level_nodes[left].val
-                    current_level_nodes[left].val = current_level_nodes[
-                        right
-                    ].val
+                    current_level_nodes[left].val = current_level_nodes[right].val
                     current_level_nodes[right].val = tmp
                     left += 1
                     right -= 1
