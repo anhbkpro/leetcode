@@ -4,6 +4,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
+
 class NAryTree:
     def __init__(self, val=0, children=None):
         self.val = val
