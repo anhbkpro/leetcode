@@ -16,16 +16,18 @@ class Solution:
             return []
 
         ans = []
-        q = deque([root])
-        curr_max = float("-inf")
-        while q:
-            for _ in range(len(q)):
-                item = q.popleft()
+        queue = deque([root])
+        while queue:
+            curr_len = len(queue)
+            curr_max = float("-inf")
+
+            for _ in range(curr_len):
+                item = queue.popleft()
                 curr_max = max(curr_max, item.val)
                 if item.left:
-                    q.append(item.left)
+                    queue.append(item.left)
                 if item.right:
-                    q.append(item.right)
+                    queue.append(item.right)
             ans.append(curr_max)
-            curr_max = float("-inf")  # reset max val
+
         return ans
