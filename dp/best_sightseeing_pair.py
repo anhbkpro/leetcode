@@ -1,5 +1,15 @@
-class Solution:
-    def maxScoreSightseeingPair(self, values):
+from abc import ABC, abstractmethod
+from typing import List
+
+
+class SolutionBase(ABC):
+    @abstractmethod
+    def maxScoreSightseeingPair(self, values: List[int]) -> int:
+        pass
+
+
+class SolutionDP(SolutionBase):
+    def maxScoreSightseeingPair(self, values: List[int]) -> int:
         n = len(values)
         # Initialize a list to store the maximum left scores up to each index.
         max_left_score = [0] * n
@@ -16,5 +26,23 @@ class Solution:
             current_left_score = values[i] + i
             # Update the maximum left score up to the current index.
             max_left_score[i] = max(max_left_score[i - 1], current_left_score)
+
+        return max_score
+
+
+class SolutionSpaceOptimizedDP(SolutionBase):
+    def maxScoreSightseeingPair(self, values: List[int]) -> int:
+        n = len(values)
+        max_score = 0
+        max_left_score = values[0]
+
+        for i in range(1, n):
+            current_right_score = values[i] - i
+            # Update the maximum score by combining the best left score so far with the current right score.
+            max_score = max(max_score, max_left_score + current_right_score)
+
+            current_left_score = values[i] + i
+            # Update the maximum left score up to the current index.
+            max_left_score = max(max_left_score, current_left_score)
 
         return max_score
