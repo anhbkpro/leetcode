@@ -11,9 +11,7 @@ class Solution:
                 char_frequency[j][character] += 1
         return self.__get_words(words, target, 0, 0, dp, char_frequency)
 
-    def __get_words(
-        self, words, target, words_index, target_index, dp, char_frequency
-    ):
+    def __get_words(self, words, target, words_index, target_index, dp, char_frequency):
         if target_index == len(target):
             return 1
         if (

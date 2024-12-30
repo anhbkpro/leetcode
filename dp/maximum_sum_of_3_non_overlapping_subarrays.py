@@ -18,9 +18,7 @@ class Solution:
         # Compute the best sum and indices for 1, 2, and 3 subarrays
         for t in range(1, 4):
             for i in range(k * t, n + 1):
-                current_sum = (
-                    prefix_sum[i] - prefix_sum[i - k] + best_sum[t - 1][i - k]
-                )
+                current_sum = prefix_sum[i] - prefix_sum[i - k] + best_sum[t - 1][i - k]
 
                 # Check if the current configuration gives a better sum
                 if current_sum > best_sum[t][i - 1]:
