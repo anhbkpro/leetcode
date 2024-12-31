@@ -2,8 +2,6 @@ from typing import List
 
 
 class Solution:
-    # Time complexity: O(log(n))
-    # Space complexity: O(1)
     def findPeakElement(self, nums: List[int]) -> int:
         l = 0
         r = len(nums) - 1
