@@ -1,10 +1,10 @@
 import unittest
-from dp.minimum_cost_for_tickets import Solution
+from dp.minimum_cost_for_tickets import SolutionTopDownDP
 
 
 class TestMinCostTickets(unittest.TestCase):
     def setUp(self):
-        self.solution = Solution()
+        self.solution = SolutionTopDownDP()
 
     def test_basic_case(self):
         """Test with basic example having obvious minimum cost path"""
