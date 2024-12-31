@@ -1,0 +1,26 @@
+# start macro -> qh (h is the name of macro)
+# move to start of a word
+# insert mode, ", ecs
+# move to end of a word
+# insert mode, ", esc
+# move to start of next word
+# q -> to stop macro
+
+# to use macro: @h
+# to apply this macro multiple lines, for example 5 lines: 5@h
+
+# Input:
+
+
+
+array = [
+  "something",
+  "hello",
+  "world",
+  "vim",
+  "great",
+  "vimisgreat",
+  "betterme",
+  "lorem",
+]
+

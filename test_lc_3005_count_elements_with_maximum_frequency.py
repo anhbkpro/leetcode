@@ -1,5 +1,0 @@
-from lc_3005_count_elements_with_maximum_frequency import Solution
-
-
-def test_max_frequency_elements():
-    assert Solution.max_frequency_elements([1, 2, 2, 3, 1]) == 4

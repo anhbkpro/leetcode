@@ -1,5 +1,0 @@
-class Solution(object):
-    @staticmethod
-    def sortArrayByParity(A):
-        return ([x for x in A if x % 2 == 0] +
-                [x for x in A if x % 2 == 1])
