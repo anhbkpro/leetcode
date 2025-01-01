@@ -16,9 +16,7 @@ class Solution:
             return 0  # The array is already divisible by p
 
         # Step 2: Use a dict to track prefix sum mod p
-        mod_map = {
-            0: -1
-        }  # To handle the case where the whole prefix is the answer
+        mod_map = {0: -1}  # To handle the case where the whole prefix is the answer
         current_sum = 0
         min_len = n
 
