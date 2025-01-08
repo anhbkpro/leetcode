@@ -1,91 +1,86 @@
+from typing import Type
 import unittest
-from .count_prefix_and_suffix_pairs_i import Solution
+from .count_prefix_and_suffix_pairs_i import SolutionBase, SolutionBF, SolutionTrie
 
 
 class TestPrefixSuffixSolution(unittest.TestCase):
-    def setUp(self):
-        self.solution = Solution()
+    def run_test_case(self, solution_class, words, expected):
+        """Helper method to run a test case for a specific solution class"""
+        solution = solution_class()
+        result = solution.countPrefixSuffixPairs(words)
+        self.assertEqual(
+            result,
+            expected,
+            f"{solution_class.__name__} failed: Expected {expected}, got {result}",
+        )
 
-    def test_is_prefix_and_suffix_basic(self):
-        """Test basic cases for isPrefixAndSuffix method"""
-        test_cases = [
-            ("aba", "ababa", True),
-            ("abc", "abcd", False),
-            ("a", "a", True),
-            ("hello", "hello", True),
-            ("ab", "abc", False),
-            ("bc", "abc", False),
-        ]
-
-        for str1, str2, expected in test_cases:
-            with self.subTest(str1=str1, str2=str2):
-                result = self.solution.isPrefixAndSuffix(str1, str2)
-                self.assertEqual(result, expected)
+    def run_all_solutions(self, words, expected):
+        """Run the same test case for all solution classes"""
+        solutions = [SolutionBF, SolutionTrie]
+        for solution_class in solutions:
+            self.run_test_case(solution_class, words, expected)
 
     def test_example_1(self):
         """Test case from Example 1"""
         words = ["a", "aba", "ababa", "aa"]
-        self.assertEqual(self.solution.countPrefixSuffixPairs(words), 4)
+        self.run_all_solutions(words, 4)
 
     def test_example_2(self):
         """Test case from Example 2"""
         words = ["pa", "papa", "ma", "mama"]
-        self.assertEqual(self.solution.countPrefixSuffixPairs(words), 2)
+        self.run_all_solutions(words, 2)
 
     def test_example_3(self):
         """Test case from Example 3"""
         words = ["abab", "ab"]
-        self.assertEqual(self.solution.countPrefixSuffixPairs(words), 0)
+        self.run_all_solutions(words, 0)
 
     def test_single_word(self):
         """Test array with single word"""
         words = ["hello"]
-        self.assertEqual(self.solution.countPrefixSuffixPairs(words), 0)
+        self.run_all_solutions(words, 0)
 
     def test_identical_words(self):
         """Test array with identical words"""
         words = ["abc", "abc", "abc"]
-        self.assertEqual(
-            self.solution.countPrefixSuffixPairs(words), 3
-        )  # All pairs are valid
+        self.run_all_solutions(words, 3)
 
     def test_no_matches(self):
         """Test array with no valid prefix-suffix pairs"""
         words = ["cat", "dog", "bird", "fish"]
-        self.assertEqual(self.solution.countPrefixSuffixPairs(words), 0)
+        self.run_all_solutions(words, 0)
 
     def test_max_length_strings(self):
         """Test with maximum length strings (10 characters)"""
         words = ["abcdefghij", "abcdefghij", "abcdefghi"]
-        self.assertEqual(self.solution.countPrefixSuffixPairs(words), 1)
+        self.run_all_solutions(words, 1)
 
     def test_nested_patterns(self):
         """Test with nested pattern strings"""
         words = ["a", "aa", "aaa", "aaaa"]
         # Count pairs: (a,aa), (a,aaa), (a,aaaa), (aa,aaa), (aa,aaaa), (aaa,aaaa)
-        self.assertEqual(self.solution.countPrefixSuffixPairs(words), 6)
+        self.run_all_solutions(words, 6)
 
     def test_palindrome_patterns(self):
         """Test with palindrome strings"""
         words = ["aba", "ababa", "aabbaa"]
-        self.assertEqual(self.solution.countPrefixSuffixPairs(words), 1)
+        self.run_all_solutions(words, 1)
 
     def test_different_lengths(self):
         """Test strings of different lengths"""
         words = ["a", "ab", "abc", "abcd"]
-        self.assertEqual(self.solution.countPrefixSuffixPairs(words), 0)
+        self.run_all_solutions(words, 0)
 
     def test_constraints(self):
         """Test edge cases within constraints"""
         # Test maximum length array (50 elements)
         long_words = ["a"] * 50
-        result = self.solution.countPrefixSuffixPairs(long_words)
         expected = (49 * 50) // 2  # Number of pairs when all words are identical
-        self.assertEqual(result, expected)
+        self.run_all_solutions(long_words, expected)
 
         # Test maximum word length (10 characters)
         words = ["a" * 10, "a" * 10]
-        self.assertEqual(self.solution.countPrefixSuffixPairs(words), 1)
+        self.run_all_solutions(words, 1)
 
 
 if __name__ == "__main__":
