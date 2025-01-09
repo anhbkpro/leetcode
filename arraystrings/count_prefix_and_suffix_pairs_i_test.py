@@ -1,10 +1,12 @@
-from typing import Type
+from typing import List, Type
 import unittest
 from .count_prefix_and_suffix_pairs_i import SolutionBase, SolutionBF, SolutionTrie
 
 
 class TestPrefixSuffixSolution(unittest.TestCase):
-    def run_test_case(self, solution_class, words, expected):
+    def run_test_case(
+        self, solution_class: Type[SolutionBase], words: List[str], expected: int
+    ):
         """Helper method to run a test case for a specific solution class"""
         solution = solution_class()
         result = solution.countPrefixSuffixPairs(words)
