@@ -8,6 +8,6 @@ class Solution:
         freq = [0] * 26
         for c in s:
             freq[ord(c) - ord("a")] += 1
-        odd_count = len([c for c in freq if c % 2 == 1])
+        odd_count = len([c for c in freq if c % 2])
 
         return odd_count <= k
