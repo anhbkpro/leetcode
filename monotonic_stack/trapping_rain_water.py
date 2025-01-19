@@ -4,19 +4,19 @@ from typing import List
 
 class Solution:
     def trap(self, height: List[int]) -> int:
-        stack = deque()
         ans = 0
         current = 0
+        st = []
         while current < len(height):
-            while stack and height[current] > height[stack[-1]]:
-                top = stack.pop()
-                if len(stack) == 0:
+            while st and height[current] > height[st[-1]]:
+                top = st.pop()
+                if len(st) == 0:
                     break
-                distance = current - stack[-1] - 1
-                bounded_height = min(height[stack[-1]], height[current]) - height[top]
-                ans += bounded_height * distance
+                distance = current - st[-1] - 1
+                bounded_height = min(height[current], height[st[-1]]) - height[top]
+                ans += distance * bounded_height
 
-            stack.append(current)
+            st.append(current)
             current += 1
 
         return ans
