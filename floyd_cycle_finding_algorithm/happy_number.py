@@ -5,7 +5,7 @@ class Solution:
             total_sum = 0
             while number > 0:
                 number, digit = divmod(number, 10)
-                total_sum += digit ** 2
+                total_sum += digit**2
             return total_sum
 
         slow_pointer = n
@@ -15,6 +15,6 @@ class Solution:
             slow_pointer = sum_of_squared_digits(slow_pointer)
             fast_pointer = sum_of_squared_digits(sum_of_squared_digits(fast_pointer))
 
-        if(fast_pointer == 1):
+        if fast_pointer == 1:
             return True
         return False

@@ -17,9 +17,10 @@ class Greeter:
         return "evening"
 
     def greet(self, store: str) -> str:
-        print(f'Hi, my name is {self.name}, and welcome to {store}!')
-        print(f'How\'s your {self._day()} {self._part_of_day()} going?')
-        print('Here\'s a coupon for 20% off!')
+        print(f"Hi, my name is {self.name}, and welcome to {store}!")
+        print(f"How's your {self._day()} {self._part_of_day()} going?")
+        print("Here's a coupon for 20% off!")
+
 
 def main() -> None:
     greeter = Greeter("Andy")

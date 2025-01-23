@@ -7,6 +7,7 @@ def findHeavyAnimals(animals: pd.DataFrame) -> pd.DataFrame:
     animals = sorted_animals[["name"]]
     return animals
 
+
 def findHeavyAnimalsLoc(animals: pd.DataFrame) -> pd.DataFrame:
     animals = animals.loc[animals["weight"] > 100, ["name"]]
     animals = animals.sort_values(by="name", ascending=True)

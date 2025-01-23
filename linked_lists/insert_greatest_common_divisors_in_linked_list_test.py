@@ -20,4 +20,3 @@ def test_insert_greatest_common_divisors():
     assert ans.next.next.next.next.val == 10
     assert ans.next.next.next.next.next.val == 1
     assert ans.next.next.next.next.next.next.val == 3
-

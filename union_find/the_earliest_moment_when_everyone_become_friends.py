@@ -4,7 +4,7 @@ from typing import List
 class Solution:
     def earliestAcq(self, logs: List[List[int]], n: int) -> int:
         # First, we need to sort the events in chronological order.
-        logs.sort(key = lambda x: x[0])
+        logs.sort(key=lambda x: x[0])
 
         uf = UnionFind(n)
         # Initially, we treat each individual as a separate group.
@@ -37,8 +37,8 @@ class UnionFind:
 
     def union(self, a, b):
         """
-            return: true if a and b are not connected before
-                otherwise, connect a with b and then return false
+        return: true if a and b are not connected before
+            otherwise, connect a with b and then return false
         """
         group_a = self.find(a)
         group_b = self.find(b)
