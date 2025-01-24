@@ -1,9 +1,9 @@
 import unittest
-from toposort.find_eventual_safe_states import Solution
+from toposort.find_eventual_safe_states import SolutionTopo
 
 class TestFindEventualSafeStates(unittest.TestCase):
     def setUp(self):
-        self.solution = Solution()
+        self.solution = SolutionTopo()
 
     def test_example_1(self):
         # Test case from LeetCode example
