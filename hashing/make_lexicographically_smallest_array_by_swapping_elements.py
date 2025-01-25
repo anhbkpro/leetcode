@@ -14,7 +14,7 @@ class Solution:
 
         for i in range(1, len(sorted_nums)):
             num = sorted_nums[i]
-            if abs(num - sorted_nums[i - 1]) > limit:
+            if abs(num - sorted_nums[i-1]) > limit:
                 group_idx += 1
             curr_group_list = group_to_list.get(group_idx)
             if not curr_group_list:
@@ -23,7 +23,6 @@ class Solution:
             group_to_list[group_idx] = curr_group_list
             num_to_group[num] = group_idx
 
-        print(num_to_group)
         for i in range(len(nums)):
             num = nums[i]
             group = num_to_group[num]
