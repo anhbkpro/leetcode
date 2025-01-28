@@ -1,5 +1,9 @@
 import unittest
-from maximum_number_of_fish_in_a_grid import SolutionDFS, SolutionBFS, SolutionUnionFind
+from .maximum_number_of_fish_in_a_grid import (
+    SolutionDFS,
+    SolutionBFS,
+    SolutionUnionFind,
+)
 
 
 class TestMaximumNumberOfFishInAGrid(unittest.TestCase):
@@ -42,5 +46,5 @@ class TestMaximumNumberOfFishInAGrid(unittest.TestCase):
                 self.assertEqual(solution.findMaxFish(grid), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
