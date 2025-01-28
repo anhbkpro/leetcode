@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def countServers(self, grid: List[List[int]]) -> int:
         """
@@ -30,7 +31,8 @@ class Solution:
 
         # Second pass: Count servers that can communicate
         connected_servers = sum(
-            1 for i, j in server_positions
+            1
+            for i, j in server_positions
             if servers_in_row[i] > 1 or servers_in_col[j] > 1
         )
 

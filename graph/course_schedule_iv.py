@@ -34,11 +34,10 @@ class SolutionTreeTraversalOnDemand:
         for query in queries:
             # Reset the visited array for each query
             visited = [False] * numCourses
-            result.append(
-                self.isPrerequisite(adjList, visited, query[0], query[1])
-            )
+            result.append(self.isPrerequisite(adjList, visited, query[0], query[1]))
 
         return result
+
 
 class SolutionTreeTraversalPreprocessed:
     # Iterate over each node and perform BFS starting from it.
@@ -127,6 +126,7 @@ class SolutionTopologicalSortKahnAlgorithm:
 
         return answer
 
+
 class SolutionFloydWarshallAlgorithm:
     def checkIfPrerequisite(
         self,
@@ -143,9 +143,7 @@ class SolutionFloydWarshallAlgorithm:
             for src in range(numCourses):
                 for target in range(numCourses):
                     # If there is a path src -> intermediate and intermediate -> target, then src -> target exists as well
-                    isPrerequisite[src][target] = isPrerequisite[src][
-                        target
-                    ] or (
+                    isPrerequisite[src][target] = isPrerequisite[src][target] or (
                         isPrerequisite[src][intermediate]
                         and isPrerequisite[intermediate][target]
                     )

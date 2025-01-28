@@ -58,9 +58,7 @@ class Solution:
                             visited_nodes = {current_person, next_person}
                             two_cycle_invitations += (
                                 2
-                                + _bfs(
-                                    next_person, visited_nodes, reversed_graph
-                                )
+                                + _bfs(next_person, visited_nodes, reversed_graph)
                                 + _bfs(
                                     current_person,
                                     visited_nodes,

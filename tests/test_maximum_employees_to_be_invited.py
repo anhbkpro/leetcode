@@ -47,7 +47,9 @@ class TestMaximumInvitations(unittest.TestCase):
         favorite = [1, 2, 1, 3, 3, 4, 5, 4]
         # Two-person cycle (1,2) with admirer (0)
         # Two-person cycle (4,5) with admirers (3,6,7)
-        expected = 3  # Maximum is either a 3-person cycle or two-person cycle with one branch
+        expected = (
+            3  # Maximum is either a 3-person cycle or two-person cycle with one branch
+        )
         self.assertEqual(self.solution.maximumInvitations(favorite), expected)
 
     def test_self_favorite(self):
@@ -73,5 +75,5 @@ class TestMaximumInvitations(unittest.TestCase):
         self.assertEqual(self.solution.maximumInvitations(favorite), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -37,6 +37,7 @@ class SolutionTopo:
 
         return safeNodes
 
+
 class SolutionDFS:
     def dfs(self, node, adj, visit, inStack):
         # If the node is already in the stack, we have a cycle.
