@@ -1,3 +1,11 @@
+from abc import ABC
+
+
+class BaseSolution(ABC):
+    def findMaxFish(self, grid: list[list[int]]) -> int:
+        pass
+
+
 class SolutionDFS:
     # Helper function to count the number of fishes in a connected component
     def calculate_fishes(self, grid, visited, row, col):
