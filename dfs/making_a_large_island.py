@@ -42,36 +42,28 @@ class Solution:
                         current_row + 1 < len(grid)
                         and grid[current_row + 1][current_column] > 1
                     ):
-                        neighboring_islands.add(
-                            grid[current_row + 1][current_column]
-                        )
+                        neighboring_islands.add(grid[current_row + 1][current_column])
 
                     # Check up
                     if (
                         current_row - 1 >= 0
                         and grid[current_row - 1][current_column] > 1
                     ):
-                        neighboring_islands.add(
-                            grid[current_row - 1][current_column]
-                        )
+                        neighboring_islands.add(grid[current_row - 1][current_column])
 
                     # Check right
                     if (
                         current_column + 1 < len(grid[0])
                         and grid[current_row][current_column + 1] > 1
                     ):
-                        neighboring_islands.add(
-                            grid[current_row][current_column + 1]
-                        )
+                        neighboring_islands.add(grid[current_row][current_column + 1])
 
                     # Check left
                     if (
                         current_column - 1 >= 0
                         and grid[current_row][current_column - 1] > 1
                     ):
-                        neighboring_islands.add(
-                            grid[current_row][current_column - 1]
-                        )
+                        neighboring_islands.add(grid[current_row][current_column - 1])
 
                     # Sum the sizes of all unique neighboring islands
                     for island_id in neighboring_islands:
@@ -100,16 +92,8 @@ class Solution:
 
         return (
             1
-            + self.explore_island(
-                grid, island_id, current_row + 1, current_column
-            )
-            + self.explore_island(
-                grid, island_id, current_row - 1, current_column
-            )
-            + self.explore_island(
-                grid, island_id, current_row, current_column + 1
-            )
-            + self.explore_island(
-                grid, island_id, current_row, current_column - 1
-            )
+            + self.explore_island(grid, island_id, current_row + 1, current_column)
+            + self.explore_island(grid, island_id, current_row - 1, current_column)
+            + self.explore_island(grid, island_id, current_row, current_column + 1)
+            + self.explore_island(grid, island_id, current_row, current_column - 1)
         )
