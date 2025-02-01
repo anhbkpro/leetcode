@@ -1,11 +1,10 @@
 import unittest
-from special_array_i import Solution
+from abc import ABC, abstractmethod
+from special_array_i import Solution, SolutionModuloComparisons, SolutionBitwiseOperations
 
 
-class TestSpecialArray(unittest.TestCase):
-    def setUp(self):
-        self.solution = Solution()
-
+class BaseSpecialArrayTests:
+    """Base test class containing test methods for special array implementations"""
     def test_empty_array(self):
         nums = []
         self.assertTrue(self.solution.isArraySpecial(nums))
@@ -37,6 +36,21 @@ class TestSpecialArray(unittest.TestCase):
     def test_mixed_signs(self):
         nums = [-2, 3, -4, 5]  # alternating even-odd with mixed signs
         self.assertTrue(self.solution.isArraySpecial(nums))
+
+
+class TestSpecialArray(unittest.TestCase, BaseSpecialArrayTests):
+    def setUp(self):
+        self.solution = Solution()
+
+
+class TestSpecialArrayModulo(unittest.TestCase, BaseSpecialArrayTests):
+    def setUp(self):
+        self.solution = SolutionModuloComparisons()
+
+
+class TestSpecialArrayBitwise(unittest.TestCase, BaseSpecialArrayTests):
+    def setUp(self):
+        self.solution = SolutionBitwiseOperations()
 
 
 if __name__ == "__main__":
