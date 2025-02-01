@@ -1,6 +1,5 @@
 import unittest
-from abc import ABC, abstractmethod
-from special_array_i import Solution, SolutionModuloComparisons, SolutionBitwiseOperations
+from .special_array_i import Solution, SolutionModuloComparisons, SolutionBitwiseOperations
 
 
 class BaseSpecialArrayTests:
