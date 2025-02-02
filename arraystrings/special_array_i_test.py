@@ -1,9 +1,14 @@
 import unittest
-from .special_array_i import Solution, SolutionModuloComparisons, SolutionBitwiseOperations
+from .special_array_i import (
+    Solution,
+    SolutionModuloComparisons,
+    SolutionBitwiseOperations,
+)
 
 
 class BaseSpecialArrayTests:
     """Base test class containing test methods for special array implementations"""
+
     def test_empty_array(self):
         nums = []
         self.assertTrue(self.solution.isArraySpecial(nums))
