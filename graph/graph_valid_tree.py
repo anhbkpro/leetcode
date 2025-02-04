@@ -28,10 +28,12 @@ class UnionFind:
         self.parent[root_A] = root_B
         return True
 
+
 class Solution:
     def validTree(self, n: int, edges: List[List[int]]) -> bool:
         # Condition 1: The graph must contain n - 1 edges.
-        if len(edges) != n - 1: return False
+        if len(edges) != n - 1:
+            return False
 
         # Condition 2: The graph must contain a single connected component.
         # Create a new UnionFind object with n nodes.

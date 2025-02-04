@@ -26,8 +26,7 @@ class Solution:
 
         # Calculate the longest shortest path for each node
         distances = [
-            self._get_longest_shortest_path(adj_list, node, n)
-            for node in range(n)
+            self._get_longest_shortest_path(adj_list, node, n) for node in range(n)
         ]
 
         # Calculate the total maximum number of groups across all components
@@ -86,9 +85,7 @@ class Solution:
         return distance
 
     # Calculates the maximum number of groups for a connected component
-    def _get_number_of_groups_for_component(
-        self, adj_list, node, distances, visited
-    ):
+    def _get_number_of_groups_for_component(self, adj_list, node, distances, visited):
         # Start with the distance of the current node as the maximum
         max_number_of_groups = distances[node]
         visited[node] = True
