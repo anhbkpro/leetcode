@@ -2,6 +2,7 @@ from typing import List
 
 
 class Solution:
+    # Similar to maximum_subarray.py
     def maxAscendingSum(self, nums: List[int]) -> int:
         ret_val = nums[0]
         window_sum = 0
