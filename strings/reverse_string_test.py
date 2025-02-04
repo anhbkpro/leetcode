@@ -1,10 +1,11 @@
 import unittest
-from .reverse_string import Solution
+from .reverse_string import SolutionOnSpace, SolutionO1Space
 
 
-class TestReverseString(unittest.TestCase):
+class BaseTestReverseString:
+    """Base test class with common test cases"""
     def setUp(self):
-        self.solution = Solution()
+        self.solution = self.SolutionClass()
 
     def test_basic_string(self):
         """Test with basic string"""
@@ -54,6 +55,23 @@ class TestReverseString(unittest.TestCase):
         s = ["a", "1", "@", "b", "2"]
         self.solution.reverseString(s)
         self.assertEqual(s, ["2", "b", "@", "1", "a"])
+
+    def test_long_string(self):
+        """Test with a long string to verify performance"""
+        s = list("abcdefghijklmnopqrstuvwxyz")
+        expected = list("zyxwvutsrqponmlkjihgfedcba")
+        self.solution.reverseString(s)
+        self.assertEqual(s, expected)
+
+
+class TestReverseStringRecursive(BaseTestReverseString, unittest.TestCase):
+    """Test cases for the recursive solution with O(N) space"""
+    SolutionClass = SolutionOnSpace
+
+
+class TestReverseStringIterative(BaseTestReverseString, unittest.TestCase):
+    """Test cases for the iterative solution with O(1) space"""
+    SolutionClass = SolutionO1Space
 
 
 if __name__ == "__main__":
