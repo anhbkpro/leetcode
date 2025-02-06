@@ -49,16 +49,19 @@ class BaseTestAreAlmostEqual:
 
 class TestSolutionCounter(BaseTestAreAlmostEqual, unittest.TestCase):
     """Test cases for the Counter-based solution"""
+
     solution_class = Solution
 
 
 class TestSolutionFrequencyMap(BaseTestAreAlmostEqual, unittest.TestCase):
     """Test cases for the frequency map solution"""
+
     solution_class = SolutionFrequencyMapCheckDifferences
 
 
 class TestSolutionDifferences(BaseTestAreAlmostEqual, unittest.TestCase):
     """Test cases for the differences-only solution"""
+
     solution_class = SolutionOnlyCheckDifferences
 
 
