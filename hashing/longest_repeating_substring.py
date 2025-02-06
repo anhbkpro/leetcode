@@ -1,28 +1,23 @@
 class Solution:
-    def search(self, L: int, n: int, S: str) -> str:
-        """
-        Search a substring of a given length
-        that occurs at least 2 times.
-        @return start position if the substring exists and -1 otherwise.
-        """
-        seen = set()
-        for start in range(0, n - L + 1):
-            tmp = S[start : start + L]
-            if tmp in seen:
-                return start
-            seen.add(tmp)
-        return -1
+    def longestRepeatingSubstring(self, s: str) -> int:
+        start, end = 1, len(s) - 1
 
-    def longestRepeatingSubstring(self, S: str) -> str:
-        n = len(S)
-
-        # binary search, L = repeating string length
-        left, right = 1, n
-        while left <= right:
-            L = left + (right - left) // 2
-            if self.search(L, n, S) != -1:
-                left = L + 1
+        while start <= end:
+            mid = (start + end) // 2
+            # Check if there's a repeating substring of length mid
+            if self._has_repeating_substring(s, mid):
+                start = mid + 1  # Try longer substrings
             else:
-                right = L - 1
+                end = mid - 1  # Try shorter substrings
+        return start - 1
 
-        return left - 1
+    def _has_repeating_substring(self, s: str, length: int) -> bool:
+        seen_substrings = set()
+        for i in range(len(s) - length + 1):
+            # Extract a substring of the given length
+            substring = s[i : i + length]
+            # Check if the substring has been seen before
+            if substring in seen_substrings:
+                return True
+            seen_substrings.add(substring)
+        return False
