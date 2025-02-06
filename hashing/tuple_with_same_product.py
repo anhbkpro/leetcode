@@ -91,10 +91,10 @@ class SolutionCountProductFrequency:
 
 class SolutionProductFrequencyHashMap:
     """Find the number of tuples (i,j,k,l) such that nums[i] * nums[j] == nums[k] * nums[l].
-    
+
     Time Complexity: O(N^2) where N is the length of nums
     Space Complexity: O(N^2) to store the product frequencies
-    
+
     Example:
         >>> solution = SolutionProductFrequencyHashMap()
         >>> solution.tupleSameProduct([2,3,4,6])
@@ -102,19 +102,21 @@ class SolutionProductFrequencyHashMap:
         >>> solution.tupleSameProduct([1,2,4,5,10])
         16
     """
+
     def __init__(self):
         from collections import defaultdict
+
         self.defaultdict = defaultdict
 
     def _calculate_tuples_for_frequency(self, frequency: int) -> int:
         """Calculate number of valid tuples for a given product frequency.
-        
+
         For each pair of pairs with the same product, we can form 8 different
         tuples by arranging the numbers in different orders.
-        
+
         Args:
             frequency: Number of pairs that produce the same product
-            
+
         Returns:
             Number of valid tuples that can be formed
         """
@@ -125,10 +127,10 @@ class SolutionProductFrequencyHashMap:
 
     def tupleSameProduct(self, nums: List[int]) -> int:
         """Find number of tuples with equal products.
-        
+
         Args:
             nums: List of integers to find tuples from
-            
+
         Returns:
             Number of valid tuples (i,j,k,l) where nums[i] * nums[j] == nums[k] * nums[l]
             and i, j, k, and l are different indices
@@ -138,13 +140,14 @@ class SolutionProductFrequencyHashMap:
 
         # Use defaultdict to automatically initialize frequencies to 0
         product_freq = self.defaultdict(int)
-        
+
         # Calculate frequencies of all possible products
         for i in range(len(nums)):
             for j in range(i + 1, len(nums)):
                 product = nums[i] * nums[j]
                 product_freq[product] += 1
-        
+
         # Sum up the number of tuples for each product frequency
-        return sum(self._calculate_tuples_for_frequency(freq) 
-                  for freq in product_freq.values())
+        return sum(
+            self._calculate_tuples_for_frequency(freq) for freq in product_freq.values()
+        )
