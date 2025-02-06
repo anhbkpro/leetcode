@@ -3,6 +3,7 @@ class SolutionOnSpace:
     Time complexity : O(N) time to perform N/2 swaps.
     Space complexity : O(N) to keep the recursion stack.
     """
+
     def reverseString(self, s):
         def helper(left, right):
             if left < right:
@@ -17,6 +18,7 @@ class SolutionO1Space:
     Time complexity : O(N) time to perform N/2 swaps.
     Space complexity : O(1), it's a constant space solution.
     """
+
     def reverseString(self, s):
         left, right = 0, len(s) - 1
         while left < right:

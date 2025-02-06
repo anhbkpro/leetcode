@@ -4,6 +4,7 @@ from .reverse_string import SolutionOnSpace, SolutionO1Space
 
 class BaseTestReverseString:
     """Base test class with common test cases"""
+
     def setUp(self):
         self.solution = self.SolutionClass()
 
@@ -66,11 +67,13 @@ class BaseTestReverseString:
 
 class TestReverseStringRecursive(BaseTestReverseString, unittest.TestCase):
     """Test cases for the recursive solution with O(N) space"""
+
     SolutionClass = SolutionOnSpace
 
 
 class TestReverseStringIterative(BaseTestReverseString, unittest.TestCase):
     """Test cases for the iterative solution with O(1) space"""
+
     SolutionClass = SolutionO1Space
 
 

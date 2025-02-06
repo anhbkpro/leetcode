@@ -4,6 +4,7 @@ from .distinct_numbers_in_each_subarray import Solution, SolutionFrequencyArray
 
 class BaseTestDistinctNumbers:
     """Base test class with common test cases"""
+
     def setUp(self):
         self.solution = self.SolutionClass()
 
@@ -52,6 +53,7 @@ class BaseTestDistinctNumbers:
 
 class TestDistinctNumbersHashMap(BaseTestDistinctNumbers, unittest.TestCase):
     """Test cases for the HashMap-based solution"""
+
     SolutionClass = Solution
 
     def test_negative_numbers(self):
@@ -71,6 +73,7 @@ class TestDistinctNumbersHashMap(BaseTestDistinctNumbers, unittest.TestCase):
 
 class TestDistinctNumbersFrequencyArray(BaseTestDistinctNumbers, unittest.TestCase):
     """Test cases for the Frequency Array-based solution"""
+
     SolutionClass = SolutionFrequencyArray
 
     def test_small_range(self):
