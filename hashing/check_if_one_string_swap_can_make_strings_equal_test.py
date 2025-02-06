@@ -1,10 +1,16 @@
 import unittest
-from .check_if_one_string_swap_can_make_strings_equal import Solution
+from .check_if_one_string_swap_can_make_strings_equal import (
+    Solution,
+    SolutionFrequencyMapCheckDifferences,
+    SolutionOnlyCheckDifferences,
+)
 
 
-class TestAreAlmostEqual(unittest.TestCase):
+class BaseTestAreAlmostEqual:
+    """Base test class containing all test cases"""
+
     def setUp(self):
-        self.solution = Solution()
+        self.solution = self.solution_class()
 
     def test_strings_are_equal(self):
         """Test when strings are already equal"""
@@ -30,6 +36,31 @@ class TestAreAlmostEqual(unittest.TestCase):
         """Test with empty strings"""
         self.assertTrue(self.solution.areAlmostEqual("", ""))
 
+    def test_single_character_strings(self):
+        """Test with single character strings"""
+        self.assertTrue(self.solution.areAlmostEqual("a", "a"))
+        self.assertFalse(self.solution.areAlmostEqual("a", "b"))
 
-if __name__ == '__main__':
+    def test_strings_with_repeated_characters(self):
+        """Test strings with repeated characters"""
+        self.assertTrue(self.solution.areAlmostEqual("aabc", "abac"))
+        self.assertFalse(self.solution.areAlmostEqual("aabc", "abcc"))
+
+
+class TestSolutionCounter(BaseTestAreAlmostEqual, unittest.TestCase):
+    """Test cases for the Counter-based solution"""
+    solution_class = Solution
+
+
+class TestSolutionFrequencyMap(BaseTestAreAlmostEqual, unittest.TestCase):
+    """Test cases for the frequency map solution"""
+    solution_class = SolutionFrequencyMapCheckDifferences
+
+
+class TestSolutionDifferences(BaseTestAreAlmostEqual, unittest.TestCase):
+    """Test cases for the differences-only solution"""
+    solution_class = SolutionOnlyCheckDifferences
+
+
+if __name__ == "__main__":
     unittest.main()
