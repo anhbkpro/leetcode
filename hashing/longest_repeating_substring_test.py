@@ -29,7 +29,9 @@ class TestLongestRepeatingSubstring(unittest.TestCase):
     def test_overlapping_substrings(self):
         """Test with overlapping repeating substrings"""
         s = "aabaabaa"
-        self.assertEqual(self.solution.longestRepeatingSubstring(s), 5)  # "aabaa" repeats
+        self.assertEqual(
+            self.solution.longestRepeatingSubstring(s), 5
+        )  # "aabaa" repeats
 
     def test_empty_string(self):
         """Test with empty string"""
@@ -49,7 +51,9 @@ class TestLongestRepeatingSubstring(unittest.TestCase):
     def test_multiple_possible_substrings(self):
         """Test with multiple possible repeating substrings of different lengths"""
         s = "ababab"
-        self.assertEqual(self.solution.longestRepeatingSubstring(s), 4)  # "abab" repeats
+        self.assertEqual(
+            self.solution.longestRepeatingSubstring(s), 4
+        )  # "abab" repeats
 
     def test_case_sensitive(self):
         """Test that the search is case-sensitive"""
