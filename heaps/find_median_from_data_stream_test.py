@@ -1,5 +1,5 @@
 import unittest
-from heaps.find_median_from_data_stream import MedianFinder
+from find_median_from_data_stream import MedianFinder
 
 
 class TestMedianFinder(unittest.TestCase):

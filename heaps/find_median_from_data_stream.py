@@ -1,36 +1,64 @@
 import heapq
+from typing import List
 
 
 class MedianFinder:
-    def __init__(self):
+    """
+    A class to find the median from a data stream using two heaps.
+    The smaller half is stored in a max heap (small) and the larger half in a min heap (large).
+    """
+
+    def __init__(self) -> None:
         """
-        initialize your data structure here.
+        Initialize the MedianFinder with two empty heaps:
+        - max_heap: stores the smaller half (as negative numbers to simulate max heap)
+        - min_heap: stores the larger half
         """
-        # Initialize two heaps: small to store the smaller half as a max heap
-        # and large to store the larger half as a min heap
-        self.small, self.large = [], []
+        self.max_heap: List[int] = (
+            []
+        )  # stores smaller half (negated for max heap behavior)
+        self.min_heap: List[int] = []  # stores larger half
+
+    def _balance_heaps(self) -> None:
+        """
+        Balance the two heaps so their sizes differ by at most 1.
+        The max_heap can have one more element than min_heap.
+        """
+        # If max_heap has more than one extra element, move one to min_heap
+        if len(self.max_heap) > len(self.min_heap) + 1:
+            val = -heapq.heappop(self.max_heap)
+            heapq.heappush(self.min_heap, val)
+        # If min_heap has more elements, move one to max_heap
+        elif len(self.min_heap) > len(self.max_heap):
+            val = heapq.heappop(self.min_heap)
+            heapq.heappush(self.max_heap, -val)
 
     def addNum(self, num: int) -> None:
-        # If large heap is not empty and the number is greater than the smallest number in large heap,
-        # push it to the large heap. Otherwise, push the negation of the number to the small heap.
-        if self.large and num > self.large[0]:
-            heapq.heappush(self.large, num)
-        else:
-            heapq.heappush(self.small, -1 * num)
+        """
+        Add a number to the data stream and maintain heap balance.
 
-        # Balance the heaps by adjusting their sizes if necessary
-        if len(self.small) > len(self.large) + 1:
-            val = -1 * heapq.heappop(self.small)
-            heapq.heappush(self.large, val)
-        if len(self.large) > len(self.small) + 1:
-            val = heapq.heappop(self.large)
-            heapq.heappush(self.small, -1 * val)
+        Args:
+            num: The number to add to the data stream
+        """
+        # Add to appropriate heap based on value
+        if self.min_heap and num > self.min_heap[0]:
+            heapq.heappush(self.min_heap, num)
+        else:
+            heapq.heappush(self.max_heap, -num)
+
+        # Ensure heaps remain balanced
+        self._balance_heaps()
 
     def findMedian(self) -> float:
-        # If sizes of both heaps are equal, return the average of the maximum element in the small heap
-        # and the minimum element in the large heap
-        if len(self.small) > len(self.large):
-            return -1 * self.small[0]
-        elif len(self.large) > len(self.small):
-            return self.large[0]
-        return (-1 * self.small[0] + self.large[0]) / 2.0
+        """
+        Find the median of the current data stream.
+
+        Returns:
+            float: The median value of all added numbers
+        """
+        if len(self.max_heap) > len(self.min_heap):
+            # If max_heap has one more element, that's the median
+            return -self.max_heap[0]
+        else:
+            # Otherwise, average of the two middle elements
+            return (-self.max_heap[0] + self.min_heap[0]) / 2.0
