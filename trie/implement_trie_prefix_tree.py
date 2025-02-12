@@ -10,10 +10,10 @@ class TrieNodeArray:
     def contains_key(self, ch: str) -> bool:
         return self.links[ord(ch) - ord("a")] is not None
 
-    def get(self, ch: str) -> "TrieNodeArray":
+    def get(self, ch: str):
         return self.links[ord(ch) - ord("a")]
 
-    def put(self, ch: str, node: "TrieNodeArray") -> None:
+    def put(self, ch: str, node) -> None:
         self.links[ord(ch) - ord("a")] = node
 
     def set_end(self) -> None:
@@ -79,12 +79,12 @@ class TrieNodeHash:
         self.is_word = False
         self.links = defaultdict(TrieNodeHash)
 
-    def get(self, ch: str) -> "TrieNode":
+    def get(self, ch: str):
         if ch in self.links:
             return self.links[ch]
         return None
 
-    def put(self, ch: str, node: "TrieNode") -> None:
+    def put(self, ch: str, node) -> None:
         self.links[ch] = node
 
     def contains_key(self, ch: str) -> bool:
