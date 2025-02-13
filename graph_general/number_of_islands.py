@@ -1,7 +1,7 @@
 from typing import List
 
 
-class Solution:
+class SolutionDFS:
     def _check_in_bound(self, grid: List[List[str]], row: int, col: int) -> bool:
         return 0 <= row < len(grid) and 0 <= col < len(grid[0])
 

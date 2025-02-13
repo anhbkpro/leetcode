@@ -1,10 +1,10 @@
-from .number_of_islands import Solution
+from .number_of_islands import SolutionDFS
 import pytest
 
 
 @pytest.fixture
 def solution():
-    return Solution()
+    return SolutionDFS()
 
 
 def test_single_island(solution):
