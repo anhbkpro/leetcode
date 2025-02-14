@@ -23,6 +23,4 @@ class ProductOfNumbers:
         if k > self.size:
             return 0
         # Compute the product of the last k elements using division
-        return (
-            self.prefix_product[self.size] // self.prefix_product[self.size - k]
-        )
+        return self.prefix_product[self.size] // self.prefix_product[self.size - k]
