@@ -61,8 +61,25 @@ def test_large_numbers(solution):
 def test_edge_cases(solution):
     # Test edge cases
     assert solution.plusOne([0]) == [1]  # Smallest possible input
-    assert solution.plusOne([9, 9, 9, 9, 9, 9, 9, 9, 9]) == [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # All nines
-    assert solution.plusOne([1, 0, 0, 0, 0]) == [1, 0, 0, 0, 1]  # Number ending with zeros
+    assert solution.plusOne([9, 9, 9, 9, 9, 9, 9, 9, 9]) == [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+    ]  # All nines
+    assert solution.plusOne([1, 0, 0, 0, 0]) == [
+        1,
+        0,
+        0,
+        0,
+        1,
+    ]  # Number ending with zeros
 
 
 def test_consecutive_carries(solution):
