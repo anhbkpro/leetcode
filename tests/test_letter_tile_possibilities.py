@@ -1,6 +1,7 @@
 import unittest
 from backtracking.letter_tile_possibilities import Solution
 
+
 class TestLetterTilePossibilities(unittest.TestCase):
     def setUp(self):
         self.solution = Solution()
@@ -25,5 +26,6 @@ class TestLetterTilePossibilities(unittest.TestCase):
         """Test the example case 'AAABBC'"""
         self.assertEqual(self.solution.numTilePossibilities("AAABBC"), 188)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
