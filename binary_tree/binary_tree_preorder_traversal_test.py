@@ -1,19 +1,27 @@
 import unittest
-from binary_tree.binary_tree_preorder_traversal import Solution, TreeNode
+from binary_tree.binary_tree_preorder_traversal import (
+    Solution,
+    SolutionIterations,
+    TreeNode,
+)
 
 
 class TestBinaryTreePreorderTraversal(unittest.TestCase):
     def setUp(self):
         self.solution = Solution()
+        self.solution_iter = SolutionIterations()
 
     def test_empty_tree(self):
         """Test preorder traversal of an empty tree"""
         self.assertEqual(self.solution.preorderTraversal(None), [])
+        self.assertEqual(self.solution_iter.preorderTraversal(None), [])
 
     def test_single_node(self):
         """Test preorder traversal of a tree with a single node"""
         root = TreeNode(1)
-        self.assertEqual(self.solution.preorderTraversal(root), [1])
+        expected = [1]
+        self.assertEqual(self.solution.preorderTraversal(root), expected)
+        self.assertEqual(self.solution_iter.preorderTraversal(root), expected)
 
     def test_complete_binary_tree(self):
         """Test preorder traversal of a complete binary tree
@@ -34,6 +42,7 @@ class TestBinaryTreePreorderTraversal(unittest.TestCase):
 
         expected = [1, 2, 4, 5, 3, 6, 7]
         self.assertEqual(self.solution.preorderTraversal(root), expected)
+        self.assertEqual(self.solution_iter.preorderTraversal(root), expected)
 
     def test_left_skewed_tree(self):
         """Test preorder traversal of a left-skewed tree
@@ -50,6 +59,7 @@ class TestBinaryTreePreorderTraversal(unittest.TestCase):
 
         expected = [1, 2, 3]
         self.assertEqual(self.solution.preorderTraversal(root), expected)
+        self.assertEqual(self.solution_iter.preorderTraversal(root), expected)
 
     def test_right_skewed_tree(self):
         """Test preorder traversal of a right-skewed tree
@@ -66,6 +76,7 @@ class TestBinaryTreePreorderTraversal(unittest.TestCase):
 
         expected = [1, 2, 3]
         self.assertEqual(self.solution.preorderTraversal(root), expected)
+        self.assertEqual(self.solution_iter.preorderTraversal(root), expected)
 
     def test_unbalanced_tree(self):
         """Test preorder traversal of an unbalanced tree
@@ -84,6 +95,7 @@ class TestBinaryTreePreorderTraversal(unittest.TestCase):
 
         expected = [1, 2, 4, 3, 5]
         self.assertEqual(self.solution.preorderTraversal(root), expected)
+        self.assertEqual(self.solution_iter.preorderTraversal(root), expected)
 
 
 if __name__ == "__main__":
