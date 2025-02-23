@@ -11,8 +11,6 @@ class TreeNode:
 class Solution:
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         ans = []
-        if not root:
-            return ans
         self.dfs(root, ans)
         return ans
 
