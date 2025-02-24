@@ -1,3 +1,6 @@
+from collections import deque
+
+
 class Solution:
     def __init__(self):
         self.bob_path = {}
@@ -26,10 +29,7 @@ class Solution:
             source_node, time, income = node_queue.popleft()
 
             # Alice reaches the node first
-            if (
-                source_node not in self.bob_path
-                or time < self.bob_path[source_node]
-            ):
+            if source_node not in self.bob_path or time < self.bob_path[source_node]:
                 income += amount[source_node]
             # Alice and Bob reach the node at the same time
             elif time == self.bob_path[source_node]:
