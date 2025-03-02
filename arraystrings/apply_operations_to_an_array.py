@@ -8,11 +8,7 @@ class Solution:
 
         for index in range(n):
             # Step 1: Merge adjacent equal elements if they are non-zero
-            if (
-                index < n - 1
-                and nums[index] == nums[index + 1]
-                and nums[index] != 0
-            ):
+            if index < n - 1 and nums[index] == nums[index + 1] and nums[index] != 0:
                 nums[index] *= 2
                 nums[index + 1] = 0
             # Step 2: Shift non-zero elements to the front
