@@ -37,9 +37,7 @@ class Solution:
                 start += 1
 
             while (
-                start < len(word)
-                and len(vowel_count) == 5
-                and consonant_count == k
+                start < len(word) and len(vowel_count) == 5 and consonant_count == k
             ):  # Try to shrink if window is valid
                 num_valid_substrings += next_consonant[end] - end
                 start_letter = word[start]

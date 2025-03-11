@@ -1,5 +1,8 @@
 import unittest
-from sliding_windows.count_of_substrings_containing_every_vowel_and_k_consonants_ii import Solution
+from sliding_windows.count_of_substrings_containing_every_vowel_and_k_consonants_ii import (
+    Solution,
+)
+
 
 class TestCountOfSubstrings(unittest.TestCase):
     def setUp(self):
@@ -13,6 +16,7 @@ class TestCountOfSubstrings(unittest.TestCase):
 
     def test_no_consonants(self):
         self.assertEqual(self.solution.countOfSubstrings("ieaouqqieaouqq", 1), 3)
+
 
 if __name__ == "__main__":
     unittest.main()
