@@ -9,27 +9,50 @@ class Solution:
 
 
 class BinarySearchSolution:
-    def _find_right_bound(self, nums: List[int]) -> int:
+    def _binary_search(self, nums: List[int], target: int, find_left: bool) -> int:
+        """
+        Generic binary search helper that can find either left or right boundary.
+        Args:
+            nums: Input array
+            target: Target value to compare against (0)
+            find_left: If True, finds leftmost boundary, otherwise rightmost
+        Returns:
+            Index of the boundary
+        """
         left, right = 0, len(nums) - 1
+        
         while left <= right:
             mid = (left + right) // 2
-            if nums[mid] > 0:
-                right = mid - 1
+            
+            if find_left:
+                if nums[mid] < target:
+                    left = mid + 1
+                else:
+                    right = mid - 1
             else:
-                left = mid + 1
-        return left
-
-    def _find_left_bound(self, nums: List[int]) -> int:
-        left, right = 0, len(nums) - 1
-        while left <= right:
-            mid = (left + right) // 2
-            if nums[mid] < 0:
-                left = mid + 1
-            else:
-                right = mid - 1
-        return right
+                if nums[mid] <= target:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+                    
+        return right if find_left else left
 
     def maximumCount(self, nums: List[int]) -> int:
-        last_negative_idx = self._find_left_bound(nums)
-        first_positive_idx = self._find_right_bound(nums)
-        return max(len(nums) - first_positive_idx, last_negative_idx + 1)
+        if not nums:
+            return 0
+            
+        # Sort the array first since binary search requires sorted input
+        nums = sorted(nums)
+            
+        # Handle edge cases of all positive/negative numbers
+        if nums[0] > 0 or nums[-1] < 0:
+            return len(nums)
+            
+        # Find boundaries of negative and positive numbers
+        last_negative = self._binary_search(nums, 0, True)
+        first_positive = self._binary_search(nums, 0, False)
+        
+        negative_count = last_negative + 1
+        positive_count = len(nums) - first_positive
+        
+        return max(negative_count, positive_count)
