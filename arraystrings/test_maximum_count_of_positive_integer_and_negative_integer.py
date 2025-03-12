@@ -1,6 +1,7 @@
 import pytest
 from .maximum_count_of_positive_integer_and_negative_integer import (
     Solution,
+    OnePassSolution,
     BinarySearchSolution,
 )
 
@@ -8,6 +9,11 @@ from .maximum_count_of_positive_integer_and_negative_integer import (
 @pytest.fixture
 def solution():
     return Solution()
+
+
+@pytest.fixture
+def one_pass_solution():
+    return OnePassSolution()
 
 
 @pytest.fixture
@@ -19,7 +25,7 @@ def test_basic_functionality(solution, binary_search_solution):
     test_cases = [
         ([-2, -1, -1, 1, 2, 3], 3),
         ([-3, -2, -1, 0, 0, 1, 2], 3),
-        ([1, 2, 3, 4, 5], 5)
+        ([1, 2, 3, 4, 5], 5),
     ]
     for nums, expected in test_cases:
         assert solution.maximumCount(nums) == expected
