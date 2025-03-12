@@ -1,10 +1,18 @@
 import pytest
-from .maximum_count_of_positive_integer_and_negative_integer import Solution
+from .maximum_count_of_positive_integer_and_negative_integer import (
+    Solution,
+    BinarySearchSolution,
+)
 
 
 @pytest.fixture
 def solution():
     return Solution()
+
+
+@pytest.fixture
+def binary_search_solution():
+    return BinarySearchSolution()
 
 
 def test_basic_functionality(solution):
