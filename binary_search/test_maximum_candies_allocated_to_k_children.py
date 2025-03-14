@@ -130,4 +130,4 @@ def test_can_allocate_helper(solution):
         ),
     ]
     for candies, k, target, expected in test_cases:
-        assert solution._can_allocate(candies, k, target) == expected
+        assert solution._can_allocate_candies(candies, k, target) == expected
