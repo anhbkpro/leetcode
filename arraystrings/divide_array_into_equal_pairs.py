@@ -5,7 +5,4 @@ from typing import List
 class Solution:
     def divideArray(self, nums: List[int]) -> bool:
         freq = Counter(nums)
-        for v in freq.values():
-            if v % 2:
-                return False
-        return True
+        return all(v % 2 == 0 for v in freq.values())
