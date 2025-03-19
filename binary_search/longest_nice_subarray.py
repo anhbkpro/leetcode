@@ -2,9 +2,7 @@ class Solution:
     def longestNiceSubarray(self, nums: list[int]) -> int:
         # Binary search for the longest nice subarray length
         left, right = 0, len(nums)
-        result = (
-            1  # Minimum answer is 1 (as subarrays of length 1 are always nice)
-        )
+        result = 1  # Minimum answer is 1 (as subarrays of length 1 are always nice)
 
         while left <= right:
             length = left + (right - left) // 2
