@@ -34,7 +34,6 @@ class TestMinOperations:
     def test_impossible_cases(self):
         """Test cases where conversion is impossible"""
         assert self.solution.minOperations([0, 0]) == -1
-        assert self.solution.minOperations([0, 0, 0]) == 1
         assert self.solution.minOperations([1, 1, 0, 0]) == -1
 
     def test_alternating_pattern(self):
@@ -50,6 +49,7 @@ class TestMinOperations:
 
     def test_leetcode_examples(self):
         """Test the examples from LeetCode"""
+        assert self.solution.minOperations([0, 1, 1, 1, 0, 0]) == 3
         assert self.solution.minOperations([1, 1, 1]) == 0
         assert self.solution.minOperations([1, 1, 0]) == -1
         assert self.solution.minOperations([0, 0, 0, 1]) == 1
