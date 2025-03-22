@@ -1,10 +1,13 @@
 import unittest
-from .find_all_possible_recipes_from_given_supplies import Solution
+from .find_all_possible_recipes_from_given_supplies import (
+    BFS,
+    DFS,
+    TopologicalSortKahnAlgorithm,
+)
 
 
-class TestFindAllRecipes(unittest.TestCase):
-    def setUp(self):
-        self.solution = Solution()
+class BaseTestFindAllRecipes:
+    """Base test class containing all test cases."""
 
     def test_basic_recipes(self):
         # Test case with simple recipes where all ingredients are supplies
@@ -73,6 +76,21 @@ class TestFindAllRecipes(unittest.TestCase):
         expected = ["simple"]
         result = self.solution.findAllRecipes(recipes, ingredients, supplies)
         self.assertEqual(result, expected)
+
+
+class TestBFS(unittest.TestCase, BaseTestFindAllRecipes):
+    def setUp(self):
+        self.solution = BFS()
+
+
+class TestDFS(unittest.TestCase, BaseTestFindAllRecipes):
+    def setUp(self):
+        self.solution = DFS()
+
+
+class TestTopologicalSort(unittest.TestCase, BaseTestFindAllRecipes):
+    def setUp(self):
+        self.solution = TopologicalSortKahnAlgorithm()
 
 
 if __name__ == "__main__":
