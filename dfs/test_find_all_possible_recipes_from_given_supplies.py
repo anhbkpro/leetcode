@@ -1,5 +1,5 @@
 import unittest
-from find_all_possible_recipes_from_given_supplies import Solution
+from .find_all_possible_recipes_from_given_supplies import Solution
 
 
 class TestFindAllRecipes(unittest.TestCase):
