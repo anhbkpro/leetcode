@@ -39,8 +39,7 @@ class Solution:
             # While the stack is not empty and the current prime score is greater than the stack's top
             while (
                 decreasing_prime_score_stack
-                and prime_scores[decreasing_prime_score_stack[-1]]
-                < prime_scores[index]
+                and prime_scores[decreasing_prime_score_stack[-1]] < prime_scores[index]
             ):
                 top_index = decreasing_prime_score_stack.pop()
 
