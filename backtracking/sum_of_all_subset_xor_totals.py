@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def subsetXORSum(self, nums):
+    def subsetXORSum(self, nums: List[int]) -> int:
 
         def generate_subsets(nums, index, subset, subsets):
             # Base case: index reached end of nums
