@@ -1,5 +1,5 @@
 import pytest
-from partition_labels import MergeIntervals, TwoPointers
+from .partition_labels import MergeIntervals, TwoPointers
 
 
 class TestMergeIntervals:

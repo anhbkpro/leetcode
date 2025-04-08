@@ -1,5 +1,5 @@
 import pytest
-from put_marbles_in_bags import Solution
+from .put_marbles_in_bags import Solution
 
 
 class TestPutMarbles:

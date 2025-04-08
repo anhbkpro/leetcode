@@ -1,5 +1,5 @@
 import pytest
-from maximum_value_of_an_ordered_triplet_ii import Solution
+from .maximum_value_of_an_ordered_triplet_ii import Solution
 
 
 class TestMaximumValueOfAnOrderedTripletII:

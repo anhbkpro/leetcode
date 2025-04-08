@@ -1,5 +1,5 @@
 import unittest
-from count_days_without_meetings import Solution
+from .count_days_without_meetings import Solution
 
 
 class TestCountDays(unittest.TestCase):

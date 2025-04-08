@@ -1,5 +1,5 @@
 import unittest
-from network_delay_time import BFSSolution, DijkstraSolution
+from .network_delay_time import BFSSolution, DijkstraSolution
 
 
 class BaseTestNetworkDelayTime:

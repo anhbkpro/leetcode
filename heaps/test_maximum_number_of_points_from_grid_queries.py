@@ -1,5 +1,4 @@
-import pytest
-from maximum_number_of_points_from_grid_queries import Solution
+from .maximum_number_of_points_from_grid_queries import Solution
 
 
 def test_max_points_example1():

@@ -1,5 +1,5 @@
 import pytest
-from lowest_common_ancestor_of_deepest_leaves import Solution, TreeNode
+from .lowest_common_ancestor_of_deepest_leaves import Solution, TreeNode
 
 
 class TestLowestCommonAncestorOfDeepestLeaves:

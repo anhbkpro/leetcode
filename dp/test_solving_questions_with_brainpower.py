@@ -1,5 +1,5 @@
 import pytest
-from solving_questions_with_brainpower import Solution
+from .solving_questions_with_brainpower import Solution
 
 
 class TestSolvingQuestionsWithBrainpower:
