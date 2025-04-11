@@ -43,8 +43,8 @@ class UnionFind:
     def combine(
         self, representative: List[int], size: List[int], vertex1: int, vertex2: int
     ) -> int:
-        vertex1 = self.find(representative, vertex1) # 0
-        vertex2 = self.find(representative, vertex2) # 1
+        vertex1 = self.find(representative, vertex1)  # 0
+        vertex2 = self.find(representative, vertex2)  # 1
 
         if vertex1 == vertex2:
             return 0
@@ -65,8 +65,8 @@ class UnionFind:
     def countComponents(self, n: int, edges: List[List[int]]) -> int:
         # Example with Input: n = 5, edges = [[0,1],[1,2],[3,4]]
         # Output: 2
-        representative: List[int] = [i for i in range(n)] # [0, 1, 2, 3, 4]
-        size: List[int] = [1] * n # [1, 1, 1, 1, 1]
+        representative: List[int] = [i for i in range(n)]  # [0, 1, 2, 3, 4]
+        size: List[int] = [1] * n  # [1, 1, 1, 1, 1]
 
         components: int = n
         for edge in edges:
