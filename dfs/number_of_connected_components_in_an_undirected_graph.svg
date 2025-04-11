@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600">
+  <!-- Initial State -->
+  <g transform="translate(100, 50)">
+    <text x="0" y="0" font-family="Arial" font-size="14" font-weight="bold">Initial State: 5 Components</text>
+    <circle cx="20" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="20" y="35" font-family="Arial" font-size="14" text-anchor="middle">0</text>
+
+    <circle cx="70" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="70" y="35" font-family="Arial" font-size="14" text-anchor="middle">1</text>
+
+    <circle cx="120" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="120" y="35" font-family="Arial" font-size="14" text-anchor="middle">2</text>
+
+    <circle cx="170" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="170" y="35" font-family="Arial" font-size="14" text-anchor="middle">3</text>
+
+    <circle cx="220" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="220" y="35" font-family="Arial" font-size="14" text-anchor="middle">4</text>
+
+    <text x="300" y="30" font-family="Arial" font-size="12">representative = [0,1,2,3,4]</text>
+    <text x="300" y="50" font-family="Arial" font-size="12">size = [1,1,1,1,1]</text>
+    <text x="300" y="70" font-family="Arial" font-size="12">components = 5</text>
+  </g>
+
+  <!-- After First Edge -->
+  <g transform="translate(100, 150)">
+    <text x="0" y="0" font-family="Arial" font-size="14" font-weight="bold">After Edge [0,1]: 4 Components</text>
+    <circle cx="20" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="20" y="35" font-family="Arial" font-size="14" text-anchor="middle">0</text>
+
+    <circle cx="70" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="70" y="35" font-family="Arial" font-size="14" text-anchor="middle">1</text>
+
+    <line x1="40" y1="30" x2="50" y2="30" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <circle cx="120" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="120" y="35" font-family="Arial" font-size="14" text-anchor="middle">2</text>
+
+    <circle cx="170" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="170" y="35" font-family="Arial" font-size="14" text-anchor="middle">3</text>
+
+    <circle cx="220" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="220" y="35" font-family="Arial" font-size="14" text-anchor="middle">4</text>
+
+    <text x="300" y="30" font-family="Arial" font-size="12">representative = [0,0,2,3,4]</text>
+    <text x="300" y="50" font-family="Arial" font-size="12">size = [2,1,1,1,1]</text>
+    <text x="300" y="70" font-family="Arial" font-size="12">components = 4</text>
+  </g>
+
+  <!-- After Second Edge -->
+  <g transform="translate(100, 250)">
+    <text x="0" y="0" font-family="Arial" font-size="14" font-weight="bold">After Edge [1,2]: 3 Components</text>
+    <circle cx="20" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="20" y="35" font-family="Arial" font-size="14" text-anchor="middle">0</text>
+
+    <circle cx="70" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="70" y="35" font-family="Arial" font-size="14" text-anchor="middle">1</text>
+
+    <line x1="40" y1="30" x2="50" y2="30" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <circle cx="120" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="120" y="35" font-family="Arial" font-size="14" text-anchor="middle">2</text>
+
+    <line x1="90" y1="30" x2="100" y2="30" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <circle cx="170" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="170" y="35" font-family="Arial" font-size="14" text-anchor="middle">3</text>
+
+    <circle cx="220" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="220" y="35" font-family="Arial" font-size="14" text-anchor="middle">4</text>
+
+    <text x="300" y="30" font-family="Arial" font-size="12">representative = [0,0,0,3,4]</text>
+    <text x="300" y="50" font-family="Arial" font-size="12">size = [3,1,1,1,1]</text>
+    <text x="300" y="70" font-family="Arial" font-size="12">components = 3</text>
+  </g>
+
+  <!-- After Third Edge -->
+  <g transform="translate(100, 350)">
+    <text x="0" y="0" font-family="Arial" font-size="14" font-weight="bold">After Edge [3,4]: 2 Components</text>
+    <circle cx="20" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="20" y="35" font-family="Arial" font-size="14" text-anchor="middle">0</text>
+
+    <circle cx="70" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="70" y="35" font-family="Arial" font-size="14" text-anchor="middle">1</text>
+
+    <line x1="40" y1="30" x2="50" y2="30" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <circle cx="120" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="120" y="35" font-family="Arial" font-size="14" text-anchor="middle">2</text>
+
+    <line x1="90" y1="30" x2="100" y2="30" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <circle cx="170" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="170" y="35" font-family="Arial" font-size="14" text-anchor="middle">3</text>
+
+    <circle cx="220" cy="30" r="20" fill="white" stroke="black" stroke-width="2"/>
+    <text x="220" y="35" font-family="Arial" font-size="14" text-anchor="middle">4</text>
+
+    <line x1="190" y1="30" x2="200" y2="30" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <text x="300" y="30" font-family="Arial" font-size="12">representative = [0,0,0,3,3]</text>
+    <text x="300" y="50" font-family="Arial" font-size="12">size = [3,1,1,2,1]</text>
+    <text x="300" y="70" font-family="Arial" font-size="12">components = 2</text>
+  </g>
+
+  <!-- Final State -->
+  <g transform="translate(100, 450)">
+    <text x="0" y="0" font-family="Arial" font-size="14" font-weight="bold">Final State: 2 Connected Components</text>
+
+    <circle cx="20" cy="30" r="20" fill="#90EE90" stroke="#006400" stroke-width="2"/>
+    <text x="20" y="35" font-family="Arial" font-size="14" text-anchor="middle">0</text>
+
+    <line x1="40" y1="30" x2="50" y2="30" stroke="#006400" stroke-width="2"/>
+
+    <circle cx="70" cy="30" r="20" fill="#90EE90" stroke="#006400" stroke-width="2"/>
+    <text x="70" y="35" font-family="Arial" font-size="14" text-anchor="middle">1</text>
+
+    <line x1="90" y1="30" x2="100" y2="30" stroke="#006400" stroke-width="2"/>
+
+    <circle cx="120" cy="30" r="20" fill="#90EE90" stroke="#006400" stroke-width="2"/>
+    <text x="120" y="35" font-family="Arial" font-size="14" text-anchor="middle">2</text>
+
+    <circle cx="170" cy="30" r="20" fill="#FFB6C1" stroke="#8B0000" stroke-width="2"/>
+    <text x="170" y="35" font-family="Arial" font-size="14" text-anchor="middle">3</text>
+
+    <line x1="190" y1="30" x2="200" y2="30" stroke="#8B0000" stroke-width="2"/>
+
+    <circle cx="220" cy="30" r="20" fill="#FFB6C1" stroke="#8B0000" stroke-width="2"/>
+    <text x="220" y="35" font-family="Arial" font-size="14" text-anchor="middle">4</text>
+
+    <text x="300" y="30" font-family="Arial" font-size="14" font-weight="bold">Final Result:</text>
+    <text x="300" y="50" font-family="Arial" font-size="12">2 components:</text>
+    <text x="300" y="70" font-family="Arial" font-size="12">{0,1,2} and {3,4}</text>
+  </g>
+
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+    </marker>
+  </defs>
+</svg>
