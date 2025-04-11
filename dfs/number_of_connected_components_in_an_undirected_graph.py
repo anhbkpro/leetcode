@@ -1,10 +1,10 @@
 from collections import defaultdict
-from typing import List
+from typing import List, Set, Dict
 
 
 class DFS:
     def countComponents(self, n: int, edges: List[List[int]]) -> int:
-        def dfs(visited, graph, node):
+        def dfs(visited: Set[int], graph: Dict[int, List[int]], node: int) -> None:
             if node in visited:
                 return
 
@@ -15,13 +15,13 @@ class DFS:
                     continue
                 dfs(visited, graph, neighbor)
 
-        visited = set()
-        graph = defaultdict(list)
+        visited: Set[int] = set()
+        graph: Dict[int, List[int]] = defaultdict(list)
         for u, v in edges:
             graph[u].append(v)
             graph[v].append(u)
 
-        components = 0
+        components: int = 0
         for i in range(n):
             if i not in visited:
                 components += 1
@@ -31,14 +31,16 @@ class DFS:
 
 
 class UnionFind:
-    def find(self, representative, vertex):
+    def find(self, representative: List[int], vertex: int) -> int:
         if vertex == representative[vertex]:
             return vertex
 
         representative[vertex] = self.find(representative, representative[vertex])
         return representative[vertex]
 
-    def combine(self, representative, size, vertex1, vertex2):
+    def combine(
+        self, representative: List[int], size: List[int], vertex1: int, vertex2: int
+    ) -> int:
         vertex1 = self.find(representative, vertex1)
         vertex2 = self.find(representative, vertex2)
 
@@ -53,11 +55,11 @@ class UnionFind:
                 representative[vertex1] = vertex2
             return 1
 
-    def countComponents(self, n, edges):
-        representative = [i for i in range(n)]
-        size = [1] * n
+    def countComponents(self, n: int, edges: List[List[int]]) -> int:
+        representative: List[int] = [i for i in range(n)]
+        size: List[int] = [1] * n
 
-        components = n
+        components: int = n
         for edge in edges:
             components -= self.combine(representative, size, edge[0], edge[1])
 
