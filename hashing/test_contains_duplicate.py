@@ -1,6 +1,6 @@
 import unittest
 from typing import List
-from .contains_duplicate import SolutionHashMap, SolutionSorting
+from .LC75__contains_duplicate import SolutionHashMap, SolutionSorting
 
 
 class BaseTestContainsDuplicate:
