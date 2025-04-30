@@ -15,4 +15,5 @@ class Solution:
                     max_elements_in_window -= 1
                 start += 1
             ans += start
+            print(f"ans: {ans}, start: {start}, end: {end}")
         return ans

@@ -6,7 +6,7 @@ class TestCountSubarraysWhereMaxElementAppearsAtLeastKTimes(unittest.TestCase):
     def test_example_1(self):
         # nums = [1,3,2,3,3], k = 2
         # max_element = 3
-        # Valid subarrays: [3,2,3], [3,2,3,3], [2,3,3], [3,3]
+        # The subarrays that contain the element 3 at least 2 times are: [1,3,2,3], [1,3,2,3,3], [3,2,3], [3,2,3,3], [2,3,3] and [3,3].
         nums = [1, 3, 2, 3, 3]
         self.assertEqual(Solution.count_sub_arrays(nums, 2), 6)
 
