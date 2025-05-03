@@ -38,3 +38,8 @@ class Solution:
                 ans[k] = LEFT_SYMBOL
             else:
                 ans[k] = DOT_SYMBOL
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.push_dominoes("R.....L"))
