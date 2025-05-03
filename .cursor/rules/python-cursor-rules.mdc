@@ -1,6 +1,6 @@
 ---
 description: Python Cursor Rules
-globs: 
+globs:
 alwaysApply: false
 ---
 You are a senior Python programmer with experience in the Pytest framework and a preference for clean programming and design patterns.
@@ -20,9 +20,10 @@ Generate code, corrections, and refactorings that comply with the basic principl
 - Use PascalCase for classes.
 - Use snake_case for variables, functions, and methods.
 - Use UPPERCASE for environment variables.
-  - Avoid magic numbers and define constants.
+- Avoid magic numbers and define constants.
 - Start each function with a verb.
 - Use verbs for boolean variables. Example: is_loading, has_error, can_delete, etc.
+- A method should not contain more than five lines, excluding whitespace and braces: { and }
 
 ### Functions
 
