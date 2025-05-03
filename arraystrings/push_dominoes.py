@@ -1,21 +1,40 @@
-class Solution:
-    def pushDominoes(self, dominoes: str) -> str:
-        symbols = [(i, x) for i, x in enumerate(dominoes) if x != "."]
-        symbols = [(-1, "L")] + symbols + [(len(dominoes), "R")]
+from typing import List, Tuple
 
-        ans = list(dominoes)
+LEFT_SYMBOL: str = "L"
+RIGHT_SYMBOL: str = "R"
+DOT_SYMBOL: str = "."
+
+
+class Solution:
+    def push_dominoes(self, dominoes: str) -> str:
+        symbols: List[Tuple[int, str]] = self._get_symbols(dominoes)
+        ans: List[str] = list(dominoes)
+        self._fill_dominoes(ans, symbols)
+        return "".join(ans)
+
+    def _get_symbols(self, dominoes: str) -> List[Tuple[int, str]]:
+        symbols: List[Tuple[int, str]] = [
+            (i, x) for i, x in enumerate(dominoes) if x != DOT_SYMBOL
+        ]
+        symbols = [(-1, LEFT_SYMBOL)] + symbols + [(len(dominoes), RIGHT_SYMBOL)]
+        return symbols
+
+    def _fill_dominoes(self, ans: List[str], symbols: List[Tuple[int, str]]) -> None:
         for (i, x), (j, y) in zip(symbols, symbols[1:]):
             if x == y:
-                for k in range(i + 1, j):
-                    ans[k] = x
-            elif x > y:  # RL
-                for k in range(i + 1, j):
-                    # Replace cmp function which doesn't exist in Python 3
-                    if k - i < j - k:
-                        ans[k] = "L"
-                    elif k - i > j - k:
-                        ans[k] = "R"
-                    else:
-                        ans[k] = "."
+                self._fill_range(ans, i + 1, j, x)
+            elif x > y:
+                self._fill_rl(ans, i, j)
 
-        return "".join(ans)
+    def _fill_range(self, ans: List[str], start: int, end: int, symbol: str) -> None:
+        for k in range(start, end):
+            ans[k] = symbol
+
+    def _fill_rl(self, ans: List[str], i: int, j: int) -> None:
+        for k in range(i + 1, j):
+            if k - i < j - k:
+                ans[k] = RIGHT_SYMBOL
+            elif k - i > j - k:
+                ans[k] = LEFT_SYMBOL
+            else:
+                ans[k] = DOT_SYMBOL
