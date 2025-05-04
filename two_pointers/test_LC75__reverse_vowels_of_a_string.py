@@ -21,5 +21,5 @@ from two_pointers.LC75__reverse_vowels_of_a_string import Solution
 )
 def test_reverse_vowels(input_s, expected_output):
     solution = Solution()
-    actual_output = solution.reverseVowels(input_s)
+    actual_output = solution.reverse_vowels(input_s)
     assert actual_output == expected_output
