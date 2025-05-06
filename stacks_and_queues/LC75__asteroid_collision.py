@@ -10,7 +10,7 @@ class Solution:
                 top = stk[-1]
                 if abs(top) < abs(asteroid):
                     stk.pop()
-                    continue
+                    continue # continue with the next asteroid in the stack.
                 elif abs(top) == abs(asteroid):
                     stk.pop()
 
