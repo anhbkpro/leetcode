@@ -1,5 +1,6 @@
 from collections import defaultdict, deque
 
+
 class Solution:
     def largestPathValue(self, colors: str, edges: list[list[int]]) -> int:
         n = len(colors)
@@ -26,7 +27,7 @@ class Solution:
         while q:
             node = q.popleft()
             # Update count for current node's color and track maximum
-            color_index = ord(colors[node]) - ord('a')
+            color_index = ord(colors[node]) - ord("a")
             count[node][color_index] += 1
             answer = max(answer, count[node][color_index])
             nodes_seen += 1
