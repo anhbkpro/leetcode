@@ -1,5 +1,5 @@
 import unittest
-from candy import Solution
+from .candy import Solution
 
 
 class TestCandy(unittest.TestCase):
