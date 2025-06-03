@@ -1,5 +1,4 @@
 import unittest
-from collections import deque
 from .maximum_candies_you_can_get_from_boxes import Solution
 
 
