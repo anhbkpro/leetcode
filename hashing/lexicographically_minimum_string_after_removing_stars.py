@@ -8,6 +8,9 @@ class Solution:
             else:
                 for j in range(26):
                     if cnt[j]:
+                        # To ensure that the resulting string is as lexicographically small as possible,
+                        # and following the greedy principle,
+                        # it's better to remove characters from the end rather than the beginning.
                         arr[cnt[j].pop()] = "*"
                         break
         return "".join(c for c in arr if c != "*")
