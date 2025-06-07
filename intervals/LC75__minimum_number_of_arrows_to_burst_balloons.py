@@ -11,11 +11,7 @@ class Solution:
         number_of_arrows = 0
         intervals = []
         for start, end in points:
-            if not intervals:
-                intervals.append([start, end])
-                number_of_arrows += 1
-                continue
-            if start <= intervals[-1][-1]:
+            if intervals and start <= intervals[-1][-1]:
                 # shrink the end to build the common interval
                 intervals[-1][-1] = min(intervals[-1][-1], end)
             else:
