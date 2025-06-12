@@ -22,7 +22,7 @@ def sharedAccounts(customerAccounts):
     return sorted(result)
 
 
-if __name__ == "__main__":
+if __name__ == "_        c  dcç∂ß56t7y9_main__":
     customerAccounts = [
         ("1", "10"),
         ("1", "11"),
