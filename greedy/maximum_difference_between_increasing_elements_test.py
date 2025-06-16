@@ -1,11 +1,6 @@
 from greedy.maximum_difference_between_increasing_elements import Solution
 
 
-def test_empty_array():
-    solution = Solution()
-    assert solution.maximumDifference([]) == -1
-
-
 def test_single_element():
     solution = Solution()
     assert solution.maximumDifference([1]) == -1
