@@ -58,7 +58,7 @@ class TestKeysAndRooms(unittest.TestCase):
 
     def test_self_loop(self):
         rooms = [[0], [1], [2]]
-        expected = True
+        expected = False
         self.assertEqual(self.solution.canVisitAllRooms(rooms), expected)
 
     def test_empty_rooms(self):

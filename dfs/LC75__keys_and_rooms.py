@@ -9,7 +9,7 @@ class Solution:
 
         while len(q) > 0:
             room = q.popleft()
-            if visited[room]:
+            if not visited or visited[room]:
                 continue
             visited[room] = True
             for key in rooms[room]:
