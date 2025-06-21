@@ -1,3 +1,7 @@
+from collections import defaultdict
+import unittest
+
+
 class Solution:
     def minimumDeletions(self, word: str, k: int) -> int:
         cnt = defaultdict(int)
