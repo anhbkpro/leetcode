@@ -11,9 +11,7 @@ class Solution:
         else:
             return len(nums2) if v >= 0 else 0
 
-    def kthSmallestProduct(
-        self, nums1: List[int], nums2: List[int], k: int
-    ) -> int:
+    def kthSmallestProduct(self, nums1: List[int], nums2: List[int], k: int) -> int:
         n1 = len(nums1)
         left, right = -(10**10), 10**10
         while left <= right:
