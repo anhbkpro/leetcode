@@ -67,24 +67,24 @@ if __name__ == "__main__":
     lru = LRUCache(2)
     lru.put(1, 1)
     lru.put(2, 2)
-    print(lru.get(1))    # returns 1
-    lru.put(3, 3)        # evicts key 2
-    print(lru.get(2))    # returns -1 (not found)
-    lru.put(4, 4)        # evicts key 1
-    print(lru.get(1))    # returns -1 (not found)
-    print(lru.get(3))    # returns 3
-    print(lru.get(4))    # returns 4
+    print(lru.get(1))  # returns 1
+    lru.put(3, 3)  # evicts key 2
+    print(lru.get(2))  # returns -1 (not found)
+    lru.put(4, 4)  # evicts key 1
+    print(lru.get(1))  # returns -1 (not found)
+    print(lru.get(3))  # returns 3
+    print(lru.get(4))  # returns 4
 
-    print("\n" + "="*50 + "\n")
+    print("\n" + "=" * 50 + "\n")
 
     # Example 2 - More comprehensive test
     lru2 = LRUCache(3)
     lru2.put(1, 10)
     lru2.put(2, 20)
     lru2.put(3, 30)
-    print(f"get(2): {lru2.get(2)}")    # 20, moves 2 to front
-    lru2.put(4, 40)                    # evicts 1 (least recently used)
-    print(f"get(1): {lru2.get(1)}")    # -1 (evicted)
-    print(f"get(3): {lru2.get(3)}")    # 30
-    print(f"get(2): {lru2.get(2)}")    # 20
-    print(f"get(4): {lru2.get(4)}")    # 40
+    print(f"get(2): {lru2.get(2)}")  # 20, moves 2 to front
+    lru2.put(4, 40)  # evicts 1 (least recently used)
+    print(f"get(1): {lru2.get(1)}")  # -1 (evicted)
+    print(f"get(3): {lru2.get(3)}")  # 30
+    print(f"get(2): {lru2.get(2)}")  # 20
+    print(f"get(4): {lru2.get(4)}")  # 40
