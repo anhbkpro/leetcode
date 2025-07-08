@@ -6,7 +6,7 @@ class Solution:
     def maxValue(self, events: List[List[int]], k: int) -> int:
         events.sort()
         n = len(events)
-        starts = [start for start, end, value in events]
+        starts = [start for start, _, _ in events]
         dp = [[-1] * n for _ in range(k + 1)]
 
         def dfs(cur_index, count):
