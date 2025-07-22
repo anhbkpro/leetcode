@@ -1,12 +1,15 @@
+from collections import defaultdict
+
+
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        max_len = 0
-        left = right = 0
-        char_to_next_idx = {}
-        while right < len(s):
-            if s[right] in char_to_next_idx:
-                left = max(left, char_to_next_idx[s[right]])
-            max_len = max(max_len, right - left + 1)
-            char_to_next_idx[s[right]] = right + 1
-            right += 1
-        return max_len
+        ans = start = 0
+        last_index_map = defaultdict(int)
+        n = len(s)
+        for end in range(n):
+            c = s[end]
+            if c in last_index_map:
+                start = max(start, last_index_map[c] + 1)
+            ans = max(ans, end - start + 1)
+            last_index_map[c] = end
+        return ans
