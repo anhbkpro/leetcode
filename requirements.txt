@@ -2,3 +2,4 @@ flake8==7.1.1
 pandas==2.2.3
 pytest==8.3.3
 sortedcontainers==2.4.0
+black==25.1.0
