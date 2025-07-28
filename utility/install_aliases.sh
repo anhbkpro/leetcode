@@ -3,6 +3,8 @@
 # install_aliases.sh - Install developer aliases
 # ==============================================
 
+alias le="set -o allexport; source .env; set +o allexport"
+
 set -e
 
 # Colors
