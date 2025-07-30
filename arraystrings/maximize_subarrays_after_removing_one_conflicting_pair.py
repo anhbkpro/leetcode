@@ -24,7 +24,5 @@ class Solution:
             else:
                 b2 = min(b2, bMin1[i])
             res += min(bMin1[ib1], n + 1) - i
-            delCount[ib1] += min(min(b2, bMin2[ib1]), n + 1) - min(
-                bMin1[ib1], n + 1
-            )
+            delCount[ib1] += min(min(b2, bMin2[ib1]), n + 1) - min(bMin1[ib1], n + 1)
         return res + max(delCount)

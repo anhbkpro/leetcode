@@ -82,13 +82,13 @@ def test_max_sum_edge_cases():
 def test_max_sum_with_duplicates():
     """Test cases focusing on duplicate handling"""
     solution = Solution()
-    
+
     # Test with all duplicates
     assert solution.maxSum([2, 2, 2, 2, 2]) == 2
-    
+
     # Test with some duplicates
     assert solution.maxSum([1, 1, 2, 2, 3, 3, 4]) == 10  # 1+2+3+4 = 10
-    
+
     # Test with duplicates in negative numbers
     assert solution.maxSum([-1, -1, -2, -2, -3]) == -1  # max(-1, -1, -2, -2, -3) = -1
 
@@ -96,17 +96,17 @@ def test_max_sum_with_duplicates():
 def test_max_sum_comprehensive():
     """Additional comprehensive test cases"""
     solution = Solution()
-    
+
     # Test with alternating positive and negative
     assert solution.maxSum([1, -1, 2, -2, 3, -3]) == 6  # 1+2+3 = 6
-    
+
     # Test with zeros mixed in
     assert solution.maxSum([0, 1, 0, 2, 0, 3]) == 6  # 1+2+3 = 6
-    
+
     # Test with single element arrays
     assert solution.maxSum([42]) == 42
     assert solution.maxSum([-42]) == -42
     assert solution.maxSum([0]) == 0
-    
+
     # Test with large range of numbers
     assert solution.maxSum([-1000, -500, 0, 500, 1000]) == 1500  # 500+1000 = 1500
