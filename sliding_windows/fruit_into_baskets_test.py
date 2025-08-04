@@ -1,6 +1,6 @@
 import unittest
 from typing import List
-from fruit_into_baskets import Solution
+from sliding_windows.fruit_into_baskets import Solution
 
 
 class TestFruitIntoBaskets(unittest.TestCase):
