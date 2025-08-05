@@ -3,19 +3,17 @@ from typing import List
 
 class Solution:
     def numOfUnplacedFruits(self, fruits: List[int], baskets: List[int]) -> int:
-        used = [False] * len(baskets)
         unplaced_count = 0
+        n = len(baskets)
         
         for fruit in fruits:
-            placed = False
-            for i in range(len(baskets)):
-                basket = baskets[i]
-                if basket >= fruit and not used[i]:
-                    used[i] = True
-                    placed = True
+            unset = 1
+            for i in range(n):
+                if fruit <= baskets[i]:
+                    baskets[i] = 0
+                    unset = 0
                     break
-            
-            if not placed:
-                unplaced_count += 1
+
+            unplaced_count += unset
 
         return unplaced_count
