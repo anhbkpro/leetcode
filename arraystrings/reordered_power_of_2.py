@@ -16,5 +16,7 @@ class Solution(object):
         represents a power of 2: namely, that the number of ones in its binary
         representation is 1.
         """
-        return any(cand[0] != '0' and bin(int("".join(cand))).count('1') == 1
-                   for cand in itertools.permutations(str(N)))
+        return any(
+            cand[0] != "0" and bin(int("".join(cand))).count("1") == 1
+            for cand in itertools.permutations(str(N))
+        )

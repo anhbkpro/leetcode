@@ -7,9 +7,12 @@ class Solution:
         dp = {}
 
         def calculate_dp(i, j):
-            return (dp[max(0, i - 4)][j] + dp[max(0, i - 3)][j - 1] +
-                    dp[max(0, i - 2)][max(0, j - 2)]
-                    + dp[i - 1][max(0, j - 3)]) / 4
+            return (
+                dp[max(0, i - 4)][j]
+                + dp[max(0, i - 3)][j - 1]
+                + dp[max(0, i - 2)][max(0, j - 2)]
+                + dp[i - 1][max(0, j - 3)]
+            ) / 4
 
         dp[0] = {0: 0.5}
         for k in range(1, m + 1):
