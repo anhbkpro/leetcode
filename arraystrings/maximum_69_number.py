@@ -1,12 +1,8 @@
 class Solution:
     def maximum69Number (self, num: int) -> int:
-        num_str = str(num)
-        result = []
-        used = False
-        for c in num_str:
-            if c == "6" and not used:
-                result.append("9")
-                used = True
-            else:
-                result.append(c)
-        return int("".join(result))
+        num_char_list = list(str(num))
+        for i, c in enumerate(num_char_list):
+            if c == "6":
+                num_char_list[i] = "9"
+                break
+        return int("".join(num_char_list))
