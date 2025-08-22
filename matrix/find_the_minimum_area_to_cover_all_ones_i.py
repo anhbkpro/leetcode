@@ -3,16 +3,15 @@ from typing import List
 
 class Solution:
     def minimumArea(self, grid: List[List[int]]) -> int:
-        minx, miny = float("inf"), float("inf")
-        maxx, maxy = -1, -1
-        for i in range(len(grid)):
-            for j in range(len(grid[0])):
+        n, m = len(grid), len(grid[0])
+        minx, miny = n, m
+        maxx, maxy = 0, 0
+        for i in range(n):
+            for j in range(m):
                 if grid[i][j] == 1:
                     minx = min(minx, i)
                     maxx = max(maxx, i)
                     miny = min(miny, j)
                     maxy = max(maxy, j)
 
-        if minx == float("inf") or miny == float("inf") or maxx == -1 or maxy == -1:
-            return 0
         return (maxx - minx + 1) * (maxy - miny + 1)
