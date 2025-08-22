@@ -1,5 +1,5 @@
 import unittest
-from find_the_minimum_area_to_cover_all_ones_i import Solution
+from matrix.find_the_minimum_area_to_cover_all_ones_i import Solution
 
 
 class TestMinimumArea(unittest.TestCase):
