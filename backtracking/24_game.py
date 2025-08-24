@@ -20,7 +20,9 @@ class Solution:
         for i in range(len(cards)):
             for j in range(i + 1, len(cards)):
                 # Create a new list with the remaining numbers and the new result.
-                new_list = [number for k, number in enumerate(cards) if (k != i and k != j)]
+                new_list = [
+                    number for k, number in enumerate(cards) if (k != i and k != j)
+                ]
 
                 # For any two numbers in our list, we perform every operation one by one.
                 for res in self.generate_possible_results(cards[i], cards[j]):
