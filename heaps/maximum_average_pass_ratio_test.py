@@ -46,10 +46,10 @@ def test_max_average_ratio_edge_cases():
 
     # Test with no extra students
     actual = Solution().maxAverageRatio(classes=[[1, 2], [3, 5]], extraStudents=0)
-    expected = (1/2 + 3/5) / 2
+    expected = (1 / 2 + 3 / 5) / 2
     assert math.isclose(actual, expected, abs_tol=EPSILON)
 
     # Test with single class
     actual = Solution().maxAverageRatio(classes=[[1, 3]], extraStudents=2)
-    expected = 3/5
+    expected = 3 / 5
     assert math.isclose(actual, expected, abs_tol=EPSILON)
