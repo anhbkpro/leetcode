@@ -5,6 +5,9 @@ class Solution:
     def minimumTeachings(
         self, n: int, languages: List[List[int]], friendships: List[List[int]]
     ) -> int:
+        # n = 2
+        # languages = [[1],[2],[1,2]]
+        # friendships = [[1,2],[1,3],[2,3]]
         cncon = set()
         for friendship in friendships:
             mp = {}
