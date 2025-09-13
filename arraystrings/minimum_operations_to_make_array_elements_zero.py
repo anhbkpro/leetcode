@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def get(self, num: int) -> int:
         i = 1
