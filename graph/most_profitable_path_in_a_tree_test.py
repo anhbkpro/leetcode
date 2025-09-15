@@ -19,11 +19,6 @@ class TestMostProfitablePathInATree(unittest.TestCase):
 
     def test_y_shaped_tree(self):
         """Test with a Y-shaped tree
-             0
-            / \
-           1   2
-          /
-         3
         Bob starts at node 3
         Amount: [-2, 4, 2, -4]
         """
