@@ -1,6 +1,7 @@
 from math import gcd
 from typing import List
 
+
 class Solution:
     def replaceNonCoprimes(self, nums: List[int]) -> List[int]:
         stack = []
