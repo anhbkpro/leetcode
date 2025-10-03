@@ -53,7 +53,7 @@ class Solution:
 
         # Process cells in the boundary (min-heap will always pop the smallest height)
         while boundary:
-            # Pop the cell with the smallest height from the boundary
+            # Pop the cell with the SMALLEST HEIGHT from the boundary
             current_cell = heapq.heappop(boundary)
 
             current_row = current_cell.row
