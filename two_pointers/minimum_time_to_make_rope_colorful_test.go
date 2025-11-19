@@ -73,7 +73,7 @@ func TestMinCost(t *testing.T) {
 			name:       "multiple groups of same color",
 			colors:     "aabbaa",
 			neededTime: []int{1, 2, 3, 4, 5, 6},
-			want:       8,
+			want:       9,
 		},
 		{
 			name:       "large consecutive group",
