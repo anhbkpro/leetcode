@@ -1,3 +1,4 @@
+# Python
 ## Alias collections
 ```bash
 cd utility
@@ -36,4 +37,43 @@ python3 -m unittest intervals/summary_ranges_test.py -v
 # Pytest
 pytest intervals/summary_ranges_test.py
 pytest intervals/summary_ranges_test.py -v
+```
+
+# Golang
+This project includes a `Makefile` that provides formatter, linter, and testing utilities for Go development.
+
+## 🔧 Requirements
+
+- Go (version 1.23.0 or higher)
+
+### 🧩 Install Linter
+
+```bash
+make install-linter
+```
+
+## 🚀 Makefile Commands
+
+### ▶ Format Code
+
+```bash
+make fmt
+```
+
+### 🧹 Lint Code
+
+```bash
+make lint
+```
+
+### 🧪 Run Tests
+
+```bash
+make test
+```
+
+### 🧼 Clean Up
+
+```bash
+make clean
 ```
