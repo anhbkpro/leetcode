@@ -11,7 +11,7 @@ source ~/.zshrc
 
 1. Create virtual environment:
 ```bash
-python -m venv venv
+python3 -m venv venv
 ```
 1. Activate virtual environment:
 ```bash
@@ -32,11 +32,11 @@ deactivate
 ## Run tests
 ```bash
 # Built-in unittest
-python3 -m unittest intervals/summary_ranges_test.py -v
+python3 -m unittest python/intervals/summary_ranges_test.py -v
 
 # Pytest
-pytest intervals/summary_ranges_test.py
-pytest intervals/summary_ranges_test.py -v
+pytest python/intervals/summary_ranges_test.py
+pytest python/intervals/summary_ranges_test.py -v
 ```
 
 # Golang
