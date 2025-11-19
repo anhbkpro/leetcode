@@ -4,7 +4,7 @@
 cd utility
 chmod +x install_aliases.sh
 ./install_aliases.sh
-source /Users/anh.lai/.zshrc
+source ~/.zshrc
 ```
 
 ## Virtual environment
