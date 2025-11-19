@@ -26,10 +26,20 @@ class Solution:
                 (row, col) = queue.popleft()
                 # This cell is reachable, so mark it
                 reachable.add((row, col))
-                for (x, y) in [(1, 0), (0, 1), (-1, 0), (0, -1)]: # Check all 4 directions
+                for x, y in [
+                    (1, 0),
+                    (0, 1),
+                    (-1, 0),
+                    (0, -1),
+                ]:  # Check all 4 directions
                     new_row, new_col = row + x, col + y
                     # Check if the new cell is within bounds
-                    if new_row < 0 or new_row >= num_rows or new_col < 0 or new_col >= num_cols:
+                    if (
+                        new_row < 0
+                        or new_row >= num_rows
+                        or new_col < 0
+                        or new_col >= num_cols
+                    ):
                         continue
                     # Check that the new cell hasn't already been visited
                     if (new_row, new_col) in reachable:

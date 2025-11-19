@@ -3,7 +3,9 @@ from typing import List
 
 
 class Solution:
-    def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
+    def successfulPairs(
+        self, spells: List[int], potions: List[int], success: int
+    ) -> List[int]:
         # Sort the potions array in increasing order.
         potions.sort()
         answer = []

@@ -6,8 +6,9 @@ class Solution:
             count = self.countzeroesones(s)
             for zeroes in range(m, count[0] - 1, -1):
                 for ones in range(n, count[1] - 1, -1):
-                    dp[zeroes][ones] = max(1 + dp[zeroes - count[0]][ones - count[1]],
-                                           dp[zeroes][ones])
+                    dp[zeroes][ones] = max(
+                        1 + dp[zeroes - count[0]][ones - count[1]], dp[zeroes][ones]
+                    )
 
         return dp[m][n]
 

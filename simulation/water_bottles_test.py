@@ -1,6 +1,7 @@
 import unittest
 from simulation.water_bottles import Solution
 
+
 class TestWaterBottles(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
@@ -19,6 +20,7 @@ class TestWaterBottles(unittest.TestCase):
 
     def test_large_numbers(self):
         self.assertEqual(self.sol.numWaterBottles(100, 5), 124)
+
 
 if __name__ == "__main__":
     unittest.main()
