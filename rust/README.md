@@ -3,6 +3,14 @@
 A Rust workspace to solve LeetCode problems.
 Each problem lives in its own crate under `problems/`.
 
+## Why Rust?
+
+Rust is a modern systems programming language focusing on safety, speed, and concurrency. It accomplishes these goals by being memory safe without using garbage collection.
+
+- **Performance**: Rust offers performance comparable to C/C++.
+- **Safety**: Memory safety without a garbage collector.
+- **Ecosystem**: Rich libraries and tools for development.
+
 ## 📁 Project Structure
 
 ```
