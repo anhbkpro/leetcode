@@ -9,7 +9,12 @@ test:
 test-one:
 	cargo test -p $(name)
 
+# Default space
+space ?= rust-by-example
+
 # Create a new problem crate
-# Usage: make add name=best-time-to-buy-stock
+# Usage: make add space=problems name=best-time-to-buy-stock
+#    or: make add name=enums   (will go into rust-by-example/)
 add:
-	cargo new problems/$(name) --lib
+	cargo new $(space)/$(name) --lib
+
