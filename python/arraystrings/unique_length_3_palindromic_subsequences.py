@@ -1,3 +1,4 @@
+# Approach 1: Count Letters In-Between
 class Solution:
     def countPalindromicSubsequence(self, s: str) -> int:
         letters = set(s)
@@ -9,6 +10,32 @@ class Solution:
 
             for k in range(i + 1, j):
                 between.add(s[k])
+
+            ans += len(between)
+
+        return ans
+
+# Approach 2: Pre-Compute First and Last Indices
+class Solution2:
+    def countPalindromicSubsequence(self, s: str) -> int:
+        first = [-1] * 26
+        last = [-1] * 26
+
+        for i in range(len(s)):
+            curr = ord(s[i]) - ord("a")
+            if first[curr] == -1:
+                first[curr] = i
+
+            last[curr] = i
+
+        ans = 0
+        for i in range(26):
+            if first[i] == -1:
+                continue
+
+            between = set()
+            for j in range(first[i] + 1, last[i]):
+                between.add(s[j])
 
             ans += len(between)
 
