@@ -87,6 +87,14 @@ This creates a new crate under `problems/` with a `lib.rs` skeleton.
 
 ---
 
+### Add a new library to an existing package 
+```bash
+# Add library ferris-says to package ferris_says
+cargo add ferris-says --package ferris_says
+
+# After running above command, open file Cargo.toml we will see a new line `ferris-says = "0.3.2"` in the `dependencies` section.
+```
+
 ### Clean Build Artifacts
 
 ```bash
