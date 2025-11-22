@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "two-sum"
+name = "ch1-letters"
 version = "0.1.0"
