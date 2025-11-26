@@ -1,13 +1,14 @@
 fn main() {
   let search_term = "picture";
-  let quote = "\n
+  let quote = "\
 Every face, every shop, bedroom window, public-house, and
 dark square is a picture feverishly turned--in search of what?
 It is the same with books. What do we seek through millions of pages?";
 
-  for (line_number,line) in quote.lines().enumerate() {
+  for (i, line) in quote.lines().enumerate() {    // because lines() returns an iterator it can be chained with enumerate()
     if line.contains(search_term) {
-      println!("{}: {}", line_number, line);
+      let line_num = i + 1;                       // performs addition to calculate the line number, avoiding calculations at every step
+      println!("{}: {}", line_num, line);
     }
   }
 }
