@@ -35,7 +35,7 @@ impl File {
 }
 
 fn open(f: File) -> Result<File, String> {
-    if one_in(2) {
+    if one_in(10) {
         let err_msg = String::from("Not enough data to open file!");
         return Err(err_msg);
     }
@@ -43,7 +43,7 @@ fn open(f: File) -> Result<File, String> {
 }
 
 fn close(f: File) -> Result<File, String> {
-    if one_in(2) {
+    if one_in(10) {
         let err_msg = String::from("Interupted by signal!");
         return Err(err_msg);
     }
