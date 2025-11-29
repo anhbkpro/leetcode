@@ -8,7 +8,7 @@ enum Event {
 type Message = String;
 
 fn parse_log(line: &str) -> (Event, Message) {
-    let parts: Vec<_> = line.splitn(2, ' ').collect();
+    let parts: Vec<_> = line.splitn(2, ' ').collect(); // collect() consumes an iterator from line.splitn() and returns Vec<T>.
     if parts.len() != 2 {
         return (Event::Unknown, line.to_string());
     }
