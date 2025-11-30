@@ -1,5 +1,5 @@
 [workspace]
-members = [
+members = [ "problems/maximum_running_time_of_n_computers",
     "rust-by-example/constants",
     "rust-by-example/enums",
     "rust-by-example/ferris_says",
