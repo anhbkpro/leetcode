@@ -1,5 +1,5 @@
 [workspace]
-members = [ "problems/maximum_running_time_of_n_computers",
+members = ["problems/count_partitions_with_max_min_difference_at_most_k", "problems/maximum_running_time_of_n_computers",
     "rust-by-example/constants",
     "rust-by-example/enums",
     "rust-by-example/ferris_says",
