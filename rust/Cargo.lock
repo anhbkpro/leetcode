@@ -22,6 +22,14 @@ name = "constants"
 version = "0.1.0"
 
 [[package]]
+name = "count_odd_numbers_in_an_interval_range"
+version = "0.1.0"
+
+[[package]]
+name = "count_partitions_with_max_min_difference_at_most_k"
+version = "0.1.0"
+
+[[package]]
 name = "enums"
 version = "0.1.0"
 
