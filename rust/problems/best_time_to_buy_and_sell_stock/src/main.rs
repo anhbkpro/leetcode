@@ -9,8 +9,7 @@ impl Solution {
         for i in 0..prices.len() {
             if prices[i] < buy {
                 buy = prices[i];
-            }
-            if prices[i] > buy {
+            } else {
                 res = cmp::max(res, prices[i] - buy);
             }
         }
