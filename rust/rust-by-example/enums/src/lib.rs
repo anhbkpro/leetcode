@@ -33,7 +33,10 @@ fn main() {
 
     let dog = Animal::Dog(String::from("Rex"));
 
-    let cat = Animal::Cat { name: String::from("Whiskers"), age: 3 };
+    let cat = Animal::Cat {
+        name: String::from("Whiskers"),
+        age: 3,
+    };
 
     let bird = Animal::Bird;
 
@@ -41,20 +44,24 @@ fn main() {
         fn name(&self) -> String {
             match self {
                 Animal::Dog(name) => name.clone(),
-                Animal::Cat {name, ..} => name.clone(),
+                Animal::Cat { name, .. } => name.clone(),
                 Animal::Bird => String::from("Bird"),
             }
         }
 
         fn age(&self) -> u8 {
             match self {
-                Animal::Cat {age, ..} => *age,
+                Animal::Cat { age, .. } => *age,
                 _ => 0,
             }
         }
     }
 
     println!("The name of the dog is: {}", dog.name());
-    println!("The name of the cat is: {}, and its age is: {}", cat.name(), cat.age());
+    println!(
+        "The name of the cat is: {}, and its age is: {}",
+        cat.name(),
+        cat.age()
+    );
     println!("The name of the bird is: {}", bird.name());
 }
