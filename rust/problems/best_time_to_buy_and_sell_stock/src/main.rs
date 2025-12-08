@@ -13,8 +13,7 @@ impl Solution {
                 res = cmp::max(res, prices[i] - buy);
             }
         }
-
-        return res;
+        res
     }
 }
 
