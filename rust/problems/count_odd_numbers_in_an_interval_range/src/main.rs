@@ -6,6 +6,12 @@ impl Solution {
     }
 }
 
+
+fn main() {
+    println!("{:#?}", Solution::count_odds(3, 7));
+}
+
+
 #[cfg(test)]
 mod tests {
     use super::*;

@@ -58,6 +58,12 @@ impl Solution {
     }
 }
 
+
+fn main() {
+    println!("{:?}", Solution::calculate("1 + 2".to_string()))
+}
+
+
 #[cfg(test)]
 mod tests {
     use super::*;

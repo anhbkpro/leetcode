@@ -16,6 +16,12 @@ impl Solution {
     }
 }
 
+
+fn main() {
+    println!("{:?}", Solution::contains_duplicate(vec![1, 2, 3, 1]));
+}
+
+
 #[cfg(test)]
 mod tests {
     use super::*;
