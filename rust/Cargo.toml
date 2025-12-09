@@ -1,5 +1,5 @@
 [workspace]
-members = [ "problems/best_time_to_buy_and_sell_stock", "problems/count_odd_numbers_in_an_interval_range","problems/count_partitions_with_max_min_difference_at_most_k", "problems/count_square_sum_triples", "problems/maximum_running_time_of_n_computers",
+members = [ "problems/best_time_to_buy_and_sell_stock", "problems/count_odd_numbers_in_an_interval_range","problems/count_partitions_with_max_min_difference_at_most_k", "problems/count_special_triplets", "problems/count_square_sum_triples", "problems/maximum_running_time_of_n_computers",
     "rust-by-example/constants",
     "rust-by-example/enums",
     "rust-by-example/ferris_says",
