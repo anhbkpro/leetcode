@@ -84,6 +84,10 @@ name = "count_square_sum_triples"
 version = "0.1.0"
 
 [[package]]
+name = "course_schedule"
+version = "0.1.0"
+
+[[package]]
 name = "enums"
 version = "0.1.0"
 
