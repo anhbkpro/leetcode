@@ -48,6 +48,14 @@ impl Solution {
     }
 }
 
+
+fn main() {
+    println!("207. Course Schedule");
+    println!("Input: num_courses = 2, prerequisites = [[1, 0]]");
+    println!("Output: {}", Solution::can_finish(2, vec![vec![1, 0]]));
+}
+
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -129,7 +137,7 @@ mod tests {
     fn test_large_no_cycle() {
         // 0→1, 2→3, 4→5, ... etc
         let prereqs: Vec<Vec<i32>> =
-            (0..20).step_by(2).map(|i| vec![i + 1, i]).collect();
+            (0..20).step_by(2).map(|i: i32| vec![i + 1, i]).collect();
 
         assert_eq!(Solution::can_finish(40, prereqs), true);
     }
