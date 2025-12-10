@@ -1,6 +1,5 @@
 struct Solution;
 
-
 impl Solution {
     pub fn can_finish(num_courses: i32, prerequisites: Vec<Vec<i32>>) -> bool {
         let n = num_courses as usize;
@@ -48,13 +47,11 @@ impl Solution {
     }
 }
 
-
 fn main() {
     println!("207. Course Schedule");
     println!("Input: num_courses = 2, prerequisites = [[1, 0]]");
     println!("Output: {}", Solution::can_finish(2, vec![vec![1, 0]]));
 }
-
 
 #[cfg(test)]
 mod tests {
@@ -77,14 +74,7 @@ mod tests {
         // 0 → 1 → 2 → 3
         // No cycle
         assert_eq!(
-            Solution::can_finish(
-                4,
-                vec![
-                    vec![1, 0],
-                    vec![2, 1],
-                    vec![3, 2]
-                ]
-            ),
+            Solution::can_finish(4, vec![vec![1, 0], vec![2, 1], vec![3, 2]]),
             true
         );
     }
@@ -92,16 +82,7 @@ mod tests {
     #[test]
     fn test_multiple_independent_chains() {
         // 0→1, 2→3
-        assert_eq!(
-            Solution::can_finish(
-                4,
-                vec![
-                    vec![1, 0],
-                    vec![3, 2]
-                ]
-            ),
-            true
-        );
+        assert_eq!(Solution::can_finish(4, vec![vec![1, 0], vec![3, 2]]), true);
     }
 
     #[test]
@@ -136,8 +117,7 @@ mod tests {
     #[test]
     fn test_large_no_cycle() {
         // 0→1, 2→3, 4→5, ... etc
-        let prereqs: Vec<Vec<i32>> =
-            (0..20).step_by(2).map(|i: i32| vec![i + 1, i]).collect();
+        let prereqs: Vec<Vec<i32>> = (0..20).step_by(2).map(|i: i32| vec![i + 1, i]).collect();
 
         assert_eq!(Solution::can_finish(40, prereqs), true);
     }

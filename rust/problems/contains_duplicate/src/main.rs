@@ -7,7 +7,8 @@ impl Solution {
         let mut seen = HashSet::new();
 
         for n in nums {
-            if !seen.insert(n) {   // insert returns false if already present
+            if !seen.insert(n) {
+                // insert returns false if already present
                 return true;
             }
         }
@@ -16,11 +17,9 @@ impl Solution {
     }
 }
 
-
 fn main() {
     println!("{:?}", Solution::contains_duplicate(vec![1, 2, 3, 1]));
 }
-
 
 #[cfg(test)]
 mod tests {

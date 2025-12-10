@@ -58,11 +58,9 @@ impl Solution {
     }
 }
 
-
 fn main() {
     println!("{:?}", Solution::calculate("1 + 2".to_string()))
 }
-
 
 #[cfg(test)]
 mod tests {
@@ -73,6 +71,9 @@ mod tests {
         assert_eq!(Solution::calculate("1 + 2".to_string()), 3);
         assert_eq!(Solution::calculate(" 2-1 + 2 ".to_string()), 3);
         assert_eq!(Solution::calculate("(1+(4+5+2)-3)+(6+8)".to_string()), 23);
-        assert_eq!(Solution::calculate("1 - (2 - (3 - (4 - 5)))".to_string()), 3);
+        assert_eq!(
+            Solution::calculate("1 - (2 - (3 - (4 - 5)))".to_string()),
+            3
+        );
     }
 }

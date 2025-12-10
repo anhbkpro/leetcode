@@ -27,13 +27,11 @@ impl Solution {
     }
 }
 
-
 fn main() {
     println!("1550. Count Special Triplets");
     println!("Input: nums = [6, 3, 6]");
     println!("Output: {}", Solution::special_triplets(vec![6, 3, 6]));
 }
-
 
 #[cfg(test)]
 mod tests {
@@ -43,6 +41,5 @@ mod tests {
     fn test_special_triplets() {
         assert_eq!(Solution::special_triplets(vec![6, 3, 6]), 1);
         assert_eq!(Solution::special_triplets(vec![8, 4, 2, 8, 4]), 2);
-
     }
 }

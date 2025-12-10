@@ -39,7 +39,8 @@ CRATES = \
     rust-by-example/enums \
     rust-by-example/ferris_says \
     rust-by-example/first-application \
-    rust-by-example/hello-world
+    rust-by-example/hello-world \
+		problems/*
 
 format:
 	@for crate in $(CRATES); do \

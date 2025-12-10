@@ -1,4 +1,4 @@
-use std::collections::{BTreeMap};
+use std::collections::BTreeMap;
 
 struct Solution;
 
@@ -16,8 +16,7 @@ impl Solution {
         for i in 0..n {
             *cnt.entry(nums[i]).or_insert(0) += 1;
             // adjust window
-            while j <= i &&
-                  *cnt.keys().last().unwrap() - *cnt.keys().next().unwrap() > k {
+            while j <= i && *cnt.keys().last().unwrap() - *cnt.keys().next().unwrap() > k {
                 *cnt.get_mut(&nums[j]).unwrap() -= 1;
                 if cnt[&nums[j]] == 0 {
                     cnt.remove(&nums[j]);
@@ -37,11 +36,7 @@ impl Solution {
     }
 }
 
-
-fn main() {
-    
-}
-
+fn main() {}
 
 #[cfg(test)]
 mod tests {

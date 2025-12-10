@@ -1,6 +1,4 @@
-struct Solution {
-
-}
+struct Solution {}
 
 impl Solution {
     pub fn max_run_time(n: i32, mut batteries: Vec<i32>) -> i64 {
@@ -40,11 +38,7 @@ impl Solution {
     }
 }
 
-
-fn main() {
-    
-}
-
+fn main() {}
 
 #[cfg(test)]
 mod tests {
@@ -54,10 +48,7 @@ mod tests {
     fn test_basic_case() {
         // Example: n = 2, batteries = [3,3,3]
         // Extra = 3, live = [3,3]
-        assert_eq!(
-            Solution::max_run_time(2, vec![3, 3, 3]),
-            4
-        );
+        assert_eq!(Solution::max_run_time(2, vec![3, 3, 3]), 4);
     }
 
     #[test]
@@ -65,28 +56,19 @@ mod tests {
         // n = 2, batteries = [1,1,10]
         // live = [1,10], extra = 1
         // extra / 1 < live[1] - live[0] → 1 < 9 → true
-        assert_eq!(
-            Solution::max_run_time(2, vec![1, 1, 10]),
-            2
-        );
+        assert_eq!(Solution::max_run_time(2, vec![1, 1, 10]), 2);
     }
 
     #[test]
     fn test_all_equal() {
         // All batteries equal → runtime = value
-        assert_eq!(
-            Solution::max_run_time(3, vec![5, 5, 5]),
-            5
-        );
+        assert_eq!(Solution::max_run_time(3, vec![5, 5, 5]), 5);
     }
 
     #[test]
     fn test_exact_match() {
         // n = 3, batteries = [10,10,10]
-        assert_eq!(
-            Solution::max_run_time(3, vec![10, 10, 10]),
-            10
-        );
+        assert_eq!(Solution::max_run_time(3, vec![10, 10, 10]), 10);
     }
 
     #[test]
@@ -103,7 +85,7 @@ mod tests {
         // No "extra", batteries match exactly n
         assert_eq!(
             Solution::max_run_time(2, vec![4, 7]),
-            4 + 0  // smallest battery + ∅ extra
+            4 + 0 // smallest battery + ∅ extra
         );
     }
 }
