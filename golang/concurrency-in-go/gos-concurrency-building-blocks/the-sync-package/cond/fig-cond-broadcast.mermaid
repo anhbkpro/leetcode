@@ -1,0 +1,33 @@
+flowchart TD
+    A[Start main] --> B[Create Button]
+    B --> C[Create Cond with Mutex]
+
+    C --> D[Register subscribers]
+
+    D --> E[Subscribe handler 1]
+    D --> F[Subscribe handler 2]
+    D --> G[Subscribe handler 3]
+
+    E --> E1[Start goroutine]
+    F --> F1[Start goroutine]
+    G --> G1[Start goroutine]
+
+    E1 --> E2[Lock mutex]
+    F1 --> F2[Lock mutex]
+    G1 --> G2[Lock mutex]
+
+    E2 --> E3[Wait on condition]
+    F2 --> F3[Wait on condition]
+    G2 --> G3[Wait on condition]
+
+    H[Broadcast click event] --> E3
+    H --> F3
+    H --> G3
+
+    E3 --> E4[Run handler 1]
+    F3 --> F4[Run handler 2]
+    G3 --> G4[Run handler 3]
+
+    E4 --> I[Done]
+    F4 --> I
+    G4 --> I
