@@ -1,0 +1,26 @@
+flowchart TD
+    A[Start main] --> B[Create Cond and Mutex]
+    B --> C[Create empty queue]
+    C --> D[Loop i from 0 to 9]
+
+    D --> E[Lock mutex]
+    E --> F{Queue length equals 2}
+
+    F -->|Yes| G[Wait on condition]
+    G --> F
+
+    F -->|No| H[Add item to queue]
+    H --> I[Start remove goroutine]
+    I --> J[Unlock mutex]
+    J --> D
+
+    subgraph RQ
+        R1[Sleep 1 second]
+        R2[Lock mutex]
+        R3[Remove item from queue]
+        R4[Print removed message]
+        R5[Unlock mutex]
+        R6[Signal condition]
+
+        R1 --> R2 --> R3 --> R4 --> R5 --> R6
+    end
