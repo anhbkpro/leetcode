@@ -80,6 +80,10 @@ name = "count_odd_numbers_in_an_interval_range"
 version = "0.1.0"
 
 [[package]]
+name = "count_partitions_with_even_sum_difference"
+version = "0.1.0"
+
+[[package]]
 name = "count_partitions_with_max_min_difference_at_most_k"
 version = "0.1.0"
 
@@ -166,6 +170,10 @@ name = "libc"
 version = "0.2.177"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2874a2af47a2325c2001a6e6fad9b16a53b802102b528163885171cf92b15976"
+
+[[package]]
+name = "longest_consecutive_sequence"
+version = "0.1.0"
 
 [[package]]
 name = "maximum_running_time_of_n_computers"

@@ -1,6 +1,5 @@
 struct Solution;
 
-
 impl Solution {
     pub fn count_mentions(n: i32, mut events: Vec<Vec<String>>) -> Vec<i32> {
         let n = n as usize;
@@ -8,9 +7,8 @@ impl Solution {
             let ta = a[1].parse::<i32>().unwrap();
             let tb = b[1].parse::<i32>().unwrap();
 
-            ta.cmp(&tb).then_with(|| {
-                (a[0] != "OFFLINE").cmp(&(b[0] != "OFFLINE"))
-            })
+            ta.cmp(&tb)
+                .then_with(|| (a[0] != "OFFLINE").cmp(&(b[0] != "OFFLINE")))
         });
 
         let mut count = vec![0; n];
@@ -51,5 +49,19 @@ impl Solution {
 fn main() {
     println!("2381. Count Mentions per User");
     println!("Input: n = 2, events = [[\"MESSAGE\",\"10\",\"id1 id0\"], [\"OFFLINE\",\"11\",\"0\"], [\"MESSAGE\",\"12\",\"ALL\"]]");
-    println!("Output: {:?}", Solution::count_mentions(2, vec![vec!["MESSAGE".to_string(),"10".to_string(),"id1 id0".to_string()], vec!["OFFLINE".to_string(),"11".to_string(),"0".to_string()], vec!["MESSAGE".to_string(),"12".to_string(),"ALL".to_string()].to_vec()]));
+    println!(
+        "Output: {:?}",
+        Solution::count_mentions(
+            2,
+            vec![
+                vec![
+                    "MESSAGE".to_string(),
+                    "10".to_string(),
+                    "id1 id0".to_string()
+                ],
+                vec!["OFFLINE".to_string(), "11".to_string(), "0".to_string()],
+                vec!["MESSAGE".to_string(), "12".to_string(), "ALL".to_string()].to_vec()
+            ]
+        )
+    );
 }
