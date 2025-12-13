@@ -100,6 +100,10 @@ name = "count_the_number_of_computer_unlocking_permutations"
 version = "0.1.0"
 
 [[package]]
+name = "coupon_code_validator"
+version = "0.1.0"
+
+[[package]]
 name = "course_schedule"
 version = "0.1.0"
 
