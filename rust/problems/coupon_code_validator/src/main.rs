@@ -20,7 +20,7 @@ impl Solution {
 
             if code[i].is_empty() { continue; }
 
-            if !code[i].chars().all(|c| c.is_ascii_alphanumeric() || c == '_') {
+            if !code[i].chars().all(|c: char| c.is_ascii_alphanumeric() || c == '_') {
                 continue;
             }
 
