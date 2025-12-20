@@ -11,6 +11,11 @@ impl Solution {
     }
 }
 
+fn main() {
+    let result = Solution::count_partitions(vec![2, 5, 3, 4, 2]);
+    println!("result = {}", result);
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

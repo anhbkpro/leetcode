@@ -13,7 +13,7 @@ members = [
     "problems/count_the_number_of_computer_unlocking_permutations", "problems/coupon_code_validator",
     "problems/course_schedule",
     "problems/longest_consecutive_sequence", "problems/longest_substring_without_repeating_characters",
-    "problems/maximum_running_time_of_n_computers",
+    "problems/maximum_running_time_of_n_computers", "problems/merge_strings_alternately",
     "problems/two_sum",
     "rust-by-example/constants",
     "rust-by-example/enums",
