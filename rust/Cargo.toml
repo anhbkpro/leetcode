@@ -19,5 +19,5 @@ members = [
     "rust-by-example/enums",
     "rust-by-example/ferris_says",
     "rust-by-example/first-application",
-    "rust-by-example/hello-world", "rust-in-action/ch3/filebasics", "rust-in-action/ch3/fileresult", "rust-in-action/ch7/ch7-fview", "rust-in-action/ch7/ch7-fview-str", "rust-in-action/ch7/ch7-serde-eg",
+    "rust-by-example/hello-world", "rust-in-action/ch3/filebasics", "rust-in-action/ch3/fileresult", "rust-in-action/ch7/ch7-fview", "rust-in-action/ch7/ch7-fview-str", "rust-in-action/ch7/ch7-serde-eg", "rust-in-action/ch8/ch8-mget",
 ]
