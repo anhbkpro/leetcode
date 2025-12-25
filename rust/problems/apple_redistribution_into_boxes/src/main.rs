@@ -4,10 +4,10 @@ struct Solution;
 impl Solution {
     pub fn minimum_boxes(apple: Vec<i32>, capacity: Vec<i32>) -> i32 {
         let mut sum: i32 = apple.iter().sum();
-        let mut sorted_capacity = capacity.clone();
-        sorted_capacity.sort_by(|a, b| b.cmp(a));
+        let mut sorted_capacity: Vec<i32> = capacity.clone();
+        sorted_capacity.sort_by(|a: &i32, b: &i32| b.cmp(a));
 
-        let mut need = 0;
+        let mut need: i32 = 0;
         while sum > 0 {
             sum -= sorted_capacity[need as usize];
             need += 1;
@@ -18,9 +18,9 @@ impl Solution {
 }
 
 fn main() {
-    let apples = vec![5, 10, 15];
-    let capacities = vec![10, 10, 10, 10];
-    let result = Solution::minimum_boxes(apples, capacities);
+    let apples: Vec<i32> = vec![5, 10, 15];
+    let capacities: Vec<i32> = vec![10, 10, 10, 10];
+    let result: i32 = Solution::minimum_boxes(apples, capacities);
     println!("Minimum number of boxes needed: {}", result);
 }
 
