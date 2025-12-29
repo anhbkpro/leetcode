@@ -236,6 +236,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "pyramid_transition_matrix"
+version = "0.1.0"
+
+[[package]]
 name = "quote"
 version = "1.0.42"
 source = "registry+https://github.com/rust-lang/crates.io-index"
