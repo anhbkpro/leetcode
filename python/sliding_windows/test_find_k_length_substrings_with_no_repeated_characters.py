@@ -1,4 +1,5 @@
 import pytest
+
 from .find_k_length_substrings_with_no_repeated_characters import Solution
 
 

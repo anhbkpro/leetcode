@@ -1,4 +1,5 @@
 import pytest
+
 from .maximum_value_of_an_ordered_triplet_i import Solution
 
 

@@ -1,5 +1,6 @@
-from .course_schedule import Solution
 import pytest
+
+from .course_schedule import Solution
 
 
 @pytest.fixture

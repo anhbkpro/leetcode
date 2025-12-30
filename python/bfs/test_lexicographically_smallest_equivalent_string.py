@@ -1,4 +1,5 @@
 import unittest
+
 from .lexicographically_smallest_equivalent_string import Solution
 
 

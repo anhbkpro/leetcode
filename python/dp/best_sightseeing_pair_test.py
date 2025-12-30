@@ -1,6 +1,6 @@
+import time
 import unittest
 from typing import List, Type
-import time
 
 from dp.best_sightseeing_pair import SolutionDP, SolutionSpaceOptimizedDP
 

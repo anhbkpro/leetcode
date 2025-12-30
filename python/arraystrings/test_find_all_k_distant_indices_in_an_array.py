@@ -1,4 +1,5 @@
 import unittest
+
 from .find_all_k_distant_indices_in_an_array import Solution
 
 

@@ -1,8 +1,9 @@
 import pytest
+
 from .maximum_count_of_positive_integer_and_negative_integer import (
-    Solution,
-    OnePassSolution,
     BinarySearchSolution,
+    OnePassSolution,
+    Solution,
 )
 
 

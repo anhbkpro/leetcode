@@ -1,4 +1,5 @@
 import pytest
+
 from stacks_and_queues.LC75__decode_string import Solution
 
 

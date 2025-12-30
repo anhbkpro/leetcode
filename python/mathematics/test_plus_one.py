@@ -1,5 +1,6 @@
-from mathematics.plus_one import Solution
 import pytest
+
+from mathematics.plus_one import Solution
 
 
 @pytest.fixture

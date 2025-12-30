@@ -1,4 +1,5 @@
 import unittest
+
 from .divide_array_into_arrays_with_max_difference import Solution
 
 

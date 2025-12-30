@@ -1,4 +1,5 @@
 from typing import List
+
 from sortedcontainers import SortedList
 
 
@@ -9,7 +10,7 @@ class Solution:
         mod = 10**9 + 7
         dp = [0] * (n + 1)
         prefix = [0] * (n + 1)
-        
+
         dp[0] = 1
         prefix[0] = 1
 
@@ -21,6 +22,5 @@ class Solution:
                 j += 1
             dp[i + 1] = (prefix[i] - (prefix[j - 1] if j > 0 else 0)) % mod
             prefix[i + 1] = (prefix[i] + dp[i + 1]) % mod
-        
+
         return dp[n]
-        

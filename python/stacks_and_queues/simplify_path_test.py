@@ -1,4 +1,5 @@
 import unittest
+
 from .simplify_path import Solution
 
 

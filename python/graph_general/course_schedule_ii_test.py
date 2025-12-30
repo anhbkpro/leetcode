@@ -1,5 +1,6 @@
-from .course_schedule_ii import Solution
 import pytest
+
+from .course_schedule_ii import Solution
 
 
 def is_valid_order(order, prerequisites):

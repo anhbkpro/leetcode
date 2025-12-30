@@ -1,5 +1,6 @@
-from .lru_cache import LRUCache
 import pytest
+
+from .lru_cache import LRUCache
 
 
 @pytest.fixture

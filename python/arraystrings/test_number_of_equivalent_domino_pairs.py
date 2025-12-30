@@ -1,4 +1,5 @@
 import pytest
+
 from arraystrings.number_of_equivalent_domino_pairs import Solution
 
 

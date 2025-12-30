@@ -1,4 +1,4 @@
-from .linked_list_in_binary_tree import Solution, ListNode, TreeNode
+from .linked_list_in_binary_tree import ListNode, Solution, TreeNode
 
 
 def test_linked_list_in_binary_tree():

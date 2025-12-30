@@ -1,4 +1,5 @@
 import pytest
+
 from .sort_colors import Solution
 
 

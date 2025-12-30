@@ -1,5 +1,6 @@
 import unittest
 from typing import List
+
 from .grid_game import Solution
 
 

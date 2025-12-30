@@ -1,4 +1,5 @@
 import unittest
+
 from hashing.fraction_to_recurring_decimal import Solution
 
 

@@ -19,9 +19,7 @@ class Solution:
             graph[node2].add(node1)
 
         # Step 2: Initialize the BFS queue with leaf nodes (nodes with only one connection)
-        queue = deque(
-            node for node, neighbors in graph.items() if len(neighbors) == 1
-        )
+        queue = deque(node for node, neighbors in graph.items() if len(neighbors) == 1)
 
         # Step 3: Process nodes in BFS order
         while queue:

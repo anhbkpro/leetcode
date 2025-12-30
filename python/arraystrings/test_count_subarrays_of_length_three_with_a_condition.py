@@ -1,4 +1,5 @@
 import unittest
+
 from .count_subarrays_of_length_three_with_a_condition import Solution
 
 

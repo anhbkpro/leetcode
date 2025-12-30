@@ -1,4 +1,5 @@
 import pytest
+
 from .house_robber_iv import Solution
 
 

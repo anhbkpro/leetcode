@@ -1,5 +1,6 @@
-from linked_lists.linked_list_node import LinkedListNode
 from typing import Optional
+
+from linked_lists.linked_list_node import LinkedListNode
 
 
 class Solution:

@@ -1,4 +1,5 @@
 import unittest
+
 from sliding_windows.max_consecutive_ones_ii import Solution
 
 

@@ -1,4 +1,5 @@
 import pytest
+
 from .koko_eating_bananas import Solution
 
 

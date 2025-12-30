@@ -1,8 +1,9 @@
 import pytest
+
 from .house_robber import (
-    RecursionWithMemoization,
     DynamicProgramming,
     OptimizedDynamicProgramming,
+    RecursionWithMemoization,
 )
 
 

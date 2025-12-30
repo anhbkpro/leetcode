@@ -1,6 +1,6 @@
-from .remove_duplicates_from_an_unsorted_linked_list import Solution
-from .linked_list_node import LinkedListNode
 from .linked_list import LinkedList
+from .linked_list_node import LinkedListNode
+from .remove_duplicates_from_an_unsorted_linked_list import Solution
 
 
 def test_remove_duplicates_from_an_unsorted_linked_list():

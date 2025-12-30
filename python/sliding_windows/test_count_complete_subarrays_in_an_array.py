@@ -1,5 +1,6 @@
 import unittest
 from typing import List
+
 from .count_complete_subarrays_in_an_array import Solution
 
 

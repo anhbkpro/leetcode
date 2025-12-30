@@ -1,4 +1,5 @@
 import unittest
+
 from .construct_k_palindrome_strings import Solution
 
 

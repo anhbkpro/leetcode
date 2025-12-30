@@ -1,4 +1,5 @@
 from typing import List
+
 from .tree_node import NAryTree
 
 

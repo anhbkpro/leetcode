@@ -1,4 +1,5 @@
 import unittest
+
 from .isomorphic_strings import (
     SolutionCharacterMappingWithDictionary,
     SolutionFirstOccurenceTransformation,

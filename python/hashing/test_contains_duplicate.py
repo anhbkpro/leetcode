@@ -1,5 +1,6 @@
 import unittest
 from typing import List
+
 from .LC75__contains_duplicate import SolutionHashMap, SolutionSorting
 
 

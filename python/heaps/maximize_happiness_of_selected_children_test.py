@@ -1,4 +1,5 @@
 import pytest
+
 from heaps.maximize_happiness_of_selected_children import Solution
 
 
@@ -54,18 +55,21 @@ class TestMaximizeHappinessOfSelectedChildren:
 
     def test_many_children_select_few(self):
         """Test case with many children but selecting only a few."""
-        assert self.solution.maximumHappinessSum(
-            happiness=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], k=3
-        ) == 24
+        assert (
+            self.solution.maximumHappinessSum(
+                happiness=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], k=3
+            )
+            == 24
+        )
 
     @pytest.mark.parametrize(
         "happiness,k,expected",
         [
-            ([5], 1, 5),                           # 5-0 = 5
-            ([1, 2], 1, 2),                        # 2-0 = 2
-            ([10, 20, 30], 2, 49),                 # 30-0 + 20-1 = 49
-            ([1, 1, 1], 3, 1),                     # 1-0 + 1-1 + max(1-2, 0) = 1
-            (list(range(1, 11)), 5, 30),           # 10-0 + 9-1 + 8-2 + 7-3 + 6-4 = 30
+            ([5], 1, 5),  # 5-0 = 5
+            ([1, 2], 1, 2),  # 2-0 = 2
+            ([10, 20, 30], 2, 49),  # 30-0 + 20-1 = 49
+            ([1, 1, 1], 3, 1),  # 1-0 + 1-1 + max(1-2, 0) = 1
+            (list(range(1, 11)), 5, 30),  # 10-0 + 9-1 + 8-2 + 7-3 + 6-4 = 30
         ],
     )
     def test_parametrized_cases(self, happiness, k, expected):

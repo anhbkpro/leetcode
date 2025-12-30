@@ -1,9 +1,10 @@
 import unittest
+
 from .ransom_note import (
-    SolutionSimulation,
-    SolutionTwoHashMaps,
     SolutionOneHashMap,
+    SolutionSimulation,
     SolutionSortingAndStacks,
+    SolutionTwoHashMaps,
 )
 
 

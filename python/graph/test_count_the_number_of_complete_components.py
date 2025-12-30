@@ -1,4 +1,5 @@
 import unittest
+
 from .count_the_number_of_complete_components import Solution
 
 

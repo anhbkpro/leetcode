@@ -1,5 +1,6 @@
 import unittest
 from typing import List
+
 from sliding_windows.fruit_into_baskets import Solution
 
 

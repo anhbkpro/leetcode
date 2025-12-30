@@ -1,4 +1,5 @@
 import unittest
+
 from .lexicographical_numbers import Solution
 
 

@@ -1,4 +1,5 @@
 import pytest
+
 from .push_dominoes import Solution
 
 

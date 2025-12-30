@@ -1,5 +1,6 @@
-from .surrounded_regions import Solution
 import pytest
+
+from .surrounded_regions import Solution
 
 
 @pytest.fixture

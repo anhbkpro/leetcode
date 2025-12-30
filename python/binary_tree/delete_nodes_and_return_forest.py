@@ -1,4 +1,5 @@
 from typing import List, Optional, Set
+
 from .binary_tree_node import TreeNode
 
 

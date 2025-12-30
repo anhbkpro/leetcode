@@ -1,4 +1,5 @@
 import unittest
+
 from .check_if_grid_can_be_cut_into_sections import Solution
 
 

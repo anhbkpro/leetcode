@@ -1,4 +1,5 @@
 import unittest
+
 from .longest_strictly_increasing_or_strictly_decreasing_subarray import Solution
 
 

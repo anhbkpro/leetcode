@@ -1,5 +1,7 @@
-import pytest
 from typing import List
+
+import pytest
+
 from sliding_windows.maximum_average_subarray_i import Solution
 
 

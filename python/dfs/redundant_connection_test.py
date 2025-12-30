@@ -1,5 +1,6 @@
 import unittest
-from .redundant_connection import SolutionDFS, SolutionBFS, SolutionUnionFind
+
+from .redundant_connection import SolutionBFS, SolutionDFS, SolutionUnionFind
 
 
 class TestRedundantConnection(unittest.TestCase):

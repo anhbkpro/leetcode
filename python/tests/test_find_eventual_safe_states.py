@@ -1,4 +1,5 @@
 import unittest
+
 from toposort.find_eventual_safe_states import SolutionTopo
 
 

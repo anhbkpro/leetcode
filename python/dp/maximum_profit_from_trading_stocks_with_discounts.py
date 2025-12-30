@@ -52,9 +52,7 @@ class Solution:
                         subProfit0[i], subProfit1[i - dCost] + future[u] - dCost
                     )
                 if i >= cost:
-                    dp0[i] = max(
-                        subProfit0[i], subProfit1[i - cost] + future[u] - cost
-                    )
+                    dp0[i] = max(subProfit0[i], subProfit1[i - cost] + future[u] - cost)
 
             return dp0, dp1, uSize
 

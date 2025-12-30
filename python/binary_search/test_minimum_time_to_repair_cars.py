@@ -1,5 +1,6 @@
 # ruff: noqa: S101
 import pytest
+
 from .minimum_time_to_repair_cars import Solution
 
 

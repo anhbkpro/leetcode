@@ -1,5 +1,5 @@
-from typing import List, Set
 from functools import lru_cache
+from typing import List, Set
 
 
 class Solution:

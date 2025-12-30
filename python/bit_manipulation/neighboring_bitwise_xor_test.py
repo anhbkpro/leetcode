@@ -1,4 +1,5 @@
 import unittest
+
 from .neighboring_bitwise_xor import Solution
 
 

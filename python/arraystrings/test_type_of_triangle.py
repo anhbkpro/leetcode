@@ -1,4 +1,5 @@
 import pytest
+
 from .type_of_triangle import Solution
 
 

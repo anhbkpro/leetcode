@@ -1,5 +1,7 @@
-import pytest
 from typing import List
+
+import pytest
+
 from prefix_sum.maximum_size_subarray_sum_equals_k import Solution
 
 

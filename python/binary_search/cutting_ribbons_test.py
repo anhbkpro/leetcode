@@ -1,4 +1,5 @@
 import unittest
+
 from .cutting_ribbons import Solution
 
 

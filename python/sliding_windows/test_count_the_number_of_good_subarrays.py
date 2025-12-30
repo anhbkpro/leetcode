@@ -1,5 +1,7 @@
-import pytest
 from typing import List
+
+import pytest
+
 from sliding_windows.count_the_number_of_good_subarrays import Solution
 
 

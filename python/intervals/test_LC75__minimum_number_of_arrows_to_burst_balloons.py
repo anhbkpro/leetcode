@@ -1,7 +1,8 @@
 import unittest
+
 from .LC75__minimum_number_of_arrows_to_burst_balloons import (
-    SolutionSortByStart,
     SolutionSortByEnd,
+    SolutionSortByStart,
 )
 
 

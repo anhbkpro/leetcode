@@ -1,4 +1,5 @@
 import pytest
+
 from .solving_questions_with_brainpower import Solution
 
 

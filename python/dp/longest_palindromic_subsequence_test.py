@@ -1,8 +1,9 @@
 import pytest
+
 from .longest_palindromic_subsequence import (
-    RecursiveDynamicProgramming,
-    IterativeDynamicProgramming,
     DynamicProgrammingWithSpaceOptimization,
+    IterativeDynamicProgramming,
+    RecursiveDynamicProgramming,
 )
 
 

@@ -1,4 +1,5 @@
 import unittest
+
 from .meeting_rooms import Solution
 
 

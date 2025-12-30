@@ -1,5 +1,5 @@
-from .delete_nodes_and_return_forest import Solution
 from .binary_tree_node import TreeNode
+from .delete_nodes_and_return_forest import Solution
 
 
 def test_del_nodes():

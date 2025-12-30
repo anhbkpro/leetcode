@@ -1,5 +1,5 @@
-from .number_of_good_leaf_nodes_pairs import Solution
 from .binary_tree_node import TreeNode
+from .number_of_good_leaf_nodes_pairs import Solution
 
 
 def test_number_of_good_leaf_nodes_pairs():

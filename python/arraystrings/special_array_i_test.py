@@ -1,8 +1,9 @@
 import unittest
+
 from .special_array_i import (
     Solution,
-    SolutionModuloComparisons,
     SolutionBitwiseOperations,
+    SolutionModuloComparisons,
 )
 
 

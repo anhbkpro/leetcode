@@ -1,4 +1,5 @@
 import pytest
+
 from .number_of_substrings_containing_all_three_characters import Solution
 
 

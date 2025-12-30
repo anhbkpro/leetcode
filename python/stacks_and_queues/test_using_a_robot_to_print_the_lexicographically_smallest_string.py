@@ -1,4 +1,5 @@
 import unittest
+
 from .using_a_robot_to_print_the_lexicographically_smallest_string import Solution
 
 

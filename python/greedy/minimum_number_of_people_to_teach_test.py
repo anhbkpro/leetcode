@@ -1,4 +1,5 @@
 import unittest
+
 from greedy.minimum_number_of_people_to_teach import Solution
 
 

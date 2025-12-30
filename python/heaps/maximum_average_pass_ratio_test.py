@@ -1,4 +1,5 @@
 import math
+
 from .maximum_average_pass_ratio import Solution
 
 

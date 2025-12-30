@@ -1,4 +1,5 @@
 import unittest
+
 from graph.most_profitable_path_in_a_tree import Solution
 
 

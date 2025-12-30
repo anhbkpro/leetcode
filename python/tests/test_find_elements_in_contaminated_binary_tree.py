@@ -1,7 +1,8 @@
 import pytest
+
 from binary_tree.find_elements_in_a_contaminated_binary_tree import (
-    TreeNode,
     FindElements,
+    TreeNode,
 )
 
 

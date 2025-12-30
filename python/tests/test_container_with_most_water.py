@@ -1,5 +1,7 @@
-import pytest
 from typing import List
+
+import pytest
+
 from two_pointers.container_with_most_water import Solution
 
 

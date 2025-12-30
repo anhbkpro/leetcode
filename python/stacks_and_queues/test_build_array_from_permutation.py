@@ -1,4 +1,5 @@
 import pytest
+
 from stacks_and_queues.build_array_from_permutation import Solution
 
 

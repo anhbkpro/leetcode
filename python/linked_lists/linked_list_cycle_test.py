@@ -1,8 +1,9 @@
 import unittest
+
 from linked_lists.linked_list_cycle import (
     ListNode,
-    SolutionHashTable,
     SolutionFloydCycle,
+    SolutionHashTable,
 )
 
 

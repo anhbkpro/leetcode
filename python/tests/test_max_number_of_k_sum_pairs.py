@@ -1,5 +1,7 @@
-import pytest
 from typing import List
+
+import pytest
+
 from two_pointers.max_number_of_k_sum_pairs import Solution
 
 

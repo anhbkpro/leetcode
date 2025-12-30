@@ -1,4 +1,5 @@
 import unittest
+
 from .perform_string_shifts import Solution
 
 

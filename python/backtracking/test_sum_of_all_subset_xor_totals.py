@@ -1,4 +1,5 @@
 import pytest
+
 from backtracking.sum_of_all_subset_xor_totals import Solution
 
 

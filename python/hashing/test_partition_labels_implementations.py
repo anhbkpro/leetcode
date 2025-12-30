@@ -1,4 +1,5 @@
 import pytest
+
 from .partition_labels import MergeIntervals, TwoPointers
 
 

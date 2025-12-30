@@ -1,5 +1,5 @@
 from collections import defaultdict
-from typing import List, Set, Dict
+from typing import Dict, List, Set
 
 
 class DFS:

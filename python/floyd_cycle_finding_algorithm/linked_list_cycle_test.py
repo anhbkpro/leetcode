@@ -1,5 +1,6 @@
-from .linked_list_cycle import Solution
 from linked_lists.linked_list_node import LinkedListNode
+
+from .linked_list_cycle import Solution
 
 
 def test_linked_list_cycle():

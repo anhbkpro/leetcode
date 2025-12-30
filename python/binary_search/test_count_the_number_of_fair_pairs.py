@@ -1,5 +1,7 @@
-import pytest
 from typing import List
+
+import pytest
+
 from binary_search.count_the_number_of_fair_pairs import Solution
 
 

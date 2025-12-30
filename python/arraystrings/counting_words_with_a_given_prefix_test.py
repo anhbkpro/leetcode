@@ -1,5 +1,6 @@
 import unittest
 from typing import Type
+
 from .counting_words_with_a_given_prefix import SolutionBuiltIn, SolutionTrie
 
 

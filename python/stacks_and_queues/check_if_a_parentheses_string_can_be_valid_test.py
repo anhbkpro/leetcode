@@ -1,4 +1,5 @@
 import unittest
+
 from .check_if_a_parentheses_string_can_be_valid import Solution
 
 

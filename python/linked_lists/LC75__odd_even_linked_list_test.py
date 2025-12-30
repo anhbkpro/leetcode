@@ -1,4 +1,4 @@
-from linked_lists.LC75__odd_even_linked_list import Solution, ListNode
+from linked_lists.LC75__odd_even_linked_list import ListNode, Solution
 
 
 def create_linked_list(values):

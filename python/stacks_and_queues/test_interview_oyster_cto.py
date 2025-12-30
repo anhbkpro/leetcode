@@ -1,4 +1,5 @@
 import pytest
+
 from .interview_oyster_cto import calculate
 
 

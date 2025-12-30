@@ -1,4 +1,5 @@
 import pytest
+
 from .zero_array_transformation_i import Solution
 
 

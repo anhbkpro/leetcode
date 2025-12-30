@@ -1,4 +1,5 @@
 import pytest
+
 from .LC75__string_compression import Solution
 
 

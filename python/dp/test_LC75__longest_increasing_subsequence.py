@@ -1,5 +1,7 @@
-import pytest
 from typing import List
+
+import pytest
+
 from dp.LC75__longest_increasing_subsequence import Solution
 
 

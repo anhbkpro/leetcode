@@ -1,5 +1,7 @@
-import pytest
 from typing import List
+
+import pytest
+
 from sell_stocks.LC75__best_time_to_buy_and_sell_stock import Solution
 
 

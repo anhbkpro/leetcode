@@ -1,4 +1,5 @@
 import unittest
+
 from .count_vowel_strings_in_ranges import Solution
 
 

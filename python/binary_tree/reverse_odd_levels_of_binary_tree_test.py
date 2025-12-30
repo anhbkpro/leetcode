@@ -1,4 +1,4 @@
-from .reverse_odd_levels_of_binary_tree import TreeNode, SolutionDFS, SolutionBFS
+from .reverse_odd_levels_of_binary_tree import SolutionBFS, SolutionDFS, TreeNode
 
 
 def test_reverse_odd_levels():

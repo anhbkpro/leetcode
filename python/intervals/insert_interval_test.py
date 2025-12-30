@@ -1,6 +1,7 @@
 import unittest
 from abc import ABC, abstractmethod
-from .insert_interval import SolutionLinearSearch, SolutionBinarySearch
+
+from .insert_interval import SolutionBinarySearch, SolutionLinearSearch
 
 
 class TestInsertIntervalBase(ABC):

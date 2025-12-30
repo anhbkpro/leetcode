@@ -1,5 +1,7 @@
-import pytest
 from typing import List
+
+import pytest
+
 from arraystrings.count_the_hidden_sequences import Solution
 
 

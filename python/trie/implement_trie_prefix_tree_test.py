@@ -1,5 +1,6 @@
-from .implement_trie_prefix_tree import TrieHash, TrieArray
 import pytest
+
+from .implement_trie_prefix_tree import TrieArray, TrieHash
 
 
 @pytest.fixture

@@ -1,5 +1,6 @@
 import unittest
-from .meeting_rooms_ii import SolutionPriorityQueues, SolutionChronologicalOrdering
+
+from .meeting_rooms_ii import SolutionChronologicalOrdering, SolutionPriorityQueues
 
 
 class BaseTestMeetingRoomsII:

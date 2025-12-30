@@ -1,4 +1,5 @@
 import unittest
+
 from linked_lists.copy_list_with_random_pointer import Node, Solution
 
 

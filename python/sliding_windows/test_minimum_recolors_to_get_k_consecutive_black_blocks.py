@@ -1,5 +1,6 @@
 # ruff: noqa: S101
 import pytest
+
 from sliding_windows.minimum_recolors_to_get_k_consecutive_black_blocks import Solution
 
 

@@ -1,4 +1,5 @@
 import unittest
+
 from .LC75__number_of_provinces import Solution
 
 

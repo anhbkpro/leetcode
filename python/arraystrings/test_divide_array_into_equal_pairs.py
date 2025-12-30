@@ -1,5 +1,6 @@
 # ruff: noqa: S101
 import pytest
+
 from .divide_array_into_equal_pairs import Solution
 
 

@@ -1,4 +1,5 @@
 import pytest
+
 from .meeting_rooms_iii import Solution
 
 

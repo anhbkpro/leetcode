@@ -1,5 +1,7 @@
-import pytest
 from typing import List
+
+import pytest
+
 from arraystrings.find_lucky_integer_in_an_array import Solution
 
 

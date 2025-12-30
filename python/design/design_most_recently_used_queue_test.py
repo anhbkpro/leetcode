@@ -1,5 +1,6 @@
-from design.design_most_recently_used_queue import MRUQueue
 import pytest
+
+from design.design_most_recently_used_queue import MRUQueue
 
 
 def test_initialization():

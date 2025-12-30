@@ -1,5 +1,7 @@
-import pytest
 from typing import List
+
+import pytest
+
 from binary_search.search_insert_position import Solution
 
 

@@ -1,7 +1,8 @@
 import unittest
+
 from .tuple_with_same_product import (
-    SolutionOptimizedBruteForce,
     SolutionCountProductFrequency,
+    SolutionOptimizedBruteForce,
     SolutionProductFrequencyHashMap,
 )
 

@@ -1,5 +1,5 @@
-from .spiral_matrix_iv import Solution
 from .linked_list_node import LinkedListNode
+from .spiral_matrix_iv import Solution
 
 
 def test_spiral_matrix():

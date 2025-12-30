@@ -1,4 +1,5 @@
 import unittest
+
 from hashing.palindrome_permutation import Solution
 
 

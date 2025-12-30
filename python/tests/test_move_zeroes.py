@@ -1,5 +1,7 @@
-import pytest
 from typing import List
+
+import pytest
+
 from two_pointers.move_zeroes import Solution
 
 

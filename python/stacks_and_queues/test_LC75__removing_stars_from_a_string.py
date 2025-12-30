@@ -1,4 +1,5 @@
 import pytest
+
 from stacks_and_queues.LC75__removing_stars_from_a_string import Solution
 
 

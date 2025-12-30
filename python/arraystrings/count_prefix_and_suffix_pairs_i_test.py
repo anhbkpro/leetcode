@@ -1,5 +1,6 @@
-from typing import List, Type
 import unittest
+from typing import List, Type
+
 from .count_prefix_and_suffix_pairs_i import SolutionBase, SolutionBF, SolutionTrie
 
 

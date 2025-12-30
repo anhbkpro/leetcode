@@ -1,8 +1,9 @@
 import unittest
 from typing import List
+
 from .group_anagrams import (
-    SolutionCategorizeBySortedString,
     SolutionCategorizeByCharacterCount,
+    SolutionCategorizeBySortedString,
 )
 
 

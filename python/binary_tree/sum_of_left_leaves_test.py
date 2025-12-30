@@ -1,4 +1,4 @@
-from .sum_of_left_leaves import TreeNode, Solution
+from .sum_of_left_leaves import Solution, TreeNode
 
 
 def test_sum_of_left_leaves():

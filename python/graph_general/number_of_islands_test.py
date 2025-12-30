@@ -1,5 +1,6 @@
-from .number_of_islands import SolutionDFS, SolutionBFS, SolutionUnionFind
 import pytest
+
+from .number_of_islands import SolutionBFS, SolutionDFS, SolutionUnionFind
 
 
 @pytest.fixture(params=[SolutionDFS, SolutionBFS, SolutionUnionFind])

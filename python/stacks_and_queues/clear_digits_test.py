@@ -1,5 +1,6 @@
 import unittest
-from stacks_and_queues.clear_digits import SolutionStackLike, SolutionInPlace
+
+from stacks_and_queues.clear_digits import SolutionInPlace, SolutionStackLike
 
 
 class BaseTestClearDigits:

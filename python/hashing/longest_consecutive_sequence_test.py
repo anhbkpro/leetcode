@@ -1,4 +1,5 @@
 import unittest
+
 from .longest_consecutive_sequence import Solution
 
 

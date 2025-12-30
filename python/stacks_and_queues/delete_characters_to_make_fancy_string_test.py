@@ -1,4 +1,5 @@
 import unittest
+
 from delete_characters_to_make_fancy_string import Solution
 
 

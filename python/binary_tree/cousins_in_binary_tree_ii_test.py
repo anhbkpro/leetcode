@@ -1,5 +1,5 @@
-from .cousins_in_binary_tree_ii import Solution
 from .binary_tree_node import TreeNode
+from .cousins_in_binary_tree_ii import Solution
 
 
 def test_cousins_in_binary_tree_ii():

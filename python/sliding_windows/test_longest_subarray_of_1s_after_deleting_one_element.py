@@ -1,4 +1,5 @@
 import pytest
+
 from .LC75__longest_subarray_of_1s_after_deleting_one_element import Solution
 
 

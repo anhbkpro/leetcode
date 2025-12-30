@@ -1,6 +1,7 @@
 import unittest
 from typing import List
-from .contains_duplicate_ii import SolutionSlidingWindow, SolutionDictionary
+
+from .contains_duplicate_ii import SolutionDictionary, SolutionSlidingWindow
 
 
 class BaseTestContainsDuplicateII:

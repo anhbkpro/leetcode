@@ -1,6 +1,5 @@
 from typing import List
 
-
 MOD = 10**9 + 7
 L = 26
 

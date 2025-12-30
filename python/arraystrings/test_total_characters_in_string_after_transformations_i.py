@@ -1,4 +1,5 @@
 import pytest
+
 from arraystrings.total_characters_in_string_after_transformations_i import Solution
 
 

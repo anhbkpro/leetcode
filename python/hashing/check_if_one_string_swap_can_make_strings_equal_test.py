@@ -1,4 +1,5 @@
 import unittest
+
 from .check_if_one_string_swap_can_make_strings_equal import (
     Solution,
     SolutionFrequencyMapCheckDifferences,

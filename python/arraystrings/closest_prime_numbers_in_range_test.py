@@ -1,4 +1,5 @@
 import pytest
+
 from .closest_prime_numbers_in_range import Solution
 
 

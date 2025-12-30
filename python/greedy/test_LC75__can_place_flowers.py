@@ -1,4 +1,5 @@
 import pytest
+
 from greedy.LC75__can_place_flowers import Solution
 
 

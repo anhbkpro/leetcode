@@ -1,5 +1,5 @@
-from .split_linked_list_in_parts import Solution
 from .linked_list_node import LinkedListNode
+from .split_linked_list_in_parts import Solution
 
 
 def test_split_linked_list_in_parts():

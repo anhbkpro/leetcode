@@ -1,4 +1,5 @@
 import unittest
+
 from .summary_ranges import Solution
 
 

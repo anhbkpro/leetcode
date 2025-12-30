@@ -1,4 +1,5 @@
 import pytest
+
 from .longest_repeating_substring import Solution, SolutionDynamicProgramming
 
 

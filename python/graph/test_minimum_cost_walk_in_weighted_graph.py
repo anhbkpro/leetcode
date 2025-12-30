@@ -1,4 +1,5 @@
 import unittest
+
 from .minimum_cost_walk_in_weighted_graph import Solution
 
 

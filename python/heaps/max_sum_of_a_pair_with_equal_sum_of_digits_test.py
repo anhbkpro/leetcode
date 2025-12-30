@@ -1,5 +1,6 @@
-from .max_sum_of_a_pair_with_equal_sum_of_digits import Solution
 import pytest
+
+from .max_sum_of_a_pair_with_equal_sum_of_digits import Solution
 
 
 @pytest.fixture

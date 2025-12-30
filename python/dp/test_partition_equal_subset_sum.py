@@ -1,4 +1,5 @@
 import pytest
+
 from dp.partition_equal_subset_sum import Solution
 
 

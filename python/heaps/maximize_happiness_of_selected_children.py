@@ -1,6 +1,7 @@
 import heapq
 from typing import List
 
+
 class Solution:
     def maximumHappinessSum(self, happiness: List[int], k: int) -> int:
         max_heap = [-h for h in happiness]
@@ -15,4 +16,3 @@ class Solution:
             turn += 1
 
         return total_happiness_sum
-

@@ -1,8 +1,9 @@
 import unittest
+
 from dp.shortest_common_supersequence import (
     SolutionBacktrackingTLE,
-    SolutionMemoizationTLE,
     SolutionBottomUpDynamicProgramming,
+    SolutionMemoizationTLE,
     SolutionMostOptimalSpaceOptimizedDynamicProgramming,
 )
 

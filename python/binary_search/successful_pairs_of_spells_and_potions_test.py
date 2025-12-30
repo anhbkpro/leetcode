@@ -1,4 +1,5 @@
 import unittest
+
 from binary_search.successful_pairs_of_spells_and_potions import Solution
 
 

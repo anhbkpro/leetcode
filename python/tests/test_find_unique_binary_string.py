@@ -1,5 +1,7 @@
-import pytest
 from typing import List
+
+import pytest
+
 from backtracking.find_unique_binary_string import Solution
 
 

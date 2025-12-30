@@ -1,5 +1,6 @@
-from mathematics.palindrome_number import Solution
 import pytest
+
+from mathematics.palindrome_number import Solution
 
 
 @pytest.fixture

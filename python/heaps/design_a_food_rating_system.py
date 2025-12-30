@@ -1,6 +1,6 @@
-from typing import List
-from collections import defaultdict
 import heapq
+from collections import defaultdict
+from typing import List
 
 
 class Food:

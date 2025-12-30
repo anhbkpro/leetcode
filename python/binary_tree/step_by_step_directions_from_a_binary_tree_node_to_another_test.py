@@ -1,5 +1,5 @@
-from .step_by_step_directions_from_a_binary_tree_node_to_another import Solution
 from .binary_tree_node import TreeNode
+from .step_by_step_directions_from_a_binary_tree_node_to_another import Solution
 
 
 def test_step_by_step_directions_from_a_binary_tree_node_to_another():

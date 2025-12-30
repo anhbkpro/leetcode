@@ -1,4 +1,4 @@
-from .insert_greatest_common_divisors_in_linked_list import Solution, ListNode
+from .insert_greatest_common_divisors_in_linked_list import ListNode, Solution
 
 
 def test_insert_greatest_common_divisors():

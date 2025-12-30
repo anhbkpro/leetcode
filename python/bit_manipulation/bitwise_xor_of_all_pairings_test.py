@@ -1,4 +1,5 @@
 import unittest
+
 from .bitwise_xor_of_all_pairings import Solution
 
 

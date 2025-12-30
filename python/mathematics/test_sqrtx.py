@@ -1,5 +1,6 @@
-from mathematics.sqrtx import SolutionBinarySearch
 import pytest
+
+from mathematics.sqrtx import SolutionBinarySearch
 
 
 @pytest.fixture

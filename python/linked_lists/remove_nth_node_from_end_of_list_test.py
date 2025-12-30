@@ -1,5 +1,5 @@
-from .remove_nth_node_from_end_of_list import Solution
 from .linked_list_node import LinkedListNode
+from .remove_nth_node_from_end_of_list import Solution
 
 
 def test_remove_nth_from_end():

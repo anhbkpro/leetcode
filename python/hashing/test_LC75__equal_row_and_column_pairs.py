@@ -1,4 +1,5 @@
 import unittest
+
 from .LC75__equal_row_and_column_pairs import Solution
 
 

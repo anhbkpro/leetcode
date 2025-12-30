@@ -1,5 +1,5 @@
-from .create_binary_tree_from_descriptions import Solution
 from .binary_tree_node import TreeNode
+from .create_binary_tree_from_descriptions import Solution
 
 
 def test_create_binary_tree():

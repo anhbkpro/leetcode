@@ -1,5 +1,7 @@
-import pytest
 from typing import List
+
+import pytest
+
 from arraystrings.count_equal_and_divisible_pairs_in_an_array import Solution
 
 

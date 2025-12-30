@@ -1,4 +1,5 @@
 import pytest
+
 from arraystrings.longest_unequal_adjacent_groups_subsequence_i import Solution
 
 

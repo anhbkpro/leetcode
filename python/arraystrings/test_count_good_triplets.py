@@ -1,5 +1,7 @@
-import pytest
 from typing import List
+
+import pytest
+
 from arraystrings.count_good_triplets import Solution
 
 

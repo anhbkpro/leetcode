@@ -1,5 +1,6 @@
-from typing import Type
 import unittest
+from typing import Type
+
 from .climbing_stairs import SolutionBase, SolutionDP, SolutionRecursionMemoization
 
 

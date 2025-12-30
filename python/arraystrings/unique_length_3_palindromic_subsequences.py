@@ -15,6 +15,7 @@ class Solution:
 
         return ans
 
+
 # Approach 2: Pre-Compute First and Last Indices
 class Solution2:
     def countPalindromicSubsequence(self, s: str) -> int:

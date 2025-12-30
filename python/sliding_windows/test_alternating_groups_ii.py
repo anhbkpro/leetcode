@@ -1,4 +1,5 @@
 import pytest
+
 from .alternating_groups_ii import Solution
 
 

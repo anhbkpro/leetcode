@@ -1,5 +1,6 @@
-from .product_of_the_last_k_numbers import ProductOfNumbers
 import pytest
+
+from .product_of_the_last_k_numbers import ProductOfNumbers
 
 
 @pytest.fixture

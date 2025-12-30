@@ -1,4 +1,5 @@
 import unittest
+
 from .merge_intervals import Solution
 
 

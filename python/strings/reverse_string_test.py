@@ -1,5 +1,6 @@
 import unittest
-from .reverse_string import SolutionOnSpace, SolutionO1Space
+
+from .reverse_string import SolutionO1Space, SolutionOnSpace
 
 
 class BaseTestReverseString:
