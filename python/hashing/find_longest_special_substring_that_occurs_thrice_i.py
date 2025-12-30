@@ -2,7 +2,6 @@ class Solution:
     def maximumLength(self, s: str) -> int:
         # Create a dictionary to store the count of all substrings.
         count = {}
-        count_strings = 0
         for start in range(len(s)):
             character = s[start]
             substring_length = 0

@@ -17,9 +17,9 @@ def test_max_average_ratio_example1():
     expected = 0.78333
 
     # Assert using absolute difference comparison
-    assert math.isclose(
-        actual, expected, abs_tol=EPSILON
-    ), f"Expected {expected}, but got {actual}"
+    assert math.isclose(actual, expected, abs_tol=EPSILON), (
+        f"Expected {expected}, but got {actual}"
+    )
 
 
 def test_max_average_ratio_example2():
@@ -36,9 +36,9 @@ def test_max_average_ratio_example2():
     expected = 0.53485
 
     # Assert using absolute difference comparison
-    assert math.isclose(
-        actual, expected, abs_tol=EPSILON
-    ), f"Expected {expected}, but got {actual}"
+    assert math.isclose(actual, expected, abs_tol=EPSILON), (
+        f"Expected {expected}, but got {actual}"
+    )
 
 
 def test_max_average_ratio_edge_cases():

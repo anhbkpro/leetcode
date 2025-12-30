@@ -1,5 +1,4 @@
 import unittest
-from typing import List
 
 from .contains_duplicate_ii import SolutionDictionary, SolutionSlidingWindow
 

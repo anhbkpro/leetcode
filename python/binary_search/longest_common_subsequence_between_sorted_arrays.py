@@ -4,13 +4,13 @@ from typing import List
 class Solution:
     def longestCommonSubsequence(self, arrays: List[List[int]]) -> List[int]:
         def binary_search(array: List[int], target: int) -> bool:
-            l, r = 0, len(array) - 1
-            while l <= r:
-                m = (l + r) // 2
+            left, r = 0, len(array) - 1
+            while left <= r:
+                m = (left + r) // 2
                 if array[m] == target:
                     return True
                 elif array[m] < target:
-                    l = m + 1
+                    left = m + 1
                 else:
                     r = m - 1
 

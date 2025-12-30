@@ -2,9 +2,9 @@ PYTHON := python3
 VENV := .venv
 SRC := .
 
-.PHONY: all venv install fmt lint test clean
+.PHONY: all venv install fmt lint check fix test clean
 
-all: fmt lint test
+all: check
 
 ## ----------------------
 ## Virtual environment
@@ -17,24 +17,31 @@ venv:
 install: venv
 	@echo "👉 Installing dependencies..."
 	@$(VENV)/bin/pip install --upgrade pip
-	@$(VENV)/bin/pip install black isort flake8 pytest
+	@$(VENV)/bin/pip install ruff pytest
 
 ## ----------------------
-## Formatting
+## Ruff
 ## ----------------------
 
+## Format code (ruff format)
 fmt:
-	@echo "👉 Formatting Python code..."
-	@$(VENV)/bin/isort $(SRC)
-	@$(VENV)/bin/black $(SRC)
+	@echo "👉 Formatting Python code with ruff..."
+	@$(VENV)/bin/ruff format $(SRC)
 
-## ----------------------
-## Linting
-## ----------------------
-
+## Lint only (no auto-fix)
 lint:
-	@echo "👉 Linting Python code..."
-	@$(VENV)/bin/flake8 $(SRC)
+	@echo "👉 Linting Python code with ruff..."
+	@$(VENV)/bin/ruff check $(SRC)
+
+## Lint + auto-fix (recommended for local dev)
+fix:
+	@echo "👉 Auto-fixing Python code with ruff..."
+	@$(VENV)/bin/ruff check --fix $(SRC)
+
+## CI target (fail on any issue)
+check:
+	@$(VENV)/bin/ruff format --check $(SRC)
+	@$(VENV)/bin/ruff check $(SRC)
 
 ## ----------------------
 ## Testing

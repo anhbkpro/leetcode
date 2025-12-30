@@ -7,9 +7,7 @@ class TreeNode:
 
 
 class Solution:
-
     def sumOfLeftLeaves(self, root: TreeNode) -> int:
-
         if root is None:
             return 0
 

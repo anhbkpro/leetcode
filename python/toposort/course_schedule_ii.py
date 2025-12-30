@@ -2,7 +2,6 @@ from collections import defaultdict, deque
 
 
 class Solution:
-
     def findOrder(self, numCourses, prerequisites):
         """
         :type numCourses: int
@@ -26,7 +25,6 @@ class Solution:
 
         # Until there are nodes in the Q
         while zero_indegree_queue:
-
             # Pop one node with 0 in-degree
             vertex = zero_indegree_queue.popleft()
             topological_sorted_order.append(vertex)

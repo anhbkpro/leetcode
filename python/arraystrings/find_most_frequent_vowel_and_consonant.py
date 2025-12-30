@@ -1,4 +1,5 @@
 from collections import defaultdict
+from collections import Counter
 
 
 class Solution:
@@ -16,12 +17,7 @@ class Solution:
                 c_max = max(c_max, consonan_m[c])
         return v_max + c_max
 
-
-from collections import Counter
-
-
-class Solution:
-    def maxFreqSum(self, s: str) -> int:
+    def maxFreqSumV2(self, s: str) -> int:
         mp = Counter(s)
         vowel = max((mp[ch] for ch in mp if ch in "aeiou"), default=0)
         consonant = max((mp[ch] for ch in mp if ch not in "aeiou"), default=0)

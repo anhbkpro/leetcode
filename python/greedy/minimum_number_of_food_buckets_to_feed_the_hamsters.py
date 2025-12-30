@@ -11,7 +11,6 @@ class Solution:
         ):
             return -1
 
-        ans = 0
         count_diff_1 = hamsters.count("H.H")
         if not count_diff_1:
             return count

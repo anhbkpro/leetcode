@@ -18,9 +18,9 @@ class TestCountWaysToBuildGoodStrings:
         """Helper method to run a test case for a specific solution class"""
         solution = solution_class()
         result = solution.countGoodStrings(low, high, zero, one)
-        assert (
-            result == expected
-        ), f"{solution_class.__name__} failed: Expected {expected}, got {result}"
+        assert result == expected, (
+            f"{solution_class.__name__} failed: Expected {expected}, got {result}"
+        )
 
     def run_all_solutions(
         self, low: int, high: int, zero: int, one: int, expected: int

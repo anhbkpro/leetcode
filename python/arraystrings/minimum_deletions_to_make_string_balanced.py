@@ -1,6 +1,3 @@
-from typing import List
-
-
 class Solution:
     def minimumDeletions(self, s: str) -> int:
         n = len(s)

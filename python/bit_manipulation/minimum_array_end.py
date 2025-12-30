@@ -1,6 +1,5 @@
 class Solution:
     def minEnd(self, n: int, x: int) -> int:
-
         result = 0
         # Reducing n by 1 to exclude x from the iteration
         n -= 1

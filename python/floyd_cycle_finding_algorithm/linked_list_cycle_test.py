@@ -9,9 +9,9 @@ def test_linked_list_cycle():
     node.next.next = LinkedListNode(0)
     node.next.next.next = LinkedListNode(-4)
     node.next.next.next.next = node.next
-    assert Solution().hasCycle(node) == True
+    assert Solution().hasCycle(node)
 
     node = LinkedListNode(1)
     node.next = LinkedListNode(2)
     node.next.next = node
-    assert Solution().hasCycle(node) == True
+    assert Solution().hasCycle(node)

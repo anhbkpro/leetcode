@@ -1,6 +1,5 @@
 class Solution:
     def numWays(self, words, target):
-
         dp = [[-1] * len(target) for _ in range(len(words[0]))]
         char_frequency = [[0] * 26 for _ in range(len(words[0]))]
 

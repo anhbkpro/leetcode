@@ -73,9 +73,9 @@ class TestShiftingLetters(unittest.TestCase):
     def test_large_number_of_shifts(self):
         """Test with large number of shifts that should wrap around alphabet multiple times"""
         s = "a"
-        shifts = [
-            [0, 0, 1]
-        ] * 27  # Shift forward 27 times (should wrap around alphabet once plus one more shift)
+        shifts = (
+            [[0, 0, 1]] * 27
+        )  # Shift forward 27 times (should wrap around alphabet once plus one more shift)
         self.assertEqual(self.solution.shiftingLetters(s, shifts), "b")
 
     def test_boundary_shifts(self):

@@ -1,6 +1,4 @@
-import heapq
 import unittest
-from typing import List
 
 from .trapping_rain_water_ii import Solution
 

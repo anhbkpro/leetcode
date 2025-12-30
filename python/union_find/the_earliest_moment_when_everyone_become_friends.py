@@ -25,7 +25,6 @@ class Solution:
 
 
 class UnionFind:
-
     def __init__(self, size):
         self.group = [group_id for group_id in range(size)]
         self.rank = [0] * size

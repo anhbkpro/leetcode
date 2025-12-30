@@ -3,7 +3,6 @@ from typing import List
 
 
 class Solution:
-
     # Helper function to perform BFS and find the number of edges in the shortest path from node 0 to node n-1
     def bfs(self, n: int, adj_list: List[List[int]]) -> int:
         visited = [False] * n

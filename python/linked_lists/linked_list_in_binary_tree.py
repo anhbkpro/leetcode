@@ -1,4 +1,7 @@
 # Definition for singly-linked list.
+from typing import Optional
+
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -11,9 +14,6 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
-
-
-from typing import Optional
 
 
 class Solution:

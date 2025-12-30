@@ -123,7 +123,7 @@ class TestTargetSumWays(unittest.TestCase):
         for solution_class in solutions:
             solution = solution_class()
             start_time = time.time()
-            result = solution.findTargetSumWays(nums, target)
+            solution.findTargetSumWays(nums, target)
             end_time = time.time()
             times[solution_class.__name__] = end_time - start_time
 

@@ -21,7 +21,6 @@ class TrieNode:
 
 
 class WordDictionary:
-
     def __init__(self):
         self.node = TrieNode()
 

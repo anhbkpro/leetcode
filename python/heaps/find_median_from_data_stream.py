@@ -14,9 +14,9 @@ class MedianFinder:
         - max_heap: stores the smaller half (as negative numbers to simulate max heap)
         - min_heap: stores the larger half
         """
-        self.max_heap: List[int] = (
-            []
-        )  # stores smaller half (negated for max heap behavior)
+        self.max_heap: List[
+            int
+        ] = []  # stores smaller half (negated for max heap behavior)
         self.min_heap: List[int] = []  # stores larger half
 
     def _balance_heaps(self) -> None:

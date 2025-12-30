@@ -19,7 +19,6 @@ class Solution:
 
         # Recursive case: iterate through each character
         for i, current_char in enumerate(expression):
-
             # Skip if the current character is a digit
             if current_char.isdigit():
                 continue

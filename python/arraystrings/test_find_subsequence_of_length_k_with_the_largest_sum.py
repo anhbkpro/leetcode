@@ -1,7 +1,6 @@
 import os
 import sys
 import unittest
-from typing import List
 
 # Add the parent directory to the path to import the solution
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))

@@ -6,7 +6,6 @@ class Node:
 
 
 class MyCircularDeque:
-
     def __init__(self, k: int):
         self.size = 0
         self.capacity = k

@@ -3,7 +3,6 @@ from typing import List
 
 
 class Solution:
-
     # Directions for moving to neighboring cells: right, left, down, up
     dir = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 

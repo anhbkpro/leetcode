@@ -16,7 +16,6 @@ class Solution:
         # Creating a new weaved list of original and copied nodes.
         ptr = head
         while ptr:
-
             # Cloned node
             new_node = Node(ptr.val, None, None)
 

@@ -1,5 +1,3 @@
-import pytest
-
 from sliding_windows.LC75__max_consecutive_ones_iii import Solution
 
 

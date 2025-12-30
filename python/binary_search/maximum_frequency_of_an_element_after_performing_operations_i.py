@@ -18,12 +18,12 @@ class Solution:
         ans = max(ans, len(nums) - last_num_index)
 
         for i in range(nums[0], nums[-1] + 1):
-            l = bisect.bisect_left(nums, i - k)
+            left = bisect.bisect_left(nums, i - k)
             r = bisect.bisect_right(nums, i + k) - 1
             if i in num_count:
-                temp_ans = min(r - l + 1, num_count[i] + numOperations)
+                temp_ans = min(r - left + 1, num_count[i] + numOperations)
             else:
-                temp_ans = min(r - l + 1, numOperations)
+                temp_ans = min(r - left + 1, numOperations)
             ans = max(ans, temp_ans)
 
         return ans

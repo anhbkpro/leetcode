@@ -70,7 +70,9 @@ class Solution:
 
         n = 3
         N = n * n
-        box_index = lambda row, col: (row // n) * n + col // n
+
+        def box_index(row, col):
+            return (row // n) * n + col // n
 
         rows = [defaultdict(int) for _ in range(N)]
         columns = [defaultdict(int) for _ in range(N)]

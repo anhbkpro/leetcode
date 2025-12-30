@@ -3,7 +3,6 @@ from typing import List
 
 class Solution:
     def minZeroArray(self, nums: List[int], queries: List[List[int]]) -> int:
-        n = len(nums)
         left, right = 0, len(queries)
 
         # Zero array isn't formed after all queries are processed

@@ -2,7 +2,6 @@ from typing import List
 
 
 class MovieRentingSystem:
-
     def __init__(self, n: int, entries: List[List[int]]):
         self.available = {}  # (shop, movie) -> price
         self.movie_shops = {}  # movie -> list of (price, shop)

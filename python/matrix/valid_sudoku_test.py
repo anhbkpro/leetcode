@@ -1,5 +1,4 @@
 import unittest
-from typing import List
 
 from matrix.valid_sudoku import Solution
 

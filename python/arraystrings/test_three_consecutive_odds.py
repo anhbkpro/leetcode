@@ -1,5 +1,3 @@
-import pytest
-
 from arraystrings.three_consecutive_odds import Solution
 
 

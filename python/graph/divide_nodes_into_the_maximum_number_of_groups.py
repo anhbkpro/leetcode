@@ -2,7 +2,6 @@ from collections import deque
 
 
 class Solution:
-
     # Main function to calculate the maximum number of magnificent sets
     def magnificentSets(self, n, edges):
         # Create adjacency list for the graph

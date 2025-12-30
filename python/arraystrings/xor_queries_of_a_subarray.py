@@ -9,5 +9,5 @@ class Solution:
             prefix_xor[i + 1] = prefix_xor[i] ^ arr[i]
 
         # Store the XOR result for each query in a variable
-        result = [prefix_xor[r + 1] ^ prefix_xor[l] for l, r in queries]
+        result = [prefix_xor[r + 1] ^ prefix_xor[left] for left, r in queries]
         return result

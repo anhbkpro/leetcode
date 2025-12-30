@@ -32,15 +32,9 @@ def test_three_digit_numbers(solution):
 
 def test_large_numbers(solution):
     # Test cases for larger numbers
-    assert (
-        solution.addDigits(1234) == 1
-    )  # noqa: S101  # 1 + 2 + 3 + 4 = 10 -> 1 + 0 = 1
-    assert (
-        solution.addDigits(9999) == 9
-    )  # noqa: S101  # 9 + 9 + 9 + 9 = 36 -> 3 + 6 = 9
-    assert (
-        solution.addDigits(12345) == 6
-    )  # noqa: S101  # 1 + 2 + 3 + 4 + 5 = 15 -> 1 + 5 = 6
+    assert solution.addDigits(1234) == 1  # noqa: S101  # 1 + 2 + 3 + 4 = 10 -> 1 + 0 = 1
+    assert solution.addDigits(9999) == 9  # noqa: S101  # 9 + 9 + 9 + 9 = 36 -> 3 + 6 = 9
+    assert solution.addDigits(12345) == 6  # noqa: S101  # 1 + 2 + 3 + 4 + 5 = 15 -> 1 + 5 = 6
 
 
 @pytest.mark.parametrize(

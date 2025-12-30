@@ -51,7 +51,6 @@ class SolutionSort:
 
 
 class SolutionTrie:
-
     class TrieNode:
         def __init__(self):
             self.is_end_of_folder = False

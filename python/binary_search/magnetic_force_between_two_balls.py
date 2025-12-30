@@ -23,7 +23,6 @@ class Solution:
 
     def maxDistance(self, position: List[int], m: int) -> int:
         answer = 0
-        n = len(position)
         position.sort()
 
         # Initial search space.

@@ -13,7 +13,6 @@ class Solution:
             # If it goes beyond the boundary or the next node's value is not the target value, then return
             if nx < 0 or ny < 0 or nx >= m or ny >= n or grid[nx][ny] != target:
                 return 0
-            turn_int = 1 if turn else 0
             # Continue walking in the original direction.
             max_step = dfs(nx, ny, direction, turn, 2 - target)
             if turn:

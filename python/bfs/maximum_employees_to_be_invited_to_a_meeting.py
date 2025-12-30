@@ -35,7 +35,6 @@ class Solution:
         # Find all cycles in the graph
         for person in range(num_people):
             if not visited[person]:
-
                 # Track visited persons and their distances
                 visited_persons = {}
                 current_person = person

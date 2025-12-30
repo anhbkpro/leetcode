@@ -7,7 +7,6 @@ class Solution:
         prefix_sum = 0
         free_days = 0
         previous_day = days
-        has_gap = False
 
         for meeting in meetings:
             # Set first day of meetings

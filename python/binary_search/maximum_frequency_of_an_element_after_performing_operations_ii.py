@@ -30,12 +30,12 @@ class Solution:
         add_mode(nums[last_num_index])
 
         for mode in sorted(modes):
-            l = bisect.bisect_left(nums, mode - k)
+            left = bisect.bisect_left(nums, mode - k)
             r = bisect.bisect_right(nums, mode + k) - 1
             if mode in num_count:
-                temp_ans = min(r - l + 1, num_count[mode] + numOperations)
+                temp_ans = min(r - left + 1, num_count[mode] + numOperations)
             else:
-                temp_ans = min(r - l + 1, numOperations)
+                temp_ans = min(r - left + 1, numOperations)
             ans = max(ans, temp_ans)
 
         return ans

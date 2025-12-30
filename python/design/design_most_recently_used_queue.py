@@ -5,7 +5,6 @@ class ListNode:
 
 
 class MRUQueue:
-
     def __init__(self, n: int):
         self.head = ListNode()
         self.tail = self.head

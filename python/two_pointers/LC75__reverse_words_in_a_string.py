@@ -1,3 +1,6 @@
+from collections import deque
+
+
 class Solution:
     def reverseWords(self, s: str) -> str:
         s = [w for w in s.strip().split(" ") if w]
@@ -8,9 +11,6 @@ class Solution:
             right -= 1
 
         return " ".join(s)
-
-
-from collections import deque
 
 
 class SolutionDequeOfWords:

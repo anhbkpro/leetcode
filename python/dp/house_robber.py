@@ -2,18 +2,15 @@ from typing import List
 
 
 class RecursionWithMemoization:
-
     def __init__(self):
         self.memo = {}
 
     def rob(self, nums: List[int]) -> int:
-
         self.memo = {}
 
         return self.robFrom(0, nums)
 
     def robFrom(self, i, nums):
-
         # No more houses left to examine.
         if i >= len(nums):
             return 0
@@ -31,9 +28,7 @@ class RecursionWithMemoization:
 
 
 class DynamicProgramming:
-
     def rob(self, nums: List[int]) -> int:
-
         # Special handling for empty case.
         if not nums:
             return 0
@@ -46,7 +41,6 @@ class DynamicProgramming:
 
         # DP table calculations.
         for i in range(N - 2, -1, -1):
-
             # Same as recursive solution.
             maxRobbedAmount[i] = max(
                 maxRobbedAmount[i + 1], maxRobbedAmount[i + 2] + nums[i]
@@ -56,9 +50,7 @@ class DynamicProgramming:
 
 
 class OptimizedDynamicProgramming:
-
     def rob(self, nums: List[int]) -> int:
-
         # Special handling for empty case.
         if not nums:
             return 0
@@ -70,7 +62,6 @@ class OptimizedDynamicProgramming:
 
         # DP table calculations.
         for i in range(N - 2, -1, -1):
-
             # Same as recursive solution.
             current = max(rob_next, rob_next_plus_one + nums[i])
 

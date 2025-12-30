@@ -6,7 +6,6 @@ class TreeNode:
 
 
 class FindElements:
-
     def __init__(self, root: TreeNode):
         self.seen = set()
         if root:

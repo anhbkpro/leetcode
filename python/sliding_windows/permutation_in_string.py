@@ -35,22 +35,22 @@ class Solution:
 
         counter = Counter(s1)
         enough = Counter()
-        l, r = 0, 0
+        left, r = 0, 0
         while r < len(s2):
             c = s2[r]
             if c not in counter:
-                l = r
+                left = r
                 enough = {}
                 r += 1
                 continue
 
             enough[c] = enough.get(c, 0) + 1
             while enough[c] > counter[c]:
-                if s2[l] in enough:
-                    enough[s2[l]] -= 1
-                l += 1
-                if not enough[s2[l]]:
-                    del enough[s2[l]]
+                if s2[left] in enough:
+                    enough[s2[left]] -= 1
+                left += 1
+                if not enough[s2[left]]:
+                    del enough[s2[left]]
             r += 1
 
             if enough == counter:

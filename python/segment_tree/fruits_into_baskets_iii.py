@@ -11,23 +11,23 @@ class SegTree:
     def _maintain(self, o):
         self.seg[o] = max(self.seg[o * 2], self.seg[o * 2 + 1])
 
-    def _build(self, a, o, l, r):
-        if l == r:
-            self.seg[o] = a[l]
+    def _build(self, a, o, left, r):
+        if left == r:
+            self.seg[o] = a[left]
             return
-        m = (l + r) // 2
-        self._build(a, o * 2, l, m)
+        m = (left + r) // 2
+        self._build(a, o * 2, left, m)
         self._build(a, o * 2 + 1, m + 1, r)
         self._maintain(o)
 
-    def find_first_and_update(self, o, l, r, x):
+    def find_first_and_update(self, o, left, r, x):
         if self.seg[o] < x:
             return -1
-        if l == r:
+        if left == r:
             self.seg[o] = -1
-            return l
-        m = (l + r) // 2
-        i = self.find_first_and_update(o * 2, l, m, x)
+            return left
+        m = (left + r) // 2
+        i = self.find_first_and_update(o * 2, left, m, x)
         if i == -1:
             i = self.find_first_and_update(o * 2 + 1, m + 1, r, x)
         self._maintain(o)

@@ -26,7 +26,6 @@ class Solution:
                 current_node.val > previous_node.val
                 and current_node.val > current_node.next.val
             ):
-
                 # If this is the first critical point found
                 if previous_critical_index == 0:
                     previous_critical_index = current_index

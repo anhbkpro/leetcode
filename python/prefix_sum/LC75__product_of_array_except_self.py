@@ -3,7 +3,6 @@ from typing import List
 
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-
         # The length of the input array
         length = len(nums)
 
@@ -15,7 +14,6 @@ class Solution:
         # so the answer[0] would be 1
         answer[0] = 1
         for i in range(1, length):
-
             # answer[i - 1] already contains the product of elements to the left of 'i - 1'
             # Simply multiplying it with nums[i - 1] would give the product of all
             # elements to the left of index 'i'
@@ -26,7 +24,6 @@ class Solution:
         # so the R would be 1
         R = 1
         for i in reversed(range(length)):
-
             # For the index 'i', R would contain the
             # product of all elements to the right. We update R accordingly
             answer[i] = answer[i] * R

@@ -1,5 +1,4 @@
 class Spreadsheet(object):
-
     def __init__(self, rows):
         self.mpp = {}
 

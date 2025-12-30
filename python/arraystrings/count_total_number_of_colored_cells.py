@@ -5,7 +5,6 @@ class Solution:
 
         # Iterate n - 1 times
         while n - 1:
-
             # Add and update current multiple of 4
             num_blue_cells += addend
             addend += 4

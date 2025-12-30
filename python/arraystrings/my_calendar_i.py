@@ -2,7 +2,6 @@ from sortedcontainers import SortedList
 
 
 class MyCalendar:
-
     def __init__(self):
         self.calendar = SortedList()
 

@@ -27,7 +27,6 @@ class SolutionBF(SolutionBase):
             if current_sum == target:
                 self.total_ways += 1
         else:
-
             # Include the current number with a positive sign
             self.calculate_ways(
                 nums,

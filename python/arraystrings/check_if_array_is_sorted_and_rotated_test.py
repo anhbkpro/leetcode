@@ -1,6 +1,6 @@
 import unittest
 
-from .check_if_array_is_sorted_and_rotated import Solution, SolutionFindSmallestElement
+from .check_if_array_is_sorted_and_rotated import Solution
 
 
 class TestCheckIfArrayIsSortedAndRotated(unittest.TestCase):

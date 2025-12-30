@@ -20,7 +20,6 @@ class SolutionSimulation:
 
 class SolutionTwoHashMaps:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-
         # Check for obvious fail case.
         if len(ransomNote) > len(magazine):
             return False
@@ -44,7 +43,6 @@ class SolutionTwoHashMaps:
 
 class SolutionOneHashMap:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-
         # Check for obvious fail case.
         if len(ransomNote) > len(magazine):
             return False
@@ -66,7 +64,6 @@ class SolutionOneHashMap:
 
 class SolutionSortingAndStacks:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-
         # Check for obvious fail case.
         if len(ransomNote) > len(magazine):
             return False

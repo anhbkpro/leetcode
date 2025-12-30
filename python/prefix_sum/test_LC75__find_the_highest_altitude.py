@@ -1,5 +1,3 @@
-import pytest
-
 from prefix_sum.LC75__find_the_highest_altitude import Solution
 
 

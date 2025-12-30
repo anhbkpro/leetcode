@@ -3,7 +3,6 @@ from typing import List
 
 class Solution:
     def findDiagonalOrder(self, matrix: List[List[int]]) -> List[int]:
-
         # Check for empty matrices
         if not matrix or not matrix[0]:
             return []
@@ -17,7 +16,6 @@ class Solution:
         # We have to go over all the elements in the first
         # row and the last column to cover all possible diagonals
         for d in range(N + M - 1):
-
             # Clear the intermediate array everytime we start
             # to process another diagonal
             intermediate.clear()

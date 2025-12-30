@@ -7,7 +7,6 @@ class SolutionCharacterMappingWithDictionary:
         mapping_t_s = {}
 
         for c1, c2 in zip(s, t):
-
             # Case 1: No mapping exists in either of the dictionaries
             if (c1 not in mapping_s_t) and (c2 not in mapping_t_s):
                 mapping_s_t[c1] = c2
@@ -22,7 +21,6 @@ class SolutionCharacterMappingWithDictionary:
 
 
 class SolutionFirstOccurenceTransformation:
-
     def transformString(self, s: str) -> str:
         index_mapping = {}
         new_str = []

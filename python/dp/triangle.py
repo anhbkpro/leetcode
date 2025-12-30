@@ -6,7 +6,6 @@ class Solution:
     def minimumTotal(self, triangle: List[List[int]]) -> int:
         dp = triangle[-1]
         m = len(triangle)
-        n = len(dp)
 
         for r in range(m - 2, -1, -1):
             dp_tmp = copy.deepcopy(dp)

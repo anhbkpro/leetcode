@@ -4,7 +4,6 @@ from typing import List
 
 class Solution:
     def countBadPairs(self, nums: List[int]) -> int:
-        n = len(nums)
         freq = defaultdict(int)
         bad_paids = 0
         for i, num in enumerate(nums):

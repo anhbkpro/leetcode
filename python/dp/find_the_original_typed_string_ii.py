@@ -19,7 +19,7 @@ class Solution:
         if len(freq) >= k:
             return ans
 
-        f, g = [1] + [0] * (k - 1), [1] * k
+        _, g = [1] + [0] * (k - 1), [1] * k
         for i in range(len(freq)):
             f_new = [0] * k
             for j in range(1, k):
@@ -29,5 +29,4 @@ class Solution:
             g_new = [f_new[0]] + [0] * (k - 1)
             for j in range(1, k):
                 g_new[j] = (g_new[j - 1] + f_new[j]) % mod
-            f, g = f_new, g_new
         return (ans - g[k - 1]) % mod

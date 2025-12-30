@@ -1,5 +1,4 @@
 class CustomStack:
-
     def __init__(self, maxSize: int):
         self.stack = []
         self.maxSize = maxSize

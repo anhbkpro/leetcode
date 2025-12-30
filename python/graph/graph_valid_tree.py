@@ -2,7 +2,6 @@ from typing import List
 
 
 class UnionFind:
-
     # For efficiency, we aren't using makeset, but instead initialising
     # all the sets at the same time in the constructor.
     def __init__(self, n):

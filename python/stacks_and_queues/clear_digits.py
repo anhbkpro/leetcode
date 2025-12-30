@@ -25,7 +25,6 @@ class SolutionInPlace:
 
         # Iterate through each character in the input string
         for char_index in range(len(s)):
-
             # If the current character is a digit
             if s[char_index].isdigit():
                 # Decrement answerLength to remove the last character from the result

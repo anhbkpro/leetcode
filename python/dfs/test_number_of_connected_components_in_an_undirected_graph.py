@@ -212,6 +212,6 @@ class TestCountComponents:
         for n, edges in test_cases:
             dfs_result = dfs.countComponents(n, edges)
             uf_result = uf.countComponents(n, edges)
-            assert (
-                dfs_result == uf_result
-            ), f"DFS: {dfs_result}, UnionFind: {uf_result} for n={n}, edges={edges}"
+            assert dfs_result == uf_result, (
+                f"DFS: {dfs_result}, UnionFind: {uf_result} for n={n}, edges={edges}"
+            )

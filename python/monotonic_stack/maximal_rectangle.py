@@ -2,14 +2,12 @@ from typing import List
 
 
 class Solution:
-
     # Get the maximum area in a histogram given its heights
     def leetcode84(self, heights):
         stack = [-1]
 
         max_area = 0
         for i in range(len(heights)):
-
             while stack[-1] != -1 and heights[stack[-1]] >= heights[i]:
                 max_area = max(max_area, heights[stack.pop()] * (i - stack[-1] - 1))
             stack.append(i)
@@ -21,7 +19,6 @@ class Solution:
         return max_area
 
     def maximalRectangle(self, matrix: List[List[str]]) -> int:
-
         if not matrix:
             return 0
 
@@ -31,7 +28,6 @@ class Solution:
         dp = [0] * len(matrix[0])
         for i in range(len(matrix)):
             for j in range(len(matrix[0])):
-
                 # update the state of this row's histogram using the last row's histogram
                 # by keeping track of the number of consecutive ones
                 dp[j] = dp[j] + 1 if matrix[i][j] == "1" else 0

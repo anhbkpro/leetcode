@@ -4,7 +4,6 @@ from typing import List
 
 class Solution:
     def repairCars(self, ranks: List[int], cars: int) -> int:
-
         min_rank, max_rank = ranks[0], ranks[0]
 
         # Find min and max rank dynamically

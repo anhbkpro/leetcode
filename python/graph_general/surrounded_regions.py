@@ -36,5 +36,5 @@ class Solution:
 
         for row in range(1, len(board) - 1):
             for col in range(1, len(board[0]) - 1):
-                if not (row, col) in invalid_regions and board[row][col] == "O":
+                if (row, col) not in invalid_regions and board[row][col] == "O":
                     board[row][col] = "X"

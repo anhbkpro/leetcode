@@ -1,4 +1,3 @@
-from .binary_tree_node import TreeNode
 from .create_binary_tree_from_descriptions import Solution
 
 

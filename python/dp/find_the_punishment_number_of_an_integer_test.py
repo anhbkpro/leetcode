@@ -57,15 +57,15 @@ def test_find_partitions_helper(solution):
     # Test the helper function directly for specific cases
     memo = [[-1] * 10 for _ in range(2)]
     # Test "81" can be partitioned as "8"+"1"=9
-    assert solution.find_partitions(0, 0, "81", 9, memo) == True
+    assert solution.find_partitions(0, 0, "81", 9, memo)
 
     memo = [[-1] * 11 for _ in range(3)]
     # Test "100" can be partitioned as "10"+"0"=10
-    assert solution.find_partitions(0, 0, "100", 10, memo) == True
+    assert solution.find_partitions(0, 0, "100", 10, memo)
 
     memo = [[-1] * 9 for _ in range(2)]
     # Test "64" cannot be partitioned to sum to 8
-    assert solution.find_partitions(0, 0, "64", 8, memo) == False
+    assert not solution.find_partitions(0, 0, "64", 8, memo)
 
 
 def test_edge_cases(solution):

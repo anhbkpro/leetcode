@@ -3,7 +3,6 @@ from typing import List, Tuple
 
 
 class StockSpanner:
-
     def __init__(self) -> None:
         """Initialize the StockSpanner with a monotonic decreasing stack."""
         self.current_index: int = 0
