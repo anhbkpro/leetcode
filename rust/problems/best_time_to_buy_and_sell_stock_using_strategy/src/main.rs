@@ -1,6 +1,5 @@
 struct Solution;
 
-
 impl Solution {
     pub fn max_profit(prices: Vec<i32>, strategy: Vec<i32>, k: i32) -> i64 {
         let n = prices.len();
@@ -20,7 +19,6 @@ impl Solution {
         res
     }
 }
-
 
 fn main() {
     let prices = vec![3, 2, 5, 1, 7, 4];

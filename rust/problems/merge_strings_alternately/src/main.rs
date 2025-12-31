@@ -31,7 +31,6 @@ impl Solution {
     }
 }
 
-
 fn main() {
     let word1 = "abc".to_string();
     let word2 = "pqr".to_string();
@@ -45,6 +44,9 @@ mod tests {
 
     #[test]
     fn test_merge_alternately() {
-        assert_eq!(Solution::merge_alternately("abc".to_string(), "pqr".to_string()), "apbqcr".to_string());
+        assert_eq!(
+            Solution::merge_alternately("abc".to_string(), "pqr".to_string()),
+            "apbqcr".to_string()
+        );
     }
 }

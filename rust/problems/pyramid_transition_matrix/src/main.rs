@@ -3,6 +3,7 @@ use std::collections::{HashMap, HashSet};
 struct Solution;
 
 impl Solution {
+    // Input: bottom = "BCD", allowed = ["BCC","CDE","CEA","FFF"]
     pub fn pyramid_transition(bottom: String, allowed: Vec<String>) -> bool {
         // (u, v) -> possible w
         let mut t: HashMap<(char, char), Vec<char>> = HashMap::new();
@@ -10,9 +11,11 @@ impl Solution {
             let chars: Vec<char> = rule.chars().collect();
             t.entry((chars[0], chars[1])).or_default().push(chars[2]);
         }
+        // t = {('B', 'C'): ['C'], ('C', 'D'): ['E'], ('C', 'E'): ['A'], ('F', 'F'): ['F']}
 
         let mut failed: HashSet<String> = HashSet::new();
         let bottom_row: Vec<char> = bottom.chars().collect();
+        // bottom_row = ['B', 'C', 'D']
 
         fn solve(
             row: &Vec<char>,

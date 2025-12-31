@@ -42,7 +42,7 @@ CRATES = \
     rust-by-example/hello-world \
 		problems/*
 
-format:
+fmt:
 	@for crate in $(CRATES); do \
 		if [ -f $$crate/Cargo.toml ]; then \
 			echo "Formatting $$crate"; \
