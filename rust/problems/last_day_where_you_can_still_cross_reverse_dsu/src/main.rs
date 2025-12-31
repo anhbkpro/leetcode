@@ -39,7 +39,7 @@ struct Solution;
 
 impl Solution {
     pub fn latest_day_to_cross(row: i32, col: i32, cells: Vec<Vec<i32>>) -> i32 {
-        let row = row as usize;
+        let row: usize = row as usize;
         let col = col as usize;
         let n = row * col;
 
