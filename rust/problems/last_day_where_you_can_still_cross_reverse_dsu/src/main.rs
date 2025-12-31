@@ -19,8 +19,8 @@ impl DSU {
     }
 
     fn union(&mut self, x: usize, y: usize) {
-        let mut rx = self.find(x);
-        let mut ry = self.find(y);
+        let mut rx: usize = self.find(x);
+        let mut ry: usize = self.find(y);
 
         if rx == ry {
             return;
