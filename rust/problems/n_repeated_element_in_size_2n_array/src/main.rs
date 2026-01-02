@@ -1,6 +1,20 @@
+use std::collections::HashSet;
+
 struct Solution;
 
 impl Solution {
+    pub fn repeated_n_times_hashset(nums: Vec<i32>) -> i32 {
+        let mut seen = HashSet::new();
+
+        for num in nums {
+            if !seen.insert(num) {
+                return num;
+            }
+        }
+
+        unreachable!()
+    }
+
     pub fn repeated_n_times(nums: Vec<i32>) -> i32 {
         for i in 0..nums.len() - 1 {
             if nums[i] == nums[i + 1] {
@@ -19,4 +33,5 @@ impl Solution {
 
 fn main() {
     println!("{}", Solution::repeated_n_times(vec![1, 2, 3, 3]));
+    println!("{}", Solution::repeated_n_times_hashset(vec![1, 2, 3, 3]));
 }
