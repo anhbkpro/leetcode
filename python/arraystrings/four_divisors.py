@@ -1,5 +1,6 @@
 from math import isqrt
 
+
 class Solution:
     def sumFourDivisors(self, nums):
         def is_prime(x):
@@ -15,7 +16,7 @@ class Solution:
         for n in nums:
             # Case 1: n = p^3
             p = round(n ** (1 / 3))
-            if p ** 3 == n and is_prime(p):
+            if p**3 == n and is_prime(p):
                 total += 1 + p + p * p + n
                 continue
 
