@@ -13,7 +13,7 @@ class Solution:
     def maxLevelSum(self, root: Optional[TreeNode]) -> int:
         max_sum, ans, level = float('-inf'), 0, 0
 
-        q = collections.deque()
+        q = deque()
         q.append(root)
 
         while q:
