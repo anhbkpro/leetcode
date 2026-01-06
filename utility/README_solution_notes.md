@@ -18,6 +18,7 @@ python utility/add_solution_note.py
 ```
 
 This will prompt you for:
+
 - Problem number and name
 - Solution note
 - Tag(s)
@@ -33,6 +34,7 @@ python utility/add_solution_note.py --commit-msg "$(cat .git/COMMIT_EDITMSG)"
 ```
 
 The script will parse commit messages like:
+
 - "Add Rust solution for 1975. Maximum Matrix Sum"
 - "Solve 1975. Maximum Matrix Sum"
 - "1975. Maximum Matrix Sum"
@@ -56,12 +58,14 @@ python utility/add_solution_note.py \
 To automatically add notes when you commit:
 
 1. Install the git hook:
+
 ```bash
 cp utility/prepare-commit-msg-hook.sh .git/hooks/prepare-commit-msg
 chmod +x .git/hooks/prepare-commit-msg
 ```
 
-2. Commit as usual with a message like:
+1. Commit as usual with a message like:
+
 ```bash
 git commit -m "Add Rust solution for 1975. Maximum Matrix Sum
 
@@ -74,6 +78,7 @@ The hook will automatically detect LeetCode solution commits and add them to the
 ## Commit Message Format
 
 The script recognizes these patterns:
+
 - `Add Rust solution for 1975. Maximum Matrix Sum`
 - `Add Python solution for 1975. Maximum Matrix Sum`
 - `Solve 1975. Maximum Matrix Sum`
@@ -104,4 +109,3 @@ Space Complexity (e.g., 'O(1)'): O(1)
 Language (python/rust) [python]: rust
 ✓ Added to rust solution_notes.md
 ```
-
