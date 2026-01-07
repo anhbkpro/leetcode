@@ -11,7 +11,7 @@ class TreeNode:
 
 class Solution:
     def maxLevelSum(self, root: Optional[TreeNode]) -> int:
-        max_sum, ans, level = float('-inf'), 0, 0
+        max_sum, ans, level = float("-inf"), 0, 0
 
         q = deque()
         q.append(root)
