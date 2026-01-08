@@ -208,6 +208,10 @@ name = "longest_substring_without_repeating_characters"
 version = "0.1.0"
 
 [[package]]
+name = "max_dot_product_of_two_subsequences"
+version = "0.1.0"
+
+[[package]]
 name = "maximize_happiness_of_selected_children"
 version = "0.1.0"
 
