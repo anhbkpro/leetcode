@@ -1,7 +1,7 @@
 APP_NAME := leetcode
 GOLANGCI_VERSION := v1.62.2
 
-.PHONY: all fmt lint test cover tidy verify build run clean install-linter
+.PHONY: all fmt lint test cover tidy verify build run clean install-linter venv venv-activate venv-install venv-shell
 
 all: fmt lint test
 
@@ -51,3 +51,38 @@ run: build
 clean:
 	@echo "👉 Cleaning..."
 	@rm -rf bin coverage.out
+
+## Create Python virtual environment
+venv:
+	@echo "👉 Creating Python virtual environment..."
+	@if [ ! -d ".venv" ]; then \
+		python3 -m venv .venv; \
+		echo "✅ Virtual environment created at .venv"; \
+	else \
+		echo "✅ Virtual environment already exists at .venv"; \
+	fi
+
+## Show activation command for virtual environment
+venv-activate:
+	@echo "👉 To activate the virtual environment, run:"
+	@echo "   source .venv/bin/activate"
+	@echo ""
+	@echo "Or on Windows:"
+	@echo "   .venv\Scripts\activate"
+	@echo ""
+	@echo "Or use: eval \"\$$(make venv-shell)\" to activate in current shell"
+
+## Generate shell activation command (use with eval)
+venv-shell:
+	@echo "source .venv/bin/activate"
+
+## Install Python dependencies
+venv-install: venv
+	@echo "👉 Installing Python dependencies..."
+	@.venv/bin/pip install --upgrade pip
+	@if [ -f "requirements.txt" ]; then \
+		.venv/bin/pip install -r requirements.txt; \
+		echo "✅ Dependencies installed from requirements.txt"; \
+	else \
+		echo "⚠️  No requirements.txt found"; \
+	fi
