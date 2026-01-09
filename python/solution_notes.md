@@ -2,6 +2,7 @@
 
 | Problem # | Problem Name | Note | Tag | Difficulty | Time Complexity | Space Complexity |
 |-----------|--------------|------|-----|------------|-----------------|------------------|
+| 865 | Smallest Subtree with all the Deepest Nodes | Two-pass DFS approach: first pass tags each node with its depth,second pass finds the lowest common ancestor of all deepest nodes | Tree | Medium | O(n) | O(n) |
 | 1161 | Maximum Level Sum of a Binary Tree | BFS approach: traverse tree level by level, calculate sum at each level, track maximum sum and return smallest level with maximum sum | Tree | Medium | O(n) | O(n) |
 | 1339 | Maximum Product of Splitted Binary Tree | DFS approach: first compute total tree sum, then traverse tree tocalculate each subtree sum and track maximum product of split | DFS | Medium | O(n) | O(n) |
 | 1390 | Four Divisors | Handles two cases: n = p³ (cube of prime) and n = p*q (product of two distinct primes) | Math, Number Theory | Medium | O(n * √max(nums)) | O(1) |
