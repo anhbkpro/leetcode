@@ -216,6 +216,10 @@ name = "maximal_rectangle"
 version = "0.1.0"
 
 [[package]]
+name = "maximal_rectangle_monotonic_stack"
+version = "0.1.0"
+
+[[package]]
 name = "maximize_happiness_of_selected_children"
 version = "0.1.0"
 
