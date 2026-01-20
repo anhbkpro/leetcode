@@ -1,0 +1,59 @@
+name: Solve LeetCode Problems with Rust
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # This allows you to test your code against multiple Rust versions in parallel.
+        # Use this: rust-version: ["1.70", "stable", "nightly"]
+        rust-version: ["stable"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Rust ${{ matrix.rust-version }}
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: ${{ matrix.rust-version }}
+
+      - name: Cache cargo registry and target
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-
+
+      - name: Check workflow file location
+        run: |
+          pwd
+          ls -la ${{ github.workspace }}/.github/workflows
+
+      - name: Check Rust version
+        run: rustc --version && cargo --version
+
+      - name: Lint with clippy
+        run: cargo clippy --all-targets --all-features -- -D warnings
+
+      - name: Run tests
+        run: cargo test --workspace
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        with:
+          name: rust-test-results
+          path: target/debug/deps/
+        if: failure()
