@@ -23,22 +23,13 @@ impl Solution {
         edges
     }
 
-    pub fn maximize_square_area(
-        m: i32,
-        n: i32,
-        h_fences: Vec<i32>,
-        v_fences: Vec<i32>,
-    ) -> i64 {
+    pub fn maximize_square_area(m: i32, n: i32, h_fences: Vec<i32>, v_fences: Vec<i32>) -> i64 {
         const MOD: i64 = 1_000_000_007;
 
         let h_edges = Self::get_edges(h_fences, m);
         let v_edges = Self::get_edges(v_fences, n);
 
-        let max_edge = h_edges
-            .intersection(&v_edges)
-            .copied()
-            .max()
-            .unwrap_or(0);
+        let max_edge = h_edges.intersection(&v_edges).copied().max().unwrap_or(0);
 
         if max_edge == 0 {
             -1

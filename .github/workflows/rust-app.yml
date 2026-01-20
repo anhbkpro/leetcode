@@ -32,8 +32,8 @@ jobs:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-            target
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+            rust/target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('rust/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-cargo-
 
@@ -46,14 +46,16 @@ jobs:
         run: rustc --version && cargo --version
 
       - name: Lint with clippy
+        working-directory: rust
         run: cargo clippy --all-targets --all-features -- -D warnings
 
       - name: Run tests
+        working-directory: rust
         run: cargo test --workspace
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
         with:
           name: rust-test-results
-          path: target/debug/deps/
+          path: rust/target/debug/deps/
         if: failure()

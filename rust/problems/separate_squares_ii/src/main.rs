@@ -18,15 +18,7 @@ impl SegmentTree {
         }
     }
 
-    fn update(
-        &mut self,
-        ql: i32,
-        qr: i32,
-        val: i32,
-        left: usize,
-        right: usize,
-        pos: usize,
-    ) {
+    fn update(&mut self, ql: i32, qr: i32, val: i32, left: usize, right: usize, pos: usize) {
         if self.xs[right + 1] <= ql || self.xs[left] >= qr {
             return;
         }
@@ -44,8 +36,7 @@ impl SegmentTree {
         } else if left == right {
             self.covered[pos] = 0;
         } else {
-            self.covered[pos] =
-                self.covered[pos * 2 + 1] + self.covered[pos * 2 + 2];
+            self.covered[pos] = self.covered[pos * 2 + 1] + self.covered[pos * 2 + 2];
         }
     }
 
