@@ -23,7 +23,7 @@ class Solution:
                     return self.first.left < other.first.left
                 return self.cost < other.cost
 
-        pq = []
+        pq: List[PQItem] = []
         head = Node(nums[0], 0)
         current = head
         merged = [False] * len(nums)
