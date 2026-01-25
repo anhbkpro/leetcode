@@ -8,10 +8,7 @@ class Solution:
         for i in range(1, m + 1):
             for j in range(1, n + 1):
                 P[i][j] = (
-                    P[i - 1][j]
-                    + P[i][j - 1]
-                    - P[i - 1][j - 1]
-                    + mat[i - 1][j - 1]
+                    P[i - 1][j] + P[i][j - 1] - P[i - 1][j - 1] + mat[i - 1][j - 1]
                 )
 
         def getRect(x1, y1, x2, y2):

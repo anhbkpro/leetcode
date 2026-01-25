@@ -70,18 +70,14 @@ class Solution:
                 elif prev_node.value <= first.value and prev_node.value > cost:
                     decrease_count += 1
 
-                heapq.heappush(
-                    pq, PQItem(prev_node, first, prev_node.value + cost)
-                )
+                heapq.heappush(pq, PQItem(prev_node, first, prev_node.value + cost))
 
             if next_node:
                 if second.value > next_node.value and cost <= next_node.value:
                     decrease_count -= 1
                 elif second.value <= next_node.value and cost > next_node.value:
                     decrease_count += 1
-                heapq.heappush(
-                    pq, PQItem(first, next_node, cost + next_node.value)
-                )
+                heapq.heappush(pq, PQItem(first, next_node, cost + next_node.value))
 
             first.value = cost
             merged[second.left] = True
