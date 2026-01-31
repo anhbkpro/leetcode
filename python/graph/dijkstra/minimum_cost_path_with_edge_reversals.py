@@ -10,7 +10,7 @@ class Solution:
             g[x].append((y, w))
             g[y].append((x, 2 * w))
 
-        dist = [inf] * n
+        dist = [math.inf] * n
         visited = [False] * n
         dist[0] = 0
         heap = [[0, 0]] # (Distance, Node)
