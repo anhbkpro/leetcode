@@ -1,23 +1,14 @@
-fn main() {
-    enum CardinalDirection {
-        North,
-        East,
-        South,
-        West,
-    }
+use enums::{Animal, CardinalDirection};
 
+fn main() {
+    // Cardinal Direction examples
     let north = CardinalDirection::North;
     let east = CardinalDirection::East;
     let south = CardinalDirection::South;
     let west = CardinalDirection::West;
 
     fn move_to(direction: CardinalDirection) {
-        match direction {
-            CardinalDirection::North => println!("You are heading North!"),
-            CardinalDirection::East => println!("You are heading East!"),
-            CardinalDirection::South => println!("You are heading South!"),
-            CardinalDirection::West => println!("You are heading West!"),
-        }
+        println!("You are {}!", direction.description());
     }
 
     move_to(north);
@@ -25,37 +16,13 @@ fn main() {
     move_to(south);
     move_to(west);
 
-    enum Animal {
-        Dog(String),
-        Cat { name: String, age: u8 },
-        Bird,
-    }
-
+    // Animal examples
     let dog = Animal::Dog(String::from("Rex"));
-
     let cat = Animal::Cat {
         name: String::from("Whiskers"),
         age: 3,
     };
-
     let bird = Animal::Bird;
-
-    impl Animal {
-        fn name(&self) -> String {
-            match self {
-                Animal::Dog(name) => name.clone(),
-                Animal::Cat { name, .. } => name.clone(),
-                Animal::Bird => String::from("Bird"),
-            }
-        }
-
-        fn age(&self) -> u8 {
-            match self {
-                Animal::Cat { age, .. } => *age,
-                _ => 0,
-            }
-        }
-    }
 
     println!("The name of the dog is: {}", dog.name());
     println!(
