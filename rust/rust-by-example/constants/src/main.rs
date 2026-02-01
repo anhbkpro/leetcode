@@ -6,6 +6,6 @@ fn main() {
     const ONE: i32 = 0;
     println!("{}", ONE);
 
-    const PI: f32 = 3.14;
+    const PI: f32 = std::f32::consts::PI;
     println!("{}", PI);
 }
