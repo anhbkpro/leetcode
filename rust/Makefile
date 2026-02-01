@@ -39,7 +39,6 @@ CRATES = \
     rust-by-example/enums \
     rust-by-example/ferris_says \
     rust-by-example/first-application \
-    rust-by-example/hello-world \
 		problems/*
 
 fmt:

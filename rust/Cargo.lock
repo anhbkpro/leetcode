@@ -154,10 +154,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "hello-world"
-version = "0.1.0"
-
-[[package]]
 name = "last_day_where_you_can_still_cross"
 version = "0.1.0"
 
