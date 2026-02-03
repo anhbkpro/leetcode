@@ -108,7 +108,7 @@ mod tests {
             name: String::from("Senior"),
             age: 15,
         };
-        
+
         assert_eq!(young_cat.age(), 1);
         assert_eq!(old_cat.age(), 15);
     }
