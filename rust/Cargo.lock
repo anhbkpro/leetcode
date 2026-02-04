@@ -378,6 +378,10 @@ name = "trionic_array_i"
 version = "0.1.0"
 
 [[package]]
+name = "trionic_array_ii"
+version = "0.1.0"
+
+[[package]]
 name = "two_sum"
 version = "0.1.0"
 
