@@ -374,6 +374,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "transformed_array"
+version = "0.1.0"
+
+[[package]]
 name = "trionic_array_i"
 version = "0.1.0"
 
