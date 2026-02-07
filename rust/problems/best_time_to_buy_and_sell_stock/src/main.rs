@@ -27,3 +27,9 @@ mod tests {
         assert_eq!(Solution::max_profit(vec![7, 6, 4, 3, 1]), 0);
     }
 }
+
+fn main() {
+    let prices = vec![7, 1, 5, 3, 6, 4];
+    let result = Solution::max_profit(prices);
+    println!("{}", result);
+}
