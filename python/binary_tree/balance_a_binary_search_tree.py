@@ -1,3 +1,5 @@
+from typing import List
+
 class TreeNode:
     def __init__(self, x, left=None, right=None):
         self.val = x
@@ -14,7 +16,7 @@ class Solution:
         # Construct and return the balanced BST
         return self.create_balanced_bst(inorder, 0, len(inorder) - 1)
 
-    def inorder_traversal(self, root: TreeNode, inorder: list):
+    def inorder_traversal(self, root: TreeNode, inorder: List[int]):
         # Perform an inorder traversal to store the elements in sorted order
         if not root:
             return
