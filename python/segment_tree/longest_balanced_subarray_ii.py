@@ -1,3 +1,7 @@
+from typing import List
+from collections import defaultdict, deque
+
+
 class LazyTag:
     def __init__(self):
         self.to_add = 0
