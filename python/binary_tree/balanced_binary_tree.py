@@ -9,10 +9,12 @@ class Solution:
                 return 0
 
             left = dfs(node.left)
-            if left == -1: return -1
+            if left == -1:
+                return -1
 
             right = dfs(node.right)
-            if right == -1: return -1
+            if right == -1:
+                return -1
 
             if abs(left - right) > 1:
                 return -1

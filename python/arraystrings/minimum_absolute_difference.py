@@ -1,10 +1,11 @@
 from typing import List
 
+
 class Solution:
     def minimumAbsDifference(self, arr: List[int]) -> List[List[int]]:
         arr.sort()
 
-        min_diff = float('inf')
+        min_diff = float("inf")
         result = []
 
         for i in range(len(arr) - 1):

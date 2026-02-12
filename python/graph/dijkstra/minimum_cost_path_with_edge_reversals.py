@@ -13,7 +13,7 @@ class Solution:
         dist = [math.inf] * n
         visited = [False] * n
         dist[0] = 0
-        heap = [[0, 0]] # (Distance, Node)
+        heap = [[0, 0]]  # (Distance, Node)
 
         while heap:
             current_dist, x = heapq.heappop(heap)

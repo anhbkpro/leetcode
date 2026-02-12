@@ -3,8 +3,8 @@ from typing import List
 
 class Solution:
     def minimumCost(self, nums: List[int]) -> int:
-        min1 = float('inf')
-        min2 = float('inf')
+        min1 = float("inf")
+        min2 = float("inf")
 
         for x in nums[1:]:
             if x < min1:

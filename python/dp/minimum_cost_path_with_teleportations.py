@@ -25,11 +25,7 @@ class Solution:
                         costs[i][j] = 0
                         continue
                     if i != m - 1:
-                        costs[i][j] = min(
-                            costs[i][j], costs[i + 1][j] + grid[i + 1][j]
-                        )
+                        costs[i][j] = min(costs[i][j], costs[i + 1][j] + grid[i + 1][j])
                     if j != n - 1:
-                        costs[i][j] = min(
-                            costs[i][j], costs[i][j + 1] + grid[i][j + 1]
-                        )
+                        costs[i][j] = min(costs[i][j], costs[i][j + 1] + grid[i][j + 1])
         return costs[0][0]

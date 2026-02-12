@@ -39,7 +39,6 @@ def build_skewed_bst(values: List[int]) -> TreeNode:
 
 
 class TestBalanceBST(unittest.TestCase):
-
     def setUp(self):
         self.solution = Solution()
 
