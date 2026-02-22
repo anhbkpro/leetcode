@@ -32,6 +32,10 @@ name = "best_time_to_buy_and_sell_stock_v"
 version = "0.1.0"
 
 [[package]]
+name = "binary_gap"
+version = "0.1.0"
+
+[[package]]
 name = "cfg-if"
 version = "1.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
