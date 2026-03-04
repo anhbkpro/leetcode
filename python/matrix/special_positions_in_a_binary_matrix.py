@@ -15,7 +15,10 @@ class Solution:
         ans = 0
         for i in range(m):
             for j in range(n):
-                if r[i] == 1 and c[j] == 1 and mat[i][j] == 1:
+                if mat[i][j] != 1:
+                    continue
+
+                if r[i] == 1 and c[j] == 1:
                     ans += 1
 
         return ans
