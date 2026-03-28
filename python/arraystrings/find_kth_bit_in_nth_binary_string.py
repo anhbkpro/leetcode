@@ -9,9 +9,7 @@ class Solution:
             sequence += "1"
 
             # Append the inverted and reversed part of the existing sequence
-            inverted = "".join(
-                "1" if bit == "0" else "0" for bit in sequence[:-1]
-            )
+            inverted = "".join("1" if bit == "0" else "0" for bit in sequence[:-1])
             sequence += inverted[::-1]
 
         # Return the kth bit

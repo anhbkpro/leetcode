@@ -4,7 +4,7 @@ class Solution:
         ans = 0
 
         for i in range(1, n + 1):
-            shift = i.bit_length()   # number of bits needed for i
+            shift = i.bit_length()  # number of bits needed for i
             ans = ((ans << shift) + i) % MOD
 
         return ans

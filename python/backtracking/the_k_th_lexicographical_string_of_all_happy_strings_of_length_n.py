@@ -43,10 +43,7 @@ class SolutionOptimizedRecursion:
         # Try adding each character ('a', 'b', 'c') to the current string
         for current_char in ["a", "b", "c"]:
             # Skip if the current character is the same as the last one
-            if (
-                len(self.current_string) > 0
-                and self.current_string[-1] == current_char
-            ):
+            if len(self.current_string) > 0 and self.current_string[-1] == current_char:
                 continue
 
             self.current_string += current_char

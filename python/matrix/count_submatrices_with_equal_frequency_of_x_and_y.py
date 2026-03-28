@@ -13,9 +13,9 @@ class Solution:
             rx = 0
             ry = 0
             for j in range(cols):
-                if grid[i][j] == 'X':
+                if grid[i][j] == "X":
                     rx += 1
-                elif grid[i][j] == 'Y':
+                elif grid[i][j] == "Y":
                     ry += 1
 
                 sumX[j] += rx

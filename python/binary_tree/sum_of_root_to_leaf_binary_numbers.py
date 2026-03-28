@@ -1,6 +1,5 @@
 class Solution:
     def sumRootToLeaf(self, root):
-
         def dfs(node, current):
             if not node:
                 return 0

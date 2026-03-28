@@ -17,6 +17,7 @@ class Solution:
             res.append(str(sum_bit(A, B, C)))
             C = carry_bit(A, B, C)
 
-        if C: res.append(str(C))
+        if C:
+            res.append(str(C))
 
         return "".join(reversed(res))

@@ -2,9 +2,7 @@ from typing import List
 
 
 class Solution:
-    def findRotation(
-        self, mat: List[List[int]], target: List[List[int]]
-    ) -> bool:
+    def findRotation(self, mat: List[List[int]], target: List[List[int]]) -> bool:
         n = len(mat)
         # at most 4 rotations
         for k in range(4):

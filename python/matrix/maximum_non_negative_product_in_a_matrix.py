@@ -17,19 +17,11 @@ class Solution:
         for i in range(1, m):
             for j in range(1, n):
                 if grid[i][j] >= 0:
-                    maxgt[i][j] = (
-                        max(maxgt[i][j - 1], maxgt[i - 1][j]) * grid[i][j]
-                    )
-                    minlt[i][j] = (
-                        min(minlt[i][j - 1], minlt[i - 1][j]) * grid[i][j]
-                    )
+                    maxgt[i][j] = max(maxgt[i][j - 1], maxgt[i - 1][j]) * grid[i][j]
+                    minlt[i][j] = min(minlt[i][j - 1], minlt[i - 1][j]) * grid[i][j]
                 else:
-                    maxgt[i][j] = (
-                        min(minlt[i][j - 1], minlt[i - 1][j]) * grid[i][j]
-                    )
-                    minlt[i][j] = (
-                        max(maxgt[i][j - 1], maxgt[i - 1][j]) * grid[i][j]
-                    )
+                    maxgt[i][j] = min(minlt[i][j - 1], minlt[i - 1][j]) * grid[i][j]
+                    minlt[i][j] = max(maxgt[i][j - 1], maxgt[i - 1][j]) * grid[i][j]
 
         if maxgt[m - 1][n - 1] < 0:
             return -1

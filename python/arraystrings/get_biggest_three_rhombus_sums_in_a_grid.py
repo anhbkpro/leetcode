@@ -51,12 +51,7 @@ class Solution:
                         + (sum1[rx + 1][ry + 1] - sum1[ux][uy])
                         + (sum1[dx + 1][dy + 1] - sum1[lx][ly])
                         + (sum2[dx + 1][dy + 1] - sum2[rx][ry + 2])
-                        - (
-                            grid[ux][uy]
-                            + grid[dx][dy]
-                            + grid[lx][ly]
-                            + grid[rx][ry]
-                        )
+                        - (grid[ux][uy] + grid[dx][dy] + grid[lx][ly] + grid[rx][ry])
                     )
 
         return ans.get()

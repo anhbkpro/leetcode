@@ -8,8 +8,8 @@ class Solution:
         p = [[0] * m for _ in range(n)]
 
         suffix = 1
-        for i in range(n - 1, - 1, -1):
-            for j in range(m - 1, - 1, -1):
+        for i in range(n - 1, -1, -1):
+            for j in range(m - 1, -1, -1):
                 p[i][j] = suffix
                 suffix = (suffix * grid[i][j]) % MOD
 

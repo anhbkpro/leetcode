@@ -22,9 +22,9 @@ class Solution:
         max_run = 0
 
         for i, ch in enumerate(s):
-            if ch == 'a':
+            if ch == "a":
                 a += 1
-            elif ch == 'b':
+            elif ch == "b":
                 b += 1
             else:
                 c += 1

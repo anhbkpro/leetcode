@@ -70,6 +70,7 @@ Generate code, corrections, and refactorings that comply with the basic principl
 
 ### Testing
 
+- The test file should be named like the module it tests, with _test.py suffix.
 - Use Pytest framework.
 - Follow the Arrange-Act-Assert convention for tests.
 - Name test variables clearly.
@@ -85,4 +86,6 @@ Generate code, corrections, and refactorings that comply with the basic principl
 - Use the standard Pytest framework for testing.
 - Write tests for each class, method.
 
+### Formatting
 
+- Run the command in the Makefile to format the code: `make fmt`.
