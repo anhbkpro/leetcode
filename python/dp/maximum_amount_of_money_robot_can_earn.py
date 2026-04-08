@@ -31,9 +31,7 @@ class Solution:
         for i in range(1, m):
             for j in range(1, n):
                 for k in range(3):
-                    dp[i][j][k] = (
-                        max(dp[i - 1][j][k], dp[i][j - 1][k]) + coins[i][j]
-                    )
+                    dp[i][j][k] = max(dp[i - 1][j][k], dp[i][j - 1][k]) + coins[i][j]
 
                     if k > 0:
                         dp[i][j][k] = max(

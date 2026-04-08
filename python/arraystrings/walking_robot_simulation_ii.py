@@ -2,7 +2,6 @@ from typing import List
 
 
 class Robot:
-
     TO_DIR = {
         0: "East",
         1: "North",
@@ -13,8 +12,8 @@ class Robot:
     def __init__(self, width: int, height: int):
         self.moved = False
         self.idx = 0
-        self.pos = list()
-        self.dirs = list()
+        self.pos: list[tuple[int, int]] = list()
+        self.dirs: list[int] = list()
 
         pos_, dirs_ = self.pos, self.dirs
 

@@ -3,9 +3,7 @@ from typing import List
 
 
 class Solution:
-    def maxWalls(
-        self, robots: List[int], distance: List[int], walls: List[int]
-    ) -> int:
+    def maxWalls(self, robots: List[int], distance: List[int], walls: List[int]) -> int:
         n = len(robots)
         left = [0] * n
         right = [0] * n
