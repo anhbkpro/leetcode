@@ -5,7 +5,7 @@ class Solution:
     def minimumDistance(self, nums: List[int]) -> int:
         n = len(nums)
         nxt = [-1] * n
-        occur = {}
+        occur: dict[int, int] = {}
         ans = n + 1
 
         for i in range(n - 1, -1, -1):
