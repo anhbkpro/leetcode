@@ -1,9 +1,9 @@
-struct DSU {
+struct Dsu {
     parent: Vec<usize>,
     size: Vec<usize>,
 }
 
-impl DSU {
+impl Dsu {
     fn new(n: usize) -> Self {
         Self {
             parent: (0..n).collect(),
@@ -46,7 +46,7 @@ impl Solution {
         let top = 0;
         let bottom = n + 1;
 
-        let mut dsu = DSU::new(n + 2);
+        let mut dsu = Dsu::new(n + 2);
         let mut grid = vec![vec![0; col]; row];
 
         let directions = [(1, 0), (-1, 0), (0, 1), (0, -1)];
