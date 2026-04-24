@@ -35,9 +35,7 @@ class Solution:
             for c in range(26):
                 if c == idx:
                     continue
-                if node.child[c] and self.dfs(
-                    word, i + 1, node.child[c], cnt + 1
-                ):
+                if node.child[c] and self.dfs(word, i + 1, node.child[c], cnt + 1):
                     return True
 
         return False

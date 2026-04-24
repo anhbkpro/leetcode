@@ -22,10 +22,10 @@ class Solution:
             if len(pos_list) == 3:
                 queries[i] = -1
                 continue
-            pos = bisect.bisect_left(pos_list, queries[i]) # type: ignore
+            pos = bisect.bisect_left(pos_list, queries[i])  # type: ignore
             queries[i] = min(
-                pos_list[pos + 1] - pos_list[pos], # type: ignore
-                pos_list[pos] - pos_list[pos - 1], # type: ignore
+                pos_list[pos + 1] - pos_list[pos],  # type: ignore
+                pos_list[pos] - pos_list[pos - 1],  # type: ignore
             )
 
         return queries

@@ -1,3 +1,6 @@
+from functools import cache
+
+
 class Solution:
     def numberOfStableArrays(self, zero: int, one: int, limit: int) -> int:
         mod = 10**9 + 7
