@@ -36,7 +36,10 @@ impl Solution {
     }
 }
 
-fn main() {}
+fn main() {
+    let _solution = Solution;
+    let _ = Solution::count_partitions(vec![1, 2, 3, 4, 5], 2);
+}
 
 #[cfg(test)]
 mod tests {
