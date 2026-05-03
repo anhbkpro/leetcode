@@ -11,3 +11,11 @@ class Solution:
         # If find returns an index that is not -1
         # then 'goal' is a substring
         return doubled_string.find(goal) != -1
+
+
+    def rotateString2(self, s: str, goal: str) -> bool:
+        for i in range(len(s)):
+            if s[i:] + s[:i] == goal:
+                return True
+
+        return False
