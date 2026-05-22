@@ -12,7 +12,6 @@ class Solution:
         # then 'goal' is a substring
         return doubled_string.find(goal) != -1
 
-
     def rotateString2(self, s: str, goal: str) -> bool:
         for i in range(len(s)):
             if s[i:] + s[:i] == goal:

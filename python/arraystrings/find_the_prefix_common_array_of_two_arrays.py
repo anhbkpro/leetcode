@@ -10,7 +10,6 @@ class Solution:
             # Compare elements in A and B within the range of current prefix
             for a_index in range(current_index + 1):
                 for b_index in range(current_index + 1):
-
                     # Check if elements match, and count if they do
                     if A[a_index] == B[b_index]:
                         common_count += 1

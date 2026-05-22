@@ -7,6 +7,7 @@ class ListNode:
         self.val = val
         self.next = next
 
+
 class Solution:
     def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
         if not head or not head.next or k == 0:
