@@ -24,3 +24,19 @@ class Solution:
             result.remove(c)
 
         return len(result)
+
+    def count_special_chars(self, word: str) -> int:
+        last_lower: dict[str, int] = {}
+        first_upper: dict[str, int] = {}
+
+        for i, c in enumerate(word):
+            if c.islower():
+                last_lower[c] = i  # keep updating → captures last position
+            elif c.isupper() and c.lower() not in first_upper:
+                first_upper[c.lower()] = i  # only set once → captures first position
+
+        return sum(
+            1
+            for c, last in last_lower.items()
+            if c in first_upper and last < first_upper[c]
+        )
