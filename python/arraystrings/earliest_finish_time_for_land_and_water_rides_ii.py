@@ -18,10 +18,24 @@ class Solution:
                 finish2 = min(finish2, max(start2[i], finish1) + duration2[i])
             return finish2
 
-        land_water = solve(
-            landStartTime, landDuration, waterStartTime, waterDuration
-        )
-        water_land = solve(
-            waterStartTime, waterDuration, landStartTime, landDuration
-        )
+        land_water = solve(landStartTime, landDuration, waterStartTime, waterDuration)
+        water_land = solve(waterStartTime, waterDuration, landStartTime, landDuration)
         return min(land_water, water_land)
+
+    def earliestFinishTimeHardToRead(
+        self, landStartTime, landDuration, waterStartTime, waterDuration
+    ):
+        min_land_end = min(s + d for s, d in zip(landStartTime, landDuration))
+        min_water_end = min(s + d for s, d in zip(waterStartTime, waterDuration))
+
+        # Land first, then water
+        land_first = min(
+            max(min_land_end, ws) + wd for ws, wd in zip(waterStartTime, waterDuration)
+        )
+
+        # Water first, then land
+        water_first = min(
+            max(min_water_end, ls) + ld for ls, ld in zip(landStartTime, landDuration)
+        )
+
+        return min(land_first, water_first)
