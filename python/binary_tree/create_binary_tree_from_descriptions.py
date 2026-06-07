@@ -1,5 +1,8 @@
+from python.binary_tree.binary_tree_node import TreeNode
+
+
 from collections import deque
-from typing import List, Optional
+from typing import Any, List, Optional, Tuple
 
 from .binary_tree_node import TreeNode
 
@@ -7,10 +10,10 @@ from .binary_tree_node import TreeNode
 class Solution:
     def createBinaryTree(self, descriptions: List[List[int]]) -> Optional[TreeNode]:
         # Sets to track unique children and parents
-        children = set()
-        parents = set()
+        children = set[Any]()
+        parents = set[Any]()
         # Dictionary to store parent to children relationships
-        parentToChildren = {}
+        parentToChildren = dict[Any, List[Tuple[Any, int]]]()
 
         # Build graph from parent to child, and add nodes to sets
         for d in descriptions:
@@ -19,7 +22,7 @@ class Solution:
             parents.add(child)
             children.add(child)
             if parent not in parentToChildren:
-                parentToChildren[parent] = []
+                parentToChildren[parent] = list[Tuple[Any, int]]()
             parentToChildren[parent].append((child, isLeft))
 
         # Find the root node by checking which node is
@@ -31,7 +34,7 @@ class Solution:
         root = TreeNode(next(iter(parents)))
 
         # Starting from root, use BFS to construct binary tree
-        queue = deque([root])
+        queue = deque[TreeNode]([root])
 
         while queue:
             parent = queue.popleft()
