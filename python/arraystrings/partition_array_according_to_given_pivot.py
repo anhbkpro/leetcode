@@ -21,18 +21,14 @@ class Solution:
 
 
     def pivotArray2(self, nums: List[int], pivot: int) -> List[int]:
-        less_than_pivot = list[int]()
-        equal_pivot = list[int]()
-        greater_than_pivot = list[int]()
-        ans = list[int]()
+        less = list[int]()
+        equal = list[int]()
+        greater = list[int]()
         for num in nums:
             if num < pivot:
-                less_than_pivot.append(num)
+                less.append(num)
             elif num == pivot:
-                equal_pivot.append(num)
+                equal.append(num)
             else:
-                greater_than_pivot.append(num)
-        ans.extend(less_than_pivot)
-        ans.extend(equal_pivot)
-        ans.extend(greater_than_pivot)
-        return ans
+                greater.append(num)
+        return less + equal + greater
