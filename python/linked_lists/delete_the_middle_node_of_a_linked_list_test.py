@@ -12,4 +12,5 @@ def test_delete_the_middle_node_of_a_linked_list():
     head.next.next.next.next.next = LinkedListNode(2)
     head.next.next.next.next.next.next = LinkedListNode(6)
     Solution().deleteMiddle(head.next.next)
-    assert head.val == 1
+    if head.val != 1:
+        raise AssertionError(f"Expected head.val to be 1, got {head.val}")
