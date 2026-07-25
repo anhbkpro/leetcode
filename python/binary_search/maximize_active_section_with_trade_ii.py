@@ -1,3 +1,7 @@
+from typing import List
+from bisect import bisect_left, bisect_right
+
+
 class SegmentTree:
     def __init__(self, arr):
         self.n = len(arr)
