@@ -50,7 +50,12 @@ impl Solution {
 }
 
 fn main() {
-    println!("Hello, world!");
+    let result = Solution::validate_coupons(
+        vec!["SAVE20".to_string(), "SAVE@20".to_string()],
+        vec!["restaurant".to_string(), "grocery".to_string()],
+        vec![true, true],
+    );
+    println!("Valid coupons: {:?}", result);
 }
 
 #[cfg(test)]

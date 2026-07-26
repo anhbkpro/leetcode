@@ -60,7 +60,7 @@ fn main() {
                     "id1 id0".to_string()
                 ],
                 vec!["OFFLINE".to_string(), "11".to_string(), "0".to_string()],
-                vec!["MESSAGE".to_string(), "12".to_string(), "ALL".to_string()].to_vec()
+                vec!["MESSAGE".to_string(), "12".to_string(), "ALL".to_string()]
             ]
         )
     );

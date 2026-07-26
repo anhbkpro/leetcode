@@ -6,15 +6,14 @@ impl Solution {
             return 0;
         }
 
-        let rows = matrix.len();
         let cols = matrix[0].len();
         let mut heights = vec![0; cols];
         let mut max_area = 0;
 
-        for r in 0..rows {
+        for row in &matrix {
             // Build histogram
             for c in 0..cols {
-                if matrix[r][c] == '1' {
+                if row[c] == '1' {
                     heights[c] += 1;
                 } else {
                     heights[c] = 0;
@@ -28,10 +27,10 @@ impl Solution {
         max_area
     }
 
-    fn largest_rectangle(heights: &Vec<i32>) -> i32 {
+    fn largest_rectangle(heights: &[i32]) -> i32 {
         let mut stack: Vec<usize> = Vec::new();
         let mut max_area = 0;
-        let mut extended = heights.clone();
+        let mut extended = heights.to_vec();
         extended.push(0); // sentinel
 
         for i in 0..extended.len() {

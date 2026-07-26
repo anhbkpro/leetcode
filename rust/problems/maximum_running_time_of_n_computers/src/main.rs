@@ -38,7 +38,10 @@ impl Solution {
     }
 }
 
-fn main() {}
+fn main() {
+    let result = Solution::max_run_time(2, vec![3, 3, 3]);
+    println!("Maximum running time: {}", result);
+}
 
 #[cfg(test)]
 mod tests {
@@ -85,7 +88,7 @@ mod tests {
         // No "extra", batteries match exactly n
         assert_eq!(
             Solution::max_run_time(2, vec![4, 7]),
-            4 + 0 // smallest battery + ∅ extra
+            4 // smallest battery + ∅ extra
         );
     }
 }

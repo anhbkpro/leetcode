@@ -15,6 +15,12 @@ impl Solution {
     }
 }
 
+fn main() {
+    println!("1925. Count Square Sum Triples");
+    println!("Input: n = 5");
+    println!("Output: {}", Solution::count_triples(5));
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

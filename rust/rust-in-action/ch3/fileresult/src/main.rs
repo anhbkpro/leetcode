@@ -19,9 +19,9 @@ impl File {
         }
     }
 
-    fn new_with_data(name: &str, data: &Vec<u8>) -> File {
+    fn new_with_data(name: &str, data: &[u8]) -> File {
         let mut f = File::new(name);
-        f.data = data.clone();
+        f.data = data.to_vec();
         f
     }
 

@@ -1,5 +1,3 @@
-use std::cmp::Ordering;
-
 struct SegmentTree {
     xs: Vec<i32>,
     n: usize,
@@ -64,7 +62,7 @@ impl Solution {
         xs.sort_unstable();
         xs.dedup();
 
-        events.sort_by(|a, b| a.0.cmp(&b.0));
+        events.sort_by_key(|a| a.0);
 
         let mut seg = SegmentTree::new(xs);
 
@@ -108,4 +106,10 @@ impl Solution {
 
         height + (target - area_before) / width
     }
+}
+
+fn main() {
+    let squares = vec![vec![0, 0, 2], vec![1, 1, 2]];
+    let result = Solution::separate_squares(squares);
+    println!("Separate squares y-line: {}", result);
 }

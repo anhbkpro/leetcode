@@ -7,9 +7,7 @@ impl Solution {
         let mut number = 0;
         let mut sign = 1;
 
-        let mut chars = s.chars().peekable();
-
-        while let Some(c) = chars.next() {
+        for c in s.chars() {
             match c {
                 '0'..='9' => {
                     number = number * 10 + (c as i32 - '0' as i32);

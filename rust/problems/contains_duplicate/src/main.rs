@@ -27,7 +27,7 @@ mod tests {
 
     #[test]
     fn test_contains_duplicate() {
-        assert_eq!(Solution::contains_duplicate(vec![1, 2, 3, 1]), true);
-        assert_eq!(Solution::contains_duplicate(vec![1, 2, 3, 4]), false);
+        assert!(Solution::contains_duplicate(vec![1, 2, 3, 1]));
+        assert!(!Solution::contains_duplicate(vec![1, 2, 3, 4]));
     }
 }

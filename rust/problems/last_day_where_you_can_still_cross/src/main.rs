@@ -1,11 +1,11 @@
-struct DSU {
+struct Dsu {
     root: Vec<usize>,
     size: Vec<usize>,
 }
 
-impl DSU {
+impl Dsu {
     fn new(n: usize) -> Self {
-        DSU {
+        Dsu {
             root: (0..n).collect(),
             size: vec![1; n],
         }
@@ -45,7 +45,7 @@ impl Solution {
         let col = col as usize;
 
         // +2 for left virtual node (0) and right virtual node (row*col + 1)
-        let mut dsu = DSU::new(row * col + 2);
+        let mut dsu = Dsu::new(row * col + 2);
         let mut grid = vec![vec![0; col]; row];
 
         let directions = [
@@ -59,9 +59,9 @@ impl Solution {
             (-1, -1),
         ];
 
-        for i in 0..row * col {
-            let r = (cells[i][0] - 1) as isize;
-            let c = (cells[i][1] - 1) as isize;
+        for (i, cell) in cells.iter().enumerate().take(row * col) {
+            let r = (cell[0] - 1) as isize;
+            let c = (cell[1] - 1) as isize;
 
             grid[r as usize][c as usize] = 1;
 

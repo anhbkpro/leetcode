@@ -6,16 +6,12 @@ impl Solution {
         happiness.sort_by(|a, b| b.cmp(a));
 
         let mut total_happiness_sum: i64 = 0;
-        let mut turns: i32 = 0;
-
-        for i in 0..k as usize {
-            let adjusted = happiness[i] - turns;
+        for (turns, &value) in happiness.iter().take(k as usize).enumerate() {
+            let adjusted = value - turns as i32;
             if adjusted > 0 {
                 total_happiness_sum += adjusted as i64;
             }
-            turns += 1;
         }
-
         total_happiness_sum
     }
 
@@ -26,6 +22,15 @@ impl Solution {
             .map(|i| (happiness[i] - i as i32).max(0) as i64)
             .sum()
     }
+}
+
+fn main() {
+    let happiness = vec![5, 3, 8, 6];
+    let k = 3;
+    let result = Solution::maximum_happiness_sum(happiness.clone(), k);
+    let result_v2 = Solution::maximum_happiness_sum_v2(happiness, k);
+    println!("Maximum happiness sum for selected children: {}", result);
+    println!("Maximum happiness sum (v2): {}", result_v2);
 }
 
 #[cfg(test)]
@@ -84,11 +89,4 @@ mod tests {
         assert_eq!(Solution::maximum_happiness_sum_v2(happiness, k), 4);
         // picks 3 + (2 - 1) = 4
     }
-}
-
-fn main() {
-    let happiness = vec![5, 3, 8, 6];
-    let k = 3;
-    let result = Solution::maximum_happiness_sum(happiness, k);
-    println!("Maximum happiness sum for selected children: {}", result);
 }

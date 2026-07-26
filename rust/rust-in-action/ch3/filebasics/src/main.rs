@@ -22,6 +22,11 @@ impl File {
     self.data.len()
   }
 
+  /// Returns `true` if the file contains no data.
+  pub fn is_empty(&self) -> bool {
+    self.data.is_empty()
+  }
+
   /// Returns the file's name.
   pub fn name(&self) -> String {
     self.name.clone()
