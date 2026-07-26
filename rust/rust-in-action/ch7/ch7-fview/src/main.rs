@@ -13,7 +13,7 @@ fn main() {
     let mut pos = 0;
     let mut buffer = [0; BYTES_PER_LINE];
 
-    while let Ok(_) = f.read_exact(&mut buffer) { // read until read_exact() returns an error
+    while f.read_exact(&mut buffer).is_ok() { // read until read_exact() returns an error
         print!("[0x{:08x}] ", pos);
         for byte in &buffer {
             match *byte {
