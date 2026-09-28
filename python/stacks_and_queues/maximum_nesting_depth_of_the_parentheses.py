@@ -1,12 +1,10 @@
 class Solution:
     def max_depth(self, s: str) -> int:
-        stack = []
-        ans = 0
+        ans, stack = 0, []
         for c in s:
             if c == "(":
                 stack.append(c)
-                ans = max(ans, len(stack))
-            elif c == ")" and stack:
+            elif c == ")":
                 stack.pop()
-
+            ans = max(ans, len(stack))
         return ans
